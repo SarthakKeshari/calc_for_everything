@@ -1,5 +1,6 @@
 # Calculator for Everything
 Material-ui
+color pallete
 
 Star ⭐ | Fork 🔗 | Contribute 💻
 
