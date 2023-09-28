@@ -6,7 +6,7 @@ Star ⭐ | Fork 🔗 | Contribute 💻
 ### Website name - Calc for Everything
 ### Website logo - 
 <p align="center">
-  <img src="https://github.com/SarthakKeshari/CPP-Questions-and-Solutions/blob/main/calc_for_everything_logo.png" width=40% height=40%>
+  <img src="https://github.com/SarthakKeshari/calc_for_everything/blob/master/calc_for_everything_logo.png" width=40% height=40%>
 </p>
 
 <br>
