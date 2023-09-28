@@ -10,6 +10,8 @@ We love your input! We want you to make contribution to this repository in the e
 
 ## Contributing
 
+### NOTE - NOT more than *2* issues will be assigned at any given point in time.
+
 Different types of contribution practices for this repository - 
 #### 1) Add a calculator description and provide the code for the same
 ##### *provided the calculator description has NOT been created earlier in this repository, so kindly go through the repository before raising an issue.
@@ -49,7 +51,7 @@ Different types of contribution practices for this repository -
   Step d) Fill a short description form <br>
   Step e) Press Submit New Issue button <br>
   
-  ### NOTE - NOT folowing the contribution guidlines may lead to permanent ban from repository.
+### NOTE - NOT folowing the contribution guidlines may lead to permanent ban from repository.
   
 <br>
 In general, we follow the "fork-and-pull" Git workflow.
