@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Input, Typography } from '@mui/material';
+import { Container, Divider, Input, Typography } from '@mui/material';
 
 function MainSI(){
     const [principal, setPrincipal] = useState()
@@ -9,9 +9,17 @@ function MainSI(){
     const [amount, setAmount] = useState(0)
 
     useEffect(() => {
-        const cal = (parseFloat(principal)*parseFloat(rate)*parseFloat(time))/100.0;
-        setInterest(cal)
-        setAmount(cal+parseFloat(principal))
+        if(principal>=0 && rate>=0 && time>0)
+        {
+            const cal = (parseFloat(principal)*parseFloat(rate)*parseFloat(time))/100.0;
+            setInterest(cal)
+            setAmount(cal+parseFloat(principal))
+        }
+        else
+        {
+            setInterest(0)
+            setAmount(0)
+        }
     }, [principal, rate, time])
 
     return(
@@ -54,23 +62,11 @@ function MainSI(){
                     value={time}
                 />
                 <Typography pt={1} variant='h6' mt={2}>Interest (in ₹)</Typography>
-                <Input
-                    color="primary"
-                    disabled={true}
-                    size="lg"
-                    variant="outlined"
-                    type='number'
-                    value={interest}
-                />
+                <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{interest}</Typography>
+                <Divider/>
                 <Typography pt={1} variant='h6' mt={2}>Amount (in ₹)</Typography>
-                <Input
-                    color="primary"
-                    disabled={true}
-                    size="lg"
-                    variant="outlined"
-                    type='number'
-                    value={amount}
-                />
+                <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{amount}</Typography>
+                <Divider/>
             </Container>
         </Container>
     )
