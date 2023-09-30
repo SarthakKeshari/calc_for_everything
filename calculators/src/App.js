@@ -8,6 +8,8 @@ import MainDecToBinAndBinToDec from './computer_science/DecToBinAndBinToDec/Main
 import MainHexToBinAndBinToHex from './computer_science/HexToBinAndBinToHex/MainHexToBinAndBinToHex';
 import MainOctToBinAndBinToOct from './computer_science/OctToBinAndBinToOct/MainOctToBinAndBinToOct';
 import MainBinaryAdder from './computer_science/BinaryAdder/MainBinaryAdder';
+import MainOctalAdder from './computer_science/OctalAdder/MainOctalAdder';
+import MainHexadecimalAdder from './computer_science/HexadecimalAdder/MainHexadecimalAdder';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
             <Route path="hexbinandbinhex" element={<MainHexToBinAndBinToHex />} />
             <Route path="octbinandbinoct" element={<MainOctToBinAndBinToOct />} />
             <Route path="binaryadder" element={<MainBinaryAdder />} />
+            <Route path="octaladder" element={<MainOctalAdder />} />
+            <Route path="hexadecimaladder" element={<MainHexadecimalAdder />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
