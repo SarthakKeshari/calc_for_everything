@@ -12,6 +12,7 @@ export default function Home() {
             <HomeGridItem calcName="Decimal to Binary and Binary to Decimal" path="/decbinandbindec"/>
             <HomeGridItem calcName="Hexadecimal to Binary and Binary to Hexadecimal" path="/hexbinandbinhex"/>
             <HomeGridItem calcName="Octal to Binary and Binary to Octal" path="/octbinandbinoct"/>
+            <HomeGridItem calcName="Binary Adder" path="/binaryadder"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
