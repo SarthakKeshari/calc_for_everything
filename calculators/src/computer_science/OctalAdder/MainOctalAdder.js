@@ -18,7 +18,7 @@ const MainOctalAdder = () => {
     },[oct1,oct2])
   return (
     <div><Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-    <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Octal-Binary and Vice versa calculator</Typography>
+    <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Octal Adder</Typography>
     <hr/>
     <br/>
     <Container sx={{display:"flex", flexDirection:"column"}}>
