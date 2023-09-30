@@ -6,6 +6,7 @@ import MainSI from './mathematical/simple_interest/MainSI';
 import MainCI from './mathematical/compound_interest/MainCI';
 import MainDecToBinAndBinToDec from './computer_science/DecToBinAndBinToDec/MainDecToBinAndBinToDec';
 import MainHexToBinAndBinToHex from './computer_science/HexToBinAndBinToHex/MainHexToBinAndBinToHex';
+import MainOctToBinAndBinToOct from './computer_science/OctToBinAndBinToOct/MainOctToBinAndBinToOct';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             {/* Computer Science */}
             <Route path="decbinandbindec" element={<MainDecToBinAndBinToDec />} />
             <Route path="hexbinandbinhex" element={<MainHexToBinAndBinToHex />} />
+            <Route path="octbinandbinoct" element={<MainOctToBinAndBinToOct />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />

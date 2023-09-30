@@ -1,5 +1,5 @@
-function OctToBinAndBinToOct(){
+function MainOctToBinAndBinToOct(){
     
 }
 
-export default OctToBinAndBinToOct;
+export default MainOctToBinAndBinToOct;
