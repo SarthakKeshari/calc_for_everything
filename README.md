@@ -1,6 +1,7 @@
 # Calculator for Everything
-Material-ui
-color pallete
+This repository aims to provide Calculators for educational, professional, scientific, health and well-being and other purposes.
+
+#### Its a ReactJS project and the UI libraray used - Material UI
 
 Star ⭐ | Fork 🔗 | Contribute 💻
 
