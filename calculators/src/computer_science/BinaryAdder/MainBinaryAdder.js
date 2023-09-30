@@ -1,14 +1,60 @@
-import React from 'react';
-import { Container, Typography } from '@mui/material';
+import React, { useEffect, useState } from 'react';
+import { Container, Divider, Input, Typography } from '@mui/material';
 
 function MainBinaryAdder(){
-    return(
-        <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Binary Adder</Typography>
-            <hr/>
-            <br/>
-        </Container>
-    )
+    const [bin1,setBin1] = useState(0)
+    const [bin2,setBin2] = useState(0)
+    const [binans,setBinans] = useState(0)
+    const [decans,setDecans] = useState(0)
+    useEffect(()=>{
+        if(bin1>0 || bin2>0){
+            setBinans((parseInt(bin1,2)+parseInt(bin2,2)).toString(2))
+            setDecans(parseInt(bin1,2)+parseInt(bin2,2))
+        }
+        else{
+            setBinans(0)
+            setDecans(0)
+        }
+    },[bin1,bin2])
+  return (
+    <div><Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
+    <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Binary Adder</Typography>
+    <hr/>
+    <br/>
+    <Container sx={{display:"flex", flexDirection:"column"}}>
+        <Typography pt={1} variant='h6' mt={2}>Enter Binary No.</Typography>
+        <Input
+            color="primary"
+            disabled={false}
+            placeholder="Enter Binary No."
+            size="lg"
+            variant="outlined"
+            type='number'
+            onChange={(e) => setBin1(e.target.value)}
+            value={bin1}
+        />
+        <Typography pt={1} variant='h6' mt={2}>Enter Binary No.</Typography>
+        <Input
+            color="primary"
+            disabled={false}
+            placeholder="Enter Binary"
+            size="lg"
+            variant="outlined"
+            type='number'
+            onChange={(e) => setBin2(e.target.value)}
+            value={bin2}
+        />
+        
+        
+        <Typography pt={1} variant='h6' mt={2}>Resultant in Binary</Typography>
+        <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{binans}</Typography>
+        <Typography pt={1} variant='h6' mt={2}>Resultant in Decimal</Typography>
+        <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{decans}</Typography>
+        <Divider />
+    </Container>
+</Container>
+</div>
+  )
 }
 
 export default MainBinaryAdder;

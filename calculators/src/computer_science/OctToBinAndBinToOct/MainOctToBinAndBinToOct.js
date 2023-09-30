@@ -6,14 +6,14 @@ function MainOctToBinAndBinToOct(){
     const [binans,setBinans] = useState(0)
     const [octans,setOctans] = useState(0)
     useEffect(() => {
-        if(oct>0){
-            setBinans(parseInt(oct,8).toString(2))
+        if(oct>0){ //if octal is greater than 0
+            setBinans(parseInt(oct,8).toString(2))  //method to convert octal to binary
         }
         else{
             setBinans(0)
         }
-        if(bin>0){
-            setOctans(parseInt(bin,2).toString(8))
+        if(bin>0){ //if binary is greater than 0
+            setOctans(parseInt(bin,2).toString(8))  //method to convert binary to octal
         }
         else{
             setOctans(0)
@@ -46,7 +46,7 @@ function MainOctToBinAndBinToOct(){
                 <Input
                     color="primary"
                     disabled={false}
-                    placeholder="Enter Rate"
+                    placeholder="Enter Binary No."
                     size="lg"
                     variant="outlined"
                     type='number'
