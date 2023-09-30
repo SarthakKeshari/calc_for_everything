@@ -45,7 +45,7 @@ Hard | 20 Points
 #### Top Contributors
 Rank | Contributor | Points Collected
 ------------ | ------------- | ---------
-1 | - | -
+1 | [@7twik](https://github.com/7twik) | 5
 2 | - | -
 3 | - | -
 
