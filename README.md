@@ -27,7 +27,16 @@ Hard | 20 Points
 
 ## Calculators Covered 🔢
 
+#### Computer Science
 - Decimal to Binary and vice versa
+
+#### Mathematical
+- Simple Interest
+- Compound Interest
+
+#### Health
+- BMI
+
 
 <br/>
 
