@@ -1,7 +1,7 @@
 # Calculator for Everything
 This repository aims to provide Calculators for educational, professional, scientific, health and well-being and other purposes.
 
-#### Its a ReactJS project and the UI libraray used - Material UI
+#### Its a ReactJS project and the UI library used - Material UI
 
 Star ⭐ | Fork 🔗 | Contribute 💻
 
