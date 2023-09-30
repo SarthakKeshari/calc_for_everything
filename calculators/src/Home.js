@@ -11,6 +11,7 @@ export default function Home() {
         <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
             <HomeGridItem calcName="Decimal to Binary and Binary to Decimal" path="/decbinandbindec"/>
             <HomeGridItem calcName="Hexadecimal to Binary and Binary to Hexadecimal" path="/hexbinandbinhex"/>
+            <HomeGridItem calcName="Octal to Binary and Binary to Octal" path="/octbinandbinoct"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
