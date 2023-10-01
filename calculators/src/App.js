@@ -24,6 +24,9 @@ import MainQuadraticEquationIntersection from './mathematical/quadratic_eq_inter
 import MainLinearEquationIntersection from './mathematical/linear_eq_intersection/MainLinearEquationIntersection';
 import MainMatrixInverse from './mathematical/matrix_inverse/MainMatrixInverse';
 import MainMatrixAdjoint from './mathematical/matrix_adjoint/MainMatrixAdjoint';
+import MainMatrixAddition from './mathematical/matrix_addition/MainMatrixAddition';
+import MainMatrixSubstraction from './mathematical/matrix_substraction/MainMatrixSubstraction';
+import MainMatrixMultiplication from './mathematical/matrix_multiplication/MainMatrixMultiplication';
 
 function App() {
   return (
@@ -52,6 +55,9 @@ function App() {
             <Route path="graphmaker" element={<MainGraphMaker />} />
             <Route path="quadraticequationintersection" element={<MainQuadraticEquationIntersection />} />
             <Route path="linearequationintersection" element={<MainLinearEquationIntersection />} />
+            <Route path="matrixaddition" element={<MainMatrixAddition />} />
+            <Route path="matrixsubstraction" element={<MainMatrixSubstraction />} />
+            <Route path="matrixmultiplication" element={<MainMatrixMultiplication />} />
             <Route path="matrixinverse" element={<MainMatrixInverse />} />
             <Route path="matrixadjoint" element={<MainMatrixAdjoint />} />
             {/* Health */}

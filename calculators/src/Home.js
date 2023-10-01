@@ -31,6 +31,9 @@ export default function Home() {
             <HomeGridItem calcName="Graph Maker" path="/graphmaker"/>
             <HomeGridItem calcName="Quadratic Equation Intersection" path="/quadraticequationintersection"/>
             <HomeGridItem calcName="Linear Equation Intersection" path="/linearequationintersection"/>
+            <HomeGridItem calcName="Matrix Addition" path="/matrixaddition"/>
+            <HomeGridItem calcName="Matrix Substraction" path="/matrixsubstraction"/>
+            <HomeGridItem calcName="Matrix Multiplication" path="/matrixmultiplication"/>
             <HomeGridItem calcName="Matrix Inverse" path="/matrixinverse"/>
             <HomeGridItem calcName="Matrix Adjoint" path="/matrixadjoint"/>
         </Grid>
