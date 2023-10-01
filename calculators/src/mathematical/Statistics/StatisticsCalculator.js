@@ -61,12 +61,12 @@ function StatisticsCalculator() {
 
     const calculateMean = (data) => {
         const sum = data.reduce((acc, value) => acc + value, 0);
-        return sum / data.length;
+        return +parseFloat(sum / data.length).toFixed(2);
     };
 
     const calculateSum = (data) => {
         const sum = data.reduce((acc, value) => acc + value, 0);
-        return sum;
+        return +parseFloat(sum).toFixed(2);
     };
 
     const calculateVariance = (data) => {
@@ -75,19 +75,19 @@ function StatisticsCalculator() {
         for (let i = 0; i < data.length; i++) {
             squaredDifference += parseFloat((data[i] - mean) * (data[i] - mean));
         }
-        return parseFloat(squaredDifference / data.length).toFixed(2);
+        return +parseFloat(squaredDifference / data.length).toFixed(2);
     };
 
     const calculateStandardDeviation = (data) => {
         const variance = calculateVariance(data);
-        return Math.sqrt(variance).toFixed(2)
+        return +Math.sqrt(variance).toFixed(2)
     };
 
     const calculateMedian = (data) => {
         const sortedData = data.sort((a, b) => a - b);
         const middle = Math.floor(sortedData.length / 2);
         if (sortedData.length % 2 === 0) {
-            return (sortedData[middle - 1] + sortedData[middle]) / 2;
+            return +parseFloat((sortedData[middle - 1] + sortedData[middle]) / 2.0).toFixed(2);
         } else {
             return sortedData[middle];
         }
@@ -98,21 +98,23 @@ function StatisticsCalculator() {
         data.forEach((value) => {
             frequencyMap[value] = (frequencyMap[value] || 0) + 1;
         });
-        let mode = [];
+        let mode = '';
         let maxFrequency = 0;
         for (const value in frequencyMap) {
             if (frequencyMap[value] > maxFrequency) {
-                mode = [Number(value)];
+                mode = value + ",";
                 maxFrequency = frequencyMap[value];
             } else if (frequencyMap[value] === maxFrequency) {
-                mode.push(Number(value));
+                mode += value + ",";
             }
         }
-        return mode.length === data.length ? 'No mode' : mode;
+        if (mode.length)
+            mode = mode.slice(0, -1)
+        return mode.split(',').length === data.length ? 'No mode' : mode;
     };
 
     const calculateRange = (data) => {
-        return Math.max(...data) - Math.min(...data);
+        return +parseFloat(Math.max(...data) - Math.min(...data)).toFixed(2);
     };
     const isResultAvailable = Object.keys(result).length == selectedCalculations.length && selectedCalculations.length !== 0;
     return (
