@@ -24,6 +24,14 @@ export default function Home() {
             <HomeGridItem calcName="Compound Interest" path="/compoundinterest"/>
             <HomeGridItem calcName="Statistics" path="/statistics"/>
         </Grid>
+        <br/>
+        <Typography pt={1} variant='h5'>Health</Typography>
+        <hr/>
+        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
+            <HomeGridItem calcName="BMI" path="/bmi"/>
+            <HomeGridItem calcName="BMR" path="/bmr"/>
+            <HomeGridItem calcName="Body Fat" path="/bodyfat"/>
+        </Grid>
     </Container>
   );
 }
