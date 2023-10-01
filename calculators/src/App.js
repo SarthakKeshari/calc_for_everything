@@ -23,6 +23,7 @@ import MainGraphMaker from './mathematical/graph_maker/MainGraphMaker';
 import MainQuadraticEquationIntersection from './mathematical/quadratic_eq_intersection/MainQuadraticEquationIntersection';
 import MainLinearEquationIntersection from './mathematical/linear_eq_intersection/MainLinearEquationIntersection';
 import MainMatrixInverse from './mathematical/matrix_inverse/MainMatrixInverse';
+import MainMatrixAdjoint from './mathematical/matrix_adjoint/MainMatrixAdjoint';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
             <Route path="quadraticequationintersection" element={<MainQuadraticEquationIntersection />} />
             <Route path="linearequationintersection" element={<MainLinearEquationIntersection />} />
             <Route path="matrixinverse" element={<MainMatrixInverse />} />
+            <Route path="matrixadjoint" element={<MainMatrixAdjoint />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
