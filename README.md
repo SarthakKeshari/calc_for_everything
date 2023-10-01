@@ -14,7 +14,7 @@ Star ⭐ | Fork 🔗 | Contribute 💻
 <br>
 
 ## Benefits
-### Collect *50 points* and earn your **Contribution Certificate**
+### Collect *25 points* and earn your **Contribution Certificate**
    
 #### Points Scheme
 Level | Points
