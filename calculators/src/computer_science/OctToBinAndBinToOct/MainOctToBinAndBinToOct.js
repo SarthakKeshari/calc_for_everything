@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Divider, Input, Typography } from '@mui/material';
+import CopyValue from '../../components/CopyValue';
 function MainOctToBinAndBinToOct(){
     const [bin,setBin] = useState(0)
     const [oct,setOct] = useState(0)
@@ -38,7 +39,10 @@ function MainOctToBinAndBinToOct(){
                     value={oct}
                 />
                 <Typography pt={1} variant='h6' mt={2}>Binary No.</Typography>
-                <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{binans}</Typography>
+                <div className='output'>
+                    <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{binans}</Typography>
+                    <CopyValue value={binans}/>
+                </div>
                 <hr/>
                 <br/>
                 <Divider />
@@ -54,8 +58,11 @@ function MainOctToBinAndBinToOct(){
                     value={bin}
                 />
                 <Typography pt={1} variant='h6' mt={2}>Octal no.</Typography>
-                <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{octans}</Typography>
-
+                <div className='output'>
+                    <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{octans}</Typography>
+                    <CopyValue value={octans}/>
+                </div>
+                
                 <Divider />
             </Container>
         </Container>

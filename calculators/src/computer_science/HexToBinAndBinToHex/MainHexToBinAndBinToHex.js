@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Typography, Input, Divider } from '@mui/material';
+import CopyValue from '../../components/CopyValue';
 
 function MainHexToBinAndBinToHex() {
     // State variables to store the Hex and Binary values.
@@ -63,10 +64,15 @@ function MainHexToBinAndBinToHex() {
             />
 
             <Typography variant='h6' mt={2}>Converted Hexadecimal:</Typography>
-            <Typography variant='body1' sx={{ color: "blue", marginBottom: 3 }}>{hex}</Typography>
-
+            <div className='output'>
+                <Typography variant='body1' sx={{ color: "blue", marginBottom: 3 }}>{hex}</Typography>
+                <CopyValue value={hex} />
+            </div>
             <Typography variant='h6'>Converted Binary:</Typography>
-            <Typography variant='body1' sx={{ color: "blue" }}>{binary}</Typography>
+            <div className='output'>
+                <Typography variant='body1' sx={{ color: "blue" }}>{binary}</Typography>
+                <CopyValue value={binary} />
+            </div>
         </Container>
     )
 }
