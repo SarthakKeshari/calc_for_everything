@@ -22,5 +22,6 @@ Your answer
 [] Finance
 [] Scientific
 [] Health
+[] Sports
 [x] Let project owner decide
 [] Suggest a new category - _(Answer here)_
