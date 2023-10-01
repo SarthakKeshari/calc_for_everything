@@ -18,6 +18,8 @@ import MainPrimeFactors from './mathematical/prime_factors/MainPrimeFactors';
 import MainLogAntilog from './mathematical/log_antilog/MainLogAntilog';
 import MainBodmasSolver from './mathematical/bodmas_solver/MainBodmasSolver';
 import MainQuadraticEquationSolver from './mathematical/quadratic_equation_solver/MainQuadraticEquationSolver';
+import MainSetOperations from './mathematical/set_operations/MainSetOperations';
+import MainGraphMaker from './mathematical/graph_maker/MainGraphMaker';
 
 function App() {
   return (
@@ -42,6 +44,8 @@ function App() {
             <Route path="logantilog" element={<MainLogAntilog />} />
             <Route path="bodmassolver" element={<MainBodmasSolver />} />
             <Route path="quadraticequationsolver" element={<MainQuadraticEquationSolver />} />
+            <Route path="setoperations" element={<MainSetOperations />} />
+            <Route path="graphmaker" element={<MainGraphMaker />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />

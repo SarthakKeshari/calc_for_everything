@@ -27,6 +27,8 @@ export default function Home() {
             <HomeGridItem calcName="Log and Antilog" path="/logantilog"/>
             <HomeGridItem calcName="BODMAS Solver" path="/bodmassolver"/>
             <HomeGridItem calcName="Quadratic Equation Solver" path="/quadraticequationsolver"/>
+            <HomeGridItem calcName="Set Operations" path="/setoperations"/>
+            <HomeGridItem calcName="Graph Maker" path="/graphmaker"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>
