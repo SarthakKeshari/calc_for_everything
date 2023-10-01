@@ -14,6 +14,7 @@ import MainStatistics from './mathematical/statistics/MainStatistics';
 import MainBMI from './health/BMI/MainBMI';
 import MainBMR from './health/BMR/MainBMR';
 import MainBodyFat from './health/BodyFat/MainBodyFat';
+
 function App() {
   return (
     <div className="App">
