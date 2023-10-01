@@ -25,6 +25,8 @@ export default function Home() {
             <HomeGridItem calcName="Statistics" path="/statistics"/>
             <HomeGridItem calcName="Prime Factors" path="/primefactors"/>
             <HomeGridItem calcName="Log and Antilog" path="/logantilog"/>
+            <HomeGridItem calcName="BODMAS Solver" path="/bodmassolver"/>
+            <HomeGridItem calcName="Quadratic Equation Solver" path="/quadraticequationsolver"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>

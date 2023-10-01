@@ -16,6 +16,8 @@ import MainBMR from './health/BMR/MainBMR';
 import MainBodyFat from './health/BodyFat/MainBodyFat';
 import MainPrimeFactors from './mathematical/prime_factors/MainPrimeFactors';
 import MainLogAntilog from './mathematical/log_antilog/MainLogAntilog';
+import MainBodmasSolver from './mathematical/bodmas_solver/MainBodmasSolver';
+import MainQuadraticEquationSolver from './mathematical/quadratic_equation_solver/MainQuadraticEquationSolver';
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
             <Route path="statistics" element={<MainStatistics />} />
             <Route path="primefactors" element={<MainPrimeFactors />} />
             <Route path="logantilog" element={<MainLogAntilog />} />
+            <Route path="bodmassolver" element={<MainBodmasSolver />} />
+            <Route path="quadraticequationsolver" element={<MainQuadraticEquationSolver />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
