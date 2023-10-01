@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { Container, Input, MenuItem, Select, Typography } from '@mui/material';
+import CopyValue from '../../components/CopyValue';
 
 function MainCI(){
        // Initialize state variables for principal, rate, time, and frequency
@@ -74,9 +75,15 @@ function MainCI(){
                     <MenuItem value={1}>Annually</MenuItem>
                 </Select>
                 <Typography pt={1} variant='h6' mt={2}>Interest (in ₹)</Typography>
-                <Typography pt={1} variant='h6' sx={{ color: 'blue' }}>{interest || 0}</Typography>
+                <div className='output'>
+                    <Typography pt={1} variant='h6' sx={{ color: 'blue' }}>{interest || 0}</Typography>
+                    <CopyValue value={interest}/>
+                </div>
                 <Typography pt={1} variant='h6' mt={2}>Amount (in ₹)</Typography>
-                <Typography pt={1} variant='h6' sx={{ color: 'blue' }}>{amount || 0}</Typography>
+                <div className='output'>
+                    <Typography pt={1} variant='h6' sx={{ color: 'blue' }}>{amount || 0}</Typography>
+                    <CopyValue value={amount}/>
+                </div>
             </Container>
         </Container>
     )
