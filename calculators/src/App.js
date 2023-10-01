@@ -15,6 +15,7 @@ import MainBMI from './health/BMI/MainBMI';
 import MainBMR from './health/BMR/MainBMR';
 import MainBodyFat from './health/BodyFat/MainBodyFat';
 import MainPrimeFactors from './mathematical/prime_factors/MainPrimeFactors';
+import MainLogAntilog from './mathematical/log_antilog/MainLogAntilog';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path="compoundinterest" element={<MainCI />} />
             <Route path="statistics" element={<MainStatistics />} />
             <Route path="primefactors" element={<MainPrimeFactors />} />
+            <Route path="logantilog" element={<MainLogAntilog />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
