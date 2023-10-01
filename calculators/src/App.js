@@ -18,7 +18,7 @@ import MainBodyFat from './health/BodyFat/MainBodyFat';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar/>
       <BrowserRouter>
         <Routes>
           <Route path="/">
