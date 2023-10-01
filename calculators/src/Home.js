@@ -23,6 +23,7 @@ export default function Home() {
             <HomeGridItem calcName="Simple Interest" path="/simpleinterest"/>
             <HomeGridItem calcName="Compound Interest" path="/compoundinterest"/>
             <HomeGridItem calcName="Statistics" path="/statistics"/>
+            <HomeGridItem calcName="Prime Factors" path="/primefactors"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>

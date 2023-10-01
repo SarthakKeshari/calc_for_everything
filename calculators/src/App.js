@@ -14,6 +14,7 @@ import MainStatistics from './mathematical/statistics/MainStatistics';
 import MainBMI from './health/BMI/MainBMI';
 import MainBMR from './health/BMR/MainBMR';
 import MainBodyFat from './health/BodyFat/MainBodyFat';
+import MainPrimeFactors from './mathematical/prime_factors/MainPrimeFactors';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
             <Route path="statistics" element={<MainStatistics />} />
+            <Route path="primefactors" element={<MainPrimeFactors />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
