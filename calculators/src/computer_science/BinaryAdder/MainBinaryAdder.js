@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Divider, Input, Typography } from '@mui/material';
+import CopyValue from '../../components/CopyValue';
 
 function MainBinaryAdder(){
     const [bin1,setBin1] = useState(0)
@@ -47,9 +48,15 @@ function MainBinaryAdder(){
         
         
         <Typography pt={1} variant='h6' mt={2}>Resultant in Binary</Typography>
-        <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{binans}</Typography>
+        <div className='output'>
+            <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{binans}</Typography>
+            <CopyValue value={binans}/>
+        </div>
         <Typography pt={1} variant='h6' mt={2}>Resultant in Decimal</Typography>
-        <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{decans}</Typography>
+        <div className='output'>
+            <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{decans}</Typography>
+            <CopyValue value={decans}/>
+        </div>
         <Divider />
     </Container>
 </Container>

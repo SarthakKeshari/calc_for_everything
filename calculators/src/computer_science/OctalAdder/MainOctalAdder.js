@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Container, Divider, Input, Typography } from '@mui/material';
+import CopyValue from '../../components/CopyValue';
 const MainOctalAdder = () => {
     const [oct1,setOct1] = useState(0)
     const [oct2,setOct2] = useState(0)
@@ -47,9 +48,15 @@ const MainOctalAdder = () => {
         
         
         <Typography pt={1} variant='h6' mt={2}>Resultant in Octal</Typography>
-        <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{octans}</Typography>
+        <div className='output'>
+            <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{octans}</Typography>
+            <CopyValue value={octans}/>
+        </div>
         <Typography pt={1} variant='h6' mt={2}>Resultant in Decimal</Typography>
-        <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{decans}</Typography>
+        <div className='output'>
+            <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{decans}</Typography>
+            <CopyValue value={decans}/>
+        </div>
 
         <Divider />
     </Container>

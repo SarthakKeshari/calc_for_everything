@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Divider, Input, Typography } from '@mui/material';
+import CopyValue from '../../components/CopyValue';
 
 function MainSI(){
     const [principal, setPrincipal] = useState()
@@ -62,10 +63,16 @@ function MainSI(){
                     value={time}
                 />
                 <Typography pt={1} variant='h6' mt={2}>Interest (in ₹)</Typography>
-                <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{interest}</Typography>
+                <div className='output'>
+                    <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{interest}</Typography>
+                    <CopyValue value={interest}/>
+                </div>
                 <Divider/>
                 <Typography pt={1} variant='h6' mt={2}>Amount (in ₹)</Typography>
-                <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{amount}</Typography>
+                <div className='output'>
+                    <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{amount}</Typography>
+                    <CopyValue value={amount}/>
+                </div>
                 <Divider/>
             </Container>
         </Container>
