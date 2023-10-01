@@ -46,8 +46,8 @@ Hard | 20 Points
 Rank | Contributor | Points Collected
 ------------ | ------------- | ---------
 1 | [@7twik](https://github.com/7twik) | 15
-2 | - | -
-3 | - | -
+2 | [@Saksham-245](https://github.com/Saksham-245) | 5
+3 | [@TANYA03GUPTA](https://github.com/TANYA03GUPTA) | 5
 
 <br/>
 
