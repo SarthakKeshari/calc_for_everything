@@ -10,6 +10,7 @@ import MainOctToBinAndBinToOct from './computer_science/OctToBinAndBinToOct/Main
 import MainBinaryAdder from './computer_science/BinaryAdder/MainBinaryAdder';
 import MainOctalAdder from './computer_science/OctalAdder/MainOctalAdder';
 import MainHexadecimalAdder from './computer_science/HexadecimalAdder/MainHexadecimalAdder';
+import MainStatistics from './mathematical/statistics/MainStatistics';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
+            <Route path="statistics" element={<MainStatistics />} />
           </Route>
         </Routes>
       </BrowserRouter>
