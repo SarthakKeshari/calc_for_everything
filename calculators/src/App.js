@@ -22,6 +22,7 @@ import MainSetOperations from './mathematical/set_operations/MainSetOperations';
 import MainGraphMaker from './mathematical/graph_maker/MainGraphMaker';
 import MainQuadraticEquationIntersection from './mathematical/quadratic_eq_intersection/MainQuadraticEquationIntersection';
 import MainLinearEquationIntersection from './mathematical/linear_eq_intersection/MainLinearEquationIntersection';
+import MainMatrixInverse from './mathematical/matrix_inverse/MainMatrixInverse';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
             <Route path="graphmaker" element={<MainGraphMaker />} />
             <Route path="quadraticequationintersection" element={<MainQuadraticEquationIntersection />} />
             <Route path="linearequationintersection" element={<MainLinearEquationIntersection />} />
+            <Route path="matrixinverse" element={<MainMatrixInverse />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />

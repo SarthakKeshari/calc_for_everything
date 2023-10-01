@@ -31,6 +31,7 @@ export default function Home() {
             <HomeGridItem calcName="Graph Maker" path="/graphmaker"/>
             <HomeGridItem calcName="Quadratic Equation Intersection" path="/quadraticequationintersection"/>
             <HomeGridItem calcName="Linear Equation Intersection" path="/linearequationintersection"/>
+            <HomeGridItem calcName="Matrix Inverse" path="/matrixinverse"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>
