@@ -1,21 +1,21 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from './Navbar';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './Home';
-import MainSI from './mathematical/simple_interest/MainSI';
-import MainCI from './mathematical/compound_interest/MainCI';
+import Navbar from './Navbar';
+import MainBinaryAdder from './computer_science/BinaryAdder/MainBinaryAdder';
 import MainDecToBinAndBinToDec from './computer_science/DecToBinAndBinToDec/MainDecToBinAndBinToDec';
 import MainHexToBinAndBinToHex from './computer_science/HexToBinAndBinToHex/MainHexToBinAndBinToHex';
-import MainOctToBinAndBinToOct from './computer_science/OctToBinAndBinToOct/MainOctToBinAndBinToOct';
-import MainBinaryAdder from './computer_science/BinaryAdder/MainBinaryAdder';
-import MainOctalAdder from './computer_science/OctalAdder/MainOctalAdder';
 import MainHexadecimalAdder from './computer_science/HexadecimalAdder/MainHexadecimalAdder';
-import MainStatistics from './mathematical/statistics/MainStatistics';
+import MainOctToBinAndBinToOct from './computer_science/OctToBinAndBinToOct/MainOctToBinAndBinToOct';
+import MainOctalAdder from './computer_science/OctalAdder/MainOctalAdder';
 import MainBMI from './health/BMI/MainBMI';
 import MainBMR from './health/BMR/MainBMR';
 import MainBodyFat from './health/BodyFat/MainBodyFat';
-import MainPrimeFactors from './mathematical/prime_factors/MainPrimeFactors';
+import MainCI from './mathematical/compound_interest/MainCI';
 import MainLogAntilog from './mathematical/log_antilog/MainLogAntilog';
+import MainPrimeFactors from './mathematical/prime_factors/MainPrimeFactors';
+import MainSI from './mathematical/simple_interest/MainSI';
+import MainStatistics from './mathematical/statistics/MainStatistics';
 
 function App() {
   return (
