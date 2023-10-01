@@ -34,8 +34,10 @@ export default function Home() {
             <HomeGridItem calcName="Matrix Addition" path="/matrixaddition"/>
             <HomeGridItem calcName="Matrix Substraction" path="/matrixsubstraction"/>
             <HomeGridItem calcName="Matrix Multiplication" path="/matrixmultiplication"/>
+            <HomeGridItem calcName="Matrix Transpose" path="/matrixtranspose"/>
             <HomeGridItem calcName="Matrix Inverse" path="/matrixinverse"/>
             <HomeGridItem calcName="Matrix Adjoint" path="/matrixadjoint"/>
+            <HomeGridItem calcName="Matrix Determinant" path="/matrixdeterminant"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>

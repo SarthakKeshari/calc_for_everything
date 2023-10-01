@@ -27,6 +27,8 @@ import MainMatrixAdjoint from './mathematical/matrix_adjoint/MainMatrixAdjoint';
 import MainMatrixAddition from './mathematical/matrix_addition/MainMatrixAddition';
 import MainMatrixSubstraction from './mathematical/matrix_substraction/MainMatrixSubstraction';
 import MainMatrixMultiplication from './mathematical/matrix_multiplication/MainMatrixMultiplication';
+import MainMatrixDeterminant from './mathematical/matrix_determinant/MainMatrixDeterminant';
+import MainMatrixTranspose from './mathematical/matrix_transpose/MainMatrixTranspose';
 
 function App() {
   return (
@@ -58,8 +60,10 @@ function App() {
             <Route path="matrixaddition" element={<MainMatrixAddition />} />
             <Route path="matrixsubstraction" element={<MainMatrixSubstraction />} />
             <Route path="matrixmultiplication" element={<MainMatrixMultiplication />} />
+            <Route path="matrixtranspose" element={<MainMatrixTranspose />} />
             <Route path="matrixinverse" element={<MainMatrixInverse />} />
             <Route path="matrixadjoint" element={<MainMatrixAdjoint />} />
+            <Route path="matrixdeterminant" element={<MainMatrixDeterminant />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
