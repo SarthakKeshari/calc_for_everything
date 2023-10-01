@@ -20,6 +20,8 @@ import MainBodmasSolver from './mathematical/bodmas_solver/MainBodmasSolver';
 import MainQuadraticEquationSolver from './mathematical/quadratic_equation_solver/MainQuadraticEquationSolver';
 import MainSetOperations from './mathematical/set_operations/MainSetOperations';
 import MainGraphMaker from './mathematical/graph_maker/MainGraphMaker';
+import MainQuadraticEquationIntersection from './mathematical/quadratic_eq_intersection/MainQuadraticEquationIntersection';
+import MainLinearEquationIntersection from './mathematical/linear_eq_intersection/MainLinearEquationIntersection';
 
 function App() {
   return (
@@ -46,6 +48,8 @@ function App() {
             <Route path="quadraticequationsolver" element={<MainQuadraticEquationSolver />} />
             <Route path="setoperations" element={<MainSetOperations />} />
             <Route path="graphmaker" element={<MainGraphMaker />} />
+            <Route path="quadraticequationintersection" element={<MainQuadraticEquationIntersection />} />
+            <Route path="linearequationintersection" element={<MainLinearEquationIntersection />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />

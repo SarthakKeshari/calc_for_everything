@@ -29,6 +29,8 @@ export default function Home() {
             <HomeGridItem calcName="Quadratic Equation Solver" path="/quadraticequationsolver"/>
             <HomeGridItem calcName="Set Operations" path="/setoperations"/>
             <HomeGridItem calcName="Graph Maker" path="/graphmaker"/>
+            <HomeGridItem calcName="Quadratic Equation Intersection" path="/quadraticequationintersection"/>
+            <HomeGridItem calcName="Linear Equation Intersection" path="/linearequationintersection"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>
