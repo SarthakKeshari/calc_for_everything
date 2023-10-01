@@ -16,6 +16,10 @@ Your answer
 ### Under which category you wish to place it - 
 [] Computer Science
 [] Mathematics
+[] Physics
+[] Chemistry
+[] Biology
+[] Finance
 [] Scientific
 [] Health
 [x] Let project owner decide
