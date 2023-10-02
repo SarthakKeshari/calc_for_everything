@@ -29,6 +29,7 @@ import MainMatrixSubstraction from './mathematical/matrix_substraction/MainMatri
 import MainMatrixMultiplication from './mathematical/matrix_multiplication/MainMatrixMultiplication';
 import MainMatrixDeterminant from './mathematical/matrix_determinant/MainMatrixDeterminant';
 import MainMatrixTranspose from './mathematical/matrix_transpose/MainMatrixTranspose';
+import MainFirstOrderDifferentialEqSolver from './mathematical/first_order_differential_eq_solver/MainFirstOrderDifferentialEqSolver';
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
             <Route path="matrixinverse" element={<MainMatrixInverse />} />
             <Route path="matrixadjoint" element={<MainMatrixAdjoint />} />
             <Route path="matrixdeterminant" element={<MainMatrixDeterminant />} />
+            <Route path="firstorderdifferentialeqsolver" element={<MainFirstOrderDifferentialEqSolver />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />

@@ -38,6 +38,7 @@ export default function Home() {
             <HomeGridItem calcName="Matrix Inverse" path="/matrixinverse"/>
             <HomeGridItem calcName="Matrix Adjoint" path="/matrixadjoint"/>
             <HomeGridItem calcName="Matrix Determinant" path="/matrixdeterminant"/>
+            <HomeGridItem calcName="First Order Differential Equation Solver" path="/firstorderdifferentialeqsolver"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>
