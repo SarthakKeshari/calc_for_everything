@@ -40,6 +40,7 @@ import MainOROperator from './computer_science/or_operator/MainOROperator';
 import MainLoanRepaymentCalc from './finance/loan_repayment_calc/MainLoanRepaymentCalc';
 import MainDecToHexAndHexToDec from './computer_science/decToHexAndHexToDec/MainDecToHexAndHexToDec';
 import MainHexToOctAndOctToHex from './computer_science/hexToOctAndOctToHex/MainHexToOctAndOctToHex';
+import MainSavingsCalc from './finance/savings_calc/MainSavingsCalc';
 
 function App() {
   return (
@@ -86,6 +87,7 @@ function App() {
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
             <Route path="loanrepaymentcalc" element={<MainLoanRepaymentCalc />} />
+            <Route path="savingscalc" element={<MainSavingsCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
