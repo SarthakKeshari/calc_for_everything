@@ -12,6 +12,9 @@ export default function Home() {
             <HomeGridItem calcName="Decimal to Binary and Binary to Decimal" path="/decbinandbindec"/>
             <HomeGridItem calcName="Hexadecimal to Binary and Binary to Hexadecimal" path="/hexbinandbinhex"/>
             <HomeGridItem calcName="Octal to Binary and Binary to Octal" path="/octbinandbinoct"/>
+            <HomeGridItem calcName="Hexadecimal to Binary and Binary to Hexadecimal" path="/dechexandhexdec"/>
+            <HomeGridItem calcName="Hexadecimal to Octal and Octal to Hexadecimal" path="/hexoctandocthex"/>
+            <HomeGridItem calcName="Decimal to Octal and Octal to Decimal" path="/decoctandoctdec"/>
             <HomeGridItem calcName="Binary Adder" path="/binaryadder"/>
             <HomeGridItem calcName="Binary Subtractor" path="/binarysubtractor"/>
             <HomeGridItem calcName="Octal Adder" path="/octaladder"/>
@@ -19,6 +22,7 @@ export default function Home() {
             <HomeGridItem calcName="Number Type Finder" path="/numbertypefinder"/>
             <HomeGridItem calcName="AND Operator" path="/andoperator"/>
             <HomeGridItem calcName="OR Operator" path="/oroperator"/>
+            <HomeGridItem calcName="XOR Operator" path="/xoroperator"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -50,6 +54,9 @@ export default function Home() {
         <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
             <HomeGridItem calcName="FD Maturity Calculator" path="/fdmaturitycalc"/>
             <HomeGridItem calcName="RD Maturity Calculator" path="/rdmaturitycalc"/>
+            <HomeGridItem calcName="Loan Repayment Calculator" path="/loanrepaymentcalc"/>
+            <HomeGridItem calcName="Savings Calculator" path="/savingscalc"/>
+            <HomeGridItem calcName="Expense Tracker" path="/expensetracker"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>

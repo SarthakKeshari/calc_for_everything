@@ -37,6 +37,13 @@ import MainFDMaturityCalc from './finance/fd_maturity_calculator/MainFDMaturityC
 import MainRDMaturityCalc from './finance/rd_maturity_calculator/MainRDMaturityCalc';
 import MainANDOperator from './computer_science/and_operator/MainANDOperator';
 import MainOROperator from './computer_science/or_operator/MainOROperator';
+import MainLoanRepaymentCalc from './finance/loan_repayment_calc/MainLoanRepaymentCalc';
+import MainDecToHexAndHexToDec from './computer_science/decToHexAndHexToDec/MainDecToHexAndHexToDec';
+import MainHexToOctAndOctToHex from './computer_science/hexToOctAndOctToHex/MainHexToOctAndOctToHex';
+import MainSavingsCalc from './finance/savings_calc/MainSavingsCalc';
+import MainXOROperator from './computer_science/xor_operator/MainXOROperator';
+import MainDecToOctAndOctToDec from './computer_science/decToOctAndOctToDec/MainDecToOctAndOctToDec';
+import MainExpenseTracker from './finance/expense_tracker/MainExpenseTracker';
 
 function App() {
   return (
@@ -50,6 +57,9 @@ function App() {
             <Route path="decbinandbindec" element={<MainDecToBinAndBinToDec />} />
             <Route path="hexbinandbinhex" element={<MainHexToBinAndBinToHex />} />
             <Route path="octbinandbinoct" element={<MainOctToBinAndBinToOct />} />
+            <Route path="dechexandhexdec" element={<MainDecToHexAndHexToDec />} />
+            <Route path="hexoctandocthex" element={<MainHexToOctAndOctToHex />} />
+            <Route path="decoctandoctdec" element={<MainDecToOctAndOctToDec />} />
             <Route path="binaryadder" element={<MainBinaryAdder />} />
             <Route path="binarysubtractor" element={<MainBinarySubtractor />} />
             <Route path="octaladder" element={<MainOctalAdder />} />
@@ -57,6 +67,7 @@ function App() {
             <Route path="numbertypefinder" element={<MainNumberTypeFinder />} />
             <Route path="andoperator" element={<MainANDOperator />} />
             <Route path="oroperator" element={<MainOROperator />} />
+            <Route path="xoroperator" element={<MainXOROperator />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -80,6 +91,9 @@ function App() {
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
+            <Route path="loanrepaymentcalc" element={<MainLoanRepaymentCalc />} />
+            <Route path="savingscalc" element={<MainSavingsCalc />} />
+            <Route path="expensetracker" element={<MainExpenseTracker />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />

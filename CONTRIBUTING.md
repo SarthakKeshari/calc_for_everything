@@ -22,9 +22,10 @@ Different types of contribution practices for this repository -
   Step d) Fill a short description form <br>
   Step e) Press Submit New Issue button <br>
   Step f) Now Comment - "Kindly assign this issue to me" <br>
+    ##### *issue will be assigned to the participant who comments - "Kindly assign this issue to me" on first-come-first-serve basis.
   Step g) Press on Comment button <br>
   Step h) Wait for the issue to be assigned to you. <br>
-      ##### *working on the issue that has not been assigned to you will result in rejection of the PR.
+    ##### *working on the issue that has not been assigned to you will result in rejection of the PR.
   Step i) After the issue get assigned to you. <br>
           You'll also receive my comment stating in which folder the solution needs to be placed as well as the deadline for solution submission. <br>
   Step j) Now you can workout the solution and generate PR(Pull request).
@@ -37,7 +38,7 @@ Different types of contribution practices for this repository -
   Step d) If know are clear with the description then Comment - "Kindly assign this issue to me" <br>
   Step e) Press on Comment button <br>
   Step f) Wait for the issue to be assigned to you. <br>
-      ##### *working on the issue that has not been assigned to you will result in rejection of the PR.
+    ##### *working on the issue that has not been assigned to you will result in rejection of the PR.
   Step g) After the issue get assigned to you. <br>
           You'll also receive my comment stating in which folder the solution needs to be placed as well as the deadline for solution submission. <br>
   Step h) Now you can workout the solution and generate PR(Pull request)
