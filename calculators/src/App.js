@@ -37,6 +37,7 @@ import MainFDMaturityCalc from './finance/fd_maturity_calculator/MainFDMaturityC
 import MainRDMaturityCalc from './finance/rd_maturity_calculator/MainRDMaturityCalc';
 import MainANDOperator from './computer_science/and_operator/MainANDOperator';
 import MainOROperator from './computer_science/or_operator/MainOROperator';
+import MainLoanRepaymentCalc from './finance/loan_repayment_calc/MainLoanRepaymentCalc';
 
 function App() {
   return (
@@ -80,6 +81,7 @@ function App() {
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
+            <Route path="loanrepaymentcalc" element={<MainLoanRepaymentCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
