@@ -38,6 +38,7 @@ import MainRDMaturityCalc from './finance/rd_maturity_calculator/MainRDMaturityC
 import MainANDOperator from './computer_science/and_operator/MainANDOperator';
 import MainOROperator from './computer_science/or_operator/MainOROperator';
 import MainLoanRepaymentCalc from './finance/loan_repayment_calc/MainLoanRepaymentCalc';
+import MainDecToHexAndHexToDec from './computer_science/decToHexAndHexToDec/MainDecToHexAndHexToDec';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
             <Route path="decbinandbindec" element={<MainDecToBinAndBinToDec />} />
             <Route path="hexbinandbinhex" element={<MainHexToBinAndBinToHex />} />
             <Route path="octbinandbinoct" element={<MainOctToBinAndBinToOct />} />
+            <Route path="dechexandhexdec" element={<MainDecToHexAndHexToDec />} />
             <Route path="binaryadder" element={<MainBinaryAdder />} />
             <Route path="binarysubtractor" element={<MainBinarySubtractor />} />
             <Route path="octaladder" element={<MainOctalAdder />} />
