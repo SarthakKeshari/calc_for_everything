@@ -14,7 +14,7 @@ Star ⭐ | Fork 🔗 | Contribute 💻
 <br>
 
 ## Benefits
-### Collect *50 points* and earn your **Contribution Certificate**
+### Collect *25 points* and earn your **Contribution Certificate**
    
 #### Points Scheme
 Level | Points
@@ -45,9 +45,10 @@ Hard | 20 Points
 #### Top Contributors
 Rank | Contributor | Points Collected
 ------------ | ------------- | ---------
-1 | [@7twik](https://github.com/7twik) | 15
-2 | - | -
-3 | - | -
+1 | [@7twik](https://github.com/7twik) | 20
+2 | [@Saksham-245](https://github.com/Saksham-245) | 5
+3 | [@TANYA03GUPTA](https://github.com/TANYA03GUPTA) | 5
+4 | [@ArnabBCA](https://github.com/ArnabBCA) | 5
 
 <br/>
 
