@@ -31,7 +31,7 @@ import MainMatrixDeterminant from './mathematical/matrix_determinant/MainMatrixD
 import MainMatrixTranspose from './mathematical/matrix_transpose/MainMatrixTranspose';
 import MainFirstOrderDifferentialEqSolver from './mathematical/first_order_differential_eq_solver/MainFirstOrderDifferentialEqSolver';
 import MainAgeCalculator from './health/age_calculator/MainAgeCalculator';
-import MainBinarySubstractor from './computer_science/BinarySubstractor/MainBinarySubstractor';
+import MainBinarySubtractor from './computer_science/BinarySubtractor/MainBinarySubtractor';
 import MainNumberTypeFinder from './computer_science/number_type_finder/MainNumberTypeFinder';
 import MainFDMaturityCalc from './finance/fd_maturity_calculator/MainFDMaturityCalc';
 import MainRDMaturityCalc from './finance/rd_maturity_calculator/MainRDMaturityCalc';
@@ -51,7 +51,7 @@ function App() {
             <Route path="hexbinandbinhex" element={<MainHexToBinAndBinToHex />} />
             <Route path="octbinandbinoct" element={<MainOctToBinAndBinToOct />} />
             <Route path="binaryadder" element={<MainBinaryAdder />} />
-            <Route path="binarysubstractor" element={<MainBinarySubstractor />} />
+            <Route path="binarysubtractor" element={<MainBinarySubtractor />} />
             <Route path="octaladder" element={<MainOctalAdder />} />
             <Route path="hexadecimaladder" element={<MainHexadecimalAdder />} />
             <Route path="numbertypefinder" element={<MainNumberTypeFinder />} />
