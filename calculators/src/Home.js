@@ -16,6 +16,7 @@ export default function Home() {
             <HomeGridItem calcName="Binary Substractor" path="/binarysubstractor"/>
             <HomeGridItem calcName="Octal Adder" path="/octaladder"/>
             <HomeGridItem calcName="Hexadecimal Adder" path="/hexadecimaladder"/>
+            <HomeGridItem calcName="Number Type Finder" path="/numbertypefinder"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>

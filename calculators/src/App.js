@@ -32,6 +32,7 @@ import MainMatrixTranspose from './mathematical/matrix_transpose/MainMatrixTrans
 import MainFirstOrderDifferentialEqSolver from './mathematical/first_order_differential_eq_solver/MainFirstOrderDifferentialEqSolver';
 import MainAgeCalculator from './health/age_calculator/MainAgeCalculator';
 import MainBinarySubstractor from './computer_science/BinarySubstractor/MainBinarySubstractor';
+import MainNumberTypeFinder from './computer_science/number_type_finder/MainNumberTypeFinder';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
             <Route path="binarysubstractor" element={<MainBinarySubstractor />} />
             <Route path="octaladder" element={<MainOctalAdder />} />
             <Route path="hexadecimaladder" element={<MainHexadecimalAdder />} />
+            <Route path="numbertypefinder" element={<MainNumberTypeFinder />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
