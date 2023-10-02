@@ -42,18 +42,13 @@ Hard | 20 Points
 
 ## 🌟 Contributors
 
-#### Top Contributors
-Rank | Contributor | Points Collected
------------- | ------------- | ---------
-1 | [@7twik](https://github.com/7twik) | 20
-2 | [@Saksham-245](https://github.com/Saksham-245) | 5
-3 | [@TANYA03GUPTA](https://github.com/TANYA03GUPTA) | 5
-4 | [@ArnabBCA](https://github.com/ArnabBCA) | 5
+#### Contributors eligible for Contribution Certificate
+<div style="display:flex; justify-content: center">
+  <img src="https://github.com/7twik.png" width="60px;" style="margin-right:10"/>   
+  <img src="https://github.com/imsoumik03.png" width="60px;" style="margin-right:10"/>
+</div>
+
 
 <br/>
 
-Thanks to these wonderful peoples ✨✨:
-
-<a href="https://github.com/SarthakKeshari/calc_for_everything/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=SarthakKeshari/calc_for_everything" />
-</a>
+### Thanks to all the wonderful peoples, you all made this project possible ✨✨
