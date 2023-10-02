@@ -47,6 +47,7 @@ export default function Home() {
             <HomeGridItem calcName="BMI" path="/bmi"/>
             <HomeGridItem calcName="BMR" path="/bmr"/>
             <HomeGridItem calcName="Body Fat" path="/bodyfat"/>
+            <HomeGridItem calcName="Age Calculator" path="/agecalculator"/>
         </Grid>
     </Container>
   );

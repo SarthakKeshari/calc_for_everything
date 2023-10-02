@@ -30,6 +30,7 @@ import MainMatrixMultiplication from './mathematical/matrix_multiplication/MainM
 import MainMatrixDeterminant from './mathematical/matrix_determinant/MainMatrixDeterminant';
 import MainMatrixTranspose from './mathematical/matrix_transpose/MainMatrixTranspose';
 import MainFirstOrderDifferentialEqSolver from './mathematical/first_order_differential_eq_solver/MainFirstOrderDifferentialEqSolver';
+import MainAgeCalculator from './health/age_calculator/MainAgeCalculator';
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
             <Route path="bodyfat" element={<MainBodyFat />} />
+            <Route path="agecalculator" element={<MainAgeCalculator />} />
           </Route>
         </Routes>
       </BrowserRouter>
