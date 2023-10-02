@@ -56,6 +56,7 @@ export default function Home() {
             <HomeGridItem calcName="RD Maturity Calculator" path="/rdmaturitycalc"/>
             <HomeGridItem calcName="Loan Repayment Calculator" path="/loanrepaymentcalc"/>
             <HomeGridItem calcName="Savings Calculator" path="/savingscalc"/>
+            <HomeGridItem calcName="Expense Tracker" path="/expensetracker"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>

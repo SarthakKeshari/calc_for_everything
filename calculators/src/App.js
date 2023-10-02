@@ -43,6 +43,7 @@ import MainHexToOctAndOctToHex from './computer_science/hexToOctAndOctToHex/Main
 import MainSavingsCalc from './finance/savings_calc/MainSavingsCalc';
 import MainXOROperator from './computer_science/xor_operator/MainXOROperator';
 import MainDecToOctAndOctToDec from './computer_science/decToOctAndOctToDec/MainDecToOctAndOctToDec';
+import MainExpenseTracker from './finance/expense_tracker/MainExpenseTracker';
 
 function App() {
   return (
@@ -92,6 +93,7 @@ function App() {
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
             <Route path="loanrepaymentcalc" element={<MainLoanRepaymentCalc />} />
             <Route path="savingscalc" element={<MainSavingsCalc />} />
+            <Route path="expensetracker" element={<MainExpenseTracker />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
