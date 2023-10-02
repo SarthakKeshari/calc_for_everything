@@ -64,3 +64,8 @@ Hard | 20 Points
 <br/>
 
 ### Thanks to all the wonderful peoples, you all made this project possible ✨✨
+
+<p><a href="https://github.com/SarthakKeshari/calc_for_everything/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=SarthakKeshari/calc_for_everything" />
+</a></p>
+
