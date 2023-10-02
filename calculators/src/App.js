@@ -46,6 +46,8 @@ import MainDecToOctAndOctToDec from './computer_science/decToOctAndOctToDec/Main
 import MainExpenseTracker from './finance/expense_tracker/MainExpenseTracker';
 import MainAsciiTextToBinAndBinToAsciiText from './computer_science/asciiTextToBinAndBinToAsciiText/MainAsciiTextToBinAndBinToAsciiText';
 import MainPHCalc from './chemistry/phCalc/MainPHCalc';
+import MainSearchingVisualizer from './computer_science/searching_visualizer/MainSearchingVisualizer';
+import MainSortingVisualizer from './computer_science/sorting_visualizer/MainSortingVisualizer';
 
 function App() {
   return (
@@ -71,6 +73,8 @@ function App() {
             <Route path="andoperator" element={<MainANDOperator />} />
             <Route path="oroperator" element={<MainOROperator />} />
             <Route path="xoroperator" element={<MainXOROperator />} />
+            <Route path="searchingvisualizer" element={<MainSearchingVisualizer />} />
+            <Route path="sortingvisualizer" element={<MainSortingVisualizer />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />

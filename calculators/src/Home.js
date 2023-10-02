@@ -24,6 +24,8 @@ export default function Home() {
             <HomeGridItem calcName="AND Operator" path="/andoperator"/>
             <HomeGridItem calcName="OR Operator" path="/oroperator"/>
             <HomeGridItem calcName="XOR Operator" path="/xoroperator"/>
+            <HomeGridItem calcName="Searching Visualizer" path="/searchingvisualizer"/>
+            <HomeGridItem calcName="Sorting Visualizer" path="/sortingvisualizer"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
