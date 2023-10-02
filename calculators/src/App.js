@@ -50,6 +50,7 @@ import MainSearchingVisualizer from './computer_science/searching_visualizer/Mai
 import MainSortingVisualizer from './computer_science/sorting_visualizer/MainSortingVisualizer';
 import MainPregnancyDueDateCalc from './health/pregnancy_due_date_calc/MainPregnancyDueDateCalc';
 import MainCurrencyConverter from './finance/currency_converter/MainCurrencyConverter';
+import MainWorkAndTimeCalculator from './mathematical/workAndTimeCalc/MainWorkAndTimeCalculator';
 
 function App() {
   return (
@@ -97,6 +98,7 @@ function App() {
             <Route path="matrixadjoint" element={<MainMatrixAdjoint />} />
             <Route path="matrixdeterminant" element={<MainMatrixDeterminant />} />
             <Route path="firstorderdifferentialeqsolver" element={<MainFirstOrderDifferentialEqSolver />} />
+            <Route path="workandtimecalculator" element={<MainWorkAndTimeCalculator />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             {/* Finance */}
