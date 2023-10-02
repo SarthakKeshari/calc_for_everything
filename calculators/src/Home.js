@@ -43,6 +43,13 @@ export default function Home() {
             <HomeGridItem calcName="First Order Differential Equation Solver" path="/firstorderdifferentialeqsolver"/>
         </Grid>
         <br/>
+        <Typography pt={1} variant='h5'>Finance</Typography>
+        <hr/>
+        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
+            <HomeGridItem calcName="FD Maturity Calculator" path="/fdmaturitycalc"/>
+            <HomeGridItem calcName="RD Maturity Calculator" path="/rdmaturitycalc"/>
+        </Grid>
+        <br/>
         <Typography pt={1} variant='h5'>Health</Typography>
         <hr/>
         <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
@@ -51,6 +58,7 @@ export default function Home() {
             <HomeGridItem calcName="Body Fat" path="/bodyfat"/>
             <HomeGridItem calcName="Age Calculator" path="/agecalculator"/>
         </Grid>
+        <br/>
     </Container>
   );
 }

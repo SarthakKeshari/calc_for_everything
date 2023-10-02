@@ -33,6 +33,8 @@ import MainFirstOrderDifferentialEqSolver from './mathematical/first_order_diffe
 import MainAgeCalculator from './health/age_calculator/MainAgeCalculator';
 import MainBinarySubstractor from './computer_science/BinarySubstractor/MainBinarySubstractor';
 import MainNumberTypeFinder from './computer_science/number_type_finder/MainNumberTypeFinder';
+import MainFDMaturityCalc from './finance/fd_maturity_calculator/MainFDMaturityCalc';
+import MainRDMaturityCalc from './finance/rd_maturity_calculator/MainRDMaturityCalc';
 
 function App() {
   return (
@@ -71,6 +73,9 @@ function App() {
             <Route path="matrixadjoint" element={<MainMatrixAdjoint />} />
             <Route path="matrixdeterminant" element={<MainMatrixDeterminant />} />
             <Route path="firstorderdifferentialeqsolver" element={<MainFirstOrderDifferentialEqSolver />} />
+            {/* Finance */}
+            <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
+            <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
