@@ -39,6 +39,7 @@ import MainANDOperator from './computer_science/and_operator/MainANDOperator';
 import MainOROperator from './computer_science/or_operator/MainOROperator';
 import MainLoanRepaymentCalc from './finance/loan_repayment_calc/MainLoanRepaymentCalc';
 import MainDecToHexAndHexToDec from './computer_science/decToHexAndHexToDec/MainDecToHexAndHexToDec';
+import MainHexToOctAndOctToHex from './computer_science/hexToOctAndOctToHex/MainHexToOctAndOctToHex';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
             <Route path="hexbinandbinhex" element={<MainHexToBinAndBinToHex />} />
             <Route path="octbinandbinoct" element={<MainOctToBinAndBinToOct />} />
             <Route path="dechexandhexdec" element={<MainDecToHexAndHexToDec />} />
+            <Route path="hexoctandocthex" element={<MainHexToOctAndOctToHex />} />
             <Route path="binaryadder" element={<MainBinaryAdder />} />
             <Route path="binarysubtractor" element={<MainBinarySubtractor />} />
             <Route path="octaladder" element={<MainOctalAdder />} />

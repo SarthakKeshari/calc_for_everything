@@ -13,6 +13,7 @@ export default function Home() {
             <HomeGridItem calcName="Hexadecimal to Binary and Binary to Hexadecimal" path="/hexbinandbinhex"/>
             <HomeGridItem calcName="Octal to Binary and Binary to Octal" path="/octbinandbinoct"/>
             <HomeGridItem calcName="Hexadecimal to Binary and Binary to Hexadecimal" path="/dechexandhexdec"/>
+            <HomeGridItem calcName="Hexadecimal to Octal and Octal to Hexadecimal" path="/hexoctandocthex"/>
             <HomeGridItem calcName="Binary Adder" path="/binaryadder"/>
             <HomeGridItem calcName="Binary Subtractor" path="/binarysubtractor"/>
             <HomeGridItem calcName="Octal Adder" path="/octaladder"/>
