@@ -14,6 +14,7 @@ export default function Home() {
             <HomeGridItem calcName="Octal to Binary and Binary to Octal" path="/octbinandbinoct"/>
             <HomeGridItem calcName="Hexadecimal to Binary and Binary to Hexadecimal" path="/dechexandhexdec"/>
             <HomeGridItem calcName="Hexadecimal to Octal and Octal to Hexadecimal" path="/hexoctandocthex"/>
+            <HomeGridItem calcName="Decimal to Octal and Octal to Decimal" path="/decoctandoctdec"/>
             <HomeGridItem calcName="Binary Adder" path="/binaryadder"/>
             <HomeGridItem calcName="Binary Subtractor" path="/binarysubtractor"/>
             <HomeGridItem calcName="Octal Adder" path="/octaladder"/>
@@ -21,6 +22,7 @@ export default function Home() {
             <HomeGridItem calcName="Number Type Finder" path="/numbertypefinder"/>
             <HomeGridItem calcName="AND Operator" path="/andoperator"/>
             <HomeGridItem calcName="OR Operator" path="/oroperator"/>
+            <HomeGridItem calcName="XOR Operator" path="/xoroperator"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>

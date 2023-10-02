@@ -41,6 +41,8 @@ import MainLoanRepaymentCalc from './finance/loan_repayment_calc/MainLoanRepayme
 import MainDecToHexAndHexToDec from './computer_science/decToHexAndHexToDec/MainDecToHexAndHexToDec';
 import MainHexToOctAndOctToHex from './computer_science/hexToOctAndOctToHex/MainHexToOctAndOctToHex';
 import MainSavingsCalc from './finance/savings_calc/MainSavingsCalc';
+import MainXOROperator from './computer_science/xor_operator/MainXOROperator';
+import MainDecToOctAndOctToDec from './computer_science/decToOctAndOctToDec/MainDecToOctAndOctToDec';
 
 function App() {
   return (
@@ -56,6 +58,7 @@ function App() {
             <Route path="octbinandbinoct" element={<MainOctToBinAndBinToOct />} />
             <Route path="dechexandhexdec" element={<MainDecToHexAndHexToDec />} />
             <Route path="hexoctandocthex" element={<MainHexToOctAndOctToHex />} />
+            <Route path="decoctandoctdec" element={<MainDecToOctAndOctToDec />} />
             <Route path="binaryadder" element={<MainBinaryAdder />} />
             <Route path="binarysubtractor" element={<MainBinarySubtractor />} />
             <Route path="octaladder" element={<MainOctalAdder />} />
@@ -63,6 +66,7 @@ function App() {
             <Route path="numbertypefinder" element={<MainNumberTypeFinder />} />
             <Route path="andoperator" element={<MainANDOperator />} />
             <Route path="oroperator" element={<MainOROperator />} />
+            <Route path="xoroperator" element={<MainXOROperator />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
