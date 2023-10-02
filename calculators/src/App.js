@@ -35,6 +35,8 @@ import MainBinarySubstractor from './computer_science/BinarySubstractor/MainBina
 import MainNumberTypeFinder from './computer_science/number_type_finder/MainNumberTypeFinder';
 import MainFDMaturityCalc from './finance/fd_maturity_calculator/MainFDMaturityCalc';
 import MainRDMaturityCalc from './finance/rd_maturity_calculator/MainRDMaturityCalc';
+import MainANDOperator from './computer_science/and_operator/MainANDOperator';
+import MainOROperator from './computer_science/or_operator/MainOROperator';
 
 function App() {
   return (
@@ -53,6 +55,8 @@ function App() {
             <Route path="octaladder" element={<MainOctalAdder />} />
             <Route path="hexadecimaladder" element={<MainHexadecimalAdder />} />
             <Route path="numbertypefinder" element={<MainNumberTypeFinder />} />
+            <Route path="andoperator" element={<MainANDOperator />} />
+            <Route path="oroperator" element={<MainOROperator />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
