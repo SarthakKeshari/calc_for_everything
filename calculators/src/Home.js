@@ -22,6 +22,31 @@ export default function Home() {
         <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
             <HomeGridItem calcName="Simple Interest" path="/simpleinterest"/>
             <HomeGridItem calcName="Compound Interest" path="/compoundinterest"/>
+            <HomeGridItem calcName="Statistics" path="/statistics"/>
+            <HomeGridItem calcName="Prime Factors" path="/primefactors"/>
+            <HomeGridItem calcName="Log and Antilog" path="/logantilog"/>
+            <HomeGridItem calcName="BODMAS Solver" path="/bodmassolver"/>
+            <HomeGridItem calcName="Quadratic Equation Solver" path="/quadraticequationsolver"/>
+            <HomeGridItem calcName="Set Operations" path="/setoperations"/>
+            <HomeGridItem calcName="Graph Maker" path="/graphmaker"/>
+            <HomeGridItem calcName="Quadratic Equation Intersection" path="/quadraticequationintersection"/>
+            <HomeGridItem calcName="Linear Equation Intersection" path="/linearequationintersection"/>
+            <HomeGridItem calcName="Matrix Addition" path="/matrixaddition"/>
+            <HomeGridItem calcName="Matrix Substraction" path="/matrixsubstraction"/>
+            <HomeGridItem calcName="Matrix Multiplication" path="/matrixmultiplication"/>
+            <HomeGridItem calcName="Matrix Transpose" path="/matrixtranspose"/>
+            <HomeGridItem calcName="Matrix Inverse" path="/matrixinverse"/>
+            <HomeGridItem calcName="Matrix Adjoint" path="/matrixadjoint"/>
+            <HomeGridItem calcName="Matrix Determinant" path="/matrixdeterminant"/>
+            <HomeGridItem calcName="First Order Differential Equation Solver" path="/firstorderdifferentialeqsolver"/>
+        </Grid>
+        <br/>
+        <Typography pt={1} variant='h5'>Health</Typography>
+        <hr/>
+        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
+            <HomeGridItem calcName="BMI" path="/bmi"/>
+            <HomeGridItem calcName="BMR" path="/bmr"/>
+            <HomeGridItem calcName="Body Fat" path="/bodyfat"/>
         </Grid>
     </Container>
   );
