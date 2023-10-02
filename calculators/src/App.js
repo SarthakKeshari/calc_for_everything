@@ -44,6 +44,8 @@ import MainSavingsCalc from './finance/savings_calc/MainSavingsCalc';
 import MainXOROperator from './computer_science/xor_operator/MainXOROperator';
 import MainDecToOctAndOctToDec from './computer_science/decToOctAndOctToDec/MainDecToOctAndOctToDec';
 import MainExpenseTracker from './finance/expense_tracker/MainExpenseTracker';
+import MainAsciiTextToBinAndBinToAsciiText from './computer_science/asciiTextToBinAndBinToAsciiText/MainAsciiTextToBinAndBinToAsciiText';
+import MainPHCalc from './chemistry/phCalc/MainPHCalc';
 
 function App() {
   return (
@@ -60,6 +62,7 @@ function App() {
             <Route path="dechexandhexdec" element={<MainDecToHexAndHexToDec />} />
             <Route path="hexoctandocthex" element={<MainHexToOctAndOctToHex />} />
             <Route path="decoctandoctdec" element={<MainDecToOctAndOctToDec />} />
+            <Route path="asciitextbinAndbinasciitext" element={<MainAsciiTextToBinAndBinToAsciiText />} />
             <Route path="binaryadder" element={<MainBinaryAdder />} />
             <Route path="binarysubtractor" element={<MainBinarySubtractor />} />
             <Route path="octaladder" element={<MainOctalAdder />} />
@@ -88,6 +91,8 @@ function App() {
             <Route path="matrixadjoint" element={<MainMatrixAdjoint />} />
             <Route path="matrixdeterminant" element={<MainMatrixDeterminant />} />
             <Route path="firstorderdifferentialeqsolver" element={<MainFirstOrderDifferentialEqSolver />} />
+            {/* Chemistry */}
+            <Route path="phcalc" element={<MainPHCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />

@@ -15,6 +15,7 @@ export default function Home() {
             <HomeGridItem calcName="Hexadecimal to Binary and Binary to Hexadecimal" path="/dechexandhexdec"/>
             <HomeGridItem calcName="Hexadecimal to Octal and Octal to Hexadecimal" path="/hexoctandocthex"/>
             <HomeGridItem calcName="Decimal to Octal and Octal to Decimal" path="/decoctandoctdec"/>
+            <HomeGridItem calcName="ASCII Text to Binary and Binary to ASCII Text" path="/asciitextbinAndbinasciitext"/>
             <HomeGridItem calcName="Binary Adder" path="/binaryadder"/>
             <HomeGridItem calcName="Binary Subtractor" path="/binarysubtractor"/>
             <HomeGridItem calcName="Octal Adder" path="/octaladder"/>
@@ -47,6 +48,12 @@ export default function Home() {
             <HomeGridItem calcName="Matrix Adjoint" path="/matrixadjoint"/>
             <HomeGridItem calcName="Matrix Determinant" path="/matrixdeterminant"/>
             <HomeGridItem calcName="First Order Differential Equation Solver" path="/firstorderdifferentialeqsolver"/>
+        </Grid>
+        <br/>
+        <Typography pt={1} variant='h5'>Chemistry</Typography>
+        <hr/>
+        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
+            <HomeGridItem calcName="pH Calculator" path="/phcalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>
