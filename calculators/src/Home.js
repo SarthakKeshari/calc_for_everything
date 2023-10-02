@@ -66,6 +66,7 @@ export default function Home() {
             <HomeGridItem calcName="Loan Repayment Calculator" path="/loanrepaymentcalc"/>
             <HomeGridItem calcName="Savings Calculator" path="/savingscalc"/>
             <HomeGridItem calcName="Expense Tracker" path="/expensetracker"/>
+            <HomeGridItem calcName="Currency Converter" path="/currencyconverter"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>

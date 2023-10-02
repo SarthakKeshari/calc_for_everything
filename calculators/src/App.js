@@ -49,6 +49,7 @@ import MainPHCalc from './chemistry/phCalc/MainPHCalc';
 import MainSearchingVisualizer from './computer_science/searching_visualizer/MainSearchingVisualizer';
 import MainSortingVisualizer from './computer_science/sorting_visualizer/MainSortingVisualizer';
 import MainPregnancyDueDateCalc from './health/pregnancy_due_date_calc/MainPregnancyDueDateCalc';
+import MainCurrencyConverter from './finance/currency_converter/MainCurrencyConverter';
 
 function App() {
   return (
@@ -104,6 +105,7 @@ function App() {
             <Route path="loanrepaymentcalc" element={<MainLoanRepaymentCalc />} />
             <Route path="savingscalc" element={<MainSavingsCalc />} />
             <Route path="expensetracker" element={<MainExpenseTracker />} />
+            <Route path="currencyconverter" element={<MainCurrencyConverter />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
