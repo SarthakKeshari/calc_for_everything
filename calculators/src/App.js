@@ -48,6 +48,7 @@ import MainAsciiTextToBinAndBinToAsciiText from './computer_science/asciiTextToB
 import MainPHCalc from './chemistry/phCalc/MainPHCalc';
 import MainSearchingVisualizer from './computer_science/searching_visualizer/MainSearchingVisualizer';
 import MainSortingVisualizer from './computer_science/sorting_visualizer/MainSortingVisualizer';
+import MainPregnancyDueDateCalc from './health/pregnancy_due_date_calc/MainPregnancyDueDateCalc';
 
 function App() {
   return (
@@ -108,6 +109,7 @@ function App() {
             <Route path="bmr" element={<MainBMR />} />
             <Route path="bodyfat" element={<MainBodyFat />} />
             <Route path="agecalculator" element={<MainAgeCalculator />} />
+            <Route path="pregnancyduedatecalc" element={<MainPregnancyDueDateCalc />} />
           </Route>
         </Routes>
       </BrowserRouter>
