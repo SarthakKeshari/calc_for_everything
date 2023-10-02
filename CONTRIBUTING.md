@@ -22,6 +22,7 @@ Different types of contribution practices for this repository -
   Step d) Fill a short description form <br>
   Step e) Press Submit New Issue button <br>
   Step f) Now Comment - "Kindly assign this issue to me" <br>
+      ##### *issue will be assigned to the participant who comments - "Kindly assign this issue to me" on first-come-first-serve basis.
   Step g) Press on Comment button <br>
   Step h) Wait for the issue to be assigned to you. <br>
       ##### *working on the issue that has not been assigned to you will result in rejection of the PR.
