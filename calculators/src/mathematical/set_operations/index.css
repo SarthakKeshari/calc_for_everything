@@ -1,0 +1,19 @@
+.opButton{
+    border-radius: 10%;
+    margin: 5px ;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+.app{
+    margin-left: 450px;
+    margin-top: 100px;
+    
+}
+.result{
+    margin-top :20px;    
+}
+
+.sets{
+    margin: 10px;
+}
