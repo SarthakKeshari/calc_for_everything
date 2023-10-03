@@ -25,6 +25,18 @@ Hard | 20 Points
 
 <br/>
 
+## Instructions 🎒
+
+#### Do's:
+1) Provide Issue Number in the PR.
+
+#### Dont's:
+1) Do not raise PR for issues not assigned to you.
+
+### Maintainers/admins/collaborators of this repository/project/website hold all the rights to amend/add/remove any document wherever/whenever is found necessary. <br></div>
+
+<br/>
+
 ## Calculators Covered 🔢
 
 #### Computer Science
@@ -52,3 +64,8 @@ Hard | 20 Points
 <br/>
 
 ### Thanks to all the wonderful peoples, you all made this project possible ✨✨
+
+<p><a href="https://github.com/SarthakKeshari/calc_for_everything/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=SarthakKeshari/calc_for_everything" />
+</a></p>
+
