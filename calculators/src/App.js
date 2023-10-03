@@ -58,6 +58,7 @@ import MainLCMCalc from './mathematical/lcmCalc/MainLCMCalc';
 import MainHCFCalc from './mathematical/hcfCalc/MainHCFCalc';
 import MainAngleTypeClassifier from './mathematical/angleTypeClassifier/MainAngleTypeClassifier';
 import MainFactorialCalc from './computer_science/factorialCalc/MainFactorialCalc';
+import MainTrignometricValueCalc from './mathematical/trignometricValueCalc/MainTrignometricValueCalc';
 
 function App() {
   return (
@@ -113,6 +114,7 @@ function App() {
             <Route path="lcmcalc" element={<MainLCMCalc />} />
             <Route path="hcfcalc" element={<MainHCFCalc />} />
             <Route path="angletypeclassifier" element={<MainAngleTypeClassifier />} />
+            <Route path="trignometricvaluecalc" element={<MainTrignometricValueCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             {/* Finance */}
