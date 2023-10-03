@@ -59,6 +59,10 @@ import MainHCFCalc from './mathematical/hcfCalc/MainHCFCalc';
 import MainAngleTypeClassifier from './mathematical/angleTypeClassifier/MainAngleTypeClassifier';
 import MainFactorialCalc from './computer_science/factorialCalc/MainFactorialCalc';
 import MainTrignometricValueCalc from './mathematical/trignometricValueCalc/MainTrignometricValueCalc';
+import MainInfixToPostAndPreCalc from './computer_science/infixToPostAndPreCalc/MainInfixToPostAndPreCalc';
+import MainPostAndPreToInfixCalc from './computer_science/postAndPreToInfixCalc/MainPostAndPreToInfixCalc';
+import MainChemicalEqBalancer from './chemistry/chemicalEqBalancer/MainChemicalEqBalancer';
+import MainChemicalKineticsCalc from './chemistry/chemicalKineticsCalc/MainChemicalKineticsCalc';
 
 function App() {
   return (
@@ -88,6 +92,8 @@ function App() {
             <Route path="sortingvisualizer" element={<MainSortingVisualizer />} />
             <Route path="mlmodelperformanceevaluationcalculator" element={<MainMLModelPerformanceEvaluationCalculator />} />
             <Route path="factorialcalc" element={<MainFactorialCalc />} />
+            <Route path="infixtopostandprecalc" element={<MainInfixToPostAndPreCalc />} />
+            <Route path="postandpretoinfixcalc" element={<MainPostAndPreToInfixCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -117,6 +123,8 @@ function App() {
             <Route path="trignometricvaluecalc" element={<MainTrignometricValueCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
+            <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
+            <Route path="chemicalkineticscalc" element={<MainChemicalKineticsCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
