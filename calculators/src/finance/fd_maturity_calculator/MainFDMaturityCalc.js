@@ -6,7 +6,7 @@ function MainFDMaturityCalc() {
 	const [amountDeposited, setAmountDeposited] = useState(0);
 	const [rateOfInterest, setRateOFInterest] = useState(0);
 	const [durationOfDeposit, setDurationOfDeposit] = useState(0);
-	const [dateOfDeposit, setDateOfDeposit] = useState(null);
+	const [dateOfDeposit, setDateOfDeposit] = useState("");
 	const [compoundingFrequency, setCompoundingFrequency] = useState(1);
 
 	// Output Fields
@@ -26,7 +26,7 @@ function MainFDMaturityCalc() {
 					calculateMaturityDate.getFullYear()
 			);
 		} else {
-			setMaturityDate(null);
+			setMaturityDate("");
 		}
 		const calculateMaturityAmount =
 			amountDeposited *
