@@ -54,6 +54,8 @@ export default function Home() {
             <HomeGridItem calcName="Work and Time Calculator" path="/workandtimecalculator"/>
             <HomeGridItem calcName="Co-Linear Points Finder" path="/colinearpointsfinder"/>
             <HomeGridItem calcName="Grouping Points On Same Side Of Line" path="/groupingpointsonsamesideofline"/>
+            <HomeGridItem calcName="Polynomial Equation Differential Calculator" path="/polynomialeqdifferentialcalc"/>
+            <HomeGridItem calcName="Polynomial Equation Integral Calculator" path="/polynomialeqintegralcalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
