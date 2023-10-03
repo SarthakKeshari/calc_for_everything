@@ -56,6 +56,8 @@ export default function Home() {
             <HomeGridItem calcName="Grouping Points On Same Side Of Line" path="/groupingpointsonsamesideofline"/>
             <HomeGridItem calcName="Polynomial Equation Differential Calculator" path="/polynomialeqdifferentialcalc"/>
             <HomeGridItem calcName="Polynomial Equation Integral Calculator" path="/polynomialeqintegralcalc"/>
+            <HomeGridItem calcName="LCM Calculator" path="/lcmcalc"/>
+            <HomeGridItem calcName="HCF Calculator" path="/hcfcalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>

@@ -54,6 +54,8 @@ import MainWorkAndTimeCalculator from './mathematical/workAndTimeCalc/MainWorkAn
 import MainCoLinearPointsFinder from './mathematical/coLinearPointsFinder/MainCoLinearPointsFinder';
 import MainPointsOnSameSideOfLineFinder from './mathematical/pointsOnSameSideOfLineFinder/MainPointsOnSameSideOfLineFinder';
 import MainMLModelPerformanceEvaluationCalculator from './computer_science/mLModelPerformanceEvaluationCalculator/MainMLModelPerformanceEvaluationCalculator';
+import MainLCMCalc from './mathematical/lcmCalc/MainLCMCalc';
+import MainHCFCalc from './mathematical/hcfCalc/MainHCFCalc';
 
 function App() {
   return (
@@ -105,6 +107,8 @@ function App() {
             <Route path="workandtimecalculator" element={<MainWorkAndTimeCalculator />} />
             <Route path="colinearpointsfinder" element={<MainCoLinearPointsFinder />} />
             <Route path="groupingpointsonsamesideofline" element={<MainPointsOnSameSideOfLineFinder />} />
+            <Route path="lcmcalc" element={<MainLCMCalc />} />
+            <Route path="hcfcalc" element={<MainHCFCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             {/* Finance */}
