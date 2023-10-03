@@ -14,14 +14,14 @@ Your answer
 Your answer
 
 ### Under which category you wish to place it - 
-[] Computer Science
-[] Mathematics
-[] Physics
-[] Chemistry
-[] Biology
-[] Finance
-[] Scientific
-[] Health
-[] Sports
-[x] Let project owner decide
-[] Suggest a new category - _(Answer here)_
+- [] Computer Science
+- [] Mathematics
+- [] Physics
+- [] Chemistry
+- [] Biology
+- [] Finance
+- [] Scientific
+- [] Health
+- [] Sports
+- [x] Let project owner decide
+- [] Suggest a new category - _(Answer here)_

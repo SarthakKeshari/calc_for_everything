@@ -46,6 +46,14 @@ import MainDecToOctAndOctToDec from './computer_science/decToOctAndOctToDec/Main
 import MainExpenseTracker from './finance/expense_tracker/MainExpenseTracker';
 import MainAsciiTextToBinAndBinToAsciiText from './computer_science/asciiTextToBinAndBinToAsciiText/MainAsciiTextToBinAndBinToAsciiText';
 import MainPHCalc from './chemistry/phCalc/MainPHCalc';
+import MainSearchingVisualizer from './computer_science/searching_visualizer/MainSearchingVisualizer';
+import MainSortingVisualizer from './computer_science/sorting_visualizer/MainSortingVisualizer';
+import MainPregnancyDueDateCalc from './health/pregnancy_due_date_calc/MainPregnancyDueDateCalc';
+import MainCurrencyConverter from './finance/currency_converter/MainCurrencyConverter';
+import MainWorkAndTimeCalculator from './mathematical/workAndTimeCalc/MainWorkAndTimeCalculator';
+import MainCoLinearPointsFinder from './mathematical/coLinearPointsFinder/MainCoLinearPointsFinder';
+import MainPointsOnSameSideOfLineFinder from './mathematical/pointsOnSameSideOfLineFinder/MainPointsOnSameSideOfLineFinder';
+import MainMLModelPerformanceEvaluationCalculator from './computer_science/mLModelPerformanceEvaluationCalculator/MainMLModelPerformanceEvaluationCalculator';
 
 function App() {
   return (
@@ -71,6 +79,9 @@ function App() {
             <Route path="andoperator" element={<MainANDOperator />} />
             <Route path="oroperator" element={<MainOROperator />} />
             <Route path="xoroperator" element={<MainXOROperator />} />
+            <Route path="searchingvisualizer" element={<MainSearchingVisualizer />} />
+            <Route path="sortingvisualizer" element={<MainSortingVisualizer />} />
+            <Route path="mlmodelperformanceevaluationcalculator" element={<MainMLModelPerformanceEvaluationCalculator />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -91,6 +102,9 @@ function App() {
             <Route path="matrixadjoint" element={<MainMatrixAdjoint />} />
             <Route path="matrixdeterminant" element={<MainMatrixDeterminant />} />
             <Route path="firstorderdifferentialeqsolver" element={<MainFirstOrderDifferentialEqSolver />} />
+            <Route path="workandtimecalculator" element={<MainWorkAndTimeCalculator />} />
+            <Route path="colinearpointsfinder" element={<MainCoLinearPointsFinder />} />
+            <Route path="groupingpointsonsamesideofline" element={<MainPointsOnSameSideOfLineFinder />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             {/* Finance */}
@@ -99,11 +113,13 @@ function App() {
             <Route path="loanrepaymentcalc" element={<MainLoanRepaymentCalc />} />
             <Route path="savingscalc" element={<MainSavingsCalc />} />
             <Route path="expensetracker" element={<MainExpenseTracker />} />
+            <Route path="currencyconverter" element={<MainCurrencyConverter />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
             <Route path="bodyfat" element={<MainBodyFat />} />
             <Route path="agecalculator" element={<MainAgeCalculator />} />
+            <Route path="pregnancyduedatecalc" element={<MainPregnancyDueDateCalc />} />
           </Route>
         </Routes>
       </BrowserRouter>
