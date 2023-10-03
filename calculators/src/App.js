@@ -63,6 +63,8 @@ import MainInfixToPostAndPreCalc from './computer_science/infixToPostAndPreCalc/
 import MainPostAndPreToInfixCalc from './computer_science/postAndPreToInfixCalc/MainPostAndPreToInfixCalc';
 import MainChemicalEqBalancer from './chemistry/chemicalEqBalancer/MainChemicalEqBalancer';
 import MainChemicalKineticsCalc from './chemistry/chemicalKineticsCalc/MainChemicalKineticsCalc';
+import MainNOROperator from './computer_science/norOperator/MainNOROperator';
+import MainNANDOperator from './computer_science/nandOperator/MainNANDOperator';
 
 function App() {
   return (
@@ -88,6 +90,8 @@ function App() {
             <Route path="andoperator" element={<MainANDOperator />} />
             <Route path="oroperator" element={<MainOROperator />} />
             <Route path="xoroperator" element={<MainXOROperator />} />
+            <Route path="noroperator" element={<MainNOROperator />} />
+            <Route path="nandoperator" element={<MainNANDOperator />} />
             <Route path="searchingvisualizer" element={<MainSearchingVisualizer />} />
             <Route path="sortingvisualizer" element={<MainSortingVisualizer />} />
             <Route path="mlmodelperformanceevaluationcalculator" element={<MainMLModelPerformanceEvaluationCalculator />} />

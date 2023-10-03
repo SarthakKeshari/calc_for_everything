@@ -24,6 +24,8 @@ export default function Home() {
             <HomeGridItem calcName="AND Operator" path="/andoperator"/>
             <HomeGridItem calcName="OR Operator" path="/oroperator"/>
             <HomeGridItem calcName="XOR Operator" path="/xoroperator"/>
+            <HomeGridItem calcName="NOR Operator" path="/noroperator"/>
+            <HomeGridItem calcName="NAND Operator" path="/nandoperator"/>
             <HomeGridItem calcName="Searching Visualizer" path="/searchingvisualizer"/>
             <HomeGridItem calcName="Sorting Visualizer" path="/sortingvisualizer"/>
             <HomeGridItem calcName="ML Model Performance Evaluation Calculator" path="/mlmodelperformanceevaluationcalculator"/>
