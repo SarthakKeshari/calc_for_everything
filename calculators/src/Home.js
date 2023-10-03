@@ -27,6 +27,7 @@ export default function Home() {
             <HomeGridItem calcName="Searching Visualizer" path="/searchingvisualizer"/>
             <HomeGridItem calcName="Sorting Visualizer" path="/sortingvisualizer"/>
             <HomeGridItem calcName="ML Model Performance Evaluation Calculator" path="/mlmodelperformanceevaluationcalculator"/>
+            <HomeGridItem calcName="Factorial Calculator" path="/factorialcalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -58,6 +59,7 @@ export default function Home() {
             <HomeGridItem calcName="Polynomial Equation Integral Calculator" path="/polynomialeqintegralcalc"/>
             <HomeGridItem calcName="LCM Calculator" path="/lcmcalc"/>
             <HomeGridItem calcName="HCF Calculator" path="/hcfcalc"/>
+            <HomeGridItem calcName="Angle Type Classifier" path="/angletypeclassifier"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>

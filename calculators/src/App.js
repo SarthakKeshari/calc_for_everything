@@ -56,6 +56,8 @@ import MainPointsOnSameSideOfLineFinder from './mathematical/pointsOnSameSideOfL
 import MainMLModelPerformanceEvaluationCalculator from './computer_science/mLModelPerformanceEvaluationCalculator/MainMLModelPerformanceEvaluationCalculator';
 import MainLCMCalc from './mathematical/lcmCalc/MainLCMCalc';
 import MainHCFCalc from './mathematical/hcfCalc/MainHCFCalc';
+import MainAngleTypeClassifier from './mathematical/angleTypeClassifier/MainAngleTypeClassifier';
+import MainFactorialCalc from './computer_science/factorialCalc/MainFactorialCalc';
 
 function App() {
   return (
@@ -84,6 +86,7 @@ function App() {
             <Route path="searchingvisualizer" element={<MainSearchingVisualizer />} />
             <Route path="sortingvisualizer" element={<MainSortingVisualizer />} />
             <Route path="mlmodelperformanceevaluationcalculator" element={<MainMLModelPerformanceEvaluationCalculator />} />
+            <Route path="factorialcalc" element={<MainFactorialCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -109,6 +112,7 @@ function App() {
             <Route path="groupingpointsonsamesideofline" element={<MainPointsOnSameSideOfLineFinder />} />
             <Route path="lcmcalc" element={<MainLCMCalc />} />
             <Route path="hcfcalc" element={<MainHCFCalc />} />
+            <Route path="angletypeclassifier" element={<MainAngleTypeClassifier />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             {/* Finance */}
