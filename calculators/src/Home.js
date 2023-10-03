@@ -51,6 +51,8 @@ export default function Home() {
             <HomeGridItem calcName="Matrix Determinant" path="/matrixdeterminant"/>
             <HomeGridItem calcName="First Order Differential Equation Solver" path="/firstorderdifferentialeqsolver"/>
             <HomeGridItem calcName="Work and Time Calculator" path="/workandtimecalculator"/>
+            <HomeGridItem calcName="Co-Linear Points Finder" path="/colinearpointsfinder"/>
+            <HomeGridItem calcName="Grouping Points On Same Side Of Line" path="/groupingpointsonsamesideofline"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
