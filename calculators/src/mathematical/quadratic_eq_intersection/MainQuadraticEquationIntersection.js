@@ -64,24 +64,39 @@ function MainQuadraticEquationIntersection() {
     return "Equations do not intersect";
   };
 
-  const discriminantHandler = (a1,b1,c1,a2,b2,c2) =>{
+    function discriminantHandler(a1,b1,c1,a2,b2,c2){
 
-        // D = b^2 - 4ac
-        var discriminantEquationOne = (Math.pow(b1,2) - (4*a1*c1))
-        var discriminantEquationTwo = (Math.pow(b2,2) - (4*a2*c2))
+        var A = a1-a2
+        var B = b1-b2
+        var C = c1-c2
+        
+        var disc = Math.pow(B,2)-(4*A*C)
+        
+        if(disc > 0){
+            //two real roots
+            
+            //first root
+            var x1 = ((-1*B) + Math.sqrt(disc))/(2*A)
+            var y1 = (a1*Math.pow(x1,2) + b1*x1 + c1)
+            
+            //second root
+            var x2 = ((-1*B) - Math.sqrt(disc))/(2*A)
+            var y2 = (a2*Math.pow(x2,2) + b2*x2 + c2)
 
-
-        if(discriminantEquationOne>=0 && discriminantEquationTwo>=0){
-
-            //surely they'll intersect
-            var points = getIntersectionPoints(discriminantEquationOne,a1, b1, c1, a2, b2, c2)
-            setResult("They intersect at\n"+points)
-
-        } else {
-            //won't intersect
+            setResult("Equations intersect at "+`[${x1.toPrecision(2)},${y1.toPrecision(2)}]`+" and "+`[${x2.toPrecision(2)},${y2.toPrecision(2)}]`)
+        }
+        else if(disc==0){
+            //one real root
+            var x = ((-1*B))/(2*A)
+            var y = (a1*Math.pow(x,2) + b1*x + c1)
+            
+            setResult("Equations intersect at "+`[${x},${y}]`)
+        }
+        else{
+            //no root
             setResult("Equations do not intersect")
         }
-
+        
     }
 
   const startCalculation = () => {
@@ -246,8 +261,13 @@ function MainQuadraticEquationIntersection() {
             </Button>
         </div>
 
-        <div style={{alignSelf:'center', margin:'10px'}} >
-            <Typography variant="h6" style={equationStyle}>
+        <div style={{alignSelf:'center', margin:'30px'}} >
+            <Typography variant="h6" style={{
+                lineHeight: '1.5',
+                fontFamily: 'KaTeX_Math',
+                textAlign: 'center',
+                fontSize:'30px'
+            }}>
                 {result}
             </Typography>
         </div>
