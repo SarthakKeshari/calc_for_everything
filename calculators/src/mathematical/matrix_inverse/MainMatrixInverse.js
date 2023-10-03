@@ -10,8 +10,6 @@ function MainMatrixInverse() {
 
   const handleSizeChange = (e) => {
     const newSize = parseInt(e.target.value);
-    // if(newSize>=0 && newSize<=6)
-    // {
     if(newSize>=7)
     {
         alert('The Value must be less than or equal to 6')
@@ -25,39 +23,11 @@ function MainMatrixInverse() {
     );
     setInverseMatrix([]);
     setErrorMessage("");
-    
-    // else
-    // {
-    //     setErrorMessage("Matrix size must be between 1 and 6.");
-    // }
   };
 }
-// const handleSizeChange = (e) => {
-//     const newSize = parseInt(e.target.value);
-//     if (newSize >= 1 && newSize <= 6) {
-//       setMatrixSize(newSize);
-//       const newMatrix = Array.from({ length: newSize }, () => Array(newSize).fill(0));
-//       setMatrix(newMatrix);
-//       setInverse([]);
-//       setErrorMessage("");
-//     } else {
-//       // Show an error message or take other appropriate action for out-of-range values.
-//       setErrorMessage("Matrix size must be between 1 and 6.");
-//     }
-//   };
 const isValidInput = (input) => {
     return /^-?\d+(\.\d*)?$/.test(input);
   };
-  
-  
-
-//   const handleMatrixChange = (row, col, value) => {
-//     const updatedMatrix = [...matrix];
-//     updatedMatrix[row][col] = parseFloat(value);
-//     setMatrix(updatedMatrix);
-//     setInverseMatrix([]);
-//     setErrorMessage("");
-//   };
 const handleMatrixChange = (row, col, value) => {
     const updatedMatrix = matrix.map((rowArray) => [...rowArray]); // Clone the matrix.
     updatedMatrix[row][col] = value !== "" ? parseFloat(value) : null; // Parse if not empty, set to null if empty.
@@ -65,8 +35,6 @@ const handleMatrixChange = (row, col, value) => {
     setInverseMatrix([]);
     setErrorMessage("");
   };
-  
-
   const calculateMatrixInverse = () => {
     try {
       const inv = numeric.inv(matrix);
@@ -82,7 +50,6 @@ const handleMatrixChange = (row, col, value) => {
       setErrorMessage("Matrix is not invertible or contains invalid values.");
     }
   };
-
   return (
     <div className="matrix-inverse-calculator">
       <h1>Matrix Inverse Calculator</h1>
@@ -96,7 +63,6 @@ const handleMatrixChange = (row, col, value) => {
           max="6"
         />
       </div>
-
       <div>
         <h3>Enter Matrix Elements:</h3>
         {matrix.map((row, rowIndex) => (
@@ -109,21 +75,17 @@ const handleMatrixChange = (row, col, value) => {
                 onChange={(e) =>
                   isValidInput(e.target.value) && handleMatrixChange(rowIndex, colIndex, e.target.value)
                 }
-                // step="any"
               />
             ))}
           </div>
         ))}
       </div>
-
       <button onClick={calculateMatrixInverse}>Calculate Inverse</button>
-
       {errorMessage && (
         <div>
           <p>{errorMessage}</p>
         </div>
       )}
-
       {inverseMatrix.length > 0 && (
         <div>
           <h2>Inverse Matrix:</h2>
@@ -140,5 +102,4 @@ const handleMatrixChange = (row, col, value) => {
     </div>
   );
 }
-
 export default MainMatrixInverse;
