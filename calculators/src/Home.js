@@ -32,6 +32,7 @@ export default function Home() {
             <HomeGridItem calcName="Factorial Calculator" path="/factorialcalc"/>
             <HomeGridItem calcName="Infix To Postfix And Prefix Calculator" path="/infixtopostandprecalc"/>
             <HomeGridItem calcName="Postfix And Prefix To Infix Calculator" path="/postandpretoinfixcalc"/>
+            <HomeGridItem calcName="Code Time Complexity Calculator" path="/codetimecomplexitycalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
