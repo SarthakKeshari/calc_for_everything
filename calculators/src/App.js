@@ -53,6 +53,7 @@ import MainCurrencyConverter from './finance/currency_converter/MainCurrencyConv
 import MainWorkAndTimeCalculator from './mathematical/workAndTimeCalc/MainWorkAndTimeCalculator';
 import MainCoLinearPointsFinder from './mathematical/coLinearPointsFinder/MainCoLinearPointsFinder';
 import MainPointsOnSameSideOfLineFinder from './mathematical/pointsOnSameSideOfLineFinder/MainPointsOnSameSideOfLineFinder';
+import MainMLModelPerformanceEvaluationCalculator from './computer_science/mLModelPerformanceEvaluationCalculator/MainMLModelPerformanceEvaluationCalculator';
 
 function App() {
   return (
@@ -80,6 +81,7 @@ function App() {
             <Route path="xoroperator" element={<MainXOROperator />} />
             <Route path="searchingvisualizer" element={<MainSearchingVisualizer />} />
             <Route path="sortingvisualizer" element={<MainSortingVisualizer />} />
+            <Route path="mlmodelperformanceevaluationcalculator" element={<MainMLModelPerformanceEvaluationCalculator />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
