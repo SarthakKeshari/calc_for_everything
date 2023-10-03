@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Typography, Tabs, Tab, RadioGroup, FormControlLabel, Radio, TextField, Divider, Box } from '@mui/material';
+import { Container, Typography, Tabs, Tab, RadioGroup, FormControlLabel, Radio, TextField, Box } from '@mui/material';
 
 function MainBodyFat() {
     const [value, setValue] = useState(0);

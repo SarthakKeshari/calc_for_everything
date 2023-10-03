@@ -19,7 +19,7 @@ function MainNumberTypeFinder() {
   const [results, setresults] = useState(null);
 
   const handleCheck = () => {
-    if (number == "" || selectedNumberTypes.length == 0) {
+    if (number === "" || selectedNumberTypes.length === 0) {
       return alert(
         "Please make sure to select atleast one number type and add a number to check."
       );
@@ -63,7 +63,7 @@ function MainNumberTypeFinder() {
     x.forEach((digit) => {
       value += parseInt(digit) ** x.length;
     });
-    return value == num;
+    return value === num;
   };
 
   // Kaprekar Number
@@ -74,7 +74,7 @@ function MainNumberTypeFinder() {
     const leftNum = x.substring(0, mid + 1);
     const rightNum = x.substring(mid + 1, x.length);
     const value = parseInt(leftNum) + parseInt(rightNum);
-    return value == num;
+    return value === num;
   };
 
   // Automorphic Number
@@ -82,7 +82,7 @@ function MainNumberTypeFinder() {
     let x = num ** 2;
     x = x.toString();
     x = x.substring(x.length - num.toString().length, x.length);
-    return parseInt(x) == num;
+    return parseInt(x) === num;
   };
 
   // sum of proper divisors of a Number
@@ -112,7 +112,7 @@ function MainNumberTypeFinder() {
     if (num <= 0) {
       return false;
     } else {
-      return sumProperDivisors(num) == num;
+      return sumProperDivisors(num) === num;
     }
   };
 
@@ -120,7 +120,7 @@ function MainNumberTypeFinder() {
   const checkAmicable = (num) => {
     const x = sumProperDivisors(num);
     if (x !== num) {
-      if (sumProperDivisors(x) == num) {
+      if (sumProperDivisors(x) === num) {
         return true;
       } else {
         return false;
