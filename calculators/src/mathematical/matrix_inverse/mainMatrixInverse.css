@@ -1,0 +1,49 @@
+.matrix-inverse-calculator {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  max-width: 450px;
+  background-color: #f0f0f0;
+}
+.matrix-inverse-calculator h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.matrix-inverse-calculator label {
+  font-weight: bold;
+}
+.matrix-inverse-calculator div {
+  margin: 10px 0;
+}
+.matrix-inverse-calculator input {
+  width: 50px;
+  text-align: center;
+}
+.matrix-inverse-calculator button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.matrix-inverse-calculator button:hover {
+  background-color: #0056b3;
+}
+.matrix-inverse-calculator p {
+  color: red;
+  font-weight: bold;
+}
+.matrix-inverse-calculator h2 {
+  margin-top: 20px;
+}
+.matrix-inverse-calculator span {
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin: 2px;
+}
+.matrix-inverse-calculator br {
+  clear: both;
+}
