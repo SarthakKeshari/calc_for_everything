@@ -18,10 +18,11 @@ function MainQuadraticEquationIntersection() {
 
   const [result,setResult] = useState('Please ensure that you enter valid numerical values in all fields to view the result')
 
+  // Handle input change and allow only numerical values
   const handleInputChange = (e) => {
     const value = e.target.value;
 
-    // Use regular expressions to allow only numerical values
+    // allow only numerical values
     const numericValue = value.replace(/[^0-9.-]/g, '');
 
     switch (e.target.name) {
@@ -48,56 +49,41 @@ function MainQuadraticEquationIntersection() {
     }
   };
 
-  const getIntersectionPoints = (discriminant1, a1, b1, c1, a2, b2, c2) => {
-    if (discriminant1 >= 0) {
-        const x1 = (-b1 + Math.sqrt(discriminant1)) / (2 * a1);
-        const x2 = (-b1 - Math.sqrt(discriminant1)) / (2 * a1);
-      
-        const y1 = a1 * x1 * x1 + b1 * x1 + c1;
-        const y2 = a1 * x2 * x2 + b1 * x2 + c1;
-      
-        // Format the intersection points as a single string with both points separated by a comma
-        return `[${x1.toFixed(2)}, ${y1.toFixed(2)}], [${x2.toFixed(2)}, ${y2.toFixed(2)}]`;
+  // Calculate intersection points of quadratic equations
+  function discriminantHandler(a1,b1,c1,a2,b2,c2){
+    
+    var A = a1-a2
+    var B = b1-b2
+    var C = c1-c2
+        
+    var disc = Math.pow(B,2)-(4*A*C)
+        
+    // three cases handled seperately
+    if(disc > 0){
+        //two real roots
+        
+        //first root
+        var x1 = ((-1*B) + Math.sqrt(disc))/(2*A)
+        var y1 = (a1*Math.pow(x1,2) + b1*x1 + c1)
+        
+        //second root
+        var x2 = ((-1*B) - Math.sqrt(disc))/(2*A)
+        var y2 = (a2*Math.pow(x2,2) + b2*x2 + c2)
+
+        setResult("Equations intersect at "+`[ ${x1.toPrecision(2)} , ${y1.toPrecision(2)} ]`+" and "+`[ ${x2.toPrecision(2)} , ${y2.toPrecision(2)} ]`)
     }
-      
-  
-    return "Equations do not intersect";
-  };
-
-    function discriminantHandler(a1,b1,c1,a2,b2,c2){
-
-        var A = a1-a2
-        var B = b1-b2
-        var C = c1-c2
+    else if(disc==0){
+        //one real root
+        var x = ((-1*B))/(2*A)
+        var y = (a1*Math.pow(x,2) + b1*x + c1)
         
-        var disc = Math.pow(B,2)-(4*A*C)
-        
-        if(disc > 0){
-            //two real roots
-            
-            //first root
-            var x1 = ((-1*B) + Math.sqrt(disc))/(2*A)
-            var y1 = (a1*Math.pow(x1,2) + b1*x1 + c1)
-            
-            //second root
-            var x2 = ((-1*B) - Math.sqrt(disc))/(2*A)
-            var y2 = (a2*Math.pow(x2,2) + b2*x2 + c2)
-
-            setResult("Equations intersect at "+`[${x1.toPrecision(2)},${y1.toPrecision(2)}]`+" and "+`[${x2.toPrecision(2)},${y2.toPrecision(2)}]`)
-        }
-        else if(disc==0){
-            //one real root
-            var x = ((-1*B))/(2*A)
-            var y = (a1*Math.pow(x,2) + b1*x + c1)
-            
-            setResult("Equations intersect at "+`[${x},${y}]`)
-        }
-        else{
-            //no root
-            setResult("Equations do not intersect")
-        }
-        
+        setResult("Equations intersect at "+`[ ${x.toPrecision(2)} , ${y.toPrecision(2)} ]`)
     }
+    else{
+        //no root
+        setResult("Equations do not intersect")
+    }
+  }
 
   const startCalculation = () => {
     // Convert input values to numbers
@@ -114,17 +100,9 @@ function MainQuadraticEquationIntersection() {
         alert('Please enter valid numerical values in all fields');
         return;
     } else {
-        //passing parameters
-        discriminantHandler(
-            coefficientA1,
-            coefficientB1,
-            coefficientC1,
-            coefficientA2,
-            coefficientB2,
-            coefficientC2
-        )
+        // Call the discriminantHandler function with the input coefficients
+        discriminantHandler(coefficientA1, coefficientB1, coefficientC1, coefficientA2, coefficientB2, coefficientC2);
     }
-    // Perform your discriminant calculations here...
 
   };
 
