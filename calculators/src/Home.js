@@ -33,6 +33,8 @@ export default function Home() {
             <HomeGridItem calcName="Infix To Postfix And Prefix Calculator" path="/infixtopostandprecalc"/>
             <HomeGridItem calcName="Postfix And Prefix To Infix Calculator" path="/postandpretoinfixcalc"/>
             <HomeGridItem calcName="Code Time Complexity Calculator" path="/codetimecomplexitycalc"/>
+            <HomeGridItem calcName="Simple On-Screen Calculator" path="/simpleonscreencalc"/>
+            <HomeGridItem calcName="Advance On-Screen Calculator" path="/advonscreencalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -88,6 +90,7 @@ export default function Home() {
             <HomeGridItem calcName="Savings Calculator" path="/savingscalc"/>
             <HomeGridItem calcName="Expense Tracker" path="/expensetracker"/>
             <HomeGridItem calcName="Currency Converter" path="/currencyconverter"/>
+            <HomeGridItem calcName="Profit Margin Calculator" path="/profitmargincalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>

@@ -69,6 +69,9 @@ import MainCodeTimeComplexityCalc from './computer_science/codeTimeComplexityCal
 import MainPercentileCalc from './mathematical/percentileCalc/MainPercentileCalc';
 import MainCoPrimeFinder from './mathematical/coPrimeFinder/MainCoPrimeFinder';
 import MainMolecularWeightCalc from './chemistry/molecularWeightCalc/MainMolecularWeightCalc';
+import MainProfitMarginCalc from './finance/profitMarginCalc/MainProfitMarginCalc';
+import MainSimpleOnScreenCalc from './computer_science/simpleOnScreenCalc/MainSimpleOnScreenCalc';
+import MainAdvOnScreenCalc from './computer_science/advOnScreenCalc/MainAdvOnScreenCalc';
 
 function App() {
   return (
@@ -103,6 +106,8 @@ function App() {
             <Route path="infixtopostandprecalc" element={<MainInfixToPostAndPreCalc />} />
             <Route path="postandpretoinfixcalc" element={<MainPostAndPreToInfixCalc />} />
             <Route path="codetimecomplexitycalc" element={<MainCodeTimeComplexityCalc />} />
+            <Route path="simpleonscreencalc" element={<MainSimpleOnScreenCalc />} />
+            <Route path="advonscreencalc" element={<MainAdvOnScreenCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -144,6 +149,7 @@ function App() {
             <Route path="savingscalc" element={<MainSavingsCalc />} />
             <Route path="expensetracker" element={<MainExpenseTracker />} />
             <Route path="currencyconverter" element={<MainCurrencyConverter />} />
+            <Route path="profitmargincalc" element={<MainProfitMarginCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
