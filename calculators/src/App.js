@@ -65,6 +65,7 @@ import MainChemicalEqBalancer from './chemistry/chemicalEqBalancer/MainChemicalE
 import MainChemicalKineticsCalc from './chemistry/chemicalKineticsCalc/MainChemicalKineticsCalc';
 import MainNOROperator from './computer_science/norOperator/MainNOROperator';
 import MainNANDOperator from './computer_science/nandOperator/MainNANDOperator';
+import MainCodeTimeComplexityCalc from './computer_science/codeTimeComplexityCalc/MainCodeTimeComplexityCalc';
 
 function App() {
   return (
@@ -98,6 +99,7 @@ function App() {
             <Route path="factorialcalc" element={<MainFactorialCalc />} />
             <Route path="infixtopostandprecalc" element={<MainInfixToPostAndPreCalc />} />
             <Route path="postandpretoinfixcalc" element={<MainPostAndPreToInfixCalc />} />
+            <Route path="codetimecomplexitycalc" element={<MainCodeTimeComplexityCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
