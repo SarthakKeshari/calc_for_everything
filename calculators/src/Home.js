@@ -66,6 +66,7 @@ export default function Home() {
             <HomeGridItem calcName="HCF Calculator" path="/hcfcalc"/>
             <HomeGridItem calcName="Angle Type Classifier" path="/angletypeclassifier"/>
             <HomeGridItem calcName="Trignometric Value Calculator" path="/trignometricvaluecalc"/>
+            <HomeGridItem calcName="Polynomial Equation Integral Calculator" path="/polynomialintegral"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
