@@ -1,7 +1,7 @@
 /* LCMGenerator.css */
 .lcm-generator-container {
     font-family: Arial, sans-serif;
-    max-width: 400px;
+    max-width: 450px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -18,8 +18,9 @@
   }
   
   input[type="number"] {
-    width: 100%;
+    width: 90%;
     padding: 10px;
+    margin-top: 12px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;

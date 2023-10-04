@@ -14,6 +14,12 @@ class MainLCMCalc extends Component {
   handleInputChange = (e, index) => {
     const { value } = e.target;
     const numbers = [...this.state.numbers];
+
+    if (value > 1000) {
+      alert('Please enter a value less than or equal to 1000');
+      return;
+    }
+
     numbers[index] = value;
     this.setState({ numbers });
   };
@@ -55,10 +61,10 @@ class MainLCMCalc extends Component {
 
   render() {
     return (
-      <div className="lcm-generator-container my-5">
+      <div className="lcm-generator-container" style={{marginTop:'50px'}}>
         <h2 className='my-3'><strong><i>LCM Generator</i></strong></h2>
-        <label className='my-3'>Select the number of inputs : </label>
-        <select className='mx-2'
+        <label className='my-5'>Select the number of inputs : </label>
+        <select className='m-2'
   value={this.state.numberOfInputs}
   onChange={this.handleNumberOfInputsChange}
 >
@@ -79,12 +85,16 @@ class MainLCMCalc extends Component {
               placeholder={`Number ${index + 1}`}
               min="1"
               max="1000"
-              className="small-input" 
+              className="small-input"
             />
           ))}
         </form>
         <button className='my-2' onClick={this.calculateLCM}>Calculate LCM</button>
-        {this.state.result && <p className=" my-2 result" style={{color:"green"}}>LCM : {this.state.result}</p>}
+        {this.state.result && (
+          <p className="my-2 result" style={{ color: "green" }}>
+            LCM : {this.state.result}
+          </p>
+        )}
       </div>
     );
   }
