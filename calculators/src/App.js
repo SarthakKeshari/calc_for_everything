@@ -66,6 +66,7 @@ import MainChemicalKineticsCalc from './chemistry/chemicalKineticsCalc/MainChemi
 import MainNOROperator from './computer_science/norOperator/MainNOROperator';
 import MainNANDOperator from './computer_science/nandOperator/MainNANDOperator';
 import MainCodeTimeComplexityCalc from './computer_science/codeTimeComplexityCalc/MainCodeTimeComplexityCalc';
+import Polynomial_integral from './mathematical/polynomial_integral/Polynomial_integral.js'
 
 function App() {
   return (
@@ -127,6 +128,7 @@ function App() {
             <Route path="hcfcalc" element={<MainHCFCalc />} />
             <Route path="angletypeclassifier" element={<MainAngleTypeClassifier />} />
             <Route path="trignometricvaluecalc" element={<MainTrignometricValueCalc />} />
+            <Route path="polynomialintegral" element={<Polynomial_integral />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
