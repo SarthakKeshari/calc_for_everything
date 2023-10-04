@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Typography, TextField, Button, Grid } from '@mui/material';
+import { Container, Typography, TextField, Button, Grid, Box } from '@mui/material';
 
 function MainDecToOctAndOctToDec() {
   const [inputValue, setInputValue] = useState('');
@@ -56,17 +56,19 @@ function MainDecToOctAndOctToDec() {
         </Grid>
       </Grid>
       <br />
-      <Button variant="contained" onClick={handleConvert}>
-        Convert
-      </Button>
-      <br />
-      <br />
-      <Button
-        variant="outlined"
-        onClick={() => setConversionMode(conversionMode === 'decimalToOctal' ? 'octalToDecimal' : 'decimalToOctal')}
-      >
-        {conversionMode === 'decimalToOctal' ? 'Switch to Octal to Decimal' : 'Switch to Decimal to Octal'}
-      </Button>
+      <Box sx={{ textAlign: 'center' }}>
+        <Button variant="contained" onClick={handleConvert}>
+          Convert
+        </Button>
+        <br />
+        <br />
+        <Button
+          variant="outlined"
+          onClick={() => setConversionMode(conversionMode === 'decimalToOctal' ? 'octalToDecimal' : 'decimalToOctal')}
+        >
+          {conversionMode === 'decimalToOctal' ? 'Switch to Octal to Decimal' : 'Switch to Decimal to Octal'}
+        </Button>
+      </Box>
     </Container>
   );
 }
