@@ -69,6 +69,7 @@ import MainCodeTimeComplexityCalc from './computer_science/codeTimeComplexityCal
 import MainPercentileCalc from './mathematical/percentileCalc/MainPercentileCalc';
 import MainCoPrimeFinder from './mathematical/coPrimeFinder/MainCoPrimeFinder';
 import MainMolecularWeightCalc from './chemistry/molecularWeightCalc/MainMolecularWeightCalc';
+import MainProfitMarginCalc from './finance/profitMarginCalc/MainProfitMarginCalc';
 
 function App() {
   return (
@@ -144,6 +145,7 @@ function App() {
             <Route path="savingscalc" element={<MainSavingsCalc />} />
             <Route path="expensetracker" element={<MainExpenseTracker />} />
             <Route path="currencyconverter" element={<MainCurrencyConverter />} />
+            <Route path="profitmargincalc" element={<MainProfitMarginCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
