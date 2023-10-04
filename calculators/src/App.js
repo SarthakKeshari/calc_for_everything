@@ -66,6 +66,9 @@ import MainChemicalKineticsCalc from './chemistry/chemicalKineticsCalc/MainChemi
 import MainNOROperator from './computer_science/norOperator/MainNOROperator';
 import MainNANDOperator from './computer_science/nandOperator/MainNANDOperator';
 import MainCodeTimeComplexityCalc from './computer_science/codeTimeComplexityCalc/MainCodeTimeComplexityCalc';
+import MainPercentileCalc from './mathematical/percentileCalc/MainPercentileCalc';
+import MainCoPrimeFinder from './mathematical/coPrimeFinder/MainCoPrimeFinder';
+import MainMolecularWeightCalc from './chemistry/molecularWeightCalc/MainMolecularWeightCalc';
 
 function App() {
   return (
@@ -127,10 +130,13 @@ function App() {
             <Route path="hcfcalc" element={<MainHCFCalc />} />
             <Route path="angletypeclassifier" element={<MainAngleTypeClassifier />} />
             <Route path="trignometricvaluecalc" element={<MainTrignometricValueCalc />} />
+            <Route path="percentilecalc" element={<MainPercentileCalc />} />
+            <Route path="coprimefinder" element={<MainCoPrimeFinder />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
             <Route path="chemicalkineticscalc" element={<MainChemicalKineticsCalc />} />
+            <Route path="molecularweightcalc" element={<MainMolecularWeightCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />

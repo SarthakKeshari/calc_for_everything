@@ -66,6 +66,8 @@ export default function Home() {
             <HomeGridItem calcName="HCF Calculator" path="/hcfcalc"/>
             <HomeGridItem calcName="Angle Type Classifier" path="/angletypeclassifier"/>
             <HomeGridItem calcName="Trignometric Value Calculator" path="/trignometricvaluecalc"/>
+            <HomeGridItem calcName="Percentile Calculator" path="/percentilecalc"/>
+            <HomeGridItem calcName="Co-Prime Finder" path="/coprimefinder"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
@@ -74,6 +76,7 @@ export default function Home() {
             <HomeGridItem calcName="pH Calculator" path="/phcalc"/>
             <HomeGridItem calcName="Chemical Equation Balancer" path="/chemicaleqbalancer"/>
             <HomeGridItem calcName="Chemical Kinetics Calculator" path="/chemicalkineticscalc"/>
+            <HomeGridItem calcName="Molecular Weight Calculator" path="/molecularweightcalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>
