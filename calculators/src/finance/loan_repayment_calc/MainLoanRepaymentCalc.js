@@ -24,6 +24,9 @@ function MainLoanRepaymentCalc(){
         {
             const n = Math.log(monthlyPayment / (monthlyPayment - r * principal)) / Math.log(1 + r);
             !isNaN(n) ? setTime((n / 12).toFixed(1)) : setTime(0);
+            const payment = monthlyPayment;
+            setTotalInterest((payment * n - principal).toFixed());
+            setTotalAmount((payment * n).toFixed());
         }
         else
         {
@@ -64,7 +67,6 @@ function MainLoanRepaymentCalc(){
                     <Input
                         color="primary"
                         disabled={false}
-                        placeholder="Enter Principal"
                         size="lg"
                         variant="outlined"
                         type='number'
@@ -75,7 +77,6 @@ function MainLoanRepaymentCalc(){
                     <Input
                         color="primary"
                         disabled={false}
-                        placeholder="Enter Rate"
                         size="lg"
                         variant="outlined"
                         type='number'
@@ -86,7 +87,6 @@ function MainLoanRepaymentCalc(){
                     <Input
                         color="primary"
                         disabled={false}
-                        placeholder="Enter Time"
                         size="lg"
                         variant="outlined"
                         type='number'
@@ -116,7 +116,6 @@ function MainLoanRepaymentCalc(){
                     <Input
                         color="primary"
                         disabled={false}
-                        placeholder="Enter Principal"
                         size="lg"
                         variant="outlined"
                         type='number'
@@ -127,7 +126,6 @@ function MainLoanRepaymentCalc(){
                     <Input
                         color="primary"
                         disabled={false}
-                        placeholder="Enter Rate"
                         size="lg"
                         variant="outlined"
                         type='number'
@@ -138,7 +136,6 @@ function MainLoanRepaymentCalc(){
                     <Input
                         color="primary"
                         disabled={false}
-                        placeholder="Enter Monthly Payment"
                         size="lg"
                         variant="outlined"
                         type='number'
@@ -148,6 +145,16 @@ function MainLoanRepaymentCalc(){
                     <Typography pt={1} variant='h6' mt={2}>Time (in years)</Typography>
                     <div className='output'>
                         <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{time}</Typography>
+                    </div>
+                    <Divider/>
+                    <Typography pt={1} variant='h6' mt={2}>Total Interest Payable (in ₹)</Typography>
+                    <div className='output'>
+                        <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{totalInterest}</Typography>
+                    </div>
+                    <Divider/>
+                    <Typography pt={1} variant='h6' mt={2}>Total Amount Payable (in ₹)</Typography>
+                    <div className='output'>
+                        <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{totalAmount}</Typography>
                     </div>
                     <Divider/>
                 </Container>
