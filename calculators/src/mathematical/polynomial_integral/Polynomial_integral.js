@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Container, Button, Input, Typography, Divider } from "@mui/material";
 
 function Polynomial_integral() {
+  // our input equation
   const [equation, setEquation] = useState("");
+  // our output equation
   const [Intequation, setIntEquation] = useState("");
 
   function FindIntegral() {
