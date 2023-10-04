@@ -69,6 +69,7 @@ import MainCodeTimeComplexityCalc from './computer_science/codeTimeComplexityCal
 import MainPercentileCalc from './mathematical/percentileCalc/MainPercentileCalc';
 import MainCoPrimeFinder from './mathematical/coPrimeFinder/MainCoPrimeFinder';
 import MainMolecularWeightCalc from './chemistry/molecularWeightCalc/MainMolecularWeightCalc';
+import MainPolynomialEqIntegralCalc from './mathematical/polynomialEqIntegralCalc/MainPolynomialEqIntegralCalc';
 
 function App() {
   return (
@@ -132,6 +133,7 @@ function App() {
             <Route path="trignometricvaluecalc" element={<MainTrignometricValueCalc />} />
             <Route path="percentilecalc" element={<MainPercentileCalc />} />
             <Route path="coprimefinder" element={<MainCoPrimeFinder />} />
+            <Route path="polynomialeqintegralcalc" element={<MainPolynomialEqIntegralCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
