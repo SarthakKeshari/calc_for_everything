@@ -69,13 +69,10 @@ import MainCodeTimeComplexityCalc from './computer_science/codeTimeComplexityCal
 import MainPercentileCalc from './mathematical/percentileCalc/MainPercentileCalc';
 import MainCoPrimeFinder from './mathematical/coPrimeFinder/MainCoPrimeFinder';
 import MainMolecularWeightCalc from './chemistry/molecularWeightCalc/MainMolecularWeightCalc';
-<<<<<<< HEAD
-=======
 import MainProfitMarginCalc from './finance/profitMarginCalc/MainProfitMarginCalc';
 import MainSimpleOnScreenCalc from './computer_science/simpleOnScreenCalc/MainSimpleOnScreenCalc';
 import MainAdvOnScreenCalc from './computer_science/advOnScreenCalc/MainAdvOnScreenCalc';
 import MainPolynomialEqDifferentialCalc from './mathematical/polynomialEqDifferentialCalc/MainPolynomialEqDifferentialCalc';
->>>>>>> 5f911582ad7ee032acfcb58e4c5de7863bf99688
 import MainPolynomialEqIntegralCalc from './mathematical/polynomialEqIntegralCalc/MainPolynomialEqIntegralCalc';
 
 function App() {
@@ -145,6 +142,7 @@ function App() {
             <Route path="percentilecalc" element={<MainPercentileCalc />} />
             <Route path="coprimefinder" element={<MainCoPrimeFinder />} />
             <Route path="polynomialeqintegralcalc" element={<MainPolynomialEqIntegralCalc />} />
+            <Route path="polynomialeqdifferentialcalc" element={< MainPolynomialEqDifferentialCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />

@@ -55,7 +55,11 @@ function MainPolynomialEqIntegralCalc() {
         let cst;
         if (s[0] === "x") {
           cst = 0.5;
-        } else cst = Number(s[0]) / 2;
+        } else {
+          let idx = s.indexOf("x");
+          cst = Number(s.slice(0,idx))/2;
+          console.log(cst)
+        }
         eqArr[i] = `${cst + "x^" + "2"}`;
       }
       else if (Number(eqArr[i])) {
