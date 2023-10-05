@@ -12,13 +12,29 @@ export default function Home() {
             <HomeGridItem calcName="Decimal to Binary and Binary to Decimal" path="/decbinandbindec"/>
             <HomeGridItem calcName="Hexadecimal to Binary and Binary to Hexadecimal" path="/hexbinandbinhex"/>
             <HomeGridItem calcName="Octal to Binary and Binary to Octal" path="/octbinandbinoct"/>
+            <HomeGridItem calcName="Decimal to Hexadecimal and Hexadecimal to Decimal" path="/dechexandhexdec"/>
+            <HomeGridItem calcName="Hexadecimal to Octal and Octal to Hexadecimal" path="/hexoctandocthex"/>
+            <HomeGridItem calcName="Decimal to Octal and Octal to Decimal" path="/decoctandoctdec"/>
+            <HomeGridItem calcName="ASCII Text to Binary and Binary to ASCII Text" path="/asciitextbinAndbinasciitext"/>
             <HomeGridItem calcName="Binary Adder" path="/binaryadder"/>
-            <HomeGridItem calcName="Binary Substractor" path="/binarysubstractor"/>
+            <HomeGridItem calcName="Binary Subtractor" path="/binarysubtractor"/>
             <HomeGridItem calcName="Octal Adder" path="/octaladder"/>
             <HomeGridItem calcName="Hexadecimal Adder" path="/hexadecimaladder"/>
             <HomeGridItem calcName="Number Type Finder" path="/numbertypefinder"/>
             <HomeGridItem calcName="AND Operator" path="/andoperator"/>
             <HomeGridItem calcName="OR Operator" path="/oroperator"/>
+            <HomeGridItem calcName="XOR Operator" path="/xoroperator"/>
+            <HomeGridItem calcName="NOR Operator" path="/noroperator"/>
+            <HomeGridItem calcName="NAND Operator" path="/nandoperator"/>
+            <HomeGridItem calcName="Searching Visualizer" path="/searchingvisualizer"/>
+            <HomeGridItem calcName="Sorting Visualizer" path="/sortingvisualizer"/>
+            <HomeGridItem calcName="ML Model Performance Evaluation Calculator" path="/mlmodelperformanceevaluationcalculator"/>
+            <HomeGridItem calcName="Factorial Calculator" path="/factorialcalc"/>
+            <HomeGridItem calcName="Infix To Postfix And Prefix Calculator" path="/infixtopostandprecalc"/>
+            <HomeGridItem calcName="Postfix And Prefix To Infix Calculator" path="/postandpretoinfixcalc"/>
+            <HomeGridItem calcName="Code Time Complexity Calculator" path="/codetimecomplexitycalc"/>
+            <HomeGridItem calcName="Simple On-Screen Calculator" path="/simpleonscreencalc"/>
+            <HomeGridItem calcName="Advance On-Screen Calculator" path="/advonscreencalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -43,6 +59,26 @@ export default function Home() {
             <HomeGridItem calcName="Matrix Adjoint" path="/matrixadjoint"/>
             <HomeGridItem calcName="Matrix Determinant" path="/matrixdeterminant"/>
             <HomeGridItem calcName="First Order Differential Equation Solver" path="/firstorderdifferentialeqsolver"/>
+            <HomeGridItem calcName="Work and Time Calculator" path="/workandtimecalculator"/>
+            <HomeGridItem calcName="Co-Linear Points Finder" path="/colinearpointsfinder"/>
+            <HomeGridItem calcName="Grouping Points On Same Side Of Line" path="/groupingpointsonsamesideofline"/>
+            <HomeGridItem calcName="Polynomial Equation Differential Calculator" path="/polynomialeqdifferentialcalc"/>
+            <HomeGridItem calcName="Polynomial Equation Integral Calculator" path="/polynomialeqintegralcalc"/>
+            <HomeGridItem calcName="LCM Calculator" path="/lcmcalc"/>
+            <HomeGridItem calcName="HCF Calculator" path="/hcfcalc"/>
+            <HomeGridItem calcName="Angle Type Classifier" path="/angletypeclassifier"/>
+            <HomeGridItem calcName="Trignometric Value Calculator" path="/trignometricvaluecalc"/>
+            <HomeGridItem calcName="Percentile Calculator" path="/percentilecalc"/>
+            <HomeGridItem calcName="Co-Prime Finder" path="/coprimefinder"/>
+        </Grid>
+        <br/>
+        <Typography pt={1} variant='h5'>Chemistry</Typography>
+        <hr/>
+        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
+            <HomeGridItem calcName="pH Calculator" path="/phcalc"/>
+            <HomeGridItem calcName="Chemical Equation Balancer" path="/chemicaleqbalancer"/>
+            <HomeGridItem calcName="Chemical Kinetics Calculator" path="/chemicalkineticscalc"/>
+            <HomeGridItem calcName="Molecular Weight Calculator" path="/molecularweightcalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>
@@ -50,6 +86,11 @@ export default function Home() {
         <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
             <HomeGridItem calcName="FD Maturity Calculator" path="/fdmaturitycalc"/>
             <HomeGridItem calcName="RD Maturity Calculator" path="/rdmaturitycalc"/>
+            <HomeGridItem calcName="Loan Repayment Calculator" path="/loanrepaymentcalc"/>
+            <HomeGridItem calcName="Savings Calculator" path="/savingscalc"/>
+            <HomeGridItem calcName="Expense Tracker" path="/expensetracker"/>
+            <HomeGridItem calcName="Currency Converter" path="/currencyconverter"/>
+            <HomeGridItem calcName="Profit Margin Calculator" path="/profitmargincalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>
@@ -59,6 +100,7 @@ export default function Home() {
             <HomeGridItem calcName="BMR" path="/bmr"/>
             <HomeGridItem calcName="Body Fat" path="/bodyfat"/>
             <HomeGridItem calcName="Age Calculator" path="/agecalculator"/>
+            <HomeGridItem calcName="Pregnancy Due Date Calculator" path="/pregnancyduedatecalc"/>
         </Grid>
         <br/>
     </Container>
