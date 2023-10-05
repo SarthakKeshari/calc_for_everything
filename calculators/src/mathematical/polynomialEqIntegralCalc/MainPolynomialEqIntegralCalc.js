@@ -55,11 +55,7 @@ function MainPolynomialEqIntegralCalc() {
         let cst;
         if (s[0] === "x") {
           cst = 0.5;
-<<<<<<< HEAD
-        } else {
-=======
         } else  {
->>>>>>> aa3e1f07229a87b5c7f3de650747f1583cb5472c
           let idx = s.indexOf("x");
           cst = Number(s.slice(0,idx))/2;
           console.log(cst)
