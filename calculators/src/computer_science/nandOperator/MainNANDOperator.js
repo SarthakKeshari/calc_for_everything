@@ -12,9 +12,8 @@ function MainNANDOperator(){
         if(field>0){
             let ans = parseInt(fieldValues[0],2)
             for(let i=1;i<field;i++){
-                ans = ans & parseInt(fieldValues[i],2)
+                ans = ~(ans & parseInt(fieldValues[i],2));
             }
-            ans=~ans;
             setDecans(ans)
             setBinans(ans.toString(2))
         }
@@ -22,7 +21,7 @@ function MainNANDOperator(){
             setBinans(0)
             setDecans(0)
         }
-    },[fieldValues]);
+    },[fieldValues,field]);
     const handleFieldChange = (index, value) => {
         const updatedFieldValues = [...fieldValues];
         updatedFieldValues[index] = value;
