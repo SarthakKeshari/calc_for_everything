@@ -69,6 +69,13 @@ import MainCodeTimeComplexityCalc from './computer_science/codeTimeComplexityCal
 import MainPercentileCalc from './mathematical/percentileCalc/MainPercentileCalc';
 import MainCoPrimeFinder from './mathematical/coPrimeFinder/MainCoPrimeFinder';
 import MainMolecularWeightCalc from './chemistry/molecularWeightCalc/MainMolecularWeightCalc';
+<<<<<<< HEAD
+=======
+import MainProfitMarginCalc from './finance/profitMarginCalc/MainProfitMarginCalc';
+import MainSimpleOnScreenCalc from './computer_science/simpleOnScreenCalc/MainSimpleOnScreenCalc';
+import MainAdvOnScreenCalc from './computer_science/advOnScreenCalc/MainAdvOnScreenCalc';
+import MainPolynomialEqDifferentialCalc from './mathematical/polynomialEqDifferentialCalc/MainPolynomialEqDifferentialCalc';
+>>>>>>> 5f911582ad7ee032acfcb58e4c5de7863bf99688
 import MainPolynomialEqIntegralCalc from './mathematical/polynomialEqIntegralCalc/MainPolynomialEqIntegralCalc';
 
 function App() {
@@ -104,6 +111,8 @@ function App() {
             <Route path="infixtopostandprecalc" element={<MainInfixToPostAndPreCalc />} />
             <Route path="postandpretoinfixcalc" element={<MainPostAndPreToInfixCalc />} />
             <Route path="codetimecomplexitycalc" element={<MainCodeTimeComplexityCalc />} />
+            <Route path="simpleonscreencalc" element={<MainSimpleOnScreenCalc />} />
+            <Route path="advonscreencalc" element={<MainAdvOnScreenCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -127,6 +136,8 @@ function App() {
             <Route path="workandtimecalculator" element={<MainWorkAndTimeCalculator />} />
             <Route path="colinearpointsfinder" element={<MainCoLinearPointsFinder />} />
             <Route path="groupingpointsonsamesideofline" element={<MainPointsOnSameSideOfLineFinder />} />
+            <Route path="polynomialeqdifferentialcalc" element={<MainPolynomialEqDifferentialCalc />} />
+            <Route path="polynomialeqintegralcalc" element={<MainPolynomialEqIntegralCalc />} />
             <Route path="lcmcalc" element={<MainLCMCalc />} />
             <Route path="hcfcalc" element={<MainHCFCalc />} />
             <Route path="angletypeclassifier" element={<MainAngleTypeClassifier />} />
@@ -146,6 +157,7 @@ function App() {
             <Route path="savingscalc" element={<MainSavingsCalc />} />
             <Route path="expensetracker" element={<MainExpenseTracker />} />
             <Route path="currencyconverter" element={<MainCurrencyConverter />} />
+            <Route path="profitmargincalc" element={<MainProfitMarginCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
