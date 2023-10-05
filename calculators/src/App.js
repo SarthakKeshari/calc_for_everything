@@ -54,8 +54,27 @@ import MainWorkAndTimeCalculator from './mathematical/workAndTimeCalc/MainWorkAn
 import MainCoLinearPointsFinder from './mathematical/coLinearPointsFinder/MainCoLinearPointsFinder';
 import MainPointsOnSameSideOfLineFinder from './mathematical/pointsOnSameSideOfLineFinder/MainPointsOnSameSideOfLineFinder';
 import MainMLModelPerformanceEvaluationCalculator from './computer_science/mLModelPerformanceEvaluationCalculator/MainMLModelPerformanceEvaluationCalculator';
-import PostPreToIn from './computer_science/postAndPreToInfixCalc/PostPreToIn';
-
+import MainLCMCalc from './mathematical/lcmCalc/MainLCMCalc';
+import MainHCFCalc from './mathematical/hcfCalc/MainHCFCalc';
+import MainAngleTypeClassifier from './mathematical/angleTypeClassifier/MainAngleTypeClassifier';
+import MainFactorialCalc from './computer_science/factorialCalc/MainFactorialCalc';
+import MainTrignometricValueCalc from './mathematical/trignometricValueCalc/MainTrignometricValueCalc';
+import MainInfixToPostAndPreCalc from './computer_science/infixToPostAndPreCalc/MainInfixToPostAndPreCalc';
+import MainPostAndPreToInfixCalc from './computer_science/postAndPreToInfixCalc/MainPostAndPreToInfixCalc';
+import MainChemicalEqBalancer from './chemistry/chemicalEqBalancer/MainChemicalEqBalancer';
+import MainChemicalKineticsCalc from './chemistry/chemicalKineticsCalc/MainChemicalKineticsCalc';
+import MainNOROperator from './computer_science/norOperator/MainNOROperator';
+import MainNANDOperator from './computer_science/nandOperator/MainNANDOperator';
+import MainCodeTimeComplexityCalc from './computer_science/codeTimeComplexityCalc/MainCodeTimeComplexityCalc';
+import MainPercentileCalc from './mathematical/percentileCalc/MainPercentileCalc';
+import MainCoPrimeFinder from './mathematical/coPrimeFinder/MainCoPrimeFinder';
+import MainMolecularWeightCalc from './chemistry/molecularWeightCalc/MainMolecularWeightCalc';
+import MainProfitMarginCalc from './finance/profitMarginCalc/MainProfitMarginCalc';
+import MainSimpleOnScreenCalc from './computer_science/simpleOnScreenCalc/MainSimpleOnScreenCalc';
+import MainAdvOnScreenCalc from './computer_science/advOnScreenCalc/MainAdvOnScreenCalc';
+import MainPolynomialEqDifferentialCalc from './mathematical/polynomialEqDifferentialCalc/MainPolynomialEqDifferentialCalc';
+import MainPolynomialEqIntegralCalc from './mathematical/polynomialEqIntegralCalc/MainPolynomialEqIntegralCalc';
+import MainPostPreToInfix from './computer_science/postAndPreToInfixCalc/PostPreToIn';
 
 function App() {
   return (
@@ -81,10 +100,18 @@ function App() {
             <Route path="andoperator" element={<MainANDOperator />} />
             <Route path="oroperator" element={<MainOROperator />} />
             <Route path="xoroperator" element={<MainXOROperator />} />
+            <Route path="noroperator" element={<MainNOROperator />} />
+            <Route path="nandoperator" element={<MainNANDOperator />} />
             <Route path="searchingvisualizer" element={<MainSearchingVisualizer />} />
             <Route path="sortingvisualizer" element={<MainSortingVisualizer />} />
             <Route path="mlmodelperformanceevaluationcalculator" element={<MainMLModelPerformanceEvaluationCalculator />} />
-            <Route path="postpretoin" element={<PostPreToIn/>}/>
+            <Route path="factorialcalc" element={<MainFactorialCalc />} />
+            <Route path="infixtopostandprecalc" element={<MainInfixToPostAndPreCalc />} />
+            <Route path="postandpretoinfixcalc" element={<MainPostAndPreToInfixCalc />} />
+            <Route path="codetimecomplexitycalc" element={<MainCodeTimeComplexityCalc />} />
+            <Route path="simpleonscreencalc" element={<MainSimpleOnScreenCalc />} />
+            <Route path="advonscreencalc" element={<MainAdvOnScreenCalc />} />
+            <Route path="postpretoin" element={<MainPostPreToInfix/>}/>
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -108,9 +135,19 @@ function App() {
             <Route path="workandtimecalculator" element={<MainWorkAndTimeCalculator />} />
             <Route path="colinearpointsfinder" element={<MainCoLinearPointsFinder />} />
             <Route path="groupingpointsonsamesideofline" element={<MainPointsOnSameSideOfLineFinder />} />
-            
+            <Route path="polynomialeqdifferentialcalc" element={<MainPolynomialEqDifferentialCalc />} />
+            <Route path="polynomialeqintegralcalc" element={<MainPolynomialEqIntegralCalc />} />
+            <Route path="lcmcalc" element={<MainLCMCalc />} />
+            <Route path="hcfcalc" element={<MainHCFCalc />} />
+            <Route path="angletypeclassifier" element={<MainAngleTypeClassifier />} />
+            <Route path="trignometricvaluecalc" element={<MainTrignometricValueCalc />} />
+            <Route path="percentilecalc" element={<MainPercentileCalc />} />
+            <Route path="coprimefinder" element={<MainCoPrimeFinder />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
+            <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
+            <Route path="chemicalkineticscalc" element={<MainChemicalKineticsCalc />} />
+            <Route path="molecularweightcalc" element={<MainMolecularWeightCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
@@ -118,6 +155,7 @@ function App() {
             <Route path="savingscalc" element={<MainSavingsCalc />} />
             <Route path="expensetracker" element={<MainExpenseTracker />} />
             <Route path="currencyconverter" element={<MainCurrencyConverter />} />
+            <Route path="profitmargincalc" element={<MainProfitMarginCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />

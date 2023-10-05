@@ -80,7 +80,7 @@ class MainPointsOnSameSideOfLineFinder extends Component {
     };
 
     render() {
-        const { line, points, x1, y1, x2, y2, x, y, results, graphData } = this.state;
+        const { x1, y1, x2, y2, x, y, results, graphData } = this.state;
 
         return (
             <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: "10" }}>

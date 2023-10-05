@@ -2,19 +2,19 @@ import React, { useEffect, useState } from 'react';
 import { Container, Divider, Input, Typography } from '@mui/material';
 import CopyValue from '../../components/CopyValue';
 
-function MainOROperator(){
+function MainNANDOperator(){
     const [field,setField] = useState(0)
     const [decans,setDecans] = useState(0)
     const [binans,setBinans] = useState(0)
     const [fieldValues, setFieldValues] = useState([]);
     useEffect(()=>{
         console.log(fieldValues)
-        if(field>0)
-        {
+        if(field>0){
             let ans = parseInt(fieldValues[0],2)
             for(let i=1;i<field;i++){
-                ans = ans | parseInt(fieldValues[i],2)
+                ans = ans & parseInt(fieldValues[i],2)
             }
+            ans=~ans;
             setDecans(ans)
             setBinans(ans.toString(2))
         }
@@ -48,7 +48,7 @@ function MainOROperator(){
       };
     return(
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>OR Operator</Typography>
+            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>NAND Operator</Typography>
             <hr/>
             <br/>
                 <Container sx={{display:"flex", flexDirection:"column"}}>
@@ -86,4 +86,4 @@ function MainOROperator(){
     )
 }
 
-export default MainOROperator;
+export default MainNANDOperator;
