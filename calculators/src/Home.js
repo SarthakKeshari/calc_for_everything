@@ -27,6 +27,7 @@ export default function Home() {
             <HomeGridItem calcName="Searching Visualizer" path="/searchingvisualizer"/>
             <HomeGridItem calcName="Sorting Visualizer" path="/sortingvisualizer"/>
             <HomeGridItem calcName="ML Model Performance Evaluation Calculator" path="/mlmodelperformanceevaluationcalculator"/>
+            <HomeGridItem calcName="prefix, postfix to infix" path="/postpretoin"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
