@@ -72,6 +72,8 @@ import MainMolecularWeightCalc from './chemistry/molecularWeightCalc/MainMolecul
 import MainProfitMarginCalc from './finance/profitMarginCalc/MainProfitMarginCalc';
 import MainSimpleOnScreenCalc from './computer_science/simpleOnScreenCalc/MainSimpleOnScreenCalc';
 import MainAdvOnScreenCalc from './computer_science/advOnScreenCalc/MainAdvOnScreenCalc';
+import MainPolynomialEqDifferentialCalc from './mathematical/polynomialEqDifferentialCalc/MainPolynomialEqDifferentialCalc';
+import MainPolynomialEqIntegralCalc from './mathematical/polynomialEqIntegralCalc/MainPolynomialEqIntegralCalc';
 
 function App() {
   return (
@@ -131,6 +133,8 @@ function App() {
             <Route path="workandtimecalculator" element={<MainWorkAndTimeCalculator />} />
             <Route path="colinearpointsfinder" element={<MainCoLinearPointsFinder />} />
             <Route path="groupingpointsonsamesideofline" element={<MainPointsOnSameSideOfLineFinder />} />
+            <Route path="polynomialeqdifferentialcalc" element={<MainPolynomialEqDifferentialCalc />} />
+            <Route path="polynomialeqintegralcalc" element={<MainPolynomialEqIntegralCalc />} />
             <Route path="lcmcalc" element={<MainLCMCalc />} />
             <Route path="hcfcalc" element={<MainHCFCalc />} />
             <Route path="angletypeclassifier" element={<MainAngleTypeClassifier />} />
