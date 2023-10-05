@@ -8,7 +8,7 @@ import 'react-dropdown/style.css';
 import './CurrencyApp.css';
 
 
-function MainCurrencyConverter(){
+function MainCurrencyConverter() {
 
     // Initializing all the state variables
     const [info, setInfo] = useState([]);
@@ -17,29 +17,29 @@ function MainCurrencyConverter(){
     const [to, setTo] = useState("inr");
     const [options, setOptions] = useState([]);
     const [output, setOutput] = useState(0);
- 
+
     // Calling the api whenever the dependency changes
     useEffect(() => {
         Axios.get(
-`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${from}.json`)
+            `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${from}.json`)
             .then((res) => {
                 setInfo(res.data[from]);
             })
     }, [from]);
- 
+
     // Calling the convert function whenever
     // a user switches the currency
     useEffect(() => {
         setOptions(Object.keys(info));
         convert();
     }, [info])
- 
+
     // Function to convert the currency
     function convert() {
         var rate = info[to];
         setOutput(input * rate);
     }
- 
+
     // Function to switch between two currency
     function flip() {
         var temp = from;
@@ -47,17 +47,17 @@ function MainCurrencyConverter(){
         setTo(temp);
     }
 
-    return(
-        <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Currency Converter</Typography>
-            <hr/>
-            <br/>
+    return (
+        <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: "10" }}>
+            <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Currency Converter</Typography>
+            <hr />
+            <br />
 
             <div className="container">
                 <div className="left">
                     <h3>Amount</h3>
                     <input type="text"
-                        placeholder="Enter the amount"
+                        placeholder="Number"
                         onChange={(e) => setInput(e.target.value)} />
                 </div>
                 <div className="middle">
@@ -78,10 +78,10 @@ function MainCurrencyConverter(){
                 </div>
             </div>
             <div className="result">
-                <button onClick={() => { convert() }}>Convert</button>
+                <button className="convertButton" onClick={() => { convert() }}>Convert</button>
                 <h2>Converted Amount:</h2>
                 <p>{input + " " + from + " = " + output.toFixed(2) + " " + to}</p>
- 
+
             </div>
 
         </Container>
