@@ -86,6 +86,7 @@ import MainDrugDosageCalc from './health/drugDosageCalc/MainDrugDosageCalc';
 import MainIPv4ToIPv6Calc from './computer_science/iPv4ToiPv6Calc/MainIPv4ToIPv6Calc';
 import MainProfitLossCalc from './mathematical/profitLossCalc/MainProfitLossCalc';
 import MainAPGARScoreCalc from './health/aPGARScoreCalc/MainAPGARScoreCalc';
+import MainColorCodeFormatConverter from './computer_science/colorCodeFormatConverter/MainColorCodeFormatConverter';
 
 function App() {
   return (
@@ -127,6 +128,7 @@ function App() {
             <Route path="quespaperbuilder" element={<MainQuestionPaperBuilder />} />
             <Route path="codeeditorforwebdev" element={<MainCodeEditorWebDev />} />
             <Route path="ipv4toipv6calc" element={<MainIPv4ToIPv6Calc />} />
+            <Route path="colorcodeformatconverter" element={<MainColorCodeFormatConverter />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
