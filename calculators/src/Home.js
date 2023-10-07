@@ -49,6 +49,7 @@ export default function Home() {
             <HomeGridItem calcName="Log and Antilog" path="/logantilog"/>
             <HomeGridItem calcName="BODMAS Solver" path="/bodmassolver"/>
             <HomeGridItem calcName="Quadratic Equation Solver" path="/quadraticequationsolver"/>
+            <HomeGridItem calcName="Polynomial Equation Root Finder" path="/polyeqrootfinder"/>
             <HomeGridItem calcName="Set Operations" path="/setoperations"/>
             <HomeGridItem calcName="Graph Maker" path="/graphmaker"/>
             <HomeGridItem calcName="Quadratic Equation Intersection" path="/quadraticequationintersection"/>

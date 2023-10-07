@@ -77,6 +77,7 @@ import MainPolynomialEqIntegralCalc from './mathematical/polynomialEqIntegralCal
 import MainFormBuilder from './computer_science/formBuilder/MainFormBuilder';
 import MainQuestionPaperBuilder from './computer_science/questionPaperBuilder/MainQuestionPaperBuilder';
 import MainPointsInOnOutOfQuadCurveFinder from './mathematical/pointsInOnOutOfQuadCurveFinder/MainPointsInOnOutOfQuadCurveFinder';
+import MainPolyEqRootFinder from './mathematical/polyEqRootFinder/MainPolyEqRootFinder';
 
 function App() {
   return (
@@ -123,6 +124,7 @@ function App() {
             <Route path="logantilog" element={<MainLogAntilog />} />
             <Route path="bodmassolver" element={<MainBodmasSolver />} />
             <Route path="quadraticequationsolver" element={<MainQuadraticEquationSolver />} />
+            <Route path="polyeqrootfinder" element={<MainPolyEqRootFinder />} />
             <Route path="setoperations" element={<MainSetOperations />} />
             <Route path="graphmaker" element={<MainGraphMaker />} />
             <Route path="quadraticequationintersection" element={<MainQuadraticEquationIntersection />} />
