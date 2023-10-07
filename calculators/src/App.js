@@ -87,6 +87,7 @@ import MainIPv4ToIPv6Calc from './computer_science/iPv4ToiPv6Calc/MainIPv4ToIPv6
 import MainProfitLossCalc from './mathematical/profitLossCalc/MainProfitLossCalc';
 import MainAPGARScoreCalc from './health/aPGARScoreCalc/MainAPGARScoreCalc';
 import MainColorCodeFormatConverter from './computer_science/colorCodeFormatConverter/MainColorCodeFormatConverter';
+import MainDistanceFormula from './mathematical/distanceFormula/MainDistanceFormula';
 
 function App() {
   return (
@@ -165,6 +166,7 @@ function App() {
             <Route path="coprimefinder" element={<MainCoPrimeFinder />} />
             <Route path="metricunitconverter" element={<MainMetricUnitConverter />} />
             <Route path="profitlosscalc" element={<MainProfitLossCalc />} />
+            <Route path="distancecalc" element={<MainDistanceFormula />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />

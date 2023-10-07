@@ -81,6 +81,7 @@ export default function Home() {
             <HomeGridItem calcName="Co-Prime Finder" path="/coprimefinder"/>
             <HomeGridItem calcName="Metric Unit Converter" path="/metricunitconverter"/>
             <HomeGridItem calcName="Profit Loss Calculator" path="/profitlosscalc"/>
+            <HomeGridItem calcName="Distance Calculator" path="/distancecalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
