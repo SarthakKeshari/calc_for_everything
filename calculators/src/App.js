@@ -79,6 +79,7 @@ import MainQuestionPaperBuilder from './computer_science/questionPaperBuilder/Ma
 import MainPointsInOnOutOfQuadCurveFinder from './mathematical/pointsInOnOutOfQuadCurveFinder/MainPointsInOnOutOfQuadCurveFinder';
 import MainPolyEqRootFinder from './mathematical/polyEqRootFinder/MainPolyEqRootFinder';
 import MainCodeEditorWebDev from './computer_science/codeEditorWebDev/MainCodeEditorWebDev';
+import MainFracToDecAndDecToFrac from './computer_science/fracToDecAndDecToFrac/MainFracToDecAndDecToFrac';
 
 function App() {
   return (
@@ -95,6 +96,7 @@ function App() {
             <Route path="dechexandhexdec" element={<MainDecToHexAndHexToDec />} />
             <Route path="hexoctandocthex" element={<MainHexToOctAndOctToHex />} />
             <Route path="decoctandoctdec" element={<MainDecToOctAndOctToDec />} />
+            <Route path="fracdecandDecfrac" element={<MainFracToDecAndDecToFrac />} />
             <Route path="asciitextbinAndbinasciitext" element={<MainAsciiTextToBinAndBinToAsciiText />} />
             <Route path="binaryadder" element={<MainBinaryAdder />} />
             <Route path="binarysubtractor" element={<MainBinarySubtractor />} />
