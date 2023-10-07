@@ -90,6 +90,7 @@ import MainColorCodeFormatConverter from './computer_science/colorCodeFormatConv
 import MainDistanceFormula from './mathematical/distanceFormula/MainDistanceFormula';
 import MainWaterIntakeCalculator from './health/waterIntakeCalculator/MainWaterIntakeCalculator';
 import MainBayesianProbabilityCalculator from './mathematical/bayesianProbabilityCalc/MainBayesianProbabilityCalculator';
+import MainTriangleTypeFinder from './mathematical/triangleTypeFinder/MainTriangleTypeFinder';
 
 function App() {
   return (
@@ -170,6 +171,7 @@ function App() {
             <Route path="profitlosscalc" element={<MainProfitLossCalc />} />
             <Route path="distancecalc" element={<MainDistanceFormula />} />
             <Route path="bayesianprobabilitycalculator" element={<MainBayesianProbabilityCalculator />} />
+            <Route path="triangletypefinder" element={<MainTriangleTypeFinder />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
