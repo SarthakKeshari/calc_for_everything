@@ -76,6 +76,7 @@ import MainPolynomialEqDifferentialCalc from './mathematical/polynomialEqDiffere
 import MainPolynomialEqIntegralCalc from './mathematical/polynomialEqIntegralCalc/MainPolynomialEqIntegralCalc';
 import MainFormBuilder from './computer_science/formBuilder/MainFormBuilder';
 import MainQuestionPaperBuilder from './computer_science/questionPaperBuilder/MainQuestionPaperBuilder';
+import MainPointsInOnOutOfQuadCurveFinder from './mathematical/pointsInOnOutOfQuadCurveFinder/MainPointsInOnOutOfQuadCurveFinder';
 
 function App() {
   return (
@@ -137,6 +138,7 @@ function App() {
             <Route path="workandtimecalculator" element={<MainWorkAndTimeCalculator />} />
             <Route path="colinearpointsfinder" element={<MainCoLinearPointsFinder />} />
             <Route path="groupingpointsonsamesideofline" element={<MainPointsOnSameSideOfLineFinder />} />
+            <Route path="groupingpointsoninsideoutsidequadraticcurve" element={<MainPointsInOnOutOfQuadCurveFinder />} />
             <Route path="polynomialeqdifferentialcalc" element={<MainPolynomialEqDifferentialCalc />} />
             <Route path="polynomialeqintegralcalc" element={<MainPolynomialEqIntegralCalc />} />
             <Route path="lcmcalc" element={<MainLCMCalc />} />
