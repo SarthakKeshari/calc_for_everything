@@ -82,6 +82,7 @@ import MainCodeEditorWebDev from './computer_science/codeEditorWebDev/MainCodeEd
 import MainFracToDecAndDecToFrac from './computer_science/fracToDecAndDecToFrac/MainFracToDecAndDecToFrac';
 import MainMetricUnitConverter from './mathematical/metricUnitConverter/MainMetricUnitConverter';
 import MainPercentageCalc from './mathematical/percentageCalc/MainPercentageCalc';
+import MainDrugDosageCalc from './health/drugdosageCalc/MainDrugdosageCalc';
 
 function App() {
   return (
@@ -176,6 +177,7 @@ function App() {
             <Route path="bodyfat" element={<MainBodyFat />} />
             <Route path="agecalculator" element={<MainAgeCalculator />} />
             <Route path="pregnancyduedatecalc" element={<MainPregnancyDueDateCalc />} />
+            <Route path="drugdosagecalc" element={<MainDrugDosageCalc />} />
           </Route>
         </Routes>
       </BrowserRouter>

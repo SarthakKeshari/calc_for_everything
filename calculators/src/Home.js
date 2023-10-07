@@ -109,6 +109,7 @@ export default function Home() {
             <HomeGridItem calcName="Body Fat" path="/bodyfat"/>
             <HomeGridItem calcName="Age Calculator" path="/agecalculator"/>
             <HomeGridItem calcName="Pregnancy Due Date Calculator" path="/pregnancyduedatecalc"/>
+            <HomeGridItem calcName="Drug Dosage Calculator" path="/drugdosagecalc"/>
         </Grid>
         <br/>
     </Container>
