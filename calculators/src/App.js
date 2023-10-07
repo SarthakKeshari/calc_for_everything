@@ -85,6 +85,7 @@ import MainPercentageCalc from './mathematical/percentageCalc/MainPercentageCalc
 import MainDrugDosageCalc from './health/drugDosageCalc/MainDrugDosageCalc';
 import MainIPv4ToIPv6Calc from './computer_science/iPv4ToiPv6Calc/MainIPv4ToIPv6Calc';
 import MainProfitLossCalc from './mathematical/profitLossCalc/MainProfitLossCalc';
+import MainAPGARScoreCalc from './health/aPGARScoreCalc/MainAPGARScoreCalc';
 
 function App() {
   return (
@@ -182,6 +183,7 @@ function App() {
             <Route path="agecalculator" element={<MainAgeCalculator />} />
             <Route path="pregnancyduedatecalc" element={<MainPregnancyDueDateCalc />} />
             <Route path="drugdosagecalc" element={<MainDrugDosageCalc />} />
+            <Route path="apgarscorecalc" element={<MainAPGARScoreCalc />} />
           </Route>
         </Routes>
       </BrowserRouter>

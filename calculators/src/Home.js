@@ -112,6 +112,7 @@ export default function Home() {
             <HomeGridItem calcName="Age Calculator" path="/agecalculator"/>
             <HomeGridItem calcName="Pregnancy Due Date Calculator" path="/pregnancyduedatecalc"/>
             <HomeGridItem calcName="Drug Dosage Calculator" path="/drugdosagecalc"/>
+            <HomeGridItem calcName="APGAR Score Calculator" path="/apgarscorecalc"/>
         </Grid>
         <br/>
     </Container>
