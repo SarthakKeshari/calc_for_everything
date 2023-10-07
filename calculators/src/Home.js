@@ -35,6 +35,8 @@ export default function Home() {
             <HomeGridItem calcName="Code Time Complexity Calculator" path="/codetimecomplexitycalc"/>
             <HomeGridItem calcName="Simple On-Screen Calculator" path="/simpleonscreencalc"/>
             <HomeGridItem calcName="Advance On-Screen Calculator" path="/advonscreencalc"/>
+            <HomeGridItem calcName="Form Buider" path="/formbuilder"/>
+            <HomeGridItem calcName="Question Paper Buider" path="/quespaperbuilder"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>

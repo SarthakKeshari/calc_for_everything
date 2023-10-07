@@ -74,6 +74,8 @@ import MainSimpleOnScreenCalc from './computer_science/simpleOnScreenCalc/MainSi
 import MainAdvOnScreenCalc from './computer_science/advOnScreenCalc/MainAdvOnScreenCalc';
 import MainPolynomialEqDifferentialCalc from './mathematical/polynomialEqDifferentialCalc/MainPolynomialEqDifferentialCalc';
 import MainPolynomialEqIntegralCalc from './mathematical/polynomialEqIntegralCalc/MainPolynomialEqIntegralCalc';
+import MainFormBuilder from './computer_science/formBuilder/MainFormBuilder';
+import MainQuestionPaperBuilder from './computer_science/questionPaperBuilder/MainQuestionPaperBuilder';
 
 function App() {
   return (
@@ -110,6 +112,8 @@ function App() {
             <Route path="codetimecomplexitycalc" element={<MainCodeTimeComplexityCalc />} />
             <Route path="simpleonscreencalc" element={<MainSimpleOnScreenCalc />} />
             <Route path="advonscreencalc" element={<MainAdvOnScreenCalc />} />
+            <Route path="formbuilder" element={<MainFormBuilder />} />
+            <Route path="quespaperbuilder" element={<MainQuestionPaperBuilder />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
