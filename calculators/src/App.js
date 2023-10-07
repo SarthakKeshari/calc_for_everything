@@ -83,6 +83,7 @@ import MainFracToDecAndDecToFrac from './computer_science/fracToDecAndDecToFrac/
 import MainMetricUnitConverter from './mathematical/metricUnitConverter/MainMetricUnitConverter';
 import MainPercentageCalc from './mathematical/percentageCalc/MainPercentageCalc';
 import MainDrugDosageCalc from './health/drugdosageCalc/MainDrugdosageCalc';
+import MainIPv4ToIPv6Calc from './computer_science/iPv4ToiPv6Calc/MainIPv4ToIPv6Calc';
 
 function App() {
   return (
@@ -123,6 +124,7 @@ function App() {
             <Route path="formbuilder" element={<MainFormBuilder />} />
             <Route path="quespaperbuilder" element={<MainQuestionPaperBuilder />} />
             <Route path="codeeditorforwebdev" element={<MainCodeEditorWebDev />} />
+            <Route path="ipv4toipv6calc" element={<MainIPv4ToIPv6Calc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />

@@ -39,6 +39,7 @@ export default function Home() {
             <HomeGridItem calcName="Form Buider" path="/formbuilder"/>
             <HomeGridItem calcName="Question Paper Buider" path="/quespaperbuilder"/>
             <HomeGridItem calcName="Code Editor for Web Dev" path="/codeeditorforwebdev"/>
+            <HomeGridItem calcName="IPv4 To IPv6 Calculator" path="/ipv4toipv6calc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
