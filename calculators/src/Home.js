@@ -76,6 +76,7 @@ export default function Home() {
             <HomeGridItem calcName="Trignometric Value Calculator" path="/trignometricvaluecalc"/>
             <HomeGridItem calcName="Percentile Calculator" path="/percentilecalc"/>
             <HomeGridItem calcName="Co-Prime Finder" path="/coprimefinder"/>
+            <HomeGridItem calcName="Metric Unit Converter" path="/metricunitconverter"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
