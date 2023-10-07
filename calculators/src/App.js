@@ -88,6 +88,7 @@ import MainProfitLossCalc from './mathematical/profitLossCalc/MainProfitLossCalc
 import MainAPGARScoreCalc from './health/aPGARScoreCalc/MainAPGARScoreCalc';
 import MainColorCodeFormatConverter from './computer_science/colorCodeFormatConverter/MainColorCodeFormatConverter';
 import MainDistanceFormula from './mathematical/distanceFormula/MainDistanceFormula';
+import MainWaterIntakeCalculator from './health/waterIntakeCalculator/MainWaterIntakeCalculator';
 
 function App() {
   return (
@@ -188,6 +189,7 @@ function App() {
             <Route path="pregnancyduedatecalc" element={<MainPregnancyDueDateCalc />} />
             <Route path="drugdosagecalc" element={<MainDrugDosageCalc />} />
             <Route path="apgarscorecalc" element={<MainAPGARScoreCalc />} />
+            <Route path="waterintakecalc" element={<MainWaterIntakeCalculator />} />
           </Route>
         </Routes>
       </BrowserRouter>
