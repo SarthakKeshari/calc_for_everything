@@ -72,6 +72,22 @@ import MainMolecularWeightCalc from './chemistry/molecularWeightCalc/MainMolecul
 import MainProfitMarginCalc from './finance/profitMarginCalc/MainProfitMarginCalc';
 import MainSimpleOnScreenCalc from './computer_science/simpleOnScreenCalc/MainSimpleOnScreenCalc';
 import MainAdvOnScreenCalc from './computer_science/advOnScreenCalc/MainAdvOnScreenCalc';
+import MainPolynomialEqDifferentialCalc from './mathematical/polynomialEqDifferentialCalc/MainPolynomialEqDifferentialCalc';
+import MainPolynomialEqIntegralCalc from './mathematical/polynomialEqIntegralCalc/MainPolynomialEqIntegralCalc';
+import MainFormBuilder from './computer_science/formBuilder/MainFormBuilder';
+import MainQuestionPaperBuilder from './computer_science/questionPaperBuilder/MainQuestionPaperBuilder';
+import MainPointsInOnOutOfQuadCurveFinder from './mathematical/pointsInOnOutOfQuadCurveFinder/MainPointsInOnOutOfQuadCurveFinder';
+import MainPolyEqRootFinder from './mathematical/polyEqRootFinder/MainPolyEqRootFinder';
+import MainCodeEditorWebDev from './computer_science/codeEditorWebDev/MainCodeEditorWebDev';
+import MainFracToDecAndDecToFrac from './computer_science/fracToDecAndDecToFrac/MainFracToDecAndDecToFrac';
+import MainMetricUnitConverter from './mathematical/metricUnitConverter/MainMetricUnitConverter';
+import MainPercentageCalc from './mathematical/percentageCalc/MainPercentageCalc';
+import MainDrugDosageCalc from './health/drugDosageCalc/MainDrugDosageCalc';
+import MainIPv4ToIPv6Calc from './computer_science/iPv4ToiPv6Calc/MainIPv4ToIPv6Calc';
+import MainProfitLossCalc from './mathematical/profitLossCalc/MainProfitLossCalc';
+import MainAPGARScoreCalc from './health/aPGARScoreCalc/MainAPGARScoreCalc';
+import MainColorCodeFormatConverter from './computer_science/colorCodeFormatConverter/MainColorCodeFormatConverter';
+import MainDistanceFormula from './mathematical/distanceFormula/MainDistanceFormula';
 
 function App() {
   return (
@@ -88,6 +104,7 @@ function App() {
             <Route path="dechexandhexdec" element={<MainDecToHexAndHexToDec />} />
             <Route path="hexoctandocthex" element={<MainHexToOctAndOctToHex />} />
             <Route path="decoctandoctdec" element={<MainDecToOctAndOctToDec />} />
+            <Route path="fracdecandDecfrac" element={<MainFracToDecAndDecToFrac />} />
             <Route path="asciitextbinAndbinasciitext" element={<MainAsciiTextToBinAndBinToAsciiText />} />
             <Route path="binaryadder" element={<MainBinaryAdder />} />
             <Route path="binarysubtractor" element={<MainBinarySubtractor />} />
@@ -108,6 +125,11 @@ function App() {
             <Route path="codetimecomplexitycalc" element={<MainCodeTimeComplexityCalc />} />
             <Route path="simpleonscreencalc" element={<MainSimpleOnScreenCalc />} />
             <Route path="advonscreencalc" element={<MainAdvOnScreenCalc />} />
+            <Route path="formbuilder" element={<MainFormBuilder />} />
+            <Route path="quespaperbuilder" element={<MainQuestionPaperBuilder />} />
+            <Route path="codeeditorforwebdev" element={<MainCodeEditorWebDev />} />
+            <Route path="ipv4toipv6calc" element={<MainIPv4ToIPv6Calc />} />
+            <Route path="colorcodeformatconverter" element={<MainColorCodeFormatConverter />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -116,6 +138,7 @@ function App() {
             <Route path="logantilog" element={<MainLogAntilog />} />
             <Route path="bodmassolver" element={<MainBodmasSolver />} />
             <Route path="quadraticequationsolver" element={<MainQuadraticEquationSolver />} />
+            <Route path="polyeqrootfinder" element={<MainPolyEqRootFinder />} />
             <Route path="setoperations" element={<MainSetOperations />} />
             <Route path="graphmaker" element={<MainGraphMaker />} />
             <Route path="quadraticequationintersection" element={<MainQuadraticEquationIntersection />} />
@@ -131,12 +154,19 @@ function App() {
             <Route path="workandtimecalculator" element={<MainWorkAndTimeCalculator />} />
             <Route path="colinearpointsfinder" element={<MainCoLinearPointsFinder />} />
             <Route path="groupingpointsonsamesideofline" element={<MainPointsOnSameSideOfLineFinder />} />
+            <Route path="groupingpointsoninsideoutsidequadraticcurve" element={<MainPointsInOnOutOfQuadCurveFinder />} />
+            <Route path="polynomialeqdifferentialcalc" element={<MainPolynomialEqDifferentialCalc />} />
+            <Route path="polynomialeqintegralcalc" element={<MainPolynomialEqIntegralCalc />} />
             <Route path="lcmcalc" element={<MainLCMCalc />} />
             <Route path="hcfcalc" element={<MainHCFCalc />} />
             <Route path="angletypeclassifier" element={<MainAngleTypeClassifier />} />
             <Route path="trignometricvaluecalc" element={<MainTrignometricValueCalc />} />
+            <Route path="percentagecalc" element={<MainPercentageCalc />} />
             <Route path="percentilecalc" element={<MainPercentileCalc />} />
             <Route path="coprimefinder" element={<MainCoPrimeFinder />} />
+            <Route path="metricunitconverter" element={<MainMetricUnitConverter />} />
+            <Route path="profitlosscalc" element={<MainProfitLossCalc />} />
+            <Route path="distancecalc" element={<MainDistanceFormula />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
@@ -156,6 +186,8 @@ function App() {
             <Route path="bodyfat" element={<MainBodyFat />} />
             <Route path="agecalculator" element={<MainAgeCalculator />} />
             <Route path="pregnancyduedatecalc" element={<MainPregnancyDueDateCalc />} />
+            <Route path="drugdosagecalc" element={<MainDrugDosageCalc />} />
+            <Route path="apgarscorecalc" element={<MainAPGARScoreCalc />} />
           </Route>
         </Routes>
       </BrowserRouter>
