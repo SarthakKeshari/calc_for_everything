@@ -84,6 +84,7 @@ import MainMetricUnitConverter from './mathematical/metricUnitConverter/MainMetr
 import MainPercentageCalc from './mathematical/percentageCalc/MainPercentageCalc';
 import MainDrugDosageCalc from './health/drugdosageCalc/MainDrugdosageCalc';
 import MainIPv4ToIPv6Calc from './computer_science/iPv4ToiPv6Calc/MainIPv4ToIPv6Calc';
+import MainProfitLossCalc from './mathematical/profitLossCalc/MainProfitLossCalc';
 
 function App() {
   return (
@@ -160,6 +161,7 @@ function App() {
             <Route path="percentilecalc" element={<MainPercentileCalc />} />
             <Route path="coprimefinder" element={<MainCoPrimeFinder />} />
             <Route path="metricunitconverter" element={<MainMetricUnitConverter />} />
+            <Route path="profitlosscalc" element={<MainProfitLossCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
