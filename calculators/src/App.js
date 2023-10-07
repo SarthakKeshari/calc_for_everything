@@ -91,6 +91,7 @@ import MainDistanceFormula from './mathematical/distanceFormula/MainDistanceForm
 import MainWaterIntakeCalculator from './health/waterIntakeCalculator/MainWaterIntakeCalculator';
 import MainBayesianProbabilityCalculator from './mathematical/bayesianProbabilityCalc/MainBayesianProbabilityCalculator';
 import MainTriangleTypeFinder from './mathematical/triangleTypeFinder/MainTriangleTypeFinder';
+import MainFractionSortingCalculator from './mathematical/fractionSortingCalculator/MainFractionSortingCalculator';
 
 function App() {
   return (
@@ -172,6 +173,7 @@ function App() {
             <Route path="distancecalc" element={<MainDistanceFormula />} />
             <Route path="bayesianprobabilitycalculator" element={<MainBayesianProbabilityCalculator />} />
             <Route path="triangletypefinder" element={<MainTriangleTypeFinder />} />
+            <Route path="fractionsortingcalculator" element={<MainFractionSortingCalculator />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
