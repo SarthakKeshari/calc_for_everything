@@ -82,7 +82,7 @@ import MainCodeEditorWebDev from './computer_science/codeEditorWebDev/MainCodeEd
 import MainFracToDecAndDecToFrac from './computer_science/fracToDecAndDecToFrac/MainFracToDecAndDecToFrac';
 import MainMetricUnitConverter from './mathematical/metricUnitConverter/MainMetricUnitConverter';
 import MainPercentageCalc from './mathematical/percentageCalc/MainPercentageCalc';
-import MainDrugDosageCalc from './health/drugdosageCalc/MainDrugdosageCalc';
+import MainDrugDosageCalc from './health/drugDosageCalc/MainDrugDosageCalc';
 import MainIPv4ToIPv6Calc from './computer_science/iPv4ToiPv6Calc/MainIPv4ToIPv6Calc';
 import MainProfitLossCalc from './mathematical/profitLossCalc/MainProfitLossCalc';
 
