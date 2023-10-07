@@ -37,6 +37,7 @@ export default function Home() {
             <HomeGridItem calcName="Advance On-Screen Calculator" path="/advonscreencalc"/>
             <HomeGridItem calcName="Form Buider" path="/formbuilder"/>
             <HomeGridItem calcName="Question Paper Buider" path="/quespaperbuilder"/>
+            <HomeGridItem calcName="Code Editor for Web Dev" path="/codeeditorforwebdev"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>

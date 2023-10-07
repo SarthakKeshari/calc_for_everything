@@ -78,6 +78,7 @@ import MainFormBuilder from './computer_science/formBuilder/MainFormBuilder';
 import MainQuestionPaperBuilder from './computer_science/questionPaperBuilder/MainQuestionPaperBuilder';
 import MainPointsInOnOutOfQuadCurveFinder from './mathematical/pointsInOnOutOfQuadCurveFinder/MainPointsInOnOutOfQuadCurveFinder';
 import MainPolyEqRootFinder from './mathematical/polyEqRootFinder/MainPolyEqRootFinder';
+import MainCodeEditorWebDev from './computer_science/codeEditorWebDev/MainCodeEditorWebDev';
 
 function App() {
   return (
@@ -116,6 +117,7 @@ function App() {
             <Route path="advonscreencalc" element={<MainAdvOnScreenCalc />} />
             <Route path="formbuilder" element={<MainFormBuilder />} />
             <Route path="quespaperbuilder" element={<MainQuestionPaperBuilder />} />
+            <Route path="codeeditorforwebdev" element={<MainCodeEditorWebDev />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
