@@ -89,6 +89,7 @@ import MainAPGARScoreCalc from './health/aPGARScoreCalc/MainAPGARScoreCalc';
 import MainColorCodeFormatConverter from './computer_science/colorCodeFormatConverter/MainColorCodeFormatConverter';
 import MainDistanceFormula from './mathematical/distanceFormula/MainDistanceFormula';
 import MainWaterIntakeCalculator from './health/waterIntakeCalculator/MainWaterIntakeCalculator';
+import MainBayesianProbabilityCalculator from './mathematical/bayesianProbabilityCalc/MainBayesianProbabilityCalculator';
 
 function App() {
   return (
@@ -168,6 +169,7 @@ function App() {
             <Route path="metricunitconverter" element={<MainMetricUnitConverter />} />
             <Route path="profitlosscalc" element={<MainProfitLossCalc />} />
             <Route path="distancecalc" element={<MainDistanceFormula />} />
+            <Route path="bayesianprobabilitycalculator" element={<MainBayesianProbabilityCalculator />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
