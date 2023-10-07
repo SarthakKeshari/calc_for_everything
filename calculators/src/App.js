@@ -81,6 +81,7 @@ import MainPolyEqRootFinder from './mathematical/polyEqRootFinder/MainPolyEqRoot
 import MainCodeEditorWebDev from './computer_science/codeEditorWebDev/MainCodeEditorWebDev';
 import MainFracToDecAndDecToFrac from './computer_science/fracToDecAndDecToFrac/MainFracToDecAndDecToFrac';
 import MainMetricUnitConverter from './mathematical/metricUnitConverter/MainMetricUnitConverter';
+import MainPercentageCalc from './mathematical/percentageCalc/MainPercentageCalc';
 
 function App() {
   return (
@@ -152,6 +153,7 @@ function App() {
             <Route path="hcfcalc" element={<MainHCFCalc />} />
             <Route path="angletypeclassifier" element={<MainAngleTypeClassifier />} />
             <Route path="trignometricvaluecalc" element={<MainTrignometricValueCalc />} />
+            <Route path="percentagecalc" element={<MainPercentageCalc />} />
             <Route path="percentilecalc" element={<MainPercentileCalc />} />
             <Route path="coprimefinder" element={<MainCoPrimeFinder />} />
             <Route path="metricunitconverter" element={<MainMetricUnitConverter />} />

@@ -74,6 +74,7 @@ export default function Home() {
             <HomeGridItem calcName="HCF Calculator" path="/hcfcalc"/>
             <HomeGridItem calcName="Angle Type Classifier" path="/angletypeclassifier"/>
             <HomeGridItem calcName="Trignometric Value Calculator" path="/trignometricvaluecalc"/>
+            <HomeGridItem calcName="Percentage Calculator" path="/percentagecalc"/>
             <HomeGridItem calcName="Percentile Calculator" path="/percentilecalc"/>
             <HomeGridItem calcName="Co-Prime Finder" path="/coprimefinder"/>
             <HomeGridItem calcName="Metric Unit Converter" path="/metricunitconverter"/>
