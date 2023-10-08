@@ -88,6 +88,7 @@ export default function Home() {
             <HomeGridItem calcName="Place And Face Value Calculator" path="/placeandfacevaluecalc"/>
             <HomeGridItem calcName="Equating Denominator Of Fraction" path="/equatingdenominatoroffraction"/>
             <HomeGridItem calcName="Table Of A Number" path="/tableofnumber"/>
+            <HomeGridItem calcName="Factors Of A Number" path="/factorsofnumber"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>

@@ -95,6 +95,7 @@ import MainFractionSortingCalculator from './mathematical/fractionSortingCalcula
 import MainPlaceAndFaceValueCalc from './mathematical/placeAndFaceValueCalc/MainPlaceAndFaceValueCalc';
 import MainEquatingDenominatorOfFraction from './mathematical/equatingDenominatorOfFraction/MainEquatingDenominatorOfFraction';
 import MainTableOfNumber from './mathematical/tableOfNumber/MainTableOfNumber';
+import MainFactorsOfNumber from './mathematical/factorsOfNumber/MainFactorsOfNumber';
 
 function App() {
   return (
@@ -180,6 +181,7 @@ function App() {
             <Route path="placeandfacevaluecalc" element={<MainPlaceAndFaceValueCalc/> } />
             <Route path="equatingdenominatoroffraction" element={<MainEquatingDenominatorOfFraction/> } />
             <Route path="tableofnumber" element={<MainTableOfNumber/> } />
+            <Route path="factorsofnumber" element={<MainFactorsOfNumber/> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
