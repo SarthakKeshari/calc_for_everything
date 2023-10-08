@@ -86,6 +86,7 @@ export default function Home() {
             <HomeGridItem calcName="Triangle Type Finder" path="/triangletypefinder"/>
             <HomeGridItem calcName="Fraction Sorting Calculator" path="/fractionsortingcalculator"/>
             <HomeGridItem calcName="Place And Face Value Calculator" path="/placeandfacevaluecalc"/>
+            <HomeGridItem calcName="Equating Denominator Of Fraction" path="/equatingdenominatoroffraction"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>

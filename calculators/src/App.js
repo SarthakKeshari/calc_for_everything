@@ -93,6 +93,7 @@ import MainBayesianProbabilityCalculator from './mathematical/bayesianProbabilit
 import MainTriangleTypeFinder from './mathematical/triangleTypeFinder/MainTriangleTypeFinder';
 import MainFractionSortingCalculator from './mathematical/fractionSortingCalculator/MainFractionSortingCalculator';
 import MainPlaceAndFaceValueCalc from './mathematical/placeAndFaceValueCalc/MainPlaceAndFaceValueCalc';
+import MainEquatingDenominatorOfFraction from './mathematical/equatingDenominatorOfFraction/MainEquatingDenominatorOfFraction';
 
 function App() {
   return (
@@ -176,6 +177,7 @@ function App() {
             <Route path="triangletypefinder" element={<MainTriangleTypeFinder />} />
             <Route path="fractionsortingcalculator" element={<MainFractionSortingCalculator />} />
             <Route path="placeandfacevaluecalc" element={<MainPlaceAndFaceValueCalc/> } />
+            <Route path="equatingdenominatoroffraction" element={<MainEquatingDenominatorOfFraction/> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
