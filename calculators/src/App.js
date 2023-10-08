@@ -92,6 +92,7 @@ import MainWaterIntakeCalculator from './health/waterIntakeCalculator/MainWaterI
 import MainBayesianProbabilityCalculator from './mathematical/bayesianProbabilityCalc/MainBayesianProbabilityCalculator';
 import MainTriangleTypeFinder from './mathematical/triangleTypeFinder/MainTriangleTypeFinder';
 import MainFractionSortingCalculator from './mathematical/fractionSortingCalculator/MainFractionSortingCalculator';
+import MainPlaceAndFaceValueCalc from './mathematical/placeAndFaceValueCalc/MainPlaceAndFaceValueCalc';
 
 function App() {
   return (
@@ -174,6 +175,7 @@ function App() {
             <Route path="bayesianprobabilitycalculator" element={<MainBayesianProbabilityCalculator />} />
             <Route path="triangletypefinder" element={<MainTriangleTypeFinder />} />
             <Route path="fractionsortingcalculator" element={<MainFractionSortingCalculator />} />
+            <Route path="placeandfacevaluecalc" element={<MainPlaceAndFaceValueCalc/> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
