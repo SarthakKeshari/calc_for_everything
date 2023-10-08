@@ -94,6 +94,7 @@ import MainTriangleTypeFinder from './mathematical/triangleTypeFinder/MainTriang
 import MainFractionSortingCalculator from './mathematical/fractionSortingCalculator/MainFractionSortingCalculator';
 import MainPlaceAndFaceValueCalc from './mathematical/placeAndFaceValueCalc/MainPlaceAndFaceValueCalc';
 import MainEquatingDenominatorOfFraction from './mathematical/equatingDenominatorOfFraction/MainEquatingDenominatorOfFraction';
+import MainTableOfNumber from './mathematical/tableOfNumber/MainTableOfNumber';
 
 function App() {
   return (
@@ -178,6 +179,7 @@ function App() {
             <Route path="fractionsortingcalculator" element={<MainFractionSortingCalculator />} />
             <Route path="placeandfacevaluecalc" element={<MainPlaceAndFaceValueCalc/> } />
             <Route path="equatingdenominatoroffraction" element={<MainEquatingDenominatorOfFraction/> } />
+            <Route path="tableofnumber" element={<MainTableOfNumber/> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
