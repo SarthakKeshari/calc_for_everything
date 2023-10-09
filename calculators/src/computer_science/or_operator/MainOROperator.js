@@ -22,7 +22,7 @@ function MainOROperator(){
             setBinans(0)
             setDecans(0)
         }
-    },[fieldValues]);
+    },[fieldValues,field]);
     const handleFieldChange = (index, value) => {
         const updatedFieldValues = [...fieldValues];
         updatedFieldValues[index] = value;
