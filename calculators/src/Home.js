@@ -89,6 +89,7 @@ export default function Home() {
             <HomeGridItem calcName="Equating Denominator Of Fraction" path="/equatingdenominatoroffraction"/>
             <HomeGridItem calcName="Table Of A Number" path="/tableofnumber"/>
             <HomeGridItem calcName="Factors Of A Number" path="/factorsofnumber"/>
+            <HomeGridItem calcName="Pythagoras Theorem Calculator" path="/pythagorastheorem"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>

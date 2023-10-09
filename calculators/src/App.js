@@ -96,6 +96,7 @@ import MainPlaceAndFaceValueCalc from './mathematical/placeAndFaceValueCalc/Main
 import MainEquatingDenominatorOfFraction from './mathematical/equatingDenominatorOfFraction/MainEquatingDenominatorOfFraction';
 import MainTableOfNumber from './mathematical/tableOfNumber/MainTableOfNumber';
 import MainFactorsOfNumber from './mathematical/factorsOfNumber/MainFactorsOfNumber';
+import MainPythagorasTheorem from './mathematical/pythagorasTheorem/MainPythagorasTheorem';
 
 function App() {
   return (
@@ -182,6 +183,7 @@ function App() {
             <Route path="equatingdenominatoroffraction" element={<MainEquatingDenominatorOfFraction/> } />
             <Route path="tableofnumber" element={<MainTableOfNumber/> } />
             <Route path="factorsofnumber" element={<MainFactorsOfNumber/> } />
+            <Route path="pythagorastheorem" element={<MainPythagorasTheorem/> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
