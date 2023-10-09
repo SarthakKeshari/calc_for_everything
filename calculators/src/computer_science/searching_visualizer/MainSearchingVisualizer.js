@@ -89,15 +89,73 @@ function MainSearchingVisualizer() {
     }, 500); // Adjust the interval duration as needed
   };
 
+  const interpolationSearch = () => {
+    setSearching(true);
+    let left = 0;
+    let right = valuesArray.length - 1;
+    const searchInterval = setInterval(() => {
+      if (left > right) {
+        clearInterval(searchInterval);
+        setSearching(false);
+        setMessage("Value not found");
+        // Change all values to orange when the value is not found
+        setHighlightedIndex(-1);
+        return;
+      }
+
+      const rangeDelta = valuesArray[right] - valuesArray[left];
+      if (rangeDelta === 0) {
+        // Avoid division by zero
+        clearInterval(searchInterval);
+        setSearching(false);
+        setMessage("Value not found");
+        // Change all values to orange when the value is not found
+        setHighlightedIndex(-1);
+        return;
+      }
+
+      const position =
+        left +
+        Math.floor(
+          ((right - left) / rangeDelta) * (searchValue - valuesArray[left])
+        );
+
+      if (position < left || position > right) {
+        clearInterval(searchInterval);
+        setSearching(false);
+        setMessage("Value not found");
+        // Change all values to orange when the value is not found
+        setHighlightedIndex(-1);
+        return;
+      }
+
+      setHighlightedIndex(position);
+
+      if (valuesArray[position] === searchValue) {
+        clearInterval(searchInterval);
+        setSearching(false);
+        setMessage("Value found");
+        // Change the found value to green
+        setHighlightedIndex(position);
+      }
+
+      if (valuesArray[position] < searchValue) {
+        left = position + 1;
+      } else {
+        right = position - 1;
+      }
+    }, 500); // Adjust the interval duration as needed
+  };
 
   const performSearch = () => {
     if (searchType === "linear") {
       linearSearch();
     } else if (searchType === "binary") {
       binarySearch();
+    } else if (searchType === "interpolation") {
+      interpolationSearch();
     }
   };
-
 
   return (
     <Container
@@ -134,6 +192,7 @@ function MainSearchingVisualizer() {
           >
             <MenuItem value="linear">Linear Search</MenuItem>
             <MenuItem value="binary">Binary Search</MenuItem>
+            <MenuItem value="interpolation">Interpolation Search</MenuItem>
           </Select>
         </FormControl>
         <Button
