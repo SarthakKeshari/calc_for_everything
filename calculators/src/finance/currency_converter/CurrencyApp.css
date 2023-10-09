@@ -54,6 +54,7 @@ input {
 }
 
 .convertButton {
+
     font-weight: bold;
     font-size: 20px;
     margin-top: 15px;
@@ -78,4 +79,8 @@ button,
 
 p {
     font-size: 30px;
+}
+
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+    background-color: white;
 }
