@@ -8,6 +8,10 @@ import {
   Box,
   List,
   ListItem,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
 } from "@mui/material";
 
 function MainSearchingVisualizer() {
@@ -16,8 +20,13 @@ function MainSearchingVisualizer() {
   const [searching, setSearching] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(-1);
   const [message, setMessage] = useState("");
+  const [searchType, setSearchType] = useState("linear");
 
   const valuesArray = inputValues.split(",").map((value) => value.trim());
+
+  const handleSearchTypeChange = (event) => {
+    setSearchType(event.target.value);
+  };
 
   const linearSearch = () => {
     setSearching(true);
@@ -47,6 +56,49 @@ function MainSearchingVisualizer() {
     }, 500); // Adjust the interval duration as needed
   };
 
+  const binarySearch = () => {
+    setSearching(true);
+    let left = 0;
+    let right = valuesArray.length - 1;
+    const searchInterval = setInterval(() => {
+      if (left > right) {
+        clearInterval(searchInterval);
+        setSearching(false);
+        setMessage("Value not found");
+        // Change all values to orange when the value is not found
+        setHighlightedIndex(-1);
+        return;
+      }
+
+      const mid = Math.floor((left + right) / 2);
+      setHighlightedIndex(mid);
+
+      if (valuesArray[mid] === searchValue) {
+        clearInterval(searchInterval);
+        setSearching(false);
+        setMessage("Value found");
+        // Change the found value to green
+        setHighlightedIndex(mid);
+      }
+
+      if (valuesArray[mid] < searchValue) {
+        left = mid + 1;
+      } else {
+        right = mid - 1;
+      }
+    }, 500); // Adjust the interval duration as needed
+  };
+
+
+  const performSearch = () => {
+    if (searchType === "linear") {
+      linearSearch();
+    } else if (searchType === "binary") {
+      binarySearch();
+    }
+  };
+
+
   return (
     <Container
       maxWidth="lg"
@@ -71,10 +123,23 @@ function MainSearchingVisualizer() {
           onChange={(e) => setSearchValue(e.target.value)}
           sx={{ mt: "1rem" }}
         />
+        <FormControl variant="outlined" fullWidth sx={{ mt: "1rem" }}>
+          <InputLabel id="search-type-label">Search Type</InputLabel>
+          <Select
+            labelId="search-type-label"
+            id="search-type"
+            value={searchType}
+            onChange={handleSearchTypeChange}
+            label="Search Type"
+          >
+            <MenuItem value="linear">Linear Search</MenuItem>
+            <MenuItem value="binary">Binary Search</MenuItem>
+          </Select>
+        </FormControl>
         <Button
           variant="contained"
           color="primary"
-          onClick={linearSearch}
+          onClick={performSearch}
           disabled={searching}
           sx={{ mt: "1rem" }}
         >
@@ -88,8 +153,8 @@ function MainSearchingVisualizer() {
               message === "Value found"
                 ? "green"
                 : message === "Value not found"
-                ? "red"
-                : "black",
+                  ? "red"
+                  : "black",
           }}
         >
           {message || "Search Your Value"}
