@@ -74,7 +74,6 @@ import MainSimpleOnScreenCalc from './computer_science/simpleOnScreenCalc/MainSi
 import MainAdvOnScreenCalc from './computer_science/advOnScreenCalc/MainAdvOnScreenCalc';
 import MainPolynomialEqDifferentialCalc from './mathematical/polynomialEqDifferentialCalc/MainPolynomialEqDifferentialCalc';
 import MainPolynomialEqIntegralCalc from './mathematical/polynomialEqIntegralCalc/MainPolynomialEqIntegralCalc';
-import MainPostPreToInfix from './computer_science/postAndPreToInfixCalc/PostPreToIn';
 
 function App() {
   return (
@@ -111,7 +110,6 @@ function App() {
             <Route path="codetimecomplexitycalc" element={<MainCodeTimeComplexityCalc />} />
             <Route path="simpleonscreencalc" element={<MainSimpleOnScreenCalc />} />
             <Route path="advonscreencalc" element={<MainAdvOnScreenCalc />} />
-            <Route path="postpretoin" element={<MainPostPreToInfix/>}/>
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
