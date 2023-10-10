@@ -107,6 +107,7 @@ import MainDec2421CodeConverter from './computer_science/dec2421CodeConverter/Ma
 import MainRomanNumeralConverter from './mathematical/romanNumeralConverter/MainRomanNumeralConverter';
 import MainExcess3CodeConverter from './computer_science/excess3CodeConverter/MainExcess3CodeConverter';
 import MainDataStorageConverter from './computer_science/dataStorageConverter/MainDataStorageConverter';
+import MainOperationsOnFractions from './mathematical/operationsOnFractions/MainOperationsOnFractions';
 
 function App() {
   return (
@@ -203,6 +204,7 @@ function App() {
             <Route path="surfaceareaof3dshapes" element={<MainSurfaceAreaOf3DShapes /> } />
             <Route path="squareandcubecalc" element={<MainSquareAndCubeCalc /> } />
             <Route path="romannumeralconverter" element={<MainRomanNumeralConverter /> } />
+            <Route path="operationsonfractionscalc" element={<MainOperationsOnFractions /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
