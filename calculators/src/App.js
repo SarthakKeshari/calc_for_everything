@@ -106,6 +106,7 @@ import MainPressureCalc from './physics/pressureCalc/MainPressureCalc';
 import MainDec2421CodeConverter from './computer_science/dec2421CodeConverter/MainDec2421CodeConverter';
 import MainRomanNumeralConverter from './mathematical/romanNumeralConverter/MainRomanNumeralConverter';
 import MainExcess3CodeConverter from './computer_science/excess3CodeConverter/MainExcess3CodeConverter';
+import MainDataStorageConverter from './computer_science/dataStorageConverter/MainDataStorageConverter';
 
 function App() {
   return (
@@ -150,6 +151,7 @@ function App() {
             <Route path="colorcodeformatconverter" element={<MainColorCodeFormatConverter />} />
             <Route path="dec2421codeconverter" element={<MainDec2421CodeConverter />} />
             <Route path="excess3codeconverter" element={<MainExcess3CodeConverter />} />
+            <Route path="datastorageconverter" element={<MainDataStorageConverter />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />

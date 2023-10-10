@@ -42,6 +42,7 @@ export default function Home() {
             <HomeGridItem calcName="IPv4 To IPv6 Calculator" path="/ipv4toipv6calc"/>
             <HomeGridItem calcName="Color Code Format Converter" path="/colorcodeformatconverter"/>
             <HomeGridItem calcName="Decimal/2421 Code Converter" path="/dec2421codeconverter"/>
+            <HomeGridItem calcName="Data Storage Converter" path="/datastorageconverter"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
