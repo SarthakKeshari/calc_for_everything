@@ -103,6 +103,7 @@ import MainAreaOf2DShapes from './mathematical/areaOf2DShapes/MainAreaOf2DShapes
 import MainSurfaceAreaOf3DShapes from './mathematical/surfaceAreaOf3DShapes/MainSurfaceAreaOf3DShapes';
 import MainSquareAndCubeCalc from './mathematical/squareAndCubeCalc/MainSquareAndCubeCalc';
 import MainPressureCalc from './physics/pressureCalc/MainPressureCalc';
+import MainDec2421CodeConverter from './computer_science/dec2421CodeConverter/MainDec2421CodeConverter';
 
 function App() {
   return (
@@ -145,6 +146,7 @@ function App() {
             <Route path="codeeditorforwebdev" element={<MainCodeEditorWebDev />} />
             <Route path="ipv4toipv6calc" element={<MainIPv4ToIPv6Calc />} />
             <Route path="colorcodeformatconverter" element={<MainColorCodeFormatConverter />} />
+            <Route path="dec2421codeconverter" element={<MainDec2421CodeConverter />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
