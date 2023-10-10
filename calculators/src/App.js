@@ -97,6 +97,10 @@ import MainEquatingDenominatorOfFraction from './mathematical/equatingDenominato
 import MainTableOfNumber from './mathematical/tableOfNumber/MainTableOfNumber';
 import MainFactorsOfNumber from './mathematical/factorsOfNumber/MainFactorsOfNumber';
 import MainPythagorasTheorem from './mathematical/pythagorasTheorem/MainPythagorasTheorem';
+import MainMixedToImproperAndImproperToMixedFraction from './mathematical/mixedToImproperAndImproperToMixedFraction/MainMixedToImproperAndImproperToMixedFraction'
+import MainCubeRootAndSquareRootCalc from './mathematical/cubeRootAndSquareRootCalc/MainCubeRootAndSquareRootCalc';
+import MainAreaOf2DShapes from './mathematical/areaOf2DShapes/MainAreaOf2DShapes';
+import MainSurfaceAreaOf3DShapes from './mathematical/surfaceAreaOf3DShapes/MainSurfaceAreaOf3DShapes';
 
 function App() {
   return (
@@ -184,6 +188,10 @@ function App() {
             <Route path="tableofnumber" element={<MainTableOfNumber/> } />
             <Route path="factorsofnumber" element={<MainFactorsOfNumber/> } />
             <Route path="pythagorastheorem" element={<MainPythagorasTheorem/> } />
+            <Route path="mixedtoimproperanimpropertomixedfractioncalc" element={<MainMixedToImproperAndImproperToMixedFraction /> } />
+            <Route path="cuberootandsquarerootcalc" element={<MainCubeRootAndSquareRootCalc /> } />
+            <Route path="areaof2dshapes" element={<MainAreaOf2DShapes /> } />
+            <Route path="surfaceareaof3dshapes" element={<MainSurfaceAreaOf3DShapes /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />

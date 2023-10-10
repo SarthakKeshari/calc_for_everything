@@ -90,6 +90,10 @@ export default function Home() {
             <HomeGridItem calcName="Table Of A Number" path="/tableofnumber"/>
             <HomeGridItem calcName="Factors Of A Number" path="/factorsofnumber"/>
             <HomeGridItem calcName="Pythagoras Theorem Calculator" path="/pythagorastheorem"/>
+            <HomeGridItem calcName="Mixed To Improper And Improper To Mixed Fraction Calculator" path="/mixedtoimproperanimpropertomixedfractioncalc"/>
+            <HomeGridItem calcName="Cube Root And Square Root Calculator" path="/cuberootandsquarerootcalc"/>
+            <HomeGridItem calcName="Area Of 2D Shapes Calculator" path="/areaof2dshapes"/>
+            <HomeGridItem calcName="Surface Area Of 3D Shapes Calculator" path="/surfaceareaof3dshapes"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
