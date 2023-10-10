@@ -41,6 +41,7 @@ export default function Home() {
             <HomeGridItem calcName="Code Editor for Web Dev" path="/codeeditorforwebdev"/>
             <HomeGridItem calcName="IPv4 To IPv6 Calculator" path="/ipv4toipv6calc"/>
             <HomeGridItem calcName="Color Code Format Converter" path="/colorcodeformatconverter"/>
+            <HomeGridItem calcName="Decimal/2421 Code Converter" path="/dec2421codeconverter"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -90,6 +91,12 @@ export default function Home() {
             <HomeGridItem calcName="Table Of A Number" path="/tableofnumber"/>
             <HomeGridItem calcName="Factors Of A Number" path="/factorsofnumber"/>
             <HomeGridItem calcName="Pythagoras Theorem Calculator" path="/pythagorastheorem"/>
+            <HomeGridItem calcName="Mixed To Improper And Improper To Mixed Fraction Calculator" path="/mixedtoimproperanimpropertomixedfractioncalc"/>
+            <HomeGridItem calcName="Cube Root And Square Root Calculator" path="/cuberootandsquarerootcalc"/>
+            <HomeGridItem calcName="Area Of 2D Shapes Calculator" path="/areaof2dshapes"/>
+            <HomeGridItem calcName="Surface Area Of 3D Shapes Calculator" path="/surfaceareaof3dshapes"/>
+            <HomeGridItem calcName="Square And Cube Calculator" path="/squareandcubecalc"/>
+            <HomeGridItem calcName="Roman Numeral Converter" path="/romannumeralconverter"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
@@ -99,6 +106,12 @@ export default function Home() {
             <HomeGridItem calcName="Chemical Equation Balancer" path="/chemicaleqbalancer"/>
             <HomeGridItem calcName="Chemical Kinetics Calculator" path="/chemicalkineticscalc"/>
             <HomeGridItem calcName="Molecular Weight Calculator" path="/molecularweightcalc"/>
+        </Grid>
+        <br/>
+        <Typography pt={1} variant='h5'>Physics</Typography>
+        <hr/>
+        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
+            <HomeGridItem calcName="Pressure Calculator" path="/pressurecalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>

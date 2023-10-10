@@ -148,6 +148,55 @@ Hard | 20 Points
 
 ## 🌟 Contributors
 
+#### Ranklist
+Rank | Githib Handle | Points Scored       
+------------ | ------------- | ------------
+1 | @maskboyAvi | 85
+2 | @imsoumik03 | 50
+3 | @7twik | 45
+4 | @Saksham-245 | 40
+5 | @Akash0420 | 30
+6 | @aniketsinha5552 | 25
+7 | @Sam-bhav-20 | 25
+8 | @anushka-srivastava22 | 25
+9 | @Celebi07 | 25
+10 | @capsy14 | 20
+11 | @Satvik-Garg | 20
+12 | @uttkarsh1m | 20
+13 | @Ayushlion8 | 15
+14 | @DeexithParand2k2 | 15
+15 | @dfordp | 15
+16 | @farhanalws4u | 15
+17 | @govardhanshah456 | 15
+18 | @hiren2599 | 15
+19 | @Upadhyay-Harshit | 15
+20 | @ArnabBCA | 10
+21 | @ashishnallana | 10
+22 | @DanishGBU | 10
+23 | @Kris0011 | 10
+24 | @Saifullah00 | 10
+25 | @shreyashsingh-101 | 10
+26 | @Vimal-Dubey | 10
+27 | @VincentPaulV | 10
+28 | @remonix | 10
+29 | @abhijithhegde | 5
+30 | @girisha-pawan | 5
+31 | @Heramb4270 | 5
+32 | @Musak2 | 5
+33 | @PrachiDev11 | 5
+34 | @Rida-Nuha | 15
+35 | @rishirohilla | 5
+36 | @Sk783 | 5
+37 | @TANYA03GUPTA | 5
+38 | @tmsagarofficial | 5
+39 | @shrinidhihegde3 | 5
+40 | @Deathanni | 5
+41 | @munfaridzahera | 5
+42 | @mr-kadyan | 5
+43 | @dvtushar | 5
+44 | @atharvsawant2003 | 5
+45 | @tiwari00ayush | 5
+
 #### Contributors eligible for Contribution Certificate
 <div style="display:flex; justify-content: center">
   <img src="https://github.com/7twik.png" width="60px;" style="margin-right:10"/>   

@@ -97,6 +97,14 @@ import MainEquatingDenominatorOfFraction from './mathematical/equatingDenominato
 import MainTableOfNumber from './mathematical/tableOfNumber/MainTableOfNumber';
 import MainFactorsOfNumber from './mathematical/factorsOfNumber/MainFactorsOfNumber';
 import MainPythagorasTheorem from './mathematical/pythagorasTheorem/MainPythagorasTheorem';
+import MainMixedToImproperAndImproperToMixedFraction from './mathematical/mixedToImproperAndImproperToMixedFraction/MainMixedToImproperAndImproperToMixedFraction'
+import MainCubeRootAndSquareRootCalc from './mathematical/cubeRootAndSquareRootCalc/MainCubeRootAndSquareRootCalc';
+import MainAreaOf2DShapes from './mathematical/areaOf2DShapes/MainAreaOf2DShapes';
+import MainSurfaceAreaOf3DShapes from './mathematical/surfaceAreaOf3DShapes/MainSurfaceAreaOf3DShapes';
+import MainSquareAndCubeCalc from './mathematical/squareAndCubeCalc/MainSquareAndCubeCalc';
+import MainPressureCalc from './physics/pressureCalc/MainPressureCalc';
+import MainDec2421CodeConverter from './computer_science/dec2421CodeConverter/MainDec2421CodeConverter';
+import MainRomanNumeralConverter from './mathematical/romanNumeralConverter/MainRomanNumeralConverter';
 
 function App() {
   return (
@@ -139,6 +147,7 @@ function App() {
             <Route path="codeeditorforwebdev" element={<MainCodeEditorWebDev />} />
             <Route path="ipv4toipv6calc" element={<MainIPv4ToIPv6Calc />} />
             <Route path="colorcodeformatconverter" element={<MainColorCodeFormatConverter />} />
+            <Route path="dec2421codeconverter" element={<MainDec2421CodeConverter />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -184,11 +193,19 @@ function App() {
             <Route path="tableofnumber" element={<MainTableOfNumber/> } />
             <Route path="factorsofnumber" element={<MainFactorsOfNumber/> } />
             <Route path="pythagorastheorem" element={<MainPythagorasTheorem/> } />
+            <Route path="mixedtoimproperanimpropertomixedfractioncalc" element={<MainMixedToImproperAndImproperToMixedFraction /> } />
+            <Route path="cuberootandsquarerootcalc" element={<MainCubeRootAndSquareRootCalc /> } />
+            <Route path="areaof2dshapes" element={<MainAreaOf2DShapes /> } />
+            <Route path="surfaceareaof3dshapes" element={<MainSurfaceAreaOf3DShapes /> } />
+            <Route path="squareandcubecalc" element={<MainSquareAndCubeCalc /> } />
+            <Route path="romannumeralconverter" element={<MainRomanNumeralConverter /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
             <Route path="chemicalkineticscalc" element={<MainChemicalKineticsCalc />} />
             <Route path="molecularweightcalc" element={<MainMolecularWeightCalc />} />
+            {/* Physics */}
+            <Route path="pressurecalc" element={<MainPressureCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
