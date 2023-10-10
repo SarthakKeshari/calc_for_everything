@@ -104,6 +104,7 @@ import MainSurfaceAreaOf3DShapes from './mathematical/surfaceAreaOf3DShapes/Main
 import MainSquareAndCubeCalc from './mathematical/squareAndCubeCalc/MainSquareAndCubeCalc';
 import MainPressureCalc from './physics/pressureCalc/MainPressureCalc';
 import MainDec2421CodeConverter from './computer_science/dec2421CodeConverter/MainDec2421CodeConverter';
+import MainRomanNumeralConverter from './mathematical/romanNumeralConverter/MainRomanNumeralConverter';
 
 function App() {
   return (
@@ -197,6 +198,7 @@ function App() {
             <Route path="areaof2dshapes" element={<MainAreaOf2DShapes /> } />
             <Route path="surfaceareaof3dshapes" element={<MainSurfaceAreaOf3DShapes /> } />
             <Route path="squareandcubecalc" element={<MainSquareAndCubeCalc /> } />
+            <Route path="romannumeralconverter" element={<MainRomanNumeralConverter /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
