@@ -42,6 +42,7 @@ export default function Home() {
             <HomeGridItem calcName="IPv4 To IPv6 Calculator" path="/ipv4toipv6calc"/>
             <HomeGridItem calcName="Color Code Format Converter" path="/colorcodeformatconverter"/>
             <HomeGridItem calcName="Decimal/2421 Code Converter" path="/dec2421codeconverter"/>
+            <HomeGridItem calcName="Excess-3 Code Converter" path="/excess3codeconverter"/>
             <HomeGridItem calcName="Data Storage Converter" path="/datastorageconverter"/>
         </Grid>
         <br/>
@@ -98,7 +99,6 @@ export default function Home() {
             <HomeGridItem calcName="Surface Area Of 3D Shapes Calculator" path="/surfaceareaof3dshapes"/>
             <HomeGridItem calcName="Square And Cube Calculator" path="/squareandcubecalc"/>
             <HomeGridItem calcName="Roman Numeral Converter" path="/romannumeralconverter"/>
-            <HomeGridItem calcName="Excess-3 Code Converter" path="/excess3codeconverter"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
