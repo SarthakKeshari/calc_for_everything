@@ -120,7 +120,7 @@ export default function Home() {
         <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
             <HomeGridItem calcName="FD Maturity Calculator" path="/fdmaturitycalc"/>
             <HomeGridItem calcName="RD Maturity Calculator" path="/rdmaturitycalc"/>
-            <HomeGridItem calcName="Loan Repayment Calculator" path="/loanrepaymentcalc"/>
+            <HomeGridItem calcName="Loan Repayment/EMI Calculator" path="/loanrepaymentcalc"/>
             <HomeGridItem calcName="Savings Calculator" path="/savingscalc"/>
             <HomeGridItem calcName="Expense Tracker" path="/expensetracker"/>
             <HomeGridItem calcName="Currency Converter" path="/currencyconverter"/>
