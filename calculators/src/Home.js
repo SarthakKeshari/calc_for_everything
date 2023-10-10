@@ -106,6 +106,12 @@ export default function Home() {
             <HomeGridItem calcName="Molecular Weight Calculator" path="/molecularweightcalc"/>
         </Grid>
         <br/>
+        <Typography pt={1} variant='h5'>Physics</Typography>
+        <hr/>
+        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
+            <HomeGridItem calcName="Pressure Calculator" path="/pressurecalc"/>
+        </Grid>
+        <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>
         <hr/>
         <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>

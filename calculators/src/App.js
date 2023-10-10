@@ -102,6 +102,7 @@ import MainCubeRootAndSquareRootCalc from './mathematical/cubeRootAndSquareRootC
 import MainAreaOf2DShapes from './mathematical/areaOf2DShapes/MainAreaOf2DShapes';
 import MainSurfaceAreaOf3DShapes from './mathematical/surfaceAreaOf3DShapes/MainSurfaceAreaOf3DShapes';
 import MainSquareAndCubeCalc from './mathematical/squareAndCubeCalc/MainSquareAndCubeCalc';
+import MainPressureCalc from './physics/pressureCalc/MainPressureCalc';
 
 function App() {
   return (
@@ -199,6 +200,8 @@ function App() {
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
             <Route path="chemicalkineticscalc" element={<MainChemicalKineticsCalc />} />
             <Route path="molecularweightcalc" element={<MainMolecularWeightCalc />} />
+            {/* Physics */}
+            <Route path="pressurecalc" element={<MainPressureCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
