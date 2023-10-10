@@ -108,6 +108,7 @@ import MainRomanNumeralConverter from './mathematical/romanNumeralConverter/Main
 import MainExcess3CodeConverter from './computer_science/excess3CodeConverter/MainExcess3CodeConverter';
 import MainDataStorageConverter from './computer_science/dataStorageConverter/MainDataStorageConverter';
 import MainOperationsOnFractions from './mathematical/operationsOnFractions/MainOperationsOnFractions';
+import MainHammingDistance from './computer_science/hammingDistance/MainHammingDistance';
 
 function App() {
   return (
@@ -153,6 +154,7 @@ function App() {
             <Route path="dec2421codeconverter" element={<MainDec2421CodeConverter />} />
             <Route path="excess3codeconverter" element={<MainExcess3CodeConverter />} />
             <Route path="datastorageconverter" element={<MainDataStorageConverter />} />
+            <Route path="hammingdistancecalc" element={<MainHammingDistance />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
