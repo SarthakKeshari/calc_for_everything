@@ -6,57 +6,61 @@ function calculateHCF(a, b) {
     }
     return a;
 }
+
 function MainHCFCalc() {
-   
+    const [numbers, setNumbers] = useState('');
+    const [hcf, setHCF] = useState('');
 
-    
-        const [number, setNumber] = useState('');
-        const [hcf, setHCF] = useState('');
+    const handleCalculateHCF = () => {
+        const numArray = numbers
+            .split(',')
+            .map((num) => parseInt(num.trim()))
+            .filter((num) => !isNaN(num) && num > 0);
 
-        const handleCalculateHCF = () => {
-            const num = parseInt(number);
-
-            if (!isNaN(num) && num > 0) {
-                const result = calculateHCF(num, num);
-                setHCF(result.toString());
-            } else {
-                setHCF('Invalid Input');
+        if (numArray.length >= 2) {
+            let result = numArray[0];
+            for (let i = 1; i < numArray.length; i++) {
+                result = calculateHCF(result, numArray[i]);
             }
-        };
-    
+            setHCF(result.toString());
+        } else {
+            setHCF('Invalid Input');
+        }
 
-        return (
-            <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: "10" }}>
-                <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>HCF Calculator</Typography>
-                <hr />
-                <br />
-                <Container maxWidth="sm">
-                    <Typography variant="h4" align="center" gutterBottom>
-                        HCF Calculator
-                    </Typography>
-                    <TextField
-                        label="Enter a Number"
-                        fullWidth
-                        variant="outlined"
-                        value={number}
-                        onChange={(e) => setNumber(e.target.value)}
-                    />
-                    <Button
-                        variant="contained"
-                        color="primary"
-                        fullWidth
-                        onClick={handleCalculateHCF}
-                        style={{ marginTop: '20px' }}
-                    >
-                        Calculate HCF
-                    </Button>
-                    <Typography variant="h6" align="center" style={{ marginTop: '20px' }}>
-                        HCF: {hcf}
-                    </Typography>
-                </Container>
+    };
+
+    return (
+        <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: "10" }}>
+            <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>HCF Calculator</Typography>
+            <hr />
+            <br />
+            <Container maxWidth="sm">
+                <Typography variant="h4" align="center" gutterBottom>
+                    HCF Calculator
+                </Typography>
+                <TextField
+                    label="Enter Numbers (comma-separated)"
+                    fullWidth
+                    variant="outlined"
+                    value={numbers}
+                    onChange={(e) => setNumbers(e.target.value)}
+                />
+                <Button
+                    variant="contained"
+                    color="primary"
+                    fullWidth
+                    onClick={handleCalculateHCF}
+                    style={{ marginTop: '20px' }}
+                >
+                    Calculate HCF
+                </Button>
+                <Typography variant="h6" align="center" style={{ marginTop: '20px' }}>
+                    HCF: {hcf}
+                </Typography>
             </Container>
-        );
-        
+        </Container>
+    );
+
 };
 
 export default MainHCFCalc;
