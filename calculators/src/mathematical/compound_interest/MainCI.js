@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Container, Input, MenuItem, Select, Typography } from '@mui/material';
 import CopyValue from '../../components/CopyValue';
+import InfoCI from './InfoCI';
 
 function MainCI(){
        // Initialize state variables for principal, rate, time, and frequency
@@ -27,7 +28,7 @@ function MainCI(){
        }, [interest, principalFloat]);
     return(
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Compound Interest Calculator</Typography>
+            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Compound Interest Calculator <InfoCI/></Typography>
             <hr/>
             <br/>
             <Container sx={{display:"flex", flexDirection:"column"}}>
