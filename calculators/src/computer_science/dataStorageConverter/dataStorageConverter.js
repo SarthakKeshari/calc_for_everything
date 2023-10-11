@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import TextField from '@mui/material/TextField';
+import MenuItem from '@mui/material/MenuItem';
 
 class Converter extends Component {
   constructor(props) {
@@ -27,7 +32,6 @@ class Converter extends Component {
     const { inputValue, inputUnit, outputUnit } = this.state;
     let result = parseFloat(inputValue);
 
-    // Convert the input to bits
     if (inputUnit === 'bytes') {
       result *= 8;
     } else if (inputUnit === 'KB') {
@@ -40,7 +44,6 @@ class Converter extends Component {
       result *= 8 * 1024 * 1024 * 1024 * 1024;
     }
 
-    // Convert the result to the desired output unit
     if (outputUnit === 'bytes') {
       result /= 8;
     } else if (outputUnit === 'KB') {
@@ -58,34 +61,62 @@ class Converter extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Unit Converter</h1>
-        <div>
-          <input
-            type="number"
-            value={this.state.inputValue}
-            onChange={this.handleInputChange}
-          />
-          <select value={this.state.inputUnit} onChange={this.handleInputUnitChange}>
-            <option value="bits">Bits</option>
-            <option value="bytes">Bytes</option>
-            <option value="KB">Kilobytes</option>
-            <option value="MB">Megabytes</option>
-            <option value="GB">Gigabytes</option>
-            <option value="TB">Terabytes</option>
-          </select>
-          <span> = </span>
-          <span>{this.state.result} {this.state.outputUnit}</span>
-          <select value={this.state.outputUnit} onChange={this.handleOutputUnitChange}>
-            <option value="bits">Bits</option>
-            <option value="bytes">Bytes</option>
-            <option value="KB">Kilobytes</option>
-            <option value="MB">Megabytes</option>
-            <option value="GB">Gigabytes</option>
-            <option value="TB">Terabytes</option>
-          </select>
-        </div>
-      </div>
+      <Container maxWidth="lg" sx={{ bgcolor: "#eeeeee", minHeight: "90vh", paddingY: 2 }}>
+        <Typography variant="h4" sx={{ textAlign: "center", paddingBottom: 2 }}>
+          Unit Converter
+        </Typography>
+        <Grid container spacing={2} alignItems="center" justifyContent="center">
+          <Grid item>
+            <TextField
+              type="number"
+              value={this.state.inputValue}
+              onChange={this.handleInputChange}
+              label="Value"
+              variant="outlined"
+            />
+          </Grid>
+          <Grid item>
+            <TextField
+              select
+              value={this.state.inputUnit}
+              onChange={this.handleInputUnitChange}
+              label="Input Unit"
+              variant="outlined"
+            >
+              <MenuItem value="bits">Bits</MenuItem>
+              <MenuItem value="bytes">Bytes</MenuItem>
+              <MenuItem value="KB">Kilobytes</MenuItem>
+              <MenuItem value="MB">Megabytes</MenuItem>
+              <MenuItem value="GB">Gigabytes</MenuItem>
+              <MenuItem value="TB">Terabytes</MenuItem>
+            </TextField>
+          </Grid>
+          <Grid item>
+            <Typography>=</Typography>
+          </Grid>
+          <Grid item>
+            <Typography variant="h5" pt={1}>
+              {this.state.result} {this.state.outputUnit}
+            </Typography>
+          </Grid>
+          <Grid item>
+            <TextField
+              select
+              value={this.state.outputUnit}
+              onChange={this.handleOutputUnitChange}
+              label="Output Unit"
+              variant="outlined"
+            >
+              <MenuItem value="bits">Bits</MenuItem>
+              <MenuItem value="bytes">Bytes</MenuItem>
+              <MenuItem value="KB">Kilobytes</MenuItem>
+              <MenuItem value="MB">Megabytes</MenuItem>
+              <MenuItem value="GB">Gigabytes</MenuItem>
+              <MenuItem value="TB">Terabytes</MenuItem>
+            </TextField>
+          </Grid>
+        </Grid>
+      </Container>
     );
   }
 }
