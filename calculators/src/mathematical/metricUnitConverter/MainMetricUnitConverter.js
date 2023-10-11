@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import { Container, Typography, TextField, Select, MenuItem, Button, Box } from '@mui/material';
+import {
+  Container,
+  Typography,
+  TextField,
+  Select,
+  MenuItem,
+  Button,
+  Box,
+} from '@mui/material';
 
 function MainMetricUnitConverter() {
   const [unitType, setUnitType] = useState('length');
@@ -7,6 +15,7 @@ function MainMetricUnitConverter() {
   const [toUnit, setToUnit] = useState('kilometer');
   const [inputValue, setInputValue] = useState('');
   const [result, setResult] = useState('');
+  const [isReverse, setIsReverse] = useState(false); // Define isReverse state
 
   const unitData = {
     length: {
@@ -44,13 +53,22 @@ function MainMetricUnitConverter() {
     setInputValue(event.target.value);
   };
 
+  const handleToggleReverse = () => {
+    setIsReverse(!isReverse); // Toggle between forward and reverse conversions
+  };
+
   const convertUnits = () => {
     const fromFactor = unitData[unitType][fromUnit];
     const toFactor = unitData[unitType][toUnit];
     const inputValueFloat = parseFloat(inputValue);
 
     if (!isNaN(inputValueFloat)) {
-      const resultValue = (inputValueFloat * fromFactor) / toFactor;
+      let resultValue;
+      if (!isReverse) {
+        resultValue = (inputValueFloat * fromFactor) / toFactor; // Forward conversion
+      } else {
+        resultValue = (inputValueFloat * toFactor) / fromFactor; // Reverse conversion
+      }
       setResult(resultValue.toFixed(4));
     } else {
       setResult('Invalid input');
@@ -101,9 +119,14 @@ function MainMetricUnitConverter() {
         onChange={handleInputChange}
         sx={{ marginTop: '1rem' }}
       />
-      <Button variant="contained" onClick={convertUnits} sx={{ marginTop: '1rem' }}>
-        Convert
-      </Button>
+      <Box sx={{ display: 'flex', justifyContent: 'space-between', marginTop: '1rem' }}>
+        <Button variant="contained" onClick={convertUnits}>
+          {isReverse ? 'Reverse Convert' : 'Convert'}
+        </Button>
+        <Button variant="outlined" onClick={handleToggleReverse}>
+          Toggle Reverse
+        </Button>
+      </Box>
       <Typography variant="h6" sx={{ marginTop: '1rem' }}>
         Result: {result}
       </Typography>
