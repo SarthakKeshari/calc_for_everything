@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Divider, Input, Typography } from '@mui/material';
 import CopyValue from '../../components/CopyValue';
+import InfoSI from './InfoSI';
 
 function MainSI(){
     const [principal, setPrincipal] = useState()
@@ -25,7 +26,7 @@ function MainSI(){
 
     return(
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Simple Interest Calculator</Typography>
+            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Simple Interest Calculator <InfoSI/></Typography>
             <hr/>
             <br/>
             <Container sx={{display:"flex", flexDirection:"column"}}>

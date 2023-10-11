@@ -54,7 +54,7 @@ function MainLoanRepaymentCalc(){
 
     return(
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Loan Repayment Calculator</Typography>
+            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Loan Repayment/EMI Calculator</Typography>
             <hr/>
             <br/>
             <Tabs value={tab} onChange={handleTabChange}>

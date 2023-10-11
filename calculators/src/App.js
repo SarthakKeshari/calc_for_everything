@@ -97,6 +97,18 @@ import MainEquatingDenominatorOfFraction from './mathematical/equatingDenominato
 import MainTableOfNumber from './mathematical/tableOfNumber/MainTableOfNumber';
 import MainFactorsOfNumber from './mathematical/factorsOfNumber/MainFactorsOfNumber';
 import MainPythagorasTheorem from './mathematical/pythagorasTheorem/MainPythagorasTheorem';
+import MainMixedToImproperAndImproperToMixedFraction from './mathematical/mixedToImproperAndImproperToMixedFraction/MainMixedToImproperAndImproperToMixedFraction'
+import MainCubeRootAndSquareRootCalc from './mathematical/cubeRootAndSquareRootCalc/MainCubeRootAndSquareRootCalc';
+import MainAreaOf2DShapes from './mathematical/areaOf2DShapes/MainAreaOf2DShapes';
+import MainSurfaceAreaOf3DShapes from './mathematical/surfaceAreaOf3DShapes/MainSurfaceAreaOf3DShapes';
+import MainSquareAndCubeCalc from './mathematical/squareAndCubeCalc/MainSquareAndCubeCalc';
+import MainPressureCalc from './physics/pressureCalc/MainPressureCalc';
+import MainDec2421CodeConverter from './computer_science/dec2421CodeConverter/MainDec2421CodeConverter';
+import MainRomanNumeralConverter from './mathematical/romanNumeralConverter/MainRomanNumeralConverter';
+import MainExcess3CodeConverter from './computer_science/excess3CodeConverter/MainExcess3CodeConverter';
+import MainDataStorageConverter from './computer_science/dataStorageConverter/MainDataStorageConverter';
+import MainOperationsOnFractions from './mathematical/operationsOnFractions/MainOperationsOnFractions';
+import MainHammingDistance from './computer_science/hammingDistance/MainHammingDistance';
 
 function App() {
   return (
@@ -139,6 +151,10 @@ function App() {
             <Route path="codeeditorforwebdev" element={<MainCodeEditorWebDev />} />
             <Route path="ipv4toipv6calc" element={<MainIPv4ToIPv6Calc />} />
             <Route path="colorcodeformatconverter" element={<MainColorCodeFormatConverter />} />
+            <Route path="dec2421codeconverter" element={<MainDec2421CodeConverter />} />
+            <Route path="excess3codeconverter" element={<MainExcess3CodeConverter />} />
+            <Route path="datastorageconverter" element={<MainDataStorageConverter />} />
+            <Route path="hammingdistancecalc" element={<MainHammingDistance />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -184,11 +200,20 @@ function App() {
             <Route path="tableofnumber" element={<MainTableOfNumber/> } />
             <Route path="factorsofnumber" element={<MainFactorsOfNumber/> } />
             <Route path="pythagorastheorem" element={<MainPythagorasTheorem/> } />
+            <Route path="mixedtoimproperanimpropertomixedfractioncalc" element={<MainMixedToImproperAndImproperToMixedFraction /> } />
+            <Route path="cuberootandsquarerootcalc" element={<MainCubeRootAndSquareRootCalc /> } />
+            <Route path="areaof2dshapes" element={<MainAreaOf2DShapes /> } />
+            <Route path="surfaceareaof3dshapes" element={<MainSurfaceAreaOf3DShapes /> } />
+            <Route path="squareandcubecalc" element={<MainSquareAndCubeCalc /> } />
+            <Route path="romannumeralconverter" element={<MainRomanNumeralConverter /> } />
+            <Route path="operationsonfractionscalc" element={<MainOperationsOnFractions /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
             <Route path="chemicalkineticscalc" element={<MainChemicalKineticsCalc />} />
             <Route path="molecularweightcalc" element={<MainMolecularWeightCalc />} />
+            {/* Physics */}
+            <Route path="pressurecalc" element={<MainPressureCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
