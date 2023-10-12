@@ -109,6 +109,7 @@ import MainExcess3CodeConverter from './computer_science/excess3CodeConverter/Ma
 import MainDataStorageConverter from './computer_science/dataStorageConverter/MainDataStorageConverter';
 import MainOperationsOnFractions from './mathematical/operationsOnFractions/MainOperationsOnFractions';
 import MainHammingDistance from './computer_science/hammingDistance/MainHammingDistance';
+import MainTipCalc from './finance/tipCalc/MainTipCalc';
 
 function App() {
   return (
@@ -222,6 +223,7 @@ function App() {
             <Route path="expensetracker" element={<MainExpenseTracker />} />
             <Route path="currencyconverter" element={<MainCurrencyConverter />} />
             <Route path="profitmargincalc" element={<MainProfitMarginCalc />} />
+            <Route path="tipcalc" element={<MainTipCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
