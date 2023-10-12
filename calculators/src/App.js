@@ -112,6 +112,7 @@ import MainHammingDistance from './computer_science/hammingDistance/MainHammingD
 import MainTipCalc from './finance/tipCalc/MainTipCalc';
 import MainStatisticalGraphCreator from './mathematical/statisticalGraphCreator/MainStatisticalGraphCreator';
 import MainVolume3DShapes from './mathematical/volume3DShapes/MainVolume3DShapes';
+import MainCosmoMassConverter from './physics/cosmoMassConverter/MainCosmoMassConverter';
 
 function App() {
   return (
@@ -219,6 +220,7 @@ function App() {
             <Route path="molecularweightcalc" element={<MainMolecularWeightCalc />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
+            <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
