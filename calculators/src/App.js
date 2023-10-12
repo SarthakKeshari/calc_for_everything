@@ -111,6 +111,7 @@ import MainOperationsOnFractions from './mathematical/operationsOnFractions/Main
 import MainHammingDistance from './computer_science/hammingDistance/MainHammingDistance';
 import MainTipCalc from './finance/tipCalc/MainTipCalc';
 import MainStatisticalGraphCreator from './mathematical/statisticalGraphCreator/MainStatisticalGraphCreator';
+import MainVolume3DShapes from './mathematical/volume3DShapes/MainVolume3DShapes';
 
 function App() {
   return (
@@ -210,6 +211,7 @@ function App() {
             <Route path="romannumeralconverter" element={<MainRomanNumeralConverter /> } />
             <Route path="operationsonfractionscalc" element={<MainOperationsOnFractions /> } />
             <Route path="statisticalgraphcreator" element={<MainStatisticalGraphCreator /> } />
+            <Route path="volume3dshapescalc" element={<MainVolume3DShapes /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
