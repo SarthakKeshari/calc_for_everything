@@ -110,6 +110,7 @@ import MainDataStorageConverter from './computer_science/dataStorageConverter/Ma
 import MainOperationsOnFractions from './mathematical/operationsOnFractions/MainOperationsOnFractions';
 import MainHammingDistance from './computer_science/hammingDistance/MainHammingDistance';
 import MainTipCalc from './finance/tipCalc/MainTipCalc';
+import MainStatisticalGraphCreator from './mathematical/statisticalGraphCreator/MainStatisticalGraphCreator';
 
 function App() {
   return (
@@ -208,6 +209,7 @@ function App() {
             <Route path="squareandcubecalc" element={<MainSquareAndCubeCalc /> } />
             <Route path="romannumeralconverter" element={<MainRomanNumeralConverter /> } />
             <Route path="operationsonfractionscalc" element={<MainOperationsOnFractions /> } />
+            <Route path="statisticalgraphcreator" element={<MainStatisticalGraphCreator /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />

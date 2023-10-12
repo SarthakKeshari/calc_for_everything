@@ -101,6 +101,7 @@ export default function Home() {
             <HomeGridItem calcName="Square And Cube Calculator" path="/squareandcubecalc"/>
             <HomeGridItem calcName="Roman Numeral Converter" path="/romannumeralconverter"/>
             <HomeGridItem calcName="Operations On Fractions Calculator" path="/operationsonfractionscalc"/>
+            <HomeGridItem calcName="Statistical Graph Creator" path="/statisticalgraphcreator"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
