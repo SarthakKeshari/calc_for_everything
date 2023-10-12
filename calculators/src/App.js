@@ -113,6 +113,7 @@ import MainTipCalc from './finance/tipCalc/MainTipCalc';
 import MainStatisticalGraphCreator from './mathematical/statisticalGraphCreator/MainStatisticalGraphCreator';
 import MainVolume3DShapes from './mathematical/volume3DShapes/MainVolume3DShapes';
 import MainCosmoMassConverter from './physics/cosmoMassConverter/MainCosmoMassConverter';
+import MainNoveltyAgeCalculator from './health/noveltyAgeCalculator/MainNoveltyAgeCalculator';
 
 function App() {
   return (
@@ -239,6 +240,7 @@ function App() {
             <Route path="drugdosagecalc" element={<MainDrugDosageCalc />} />
             <Route path="apgarscorecalc" element={<MainAPGARScoreCalc />} />
             <Route path="waterintakecalc" element={<MainWaterIntakeCalculator />} />
+            <Route path="noveltyagecalc" element={<MainNoveltyAgeCalculator />} />
           </Route>
         </Routes>
       </BrowserRouter>
