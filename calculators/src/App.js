@@ -114,6 +114,7 @@ import MainStatisticalGraphCreator from './mathematical/statisticalGraphCreator/
 import MainVolume3DShapes from './mathematical/volume3DShapes/MainVolume3DShapes';
 import MainCosmoMassConverter from './physics/cosmoMassConverter/MainCosmoMassConverter';
 import MainNoveltyAgeCalculator from './health/noveltyAgeCalculator/MainNoveltyAgeCalculator';
+import MainReceiptGenerator from './finance/receiptGenerator/MainReceiptGenerator';
 
 function App() {
   return (
@@ -231,6 +232,7 @@ function App() {
             <Route path="currencyconverter" element={<MainCurrencyConverter />} />
             <Route path="profitmargincalc" element={<MainProfitMarginCalc />} />
             <Route path="tipcalc" element={<MainTipCalc />} />
+            <Route path="receiptgenerator" element={<MainReceiptGenerator />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
