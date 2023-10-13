@@ -14,8 +14,8 @@ function TimeConverter() {
   const [fromUnit, setFromUnit] = useState('ms');
   const [toUnit, setToUnit] = useState('s');
   const [convertedValue, setConvertedValue] = useState('');
+  const timeUnits = ['ms', 's', 'min', 'hr', 'μs', 'ns'];
 
-  const timeUnits = ['Millisecound', 'Secound', 'Minute', 'Hour', 'Microsecound', 'Nanosecound'];
 
   const convertTime = () => {
     if (isNaN(inputValue)) {
