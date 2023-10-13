@@ -166,7 +166,6 @@ function App() {
             <Route path="datastorageconverter" element={<MainDataStorageConverter />} />
             <Route path="hammingdistancecalc" element={<MainHammingDistance />} />
             {/* Mathematical */}
-            <Route path="numeralstowords" element={<MainNumeralsToWords />} />
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
             <Route path="statistics" element={<MainStatistics />} />
