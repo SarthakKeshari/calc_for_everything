@@ -23,23 +23,21 @@ function MainTriangleTypeFinder() {
     const a2 = parseFloat(sideA2);
     const b2 = parseFloat(sideB2);
     const c2 = parseFloat(sideC2);
-    // if (a <= 0 || b <= 0 || c <= 0) {
-    //   setResult("Invalid Triangle");
-    //   return;
-    // }
-    // if (a == b && b == c && a == c) {
-    //   setResult("Equilateral Triangle");
-    // } else if (a == b || b == c || a == c) {
-    //   setResult("Isoceles Triangle");
-    // } else {
-    //   setResult("Scalene Triangle");
-    // }
     if(checkTriangle(a1,b1,c1) && checkTriangle(a2,b2,c2)){
-      if(a1/a2==b1/b2 && b1/b2==c1/c2){
+      if(a1==a2 && b1==b2 && c1==c2){
+        setResult("The given triangles are congruent");
+      }else if(a1==b2 && b1==a2 && c1==c2){
+        setResult("The given triangles are congruent");
+      }else if(a1==c2 && b1==b2 && c1==a2){
+        setResult("The given triangles are congruent");
+      }else if(a1==a2 && b1==c2 && c1==b2){
+        setResult("The given triangles are congruent");
+      }else if(a1==b2 && b1==c2 && c1==a2){
+        setResult("The given triangles are congruent");
+      }else if(a1==c2 && b1==a2 && c1==b2){
         setResult("The given triangles are congruent");
       }else{
         setResult("The given triangles are not congruent");
-
       }
     }else{
       setResult("The given triangles are invalid");
