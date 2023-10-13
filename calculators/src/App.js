@@ -116,6 +116,7 @@ import MainCosmoMassConverter from './physics/cosmoMassConverter/MainCosmoMassCo
 import MainNoveltyAgeCalculator from './health/noveltyAgeCalculator/MainNoveltyAgeCalculator';
 import MainReceiptGenerator from './finance/receiptGenerator/MainReceiptGenerator';
 import MainCongruencyOfTriangleCalc from './mathematical/congruencyOfTriangleCalc/MainCongruencyOfTriangleCalc';
+import MainNumeralsToWords from './mathematical/numeralsToWords/MainNumeralsToWords';
 
 function App() {
   return (
@@ -217,6 +218,7 @@ function App() {
             <Route path="statisticalgraphcreator" element={<MainStatisticalGraphCreator /> } />
             <Route path="volume3dshapescalc" element={<MainVolume3DShapes /> } />
             <Route path="congruencyoftrianglecalc" element={<MainCongruencyOfTriangleCalc /> } />
+            <Route path="numeralstowordsconverter" element={<MainNumeralsToWords /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
