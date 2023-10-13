@@ -45,6 +45,7 @@ export default function Home() {
             <HomeGridItem calcName="Excess-3 Code Converter" path="/excess3codeconverter"/>
             <HomeGridItem calcName="Data Storage Converter" path="/datastorageconverter"/>
             <HomeGridItem calcName="Hamming Distance Calculator" path="/hammingdistancecalc"/>
+            <HomeGridItem calcName="Hamming Code Calculator" path="/hammingcodecalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>

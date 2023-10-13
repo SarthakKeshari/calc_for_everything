@@ -119,6 +119,7 @@ import MainCongruencyOfTriangleCalc from './mathematical/congruencyOfTriangleCal
 import MainNumeralsToWords from './mathematical/numeralsToWords/MainNumeralsToWords';
 import MainChemicalFormulaValidator from './chemistry/chemicalFormulaValidator/MainChemicalFormulaValidator';
 import MainPermutationAndCombinationCalc from './mathematical/permutationAndCombinationCalc/MainPermutationAndCombinationCalc';
+import MainHammingCode from './computer_science/hammingCode/MainHammingCode';
 
 function App() {
   return (
@@ -165,6 +166,7 @@ function App() {
             <Route path="excess3codeconverter" element={<MainExcess3CodeConverter />} />
             <Route path="datastorageconverter" element={<MainDataStorageConverter />} />
             <Route path="hammingdistancecalc" element={<MainHammingDistance />} />
+            <Route path="hammingcodecalc" element={<MainHammingCode />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
