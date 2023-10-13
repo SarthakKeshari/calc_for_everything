@@ -1,111 +1,221 @@
 import React, { useState } from 'react';
-import { Container, Typography, TextField, FormControl, InputLabel, Select, MenuItem, Button } from '@mui/material';
+import {
+  Container,
+  Typography,
+  TextField,
+  Select,
+  MenuItem,
+  Button,
+  Paper,
+} from '@mui/material';
 
-function MetricUnitConverter() {
-  const [unitType, setUnitType] = useState('length');
-  const [fromUnit, setFromUnit] = useState('meter');
-  const [toUnit, setToUnit] = useState('kilometer');
+function TimeConverter() {
   const [inputValue, setInputValue] = useState('');
-  const [result, setResult] = useState('');
+  const [fromUnit, setFromUnit] = useState('ms');
+  const [toUnit, setToUnit] = useState('s');
+  const [convertedValue, setConvertedValue] = useState('');
 
-  const unitData = {
-    length: {
-      meter: 1,
-      centimeter: 100,
-      millimeter: 1000,
-      kilometer: 0.001,
-      inch: 39.3701,
-      foot: 3.28084,
-      mile: 0.000621371,
-    },
-    weight: {
-      kilogram: 1,
-      gram: 1000,
-      milligram: 1000000,
-      pound: 2.20462,
-      ounce: 35.274,
-      tonne: 0.001,
-    },
-  };
+  const timeUnits = ['Millisecound', 'Secound', 'Minute', 'Hour', 'Microsecound', 'Nanosecound'];
 
-  const handleUnitTypeChange = (event) => {
-    setUnitType(event.target.value);
-  };
-
-  const handleFromUnitChange = (event) => {
-    setFromUnit(event.target.value);
-  };
-
-  const handleToUnitChange = (event) => {
-    setToUnit(event.target.value);
-  };
-
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
-  };
-
-  const convertUnits = () => {
-    const fromFactor = unitData[unitType][fromUnit];
-    const toFactor = unitData[unitType][toUnit];
-    const inputValueFloat = parseFloat(inputValue);
-
-    if (!isNaN(inputValueFloat)) {
-      const resultValue = (inputValueFloat * toFactor) / fromFactor;
-      setResult(resultValue.toFixed(4));
-    } else {
-      setResult('Invalid input');
+  const convertTime = () => {
+    if (isNaN(inputValue)) {
+      setConvertedValue('Please enter a valid number.');
+      return;
     }
+
+    const timeUnitsInMilliseconds = {
+      ms: 1,
+      s: 1000,
+      min: 60 * 1000,
+      hr: 60 * 60 * 1000,
+      μs: 0.001,
+      ns: 0.000001,
+    };
+
+    const result = (inputValue * timeUnitsInMilliseconds[fromUnit]) / timeUnitsInMilliseconds[toUnit];
+
+    setConvertedValue(`Converted time: ${result.toFixed(2)} ${toUnit}`);
   };
 
   return (
-    <Container maxWidth="md" sx={{ marginTop: '2rem' }}>
-      <Typography variant="h4" gutterBottom>
-        Metric Unit Converter
-      </Typography>
-      <br />
-      <FormControl fullWidth variant="outlined" sx={{ marginBottom: '1rem' }}>
-        <InputLabel>Select Unit Type</InputLabel>
-        <Select value={unitType} onChange={handleUnitTypeChange}>
-          <MenuItem value="length">Length</MenuItem>
-          <MenuItem value="weight">Weight</MenuItem>
-        </Select>
-      </FormControl>
-      <FormControl fullWidth variant="outlined" sx={{ marginBottom: '1rem' }}>
-        <InputLabel>From Unit</InputLabel>
-        <Select value={fromUnit} onChange={handleFromUnitChange}>
-          {Object.keys(unitData[unitType]).map((unit) => (
+    <Container maxWidth="md">
+      <Paper elevation={3} style={{ padding: '16px' }}>
+        <Typography variant="h5">Time Converter</Typography>
+        <TextField
+          label="Enter time"
+          type="number"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          fullWidth
+          margin="normal"
+        />
+        <Typography variant="body1" style={{ marginTop: '10px' }}>
+          From:
+        </Typography>
+        <Select
+          value={fromUnit}
+          onChange={(e) => setFromUnit(e.target.value)}
+          fullWidth
+          margin="normal"
+        >
+          {timeUnits.map((unit) => (
             <MenuItem key={unit} value={unit}>
               {unit}
             </MenuItem>
           ))}
         </Select>
-      </FormControl>
-      <FormControl fullWidth variant="outlined" sx={{ marginBottom: '1rem' }}>
-        <InputLabel>To Unit</InputLabel>
-        <Select value={toUnit} onChange={handleToUnitChange}>
-          {Object.keys(unitData[unitType]).map((unit) => (
+        <Typography variant="body1" style={{ marginTop: '10px' }}>
+          To:
+        </Typography>
+        <Select
+          value={toUnit}
+          onChange={(e) => setToUnit(e.target.value)}
+          fullWidth
+          margin="normal"
+        >
+          {timeUnits.map((unit) => (
             <MenuItem key={unit} value={unit}>
               {unit}
             </MenuItem>
           ))}
         </Select>
-      </FormControl>
-      <TextField
-        label="Enter Value"
-        variant="outlined"
-        fullWidth
-        value={inputValue}
-        onChange={handleInputChange}
-        sx={{ marginBottom: '1rem' }}
-      />
-      <Button variant="contained" onClick={convertUnits}>
-        Convert
-      </Button>
-      <Typography variant="h6" sx={{ marginTop: '1rem' }}>
-        Result: {result}
-      </Typography>
+        
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={convertTime}
+          fullWidth
+          style={{ marginTop: '10px' }}
+        >
+          Convert Time
+        </Button>
+        <Typography variant="body1" style={{ marginTop: '10px' }}>
+          {convertedValue}
+        </Typography>
+      </Paper>
     </Container>
   );
 }
 
-export default MetricUnitConverter;
+function TemperatureConverter() {
+  const [inputValue, setInputValue] = useState('');
+  const [fromUnit, setFromUnit] = useState('celsius');
+  const [toUnit, setToUnit] = useState('fahrenheit');
+  const [convertedValue, setConvertedValue] = useState('');
+
+  const temperatureUnits = ['Celsius (°C)', 'Fahrenheit (°F)', 'Kelvin (K)', 'Rankine (°R)'];
+
+  const convertTemperature = () => {
+    if (isNaN(inputValue)) {
+      setConvertedValue('Please enter a valid number.');
+      return;
+    }
+
+    let convertedValue = inputValue;
+
+    if (fromUnit === 'celsius') {
+      if (toUnit === 'fahrenheit') {
+        convertedValue = (inputValue * 9/5) + 32;
+      } else if (toUnit === 'kelvin') {
+        convertedValue = parseFloat(inputValue) + 273.15;
+      } else if (toUnit === 'rankine') {
+        convertedValue = (inputValue * 9/5) + 491.67;
+      }
+    } else if (fromUnit === 'fahrenheit') {
+      if (toUnit === 'celsius') {
+        convertedValue = (inputValue - 32) * 5/9;
+      } else if (toUnit === 'kelvin') {
+        convertedValue = ((inputValue - 32) * 5/9) + 273.15;
+      } else if (toUnit === 'rankine') {
+        convertedValue = inputValue + 459.67;
+      }
+    } else if (fromUnit === 'kelvin') {
+      if (toUnit === 'celsius') {
+        convertedValue = parseFloat(inputValue) - 273.15;
+      } else if (toUnit === 'fahrenheit') {
+        convertedValue = ((inputValue - 273.15) * 9/5) + 32;
+      } else if (toUnit === 'rankine') {
+        convertedValue = (inputValue * 9/5);
+      }
+    } else if (fromUnit === 'rankine') {
+      if (toUnit === 'celsius') {
+        convertedValue = (inputValue - 491.67) * 5/9;
+      } else if (toUnit === 'fahrenheit') {
+        convertedValue = inputValue - 459.67;
+      } else if (toUnit === 'kelvin') {
+        convertedValue = (inputValue - 491.67) * 5/9 + 273.15;
+      }
+    }
+
+    setConvertedValue(`Converted value: ${convertedValue.toFixed(2)} ${toUnit}`);
+  };
+
+  return (
+    <Container maxWidth="md">
+      <Paper elevation={3} style={{ padding: '16px', marginTop: '16px' }}>
+        <Typography variant="h5">Temperature Converter</Typography>
+        <TextField
+          label="Enter value"
+          type="number"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          fullWidth
+          margin="normal"
+        />
+        <Typography variant="body1" style={{ marginTop: '10px' }}>
+          From:
+        </Typography>
+        <Select
+          value={fromUnit}
+          onChange={(e) => setFromUnit(e.target.value)}
+          fullWidth
+          margin="normal"
+        >
+          {temperatureUnits.map((unit) => (
+            <MenuItem key={unit} value={unit.split(' ')[0].toLowerCase()}>
+              {unit}
+            </MenuItem>
+          ))}
+        </Select>
+        <Typography variant="body1" style={{ marginTop: '10px' }}>
+          To:
+        </Typography>
+        <Select
+          value={toUnit}
+          onChange={(e) => setToUnit(e.target.value)}
+          fullWidth
+          margin="normal"
+        >
+          {temperatureUnits.map((unit) => (
+            <MenuItem key={unit} value={unit.split(' ')[0].toLowerCase()}>
+              {unit}
+            </MenuItem>
+          ))}
+        </Select>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={convertTemperature}
+          fullWidth
+          style={{ marginTop: '10px' }}
+        >
+          Convert Temperature
+        </Button>
+        <Typography variant="body1" style={{ marginTop: '10px' }}>
+          {convertedValue}
+        </Typography>
+      </Paper>
+    </Container>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <TimeConverter />
+      <TemperatureConverter />
+    </div>
+  );
+}
+
+export default App;
