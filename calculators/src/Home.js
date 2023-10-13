@@ -103,6 +103,8 @@ export default function Home() {
             <HomeGridItem calcName="Operations On Fractions Calculator" path="/operationsonfractionscalc"/>
             <HomeGridItem calcName="Statistical Graph Creator" path="/statisticalgraphcreator"/>
             <HomeGridItem calcName="Volume 3D Shapes Calculator" path="/volume3dshapescalc"/>
+            <HomeGridItem calcName="Congruency Of Triangle Calculator" path="/congruencyoftrianglecalc"/>
+            <HomeGridItem calcName="Numerals To Words Converter" path="/numeralstowordsconverter"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
@@ -112,6 +114,7 @@ export default function Home() {
             <HomeGridItem calcName="Chemical Equation Balancer" path="/chemicaleqbalancer"/>
             <HomeGridItem calcName="Chemical Kinetics Calculator" path="/chemicalkineticscalc"/>
             <HomeGridItem calcName="Molecular Weight Calculator" path="/molecularweightcalc"/>
+            <HomeGridItem calcName="Chemical Formula Validator" path="/chemicalformulavalidator"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Physics</Typography>

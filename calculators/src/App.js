@@ -115,6 +115,9 @@ import MainVolume3DShapes from './mathematical/volume3DShapes/MainVolume3DShapes
 import MainCosmoMassConverter from './physics/cosmoMassConverter/MainCosmoMassConverter';
 import MainNoveltyAgeCalculator from './health/noveltyAgeCalculator/MainNoveltyAgeCalculator';
 import MainReceiptGenerator from './finance/receiptGenerator/MainReceiptGenerator';
+import MainCongruencyOfTriangleCalc from './mathematical/congruencyOfTriangleCalc/MainCongruencyOfTriangleCalc';
+import MainNumeralsToWords from './mathematical/numeralsToWords/MainNumeralsToWords';
+import MainChemicalFormulaValidator from './chemistry/chemicalFormulaValidator/MainChemicalFormulaValidator';
 
 function App() {
   return (
@@ -215,11 +218,14 @@ function App() {
             <Route path="operationsonfractionscalc" element={<MainOperationsOnFractions /> } />
             <Route path="statisticalgraphcreator" element={<MainStatisticalGraphCreator /> } />
             <Route path="volume3dshapescalc" element={<MainVolume3DShapes /> } />
+            <Route path="congruencyoftrianglecalc" element={<MainCongruencyOfTriangleCalc /> } />
+            <Route path="numeralstowordsconverter" element={<MainNumeralsToWords /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
             <Route path="chemicalkineticscalc" element={<MainChemicalKineticsCalc />} />
             <Route path="molecularweightcalc" element={<MainMolecularWeightCalc />} />
+            <Route path="chemicalformulavalidator" element={<MainChemicalFormulaValidator />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
