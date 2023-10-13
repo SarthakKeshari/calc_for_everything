@@ -103,6 +103,8 @@ export default function Home() {
             <HomeGridItem calcName="Operations On Fractions Calculator" path="/operationsonfractionscalc"/>
             <HomeGridItem calcName="Statistical Graph Creator" path="/statisticalgraphcreator"/>
             <HomeGridItem calcName="Volume 3D Shapes Calculator" path="/volume3dshapescalc"/>
+            <HomeGridItem calcName="Congruency Of Triangle Calculator" path="/congruencyoftrianglecalc"/>
+            <HomeGridItem calcName="Numerals To Words Converter" path="/numeralstowordsconverter"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
@@ -112,12 +114,14 @@ export default function Home() {
             <HomeGridItem calcName="Chemical Equation Balancer" path="/chemicaleqbalancer"/>
             <HomeGridItem calcName="Chemical Kinetics Calculator" path="/chemicalkineticscalc"/>
             <HomeGridItem calcName="Molecular Weight Calculator" path="/molecularweightcalc"/>
+            <HomeGridItem calcName="Chemical Formula Validator" path="/chemicalformulavalidator"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Physics</Typography>
         <hr/>
         <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
             <HomeGridItem calcName="Pressure Calculator" path="/pressurecalc"/>
+            <HomeGridItem calcName="Cosmo Mass Converter" path="/cosmomassconverter"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>
@@ -131,6 +135,7 @@ export default function Home() {
             <HomeGridItem calcName="Currency Converter" path="/currencyconverter"/>
             <HomeGridItem calcName="Profit Margin Calculator" path="/profitmargincalc"/>
             <HomeGridItem calcName="Tip Calculator" path="/tipcalc"/>
+            <HomeGridItem calcName="Receipt Generator" path="/receiptgenerator"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>
@@ -144,6 +149,7 @@ export default function Home() {
             <HomeGridItem calcName="Drug Dosage Calculator" path="/drugdosagecalc"/>
             <HomeGridItem calcName="APGAR Score Calculator" path="/apgarscorecalc"/>
             <HomeGridItem calcName="Water Intake Calculator" path="/waterintakecalc"/>
+            <HomeGridItem calcName="Novelty Age Calculator" path="/noveltyagecalc"/>
         </Grid>
         <br/>
     </Container>
