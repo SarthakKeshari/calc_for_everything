@@ -118,6 +118,7 @@ import MainReceiptGenerator from './finance/receiptGenerator/MainReceiptGenerato
 import MainCongruencyOfTriangleCalc from './mathematical/congruencyOfTriangleCalc/MainCongruencyOfTriangleCalc';
 import MainNumeralsToWords from './mathematical/numeralsToWords/MainNumeralsToWords';
 import MainChemicalFormulaValidator from './chemistry/chemicalFormulaValidator/MainChemicalFormulaValidator';
+import MainPermutationAndCombinationCalc from './mathematical/permutationAndCombinationCalc/MainPermutationAndCombinationCalc';
 
 function App() {
   return (
@@ -220,6 +221,7 @@ function App() {
             <Route path="volume3dshapescalc" element={<MainVolume3DShapes /> } />
             <Route path="congruencyoftrianglecalc" element={<MainCongruencyOfTriangleCalc /> } />
             <Route path="numeralstowordsconverter" element={<MainNumeralsToWords /> } />
+            <Route path="permutationandcombinationcalc" element={<MainPermutationAndCombinationCalc /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />

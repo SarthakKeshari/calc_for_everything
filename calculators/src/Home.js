@@ -105,6 +105,7 @@ export default function Home() {
             <HomeGridItem calcName="Volume 3D Shapes Calculator" path="/volume3dshapescalc"/>
             <HomeGridItem calcName="Congruency Of Triangle Calculator" path="/congruencyoftrianglecalc"/>
             <HomeGridItem calcName="Numerals To Words Converter" path="/numeralstowordsconverter"/>
+            <HomeGridItem calcName="Permutation And Combination Calculator" path="/permutationandcombinationcalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
