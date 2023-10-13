@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Typography, Button, TextField } from "@mui/material";
 
-function MainTriangleTypeFinder() {
+function MainCongruencyOfTriangleCalculator() {
   const [sideA1, setSideA1] = useState("");
   const [sideB1, setSideB1] = useState("");
   const [sideC1, setSideC1] = useState("");
@@ -126,4 +126,4 @@ function MainTriangleTypeFinder() {
   );
 }
 
-export default MainTriangleTypeFinder;
+export default MainCongruencyOfTriangleCalculator;
