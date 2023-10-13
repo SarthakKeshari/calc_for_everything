@@ -115,6 +115,7 @@ import MainVolume3DShapes from './mathematical/volume3DShapes/MainVolume3DShapes
 import MainCosmoMassConverter from './physics/cosmoMassConverter/MainCosmoMassConverter';
 import MainNoveltyAgeCalculator from './health/noveltyAgeCalculator/MainNoveltyAgeCalculator';
 import MainReceiptGenerator from './finance/receiptGenerator/MainReceiptGenerator';
+import MainCongruencyOfTriangleCalc from './mathematical/congruencyOfTriangleCalc/MainCongruencyOfTriangleCalc';
 
 function App() {
   return (
@@ -215,6 +216,7 @@ function App() {
             <Route path="operationsonfractionscalc" element={<MainOperationsOnFractions /> } />
             <Route path="statisticalgraphcreator" element={<MainStatisticalGraphCreator /> } />
             <Route path="volume3dshapescalc" element={<MainVolume3DShapes /> } />
+            <Route path="congruencyoftrianglecalc" element={<MainCongruencyOfTriangleCalc /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
