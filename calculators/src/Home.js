@@ -114,6 +114,7 @@ export default function Home() {
             <HomeGridItem calcName="Chemical Equation Balancer" path="/chemicaleqbalancer"/>
             <HomeGridItem calcName="Chemical Kinetics Calculator" path="/chemicalkineticscalc"/>
             <HomeGridItem calcName="Molecular Weight Calculator" path="/molecularweightcalc"/>
+            <HomeGridItem calcName="Chemical Formula Validator" path="/chemicalformulavalidator"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Physics</Typography>

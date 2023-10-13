@@ -117,6 +117,7 @@ import MainNoveltyAgeCalculator from './health/noveltyAgeCalculator/MainNoveltyA
 import MainReceiptGenerator from './finance/receiptGenerator/MainReceiptGenerator';
 import MainCongruencyOfTriangleCalc from './mathematical/congruencyOfTriangleCalc/MainCongruencyOfTriangleCalc';
 import MainNumeralsToWords from './mathematical/numeralsToWords/MainNumeralsToWords';
+import MainChemicalFormulaValidator from './chemistry/chemicalFormulaValidator/MainChemicalFormulaValidator';
 
 function App() {
   return (
@@ -224,6 +225,7 @@ function App() {
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
             <Route path="chemicalkineticscalc" element={<MainChemicalKineticsCalc />} />
             <Route path="molecularweightcalc" element={<MainMolecularWeightCalc />} />
+            <Route path="chemicalformulavalidator" element={<MainChemicalFormulaValidator />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
