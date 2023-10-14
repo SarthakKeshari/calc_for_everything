@@ -121,6 +121,7 @@ import MainChemicalFormulaValidator from './chemistry/chemicalFormulaValidator/M
 import MainPermutationAndCombinationCalc from './mathematical/permutationAndCombinationCalc/MainPermutationAndCombinationCalc';
 import MainHammingCode from './computer_science/hammingCode/MainHammingCode';
 import MainDayScheduler from './health/dayScheduler/MainDayScheduler';
+import MainSimilarityOfTriangleCalc from './mathematical/similarityOfTriangleCalc/MainSimilarityOfTriangleCalc';
 
 function App() {
   return (
@@ -225,6 +226,7 @@ function App() {
             <Route path="congruencyoftrianglecalc" element={<MainCongruencyOfTriangleCalc /> } />
             <Route path="numeralstowordsconverter" element={<MainNumeralsToWords /> } />
             <Route path="permutationandcombinationcalc" element={<MainPermutationAndCombinationCalc /> } />
+            <Route path="similarityoftrianglecalc" element={<MainSimilarityOfTriangleCalc /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
