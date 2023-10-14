@@ -4,7 +4,7 @@ import { Container, Typography } from '@mui/material';
 function MainFileDataComparator(){
     return(
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>File Data Comparator</Typography>
+            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>File/Data Comparator</Typography>
             <hr/>
             <br/>
         </Container>
