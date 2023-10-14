@@ -47,6 +47,7 @@ export default function Home() {
             <HomeGridItem calcName="Hamming Distance Calculator" path="/hammingdistancecalc"/>
             <HomeGridItem calcName="Hamming Code Calculator" path="/hammingcodecalc"/>
             <HomeGridItem calcName="File/Data Comparator" path="/filedatacomparator"/>
+            <HomeGridItem calcName="Flow Chart Maker" path="/flowchartmaker"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>

@@ -124,6 +124,7 @@ import MainDayScheduler from './health/dayScheduler/MainDayScheduler';
 import MainSimilarityOfTriangleCalc from './mathematical/similarityOfTriangleCalc/MainSimilarityOfTriangleCalc';
 import MainFileDataComparator from './computer_science/fileDataComparator/MainFileDataComparator';
 import MainDrawingCanvas from './art/drawingCanvas/MainDrawingCanvas';
+import MainFlowChartMaker from './computer_science/flowChartMaker/MainFlowChartMaker';
 
 function App() {
   return (
@@ -172,6 +173,7 @@ function App() {
             <Route path="hammingdistancecalc" element={<MainHammingDistance />} />
             <Route path="hammingcodecalc" element={<MainHammingCode />} />
             <Route path="filedatacomparator" element={<MainFileDataComparator />} />
+            <Route path="flowchartmaker" element={<MainFlowChartMaker />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
