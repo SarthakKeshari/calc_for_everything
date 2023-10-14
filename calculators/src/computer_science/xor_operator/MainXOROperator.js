@@ -1,5 +1,6 @@
 import React , {useState} from 'react';
 import { Container, Typography } from '@mui/material';
+import InfoXOROperator from './InfoXOROperator';
 
 function MainXOROperator(){
     const [value1, setValue1] = useState('');
@@ -33,7 +34,7 @@ function MainXOROperator(){
   };
     return(
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>XOR Operator</Typography>
+            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>XOR Operator <InfoXOROperator/> </Typography>
             <hr/>
             <br/>
             <div>
