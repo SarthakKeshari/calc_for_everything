@@ -131,6 +131,7 @@ import MainDataCleaner from './computer_science/dataCleaner/MainDataCleaner';
 import MainGDPCalc from './finance/gDPCalc/MainGDPCalc';
 import MainMandalaCreater from './art/mandalaCreater/MainMandalaCreater';
 import MainRandomNumberGenerator from './computer_science/randomNumberGenerator/MainRandomNumberGenerator';
+import MainIPAddressCalc from './computer_science/iPAddressCalc/MainIPAddressCalc';
 
 function App() {
   return (
@@ -182,6 +183,7 @@ function App() {
             <Route path="flowchartmaker" element={<MainFlowChartMaker />} />
             <Route path="datacleaner" element={<MainDataCleaner />} />
             <Route path="randomnumbergenerator" element={<MainRandomNumberGenerator />} />
+            <Route path="ipaddresscalc" element={<MainIPAddressCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />

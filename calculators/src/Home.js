@@ -50,6 +50,7 @@ export default function Home() {
             <HomeGridItem calcName="Flow Chart Maker" path="/flowchartmaker"/> 
             <HomeGridItem calcName="Data Cleaner" path="/datacleaner"/> 
             <HomeGridItem calcName="Random Number Generator" path="/randomnumbergenerator"/> 
+            <HomeGridItem calcName="IP Address Calculator" path="/ipaddresscalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
