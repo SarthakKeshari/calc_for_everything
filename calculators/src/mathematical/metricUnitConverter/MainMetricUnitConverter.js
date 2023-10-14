@@ -26,6 +26,20 @@ function MetricUnitConverter() {
       ounce: 35.274,
       tonne: 0.001,
     },
+    temperature: {
+      celsius: 'Celsius (°C)',
+      fahrenheit: 'Fahrenheit (°F)',
+      kelvin: 'Kelvin (K)',
+      rankine: 'Rankine (°R)',
+    },
+    time: {
+      ms: 1,
+      s: 1000,
+      min: 60*1000,
+      hr: 60*60*1000,
+      μs: 0.001,
+      ns: 0.000001,
+    },
   };
 
   const handleUnitTypeChange = (event) => {
@@ -48,11 +62,53 @@ function MetricUnitConverter() {
     const fromFactor = unitData[unitType][fromUnit];
     const toFactor = unitData[unitType][toUnit];
     const inputValueFloat = parseFloat(inputValue);
+    console.log(unitType)
 
-    if (!isNaN(inputValueFloat)) {
+    if (unitType === "length" || unitType==="weight") {
       const resultValue = (inputValueFloat * toFactor) / fromFactor;
       setResult(resultValue.toFixed(4));
-    } else {
+    }else if(unitType === "temperature"){
+      let resultValue = inputValue;
+
+    if (fromUnit === 'celsius') {
+      if (toUnit === 'fahrenheit') {
+        resultValue = (inputValue * 9/5) + 32;
+      } else if (toUnit === 'kelvin') {
+        resultValue = parseFloat(inputValue) + 273.15;
+      } else if (toUnit === 'rankine') {
+        resultValue = (inputValue * 9/5) + 491.67;
+      }
+    } else if (fromUnit === 'fahrenheit') {
+      if (toUnit === 'celsius') {
+        resultValue = (inputValue - 32) * 5/9;
+      } else if (toUnit === 'kelvin') {
+        resultValue = ((inputValue - 32) * 5/9) + 273.15;
+      } else if (toUnit === 'rankine') {
+        resultValue = inputValue + 459.67;
+      }
+    } else if (fromUnit === 'kelvin') {
+      if (toUnit === 'celsius') {
+        resultValue = parseFloat(inputValue) - 273.15;
+      } else if (toUnit === 'fahrenheit') {
+        resultValue = ((inputValue - 273.15) * 9/5) + 32;
+      } else if (toUnit === 'rankine') {
+        resultValue = (inputValue * 9/5);
+      }
+    } else if (fromUnit === 'rankine') {
+      if (toUnit === 'celsius') {
+        resultValue = (inputValue - 491.67) * 5/9;
+      } else if (toUnit === 'fahrenheit') {
+        resultValue = inputValue - 459.67;
+      } else if (toUnit === 'kelvin') {
+        resultValue = (inputValue - 491.67) * 5/9 + 273.15;
+      }
+    }
+    setResult(resultValue.toFixed(4));
+    } else if(unitType === "time"){
+      const resultValue = (inputValue * fromFactor) / toFactor;
+      setResult(resultValue.toFixed(4));
+    }
+    else {
       setResult('Invalid input');
     }
   };
@@ -68,6 +124,8 @@ function MetricUnitConverter() {
         <Select value={unitType} onChange={handleUnitTypeChange}>
           <MenuItem value="length">Length</MenuItem>
           <MenuItem value="weight">Weight</MenuItem>
+          <MenuItem value="temperature">Temperature</MenuItem>
+          <MenuItem value="time">Time</MenuItem>
         </Select>
       </FormControl>
       <FormControl fullWidth variant="outlined" sx={{ marginBottom: '1rem' }}>
