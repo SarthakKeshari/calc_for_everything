@@ -122,6 +122,7 @@ import MainPermutationAndCombinationCalc from './mathematical/permutationAndComb
 import MainHammingCode from './computer_science/hammingCode/MainHammingCode';
 import MainDayScheduler from './health/dayScheduler/MainDayScheduler';
 import MainSimilarityOfTriangleCalc from './mathematical/similarityOfTriangleCalc/MainSimilarityOfTriangleCalc';
+import MainFileDataComparator from './computer_science/fileDataComparator/MainFileDataComparator';
 
 function App() {
   return (
@@ -169,6 +170,7 @@ function App() {
             <Route path="datastorageconverter" element={<MainDataStorageConverter />} />
             <Route path="hammingdistancecalc" element={<MainHammingDistance />} />
             <Route path="hammingcodecalc" element={<MainHammingCode />} />
+            <Route path="filedatacomparator" element={<MainFileDataComparator />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
