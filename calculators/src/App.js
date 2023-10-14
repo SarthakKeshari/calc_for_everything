@@ -127,6 +127,7 @@ import MainDrawingCanvas from './art/drawingCanvas/MainDrawingCanvas';
 import MainFlowChartMaker from './computer_science/flowChartMaker/MainFlowChartMaker';
 import MainTaskPlanner from './health/taskPlanner/MainTaskPlanner';
 import MainAmplitudeCalc from './physics/amplitudeCalc/MainAmplitudeCalc';
+import MainDataCleaner from './computer_science/dataCleaner/MainDataCleaner';
 
 function App() {
   return (
@@ -176,6 +177,7 @@ function App() {
             <Route path="hammingcodecalc" element={<MainHammingCode />} />
             <Route path="filedatacomparator" element={<MainFileDataComparator />} />
             <Route path="flowchartmaker" element={<MainFlowChartMaker />} />
+            <Route path="datacleaner" element={<MainDataCleaner />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
