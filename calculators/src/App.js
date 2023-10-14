@@ -125,6 +125,7 @@ import MainSimilarityOfTriangleCalc from './mathematical/similarityOfTriangleCal
 import MainFileDataComparator from './computer_science/fileDataComparator/MainFileDataComparator';
 import MainDrawingCanvas from './art/drawingCanvas/MainDrawingCanvas';
 import MainFlowChartMaker from './computer_science/flowChartMaker/MainFlowChartMaker';
+import MainTaskPlanner from './health/taskPlanner/MainTaskPlanner';
 
 function App() {
   return (
@@ -262,6 +263,7 @@ function App() {
             <Route path="waterintakecalc" element={<MainWaterIntakeCalculator />} />
             <Route path="noveltyagecalc" element={<MainNoveltyAgeCalculator />} />
             <Route path="dayscheduler" element={<MainDayScheduler />} />
+            <Route path="taskplanner" element={<MainTaskPlanner />} />
             {/* Art */}
             <Route path="drawingcanvas" element={<MainDrawingCanvas />} />
           </Route>
