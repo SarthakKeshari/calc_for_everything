@@ -120,6 +120,7 @@ import MainNumeralsToWords from './mathematical/numeralsToWords/MainNumeralsToWo
 import MainChemicalFormulaValidator from './chemistry/chemicalFormulaValidator/MainChemicalFormulaValidator';
 import MainPermutationAndCombinationCalc from './mathematical/permutationAndCombinationCalc/MainPermutationAndCombinationCalc';
 import MainHammingCode from './computer_science/hammingCode/MainHammingCode';
+import MainDayScheduler from './health/dayScheduler/MainDayScheduler';
 
 function App() {
   return (
@@ -253,6 +254,7 @@ function App() {
             <Route path="apgarscorecalc" element={<MainAPGARScoreCalc />} />
             <Route path="waterintakecalc" element={<MainWaterIntakeCalculator />} />
             <Route path="noveltyagecalc" element={<MainNoveltyAgeCalculator />} />
+            <Route path="dayscheduler" element={<MainDayScheduler />} />
           </Route>
         </Routes>
       </BrowserRouter>

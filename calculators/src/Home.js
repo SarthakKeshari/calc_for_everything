@@ -152,6 +152,7 @@ export default function Home() {
             <HomeGridItem calcName="APGAR Score Calculator" path="/apgarscorecalc"/>
             <HomeGridItem calcName="Water Intake Calculator" path="/waterintakecalc"/>
             <HomeGridItem calcName="Novelty Age Calculator" path="/noveltyagecalc"/>
+            <HomeGridItem calcName="Day Scheduler" path="/dayscheduler"/>
         </Grid>
         <br/>
     </Container>
