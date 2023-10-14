@@ -109,6 +109,27 @@ import MainExcess3CodeConverter from './computer_science/excess3CodeConverter/Ma
 import MainDataStorageConverter from './computer_science/dataStorageConverter/MainDataStorageConverter';
 import MainOperationsOnFractions from './mathematical/operationsOnFractions/MainOperationsOnFractions';
 import MainHammingDistance from './computer_science/hammingDistance/MainHammingDistance';
+import MainTipCalc from './finance/tipCalc/MainTipCalc';
+import MainStatisticalGraphCreator from './mathematical/statisticalGraphCreator/MainStatisticalGraphCreator';
+import MainVolume3DShapes from './mathematical/volume3DShapes/MainVolume3DShapes';
+import MainCosmoMassConverter from './physics/cosmoMassConverter/MainCosmoMassConverter';
+import MainNoveltyAgeCalculator from './health/noveltyAgeCalculator/MainNoveltyAgeCalculator';
+import MainReceiptGenerator from './finance/receiptGenerator/MainReceiptGenerator';
+import MainCongruencyOfTriangleCalc from './mathematical/congruencyOfTriangleCalc/MainCongruencyOfTriangleCalc';
+import MainNumeralsToWords from './mathematical/numeralsToWords/MainNumeralsToWords';
+import MainChemicalFormulaValidator from './chemistry/chemicalFormulaValidator/MainChemicalFormulaValidator';
+import MainPermutationAndCombinationCalc from './mathematical/permutationAndCombinationCalc/MainPermutationAndCombinationCalc';
+import MainHammingCode from './computer_science/hammingCode/MainHammingCode';
+import MainDayScheduler from './health/dayScheduler/MainDayScheduler';
+import MainSimilarityOfTriangleCalc from './mathematical/similarityOfTriangleCalc/MainSimilarityOfTriangleCalc';
+import MainFileDataComparator from './computer_science/fileDataComparator/MainFileDataComparator';
+import MainDrawingCanvas from './art/drawingCanvas/MainDrawingCanvas';
+import MainFlowChartMaker from './computer_science/flowChartMaker/MainFlowChartMaker';
+import MainTaskPlanner from './health/taskPlanner/MainTaskPlanner';
+import MainAmplitudeCalc from './physics/amplitudeCalc/MainAmplitudeCalc';
+import MainDataCleaner from './computer_science/dataCleaner/MainDataCleaner';
+import MainGDPCalc from './finance/gDPCalc/MainGDPCalc';
+import MainMandalaCreater from './art/mandalaCreater/MainMandalaCreater';
 
 function App() {
   return (
@@ -155,6 +176,10 @@ function App() {
             <Route path="excess3codeconverter" element={<MainExcess3CodeConverter />} />
             <Route path="datastorageconverter" element={<MainDataStorageConverter />} />
             <Route path="hammingdistancecalc" element={<MainHammingDistance />} />
+            <Route path="hammingcodecalc" element={<MainHammingCode />} />
+            <Route path="filedatacomparator" element={<MainFileDataComparator />} />
+            <Route path="flowchartmaker" element={<MainFlowChartMaker />} />
+            <Route path="datacleaner" element={<MainDataCleaner />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -207,13 +232,22 @@ function App() {
             <Route path="squareandcubecalc" element={<MainSquareAndCubeCalc /> } />
             <Route path="romannumeralconverter" element={<MainRomanNumeralConverter /> } />
             <Route path="operationsonfractionscalc" element={<MainOperationsOnFractions /> } />
+            <Route path="statisticalgraphcreator" element={<MainStatisticalGraphCreator /> } />
+            <Route path="volume3dshapescalc" element={<MainVolume3DShapes /> } />
+            <Route path="congruencyoftrianglecalc" element={<MainCongruencyOfTriangleCalc /> } />
+            <Route path="numeralstowordsconverter" element={<MainNumeralsToWords /> } />
+            <Route path="permutationandcombinationcalc" element={<MainPermutationAndCombinationCalc /> } />
+            <Route path="similarityoftrianglecalc" element={<MainSimilarityOfTriangleCalc /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
             <Route path="chemicalkineticscalc" element={<MainChemicalKineticsCalc />} />
             <Route path="molecularweightcalc" element={<MainMolecularWeightCalc />} />
+            <Route path="chemicalformulavalidator" element={<MainChemicalFormulaValidator />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
+            <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
+            <Route path="amplitudecalculator" element={<MainAmplitudeCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
@@ -222,6 +256,9 @@ function App() {
             <Route path="expensetracker" element={<MainExpenseTracker />} />
             <Route path="currencyconverter" element={<MainCurrencyConverter />} />
             <Route path="profitmargincalc" element={<MainProfitMarginCalc />} />
+            <Route path="tipcalc" element={<MainTipCalc />} />
+            <Route path="receiptgenerator" element={<MainReceiptGenerator />} />
+            <Route path="gdpcalc" element={<MainGDPCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
@@ -231,6 +268,12 @@ function App() {
             <Route path="drugdosagecalc" element={<MainDrugDosageCalc />} />
             <Route path="apgarscorecalc" element={<MainAPGARScoreCalc />} />
             <Route path="waterintakecalc" element={<MainWaterIntakeCalculator />} />
+            <Route path="noveltyagecalc" element={<MainNoveltyAgeCalculator />} />
+            <Route path="dayscheduler" element={<MainDayScheduler />} />
+            <Route path="taskplanner" element={<MainTaskPlanner />} />
+            {/* Art */}
+            <Route path="drawingcanvas" element={<MainDrawingCanvas />} />
+            <Route path="mandalacreater" element={<MainMandalaCreater />} />
           </Route>
         </Routes>
       </BrowserRouter>

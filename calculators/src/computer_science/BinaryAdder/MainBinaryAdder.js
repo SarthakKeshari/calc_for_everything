@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Divider, Input, Typography } from '@mui/material';
 import CopyValue from '../../components/CopyValue';
+import InfoBinaryAdder from './InfoBinaryAdder';
 
 function MainBinaryAdder(){
     const [bin1,setBin1] = useState(0)
@@ -19,7 +20,7 @@ function MainBinaryAdder(){
     },[bin1,bin2])
   return (
     <div><Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-    <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Binary Adder</Typography>
+    <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Binary Adder <InfoBinaryAdder/> </Typography>
     <hr/>
     <br/>
     <Container sx={{display:"flex", flexDirection:"column"}}>
