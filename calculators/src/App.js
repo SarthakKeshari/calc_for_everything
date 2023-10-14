@@ -126,6 +126,7 @@ import MainFileDataComparator from './computer_science/fileDataComparator/MainFi
 import MainDrawingCanvas from './art/drawingCanvas/MainDrawingCanvas';
 import MainFlowChartMaker from './computer_science/flowChartMaker/MainFlowChartMaker';
 import MainTaskPlanner from './health/taskPlanner/MainTaskPlanner';
+import MainAmplitudeCalc from './physics/amplitudeCalc/MainAmplitudeCalc';
 
 function App() {
   return (
@@ -242,6 +243,7 @@ function App() {
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
+            <Route path="amplitudecalculator" element={<MainAmplitudeCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
