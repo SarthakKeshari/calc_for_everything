@@ -17,7 +17,7 @@ function MassConverter() {
   const [toUnit, setToUnit] = useState('grams');
   const [convertedMass, setConvertedMass] = useState('');
 
-  const massUnits = ['kilograms', 'grams', 'pounds', 'ounces', 'tonnes']; // Added "tonnes" as a unit
+  const massUnits = ['kilograms', 'grams', 'pounds', 'ounces', 'tonnes']; 
 
   const massUnitValues = {
     kilograms: 1,
@@ -32,10 +32,11 @@ function MassConverter() {
       setConvertedMass('Please enter a valid number for mass.');
       return;
     }
+    
 
     const result = (inputMass * massUnitValues[fromUnit]) / massUnitValues[toUnit];
 
-    setConvertedMass(`Converted mass: ${result.toFixed(2)} ${toUnit}`);
+    setConvertedMass(`Converted mass: ${result.toFixed(2)} ${fromUnit}`);
   };
 
   return (
