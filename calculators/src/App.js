@@ -123,6 +123,7 @@ import MainHammingCode from './computer_science/hammingCode/MainHammingCode';
 import MainDayScheduler from './health/dayScheduler/MainDayScheduler';
 import MainSimilarityOfTriangleCalc from './mathematical/similarityOfTriangleCalc/MainSimilarityOfTriangleCalc';
 import MainFileDataComparator from './computer_science/fileDataComparator/MainFileDataComparator';
+import MainDrawingCanvas from './art/drawingCanvas/MainDrawingCanvas';
 
 function App() {
   return (
@@ -259,6 +260,8 @@ function App() {
             <Route path="waterintakecalc" element={<MainWaterIntakeCalculator />} />
             <Route path="noveltyagecalc" element={<MainNoveltyAgeCalculator />} />
             <Route path="dayscheduler" element={<MainDayScheduler />} />
+            {/* Art */}
+            <Route path="drawingcanvas" element={<MainDrawingCanvas />} />
           </Route>
         </Routes>
       </BrowserRouter>
