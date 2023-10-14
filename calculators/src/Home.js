@@ -49,6 +49,7 @@ export default function Home() {
             <HomeGridItem calcName="File/Data Comparator" path="/filedatacomparator"/>
             <HomeGridItem calcName="Flow Chart Maker" path="/flowchartmaker"/> 
             <HomeGridItem calcName="Data Cleaner" path="/datacleaner"/> 
+            <HomeGridItem calcName="Random Number Generator" path="/randomnumbergenerator"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>

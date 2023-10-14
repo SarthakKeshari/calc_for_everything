@@ -130,6 +130,7 @@ import MainAmplitudeCalc from './physics/amplitudeCalc/MainAmplitudeCalc';
 import MainDataCleaner from './computer_science/dataCleaner/MainDataCleaner';
 import MainGDPCalc from './finance/gDPCalc/MainGDPCalc';
 import MainMandalaCreater from './art/mandalaCreater/MainMandalaCreater';
+import MainRandomNumberGenerator from './computer_science/randomNumberGenerator/MainRandomNumberGenerator';
 
 function App() {
   return (
@@ -180,6 +181,7 @@ function App() {
             <Route path="filedatacomparator" element={<MainFileDataComparator />} />
             <Route path="flowchartmaker" element={<MainFlowChartMaker />} />
             <Route path="datacleaner" element={<MainDataCleaner />} />
+            <Route path="randomnumbergenerator" element={<MainRandomNumberGenerator />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
