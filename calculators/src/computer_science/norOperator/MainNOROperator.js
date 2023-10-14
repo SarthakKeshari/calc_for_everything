@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Divider, Input, Typography } from '@mui/material';
 import CopyValue from '../../components/CopyValue';
+import InfoNOROperator from './InfoNOROperator';
 
 function MainNOROperator(){
     const [field,setField] = useState(0)
@@ -49,7 +50,7 @@ function MainNOROperator(){
       };
     return(
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>NOR Operator</Typography>
+            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>NOR Operator <InfoNOROperator/> </Typography>
             <hr/>
             <br/>
                 <Container sx={{display:"flex", flexDirection:"column"}}>
