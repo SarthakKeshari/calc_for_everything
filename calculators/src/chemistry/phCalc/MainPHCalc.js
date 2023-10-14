@@ -3,6 +3,7 @@ import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
 
 import { Container, Typography } from '@mui/material'
+import InfoPHCalc from './InfoPHCalc';
 
 function MainPHCalc () {
   const [phValue, setPhValue] = useState('');
@@ -30,7 +31,7 @@ function MainPHCalc () {
       sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: '10' }}
     >
       <Typography pt={1} variant='h5' sx={{ textAlign: 'center' }}>
-        pH Calculator
+        pH Calculator<InfoPHCalc/>
       </Typography>
       <hr />
       <br />
