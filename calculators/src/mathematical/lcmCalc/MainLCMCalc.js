@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './mainLCMCalc.css';
+import InfoLCMCalc from './InfoLCMCalc';
 
 class MainLCMCalc extends Component {
   constructor() {
@@ -62,7 +63,7 @@ class MainLCMCalc extends Component {
   render() {
     return (
       <div className="lcm-generator-container" style={{marginTop:'50px'}}>
-        <h2 className='my-3'><strong><i>LCM Generator</i></strong></h2>
+        <h2 className='my-3'><strong><i>LCM Generator</i> <InfoLCMCalc/> </strong></h2>
         <label className='my-5'>Select the number of inputs : </label>
         <select className='m-2'
   value={this.state.numberOfInputs}
