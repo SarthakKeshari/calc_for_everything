@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Typography, Button, TextField } from '@mui/material';
+import InfoPythagorasTheorem from './InfoPythagorasTheorem';
 
 function MainPythagorasTheorem(){
     const [sideA, setSideA] = useState('');
@@ -20,7 +21,7 @@ function MainPythagorasTheorem(){
   
     return(
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Pythagoras Theorem Calculator</Typography>
+            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Pythagoras Theorem Calculator <InfoPythagorasTheorem/></Typography>
             <hr/>
             <div>
       <TextField
