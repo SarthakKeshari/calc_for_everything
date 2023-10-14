@@ -129,6 +129,7 @@ import MainTaskPlanner from './health/taskPlanner/MainTaskPlanner';
 import MainAmplitudeCalc from './physics/amplitudeCalc/MainAmplitudeCalc';
 import MainDataCleaner from './computer_science/dataCleaner/MainDataCleaner';
 import MainGDPCalc from './finance/gDPCalc/MainGDPCalc';
+import MainMandalaCreater from './art/mandalaCreater/MainMandalaCreater';
 
 function App() {
   return (
@@ -272,6 +273,7 @@ function App() {
             <Route path="taskplanner" element={<MainTaskPlanner />} />
             {/* Art */}
             <Route path="drawingcanvas" element={<MainDrawingCanvas />} />
+            <Route path="mandalacreater" element={<MainMandalaCreater />} />
           </Route>
         </Routes>
       </BrowserRouter>
