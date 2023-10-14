@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Typography, Button, TextField, Grid } from '@mui/material';
+import InfoPressureCalc from './InfoPressureCalc';
 
 function MainPressureCalc() {
     const [force, setForce] = useState('');
@@ -19,7 +20,7 @@ function MainPressureCalc() {
     };
         return (
             <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: "10" }}>
-                <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Pressure Calculator</Typography>
+                <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Pressure Calculator<InfoPressureCalc/></Typography>
                 <hr />
                 <br />
                 <Container maxWidth="sm">

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Typography, Button, TextField, Box } from '@mui/material';
+import InfoRandomNumberGenerator from './InfoRandomNumberGenerator';
 
 function MainRandomNumberGenerator() {
     const [min, setMin] = useState(1);
@@ -17,7 +18,7 @@ function MainRandomNumberGenerator() {
     };
         return (
             <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: "10" }}>
-                <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Random Number Generator</Typography>
+                <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Random Number Generator<InfoRandomNumberGenerator/></Typography>
                 <hr />
                 <br />
                 {/* Write your code here */}
