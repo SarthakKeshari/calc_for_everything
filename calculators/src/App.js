@@ -128,6 +128,7 @@ import MainFlowChartMaker from './computer_science/flowChartMaker/MainFlowChartM
 import MainTaskPlanner from './health/taskPlanner/MainTaskPlanner';
 import MainAmplitudeCalc from './physics/amplitudeCalc/MainAmplitudeCalc';
 import MainDataCleaner from './computer_science/dataCleaner/MainDataCleaner';
+import MainGDPCalc from './finance/gDPCalc/MainGDPCalc';
 
 function App() {
   return (
@@ -256,6 +257,7 @@ function App() {
             <Route path="profitmargincalc" element={<MainProfitMarginCalc />} />
             <Route path="tipcalc" element={<MainTipCalc />} />
             <Route path="receiptgenerator" element={<MainReceiptGenerator />} />
+            <Route path="gdpcalc" element={<MainGDPCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
