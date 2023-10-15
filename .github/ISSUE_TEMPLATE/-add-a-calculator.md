@@ -19,6 +19,7 @@ Your answer
 - [ ] Physics
 - [ ] Chemistry
 - [ ] Biology
+- [ ] Art
 - [ ] Finance
 - [ ] Scientific
 - [ ] Health
