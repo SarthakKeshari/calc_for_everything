@@ -131,6 +131,8 @@ import MainDataCleaner from './computer_science/dataCleaner/MainDataCleaner';
 import MainGDPCalc from './finance/gDPCalc/MainGDPCalc';
 import MainMandalaCreater from './art/mandalaCreater/MainMandalaCreater';
 import MainRandomNumberGenerator from './computer_science/randomNumberGenerator/MainRandomNumberGenerator';
+import MainIPAddressCalc from './computer_science/iPAddressCalc/MainIPAddressCalc';
+import MainSumAPGPHPCalc from './mathematical/sumAPGPHPCalc/MainSumAPGPHPCalc';
 
 function App() {
   return (
@@ -182,6 +184,7 @@ function App() {
             <Route path="flowchartmaker" element={<MainFlowChartMaker />} />
             <Route path="datacleaner" element={<MainDataCleaner />} />
             <Route path="randomnumbergenerator" element={<MainRandomNumberGenerator />} />
+            <Route path="ipaddresscalc" element={<MainIPAddressCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -240,6 +243,7 @@ function App() {
             <Route path="numeralstowordsconverter" element={<MainNumeralsToWords /> } />
             <Route path="permutationandcombinationcalc" element={<MainPermutationAndCombinationCalc /> } />
             <Route path="similarityoftrianglecalc" element={<MainSimilarityOfTriangleCalc /> } />
+            <Route path="sumofapgphpcalc" element={<MainSumAPGPHPCalc /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />

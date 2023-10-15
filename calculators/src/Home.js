@@ -50,6 +50,7 @@ export default function Home() {
             <HomeGridItem calcName="Flow Chart Maker" path="/flowchartmaker"/> 
             <HomeGridItem calcName="Data Cleaner" path="/datacleaner"/> 
             <HomeGridItem calcName="Random Number Generator" path="/randomnumbergenerator"/> 
+            <HomeGridItem calcName="IP Address Calculator" path="/ipaddresscalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -112,6 +113,7 @@ export default function Home() {
             <HomeGridItem calcName="Numerals To Words Converter" path="/numeralstowordsconverter"/>
             <HomeGridItem calcName="Permutation And Combination Calculator" path="/permutationandcombinationcalc"/>
             <HomeGridItem calcName="Similarity Of Triangle Calculator" path="/similarityoftrianglecalc"/>
+            <HomeGridItem calcName="Sum of N terms of AP/GP/HP Calculator" path="/sumofapgphpcalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
