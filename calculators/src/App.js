@@ -132,6 +132,7 @@ import MainGDPCalc from './finance/gDPCalc/MainGDPCalc';
 import MainMandalaCreater from './art/mandalaCreater/MainMandalaCreater';
 import MainRandomNumberGenerator from './computer_science/randomNumberGenerator/MainRandomNumberGenerator';
 import MainIPAddressCalc from './computer_science/iPAddressCalc/MainIPAddressCalc';
+import MainSumAPGPHPCalc from './mathematical/sumAPGPHPCalc/MainSumAPGPHPCalc';
 
 function App() {
   return (
@@ -242,6 +243,7 @@ function App() {
             <Route path="numeralstowordsconverter" element={<MainNumeralsToWords /> } />
             <Route path="permutationandcombinationcalc" element={<MainPermutationAndCombinationCalc /> } />
             <Route path="similarityoftrianglecalc" element={<MainSimilarityOfTriangleCalc /> } />
+            <Route path="sumofapgphpcalc" element={<MainSumAPGPHPCalc /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
