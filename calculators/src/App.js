@@ -134,6 +134,7 @@ import MainRandomNumberGenerator from './computer_science/randomNumberGenerator/
 import MainIPAddressCalc from './computer_science/iPAddressCalc/MainIPAddressCalc';
 import MainSumAPGPHPCalc from './mathematical/sumAPGPHPCalc/MainSumAPGPHPCalc';
 import MainChecksumCalc from './computer_science/checksumCalc/MainChecksumCalc';
+import MainParaSummarizer from './computer_science/paraSummarizer/MainParaSummarizer';
 
 function App() {
   return (
@@ -187,6 +188,7 @@ function App() {
             <Route path="randomnumbergenerator" element={<MainRandomNumberGenerator />} />
             <Route path="ipaddresscalc" element={<MainIPAddressCalc />} />
             <Route path="checksumcalc" element={<MainChecksumCalc />} />
+            <Route path="parasummarizer" element={<MainParaSummarizer />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />

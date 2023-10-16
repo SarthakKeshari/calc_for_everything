@@ -51,7 +51,8 @@ export default function Home() {
             <HomeGridItem calcName="Data Cleaner" path="/datacleaner"/> 
             <HomeGridItem calcName="Random Number Generator" path="/randomnumbergenerator"/> 
             <HomeGridItem calcName="IP Address Calculator" path="/ipaddresscalc"/> 
-            <HomeGridItem calcName="IChecksum Calculator" path="/checksumcalc"/> 
+            <HomeGridItem calcName="Checksum Calculator" path="/checksumcalc"/> 
+            <HomeGridItem calcName="Paragraph Summarizer" path="/parasummarizer"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
