@@ -10,18 +10,30 @@ function DataComparator() {
     const lines1 = file1Content.split('\n');
     const lines2 = file2Content.split('\n');
     const diff = [];
+
     lines1.forEach((line, index) => {
-      if (line !== lines2[index]) {
+      const words1 = line.split(' ');
+      const words2 = lines2[index].split(' ');
+
+      const differingWords = [];
+
+      words1.forEach((word, i) => {
+        if (word !== words2[i]) {
+          differingWords.push({ index: i, word1: word, word2: words2[i] });
+        }
+      });
+
+      if (differingWords.length > 0) {
         diff.push({
           line: index + 1,
-          file1: line,
-          file2: lines2[index],
+          differingWords,
         });
       }
     });
 
     setDifferences(diff);
   };
+
 
   return (
     <div
@@ -37,7 +49,7 @@ function DataComparator() {
     >
       <h1>File/Data Comparator</h1>
       <div style={{ marginBottom: '20px', textAlign: 'left' }}>
-        <label style={{ fontWeight: 'bold', marginBottom: '5px', display: 'block', marginRight:'17rem'}}>File 1:</label>
+        <label style={{ fontWeight: 'bold', marginBottom: '5px', display: 'block', marginRight: '17rem' }}>File 1:</label>
         <textarea
           value={file1Content}
           onChange={(e) => setFile1Content(e.target.value)}
@@ -52,7 +64,7 @@ function DataComparator() {
         />
       </div>
       <div style={{ marginBottom: '20px', textAlign: 'left' }}>
-        <label style={{ fontWeight: 'bold', marginBottom: '5px', display: 'block' ,marginRight:'17rem'}}>File 2:</label>
+        <label style={{ fontWeight: 'bold', marginBottom: '5px', display: 'block', marginRight: '17rem' }}>File 2:</label>
         <textarea
           value={file2Content}
           onChange={(e) => setFile2Content(e.target.value)}
@@ -79,28 +91,47 @@ function DataComparator() {
       >
         Compare
       </button>
-      {differences.length > 0 && (
+      {differences.length > 0 ? (
         <div style={{ textAlign: 'left' }}>
           <h2 style={{ fontSize: '1.2em' }}>Differences:</h2>
           <ul style={{ listStyle: 'none', padding: '0' }}>
             {differences.map((diff, index) => (
               <li key={index} style={{ margin: '5px 0' }}>
-                Line {diff.line}: File 1 - "{diff.file1}", File 2 - "{diff.file2}"
+                Para {diff.line}:{' '}
+                {diff.differingWords.map((word, i) => (
+                  <span key={i} style={{ borderBottom: '1px solid red' }}>
+                    {i > 0 && ', '}
+                    {word.word1}
+                  </span>
+                ))}{' '}
+                <b>VS</b>{' '}
+                {diff.differingWords.map((word, i) => (
+                  <span key={i} style={{ borderBottom: '1px solid red' }}>
+                    {i > 0 && ', '}
+                    {word.word2}
+                  </span>
+                ))}
               </li>
             ))}
           </ul>
         </div>
+      ) : (
+        <div style={{ textAlign: 'left' }}>
+          <h2 style={{ fontSize: '1.2em' }}>No Differences</h2>
+        </div>
       )}
+
+
     </div>
   );
 }
 
-function MainFileDataComparator(){
-  return(
+function MainFileDataComparator() {
+  return (
     <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: 10 }}>
-      <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>File/Data Comparator</Typography>
-      <hr/>
-      <br/>
+      <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>File/Data Comparator</Typography>
+      <hr />
+      <br />
       <DataComparator />
     </Container>
   )
