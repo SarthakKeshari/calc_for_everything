@@ -133,6 +133,11 @@ import MainMandalaCreater from './art/mandalaCreater/MainMandalaCreater';
 import MainRandomNumberGenerator from './computer_science/randomNumberGenerator/MainRandomNumberGenerator';
 import MainIPAddressCalc from './computer_science/iPAddressCalc/MainIPAddressCalc';
 import MainSumAPGPHPCalc from './mathematical/sumAPGPHPCalc/MainSumAPGPHPCalc';
+import MainChecksumCalc from './computer_science/checksumCalc/MainChecksumCalc';
+import MainParaSummarizer from './computer_science/paraSummarizer/MainParaSummarizer';
+import MainImageTextReader from './computer_science/imageTextReader/MainImageTextReader';
+import MainVibrationalResponseCalc from './physics/vibrationalResponseCalc/MainVibrationalResponseCalc';
+import MainIEEE754Converter from './computer_science/iEEE754Converter/MainIEEE754Converter';
 
 function App() {
   return (
@@ -185,6 +190,10 @@ function App() {
             <Route path="datacleaner" element={<MainDataCleaner />} />
             <Route path="randomnumbergenerator" element={<MainRandomNumberGenerator />} />
             <Route path="ipaddresscalc" element={<MainIPAddressCalc />} />
+            <Route path="checksumcalc" element={<MainChecksumCalc />} />
+            <Route path="parasummarizer" element={<MainParaSummarizer />} />
+            <Route path="imagetextreader" element={<MainImageTextReader />} />
+            <Route path="ieee754converter" element={<MainIEEE754Converter />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -254,6 +263,7 @@ function App() {
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
             <Route path="amplitudecalculator" element={<MainAmplitudeCalc />} />
+            <Route path="vibrationalresponsecalc" element={<MainVibrationalResponseCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />

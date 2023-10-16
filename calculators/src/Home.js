@@ -51,6 +51,10 @@ export default function Home() {
             <HomeGridItem calcName="Data Cleaner" path="/datacleaner"/> 
             <HomeGridItem calcName="Random Number Generator" path="/randomnumbergenerator"/> 
             <HomeGridItem calcName="IP Address Calculator" path="/ipaddresscalc"/> 
+            <HomeGridItem calcName="Checksum Calculator" path="/checksumcalc"/> 
+            <HomeGridItem calcName="Paragraph Summarizer" path="/parasummarizer"/> 
+            <HomeGridItem calcName="Image Text Reader" path="/imagetextreader"/> 
+            <HomeGridItem calcName="IEEE754 Converter" path="/ieee754converter"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -132,6 +136,7 @@ export default function Home() {
             <HomeGridItem calcName="Pressure Calculator" path="/pressurecalc"/>
             <HomeGridItem calcName="Cosmo Mass Converter" path="/cosmomassconverter"/>
             <HomeGridItem calcName="Amplitude Calculator" path="/amplitudecalculator"/>
+            <HomeGridItem calcName="Vibrational Response Calculator" path="/vibrationalresponsecalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>
