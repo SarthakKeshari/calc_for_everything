@@ -136,6 +136,7 @@ import MainSumAPGPHPCalc from './mathematical/sumAPGPHPCalc/MainSumAPGPHPCalc';
 import MainChecksumCalc from './computer_science/checksumCalc/MainChecksumCalc';
 import MainParaSummarizer from './computer_science/paraSummarizer/MainParaSummarizer';
 import MainImageTextReader from './computer_science/imageTextReader/MainImageTextReader';
+import MainVibrationalResponseCalc from './physics/vibrationalResponseCalc/MainVibrationalResponseCalc';
 
 function App() {
   return (
@@ -260,6 +261,7 @@ function App() {
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
             <Route path="amplitudecalculator" element={<MainAmplitudeCalc />} />
+            <Route path="vibrationalresponsecalc" element={<MainVibrationalResponseCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
