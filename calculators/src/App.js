@@ -133,6 +133,7 @@ import MainMandalaCreater from './art/mandalaCreater/MainMandalaCreater';
 import MainRandomNumberGenerator from './computer_science/randomNumberGenerator/MainRandomNumberGenerator';
 import MainIPAddressCalc from './computer_science/iPAddressCalc/MainIPAddressCalc';
 import MainSumAPGPHPCalc from './mathematical/sumAPGPHPCalc/MainSumAPGPHPCalc';
+import MainChecksumCalc from './computer_science/checksumCalc/MainChecksumCalc';
 
 function App() {
   return (
@@ -185,6 +186,7 @@ function App() {
             <Route path="datacleaner" element={<MainDataCleaner />} />
             <Route path="randomnumbergenerator" element={<MainRandomNumberGenerator />} />
             <Route path="ipaddresscalc" element={<MainIPAddressCalc />} />
+            <Route path="checksumcalc" element={<MainChecksumCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
