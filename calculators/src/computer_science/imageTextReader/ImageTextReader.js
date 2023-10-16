@@ -24,6 +24,12 @@ export default function ImageTextReader() {
       reader.readAsBinaryString(file);
     }
   };
+  const handleBackToForm = () => {
+    setIsLoading(false);
+    setText("");
+    setImage("");
+    setHolData(null);
+  };
 
   const _handleReaderLoaded = (readerEvt) => {
     let binaryString = readerEvt.target.result;
@@ -96,12 +102,20 @@ export default function ImageTextReader() {
 
           {!isLoading && text && (
             <>
-              <TextareaAutosize
-                minRows={15}
+               <TextareaAutosize
                 value={text}
                 onChange={(e) => setText(e.target.value)}
-                fullWidth
+                style={{ width: "100%" }}
               />
+              <br/>
+              <Button
+                variant="contained"
+                color="primary"
+                fullWidth
+                onClick={handleBackToForm}
+                >
+              Upload Another File
+            </Button>
             </>
           )}
         </Grid>
