@@ -53,6 +53,7 @@ export default function Home() {
             <HomeGridItem calcName="IP Address Calculator" path="/ipaddresscalc"/> 
             <HomeGridItem calcName="Checksum Calculator" path="/checksumcalc"/> 
             <HomeGridItem calcName="Paragraph Summarizer" path="/parasummarizer"/> 
+            <HomeGridItem calcName="Image Text Reader" path="/imagetextreader"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>

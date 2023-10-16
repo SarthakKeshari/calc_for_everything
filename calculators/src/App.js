@@ -135,6 +135,7 @@ import MainIPAddressCalc from './computer_science/iPAddressCalc/MainIPAddressCal
 import MainSumAPGPHPCalc from './mathematical/sumAPGPHPCalc/MainSumAPGPHPCalc';
 import MainChecksumCalc from './computer_science/checksumCalc/MainChecksumCalc';
 import MainParaSummarizer from './computer_science/paraSummarizer/MainParaSummarizer';
+import MainImageTextReader from './computer_science/imageTextReader/MainImageTextReader';
 
 function App() {
   return (
@@ -189,6 +190,7 @@ function App() {
             <Route path="ipaddresscalc" element={<MainIPAddressCalc />} />
             <Route path="checksumcalc" element={<MainChecksumCalc />} />
             <Route path="parasummarizer" element={<MainParaSummarizer />} />
+            <Route path="imagetextreader" element={<MainImageTextReader />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
