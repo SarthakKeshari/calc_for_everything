@@ -137,6 +137,7 @@ import MainChecksumCalc from './computer_science/checksumCalc/MainChecksumCalc';
 import MainParaSummarizer from './computer_science/paraSummarizer/MainParaSummarizer';
 import MainImageTextReader from './computer_science/imageTextReader/MainImageTextReader';
 import MainVibrationalResponseCalc from './physics/vibrationalResponseCalc/MainVibrationalResponseCalc';
+import MainIEEE754Converter from './computer_science/iEEE754Converter/MainIEEE754Converter';
 
 function App() {
   return (
@@ -192,6 +193,7 @@ function App() {
             <Route path="checksumcalc" element={<MainChecksumCalc />} />
             <Route path="parasummarizer" element={<MainParaSummarizer />} />
             <Route path="imagetextreader" element={<MainImageTextReader />} />
+            <Route path="ieee754converter" element={<MainIEEE754Converter />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
