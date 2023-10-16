@@ -19,8 +19,6 @@ function MainSimilarityOfTriangleCalc() {
             setResult('Invalid input: sides must be positive and non-zero.');
             return;
         }
-
-
         // Check for SSS
         if (side1A / side1B === side2A / side2B && side2A / side2B === side3A / side3B) {
             setResult('The triangles are similar (SSS).');
