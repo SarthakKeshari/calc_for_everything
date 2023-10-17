@@ -139,6 +139,7 @@ import MainImageTextReader from './computer_science/imageTextReader/MainImageTex
 import MainVibrationalResponseCalc from './physics/vibrationalResponseCalc/MainVibrationalResponseCalc';
 import MainIEEE754Converter from './computer_science/iEEE754Converter/MainIEEE754Converter';
 import MainSatelliteLocationUsingTLE from './space/satelliteLocationUsingTLE/MainSatelliteLocationUsingTLE';
+import MainDensityCalc from './physics/densityCalc/MainDensityCalc';
 
 function App() {
   return (
@@ -265,6 +266,7 @@ function App() {
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
             <Route path="amplitudecalculator" element={<MainAmplitudeCalc />} />
             <Route path="vibrationalresponsecalc" element={<MainVibrationalResponseCalc />} />
+            <Route path="densitycalc" element={<MainDensityCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
