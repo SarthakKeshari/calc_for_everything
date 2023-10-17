@@ -141,6 +141,7 @@ import MainIEEE754Converter from './computer_science/iEEE754Converter/MainIEEE75
 import MainSatelliteLocationUsingTLE from './space/satelliteLocationUsingTLE/MainSatelliteLocationUsingTLE';
 import MainDensityCalc from './physics/densityCalc/MainDensityCalc';
 import MainProjectileCalc from './physics/projectileCalc/MainProjectileCalc';
+import MainOhmsLawCalc from './physics/ohmsLawCalc/MainOhmsLawCalc';
 
 function App() {
   return (
@@ -269,6 +270,7 @@ function App() {
             <Route path="vibrationalresponsecalc" element={<MainVibrationalResponseCalc />} />
             <Route path="densitycalc" element={<MainDensityCalc />} />
             <Route path="projectilecalc" element={<MainProjectileCalc />} />
+            <Route path="ohmslawcalc" element={<MainOhmsLawCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />

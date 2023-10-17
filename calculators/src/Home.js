@@ -139,6 +139,7 @@ export default function Home() {
             <HomeGridItem calcName="Vibrational Response Calculator" path="/vibrationalresponsecalc"/>
             <HomeGridItem calcName="Density Calculator" path="/densitycalc"/>
             <HomeGridItem calcName="Projectile Calculator" path="/projectilecalc"/>
+            <HomeGridItem calcName="Ohm's Law Calculator" path="/ohmslawcalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>
