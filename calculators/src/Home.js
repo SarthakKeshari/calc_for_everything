@@ -177,6 +177,12 @@ export default function Home() {
             <HomeGridItem calcName="Mandala Creater" path="/mandalacreater"/>
         </Grid>
         <br/>
+        <Typography pt={1} variant='h5'>Space</Typography>
+        <hr/>
+        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
+            <HomeGridItem calcName="Satellite Location using TLE" path="/satellitelocationusingtle"/>
+        </Grid>
+        <br/>
     </Container>
   );
 }

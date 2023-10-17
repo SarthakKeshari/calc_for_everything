@@ -138,6 +138,7 @@ import MainParaSummarizer from './computer_science/paraSummarizer/MainParaSummar
 import MainImageTextReader from './computer_science/imageTextReader/MainImageTextReader';
 import MainVibrationalResponseCalc from './physics/vibrationalResponseCalc/MainVibrationalResponseCalc';
 import MainIEEE754Converter from './computer_science/iEEE754Converter/MainIEEE754Converter';
+import MainSatelliteLocationUsingTLE from './space/satelliteLocationUsingTLE/MainSatelliteLocationUsingTLE';
 
 function App() {
   return (
@@ -290,6 +291,8 @@ function App() {
             {/* Art */}
             <Route path="drawingcanvas" element={<MainDrawingCanvas />} />
             <Route path="mandalacreater" element={<MainMandalaCreater />} />
+            {/* Space */}
+            <Route path="satellitelocationusingtle" element={<MainSatelliteLocationUsingTLE />} />
           </Route>
         </Routes>
       </BrowserRouter>
