@@ -121,6 +121,13 @@ Hard | 20 Points
 - Factors Of A Number
 
 
+#### Physics
+- Amplitude Calculator
+- Cosmo Mass Converter
+- Density Calculator
+- Pressure Calculator
+
+
 #### Chemistry
 - pH Calculato
 - Chemical Equation Balancer
