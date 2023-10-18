@@ -142,6 +142,7 @@ import MainSatelliteLocationUsingTLE from './space/satelliteLocationUsingTLE/Mai
 import MainDensityCalc from './physics/densityCalc/MainDensityCalc';
 import MainProjectileCalc from './physics/projectileCalc/MainProjectileCalc';
 import MainOhmsLawCalc from './physics/ohmsLawCalc/MainOhmsLawCalc';
+import MainDifferentialCalc from './mathematical/differentialCalc/MainDifferentialCalc';
 
 function App() {
   return (
@@ -257,6 +258,7 @@ function App() {
             <Route path="permutationandcombinationcalc" element={<MainPermutationAndCombinationCalc /> } />
             <Route path="similarityoftrianglecalc" element={<MainSimilarityOfTriangleCalc /> } />
             <Route path="sumofapgphpcalc" element={<MainSumAPGPHPCalc /> } />
+            <Route path="differentialcalc" element={<MainDifferentialCalc /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />

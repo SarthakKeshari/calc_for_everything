@@ -118,6 +118,7 @@ export default function Home() {
             <HomeGridItem calcName="Permutation And Combination Calculator" path="/permutationandcombinationcalc"/>
             <HomeGridItem calcName="Similarity Of Triangle Calculator" path="/similarityoftrianglecalc"/>
             <HomeGridItem calcName="Sum of N terms of AP/GP/HP Calculator" path="/sumofapgphpcalc"/>
+            <HomeGridItem calcName="Differential Calculator" path="/differentialcalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
