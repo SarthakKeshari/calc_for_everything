@@ -74,7 +74,7 @@ function MainNumberTypeFinder() {
         case "happy":
           calculatedResults.happy = checkHappy(number);
           break;
-        case "zeizel":
+        case "zeisel":
           calculatedResults.zeisel = checkZeisel(number);
           break;
           case "pancake":
