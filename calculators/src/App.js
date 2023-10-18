@@ -138,6 +138,11 @@ import MainParaSummarizer from './computer_science/paraSummarizer/MainParaSummar
 import MainImageTextReader from './computer_science/imageTextReader/MainImageTextReader';
 import MainVibrationalResponseCalc from './physics/vibrationalResponseCalc/MainVibrationalResponseCalc';
 import MainIEEE754Converter from './computer_science/iEEE754Converter/MainIEEE754Converter';
+import MainSatelliteLocationUsingTLE from './space/satelliteLocationUsingTLE/MainSatelliteLocationUsingTLE';
+import MainDensityCalc from './physics/densityCalc/MainDensityCalc';
+import MainProjectileCalc from './physics/projectileCalc/MainProjectileCalc';
+import MainOhmsLawCalc from './physics/ohmsLawCalc/MainOhmsLawCalc';
+import MainDifferentialCalc from './mathematical/differentialCalc/MainDifferentialCalc';
 
 function App() {
   return (
@@ -253,6 +258,7 @@ function App() {
             <Route path="permutationandcombinationcalc" element={<MainPermutationAndCombinationCalc /> } />
             <Route path="similarityoftrianglecalc" element={<MainSimilarityOfTriangleCalc /> } />
             <Route path="sumofapgphpcalc" element={<MainSumAPGPHPCalc /> } />
+            <Route path="differentialcalc" element={<MainDifferentialCalc /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
@@ -264,6 +270,9 @@ function App() {
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
             <Route path="amplitudecalculator" element={<MainAmplitudeCalc />} />
             <Route path="vibrationalresponsecalc" element={<MainVibrationalResponseCalc />} />
+            <Route path="densitycalc" element={<MainDensityCalc />} />
+            <Route path="projectilecalc" element={<MainProjectileCalc />} />
+            <Route path="ohmslawcalc" element={<MainOhmsLawCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
@@ -290,6 +299,8 @@ function App() {
             {/* Art */}
             <Route path="drawingcanvas" element={<MainDrawingCanvas />} />
             <Route path="mandalacreater" element={<MainMandalaCreater />} />
+            {/* Space */}
+            <Route path="satellitelocationusingtle" element={<MainSatelliteLocationUsingTLE />} />
           </Route>
         </Routes>
       </BrowserRouter>
