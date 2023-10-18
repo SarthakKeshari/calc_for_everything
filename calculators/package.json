@@ -11,8 +11,10 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.5.1",
+    "buffer": "^6.0.3",
     "chart.js": "^4.4.0",
     "d3": "^7.8.5",
+    "html-to-draftjs": "^1.5.0",
     "inr-words": "^1.0.4",
     "jspdf": "^2.5.1",
     "mathjs": "^11.11.2",
@@ -26,6 +28,7 @@
     "react-plotly.js": "^2.6.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "^5.0.1",
+    "tesseract.js": "^2.0.0-beta.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
