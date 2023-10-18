@@ -1,25 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Divider, Input, Typography } from '@mui/material';
 import CopyValue from '../../components/CopyValue';
-function MainOctToBinAndBinToOct(){
-    const [bin,setBin] = useState(0)
-    const [oct,setOct] = useState(0)
-    const [binans,setBinans] = useState(0)
-    const [octans,setOctans] = useState(0)
-    useEffect(() => {
-        if(oct>0){ //if octal is greater than 0
-            setBinans(parseInt(oct,8).toString(2))  //method to convert octal to binary
-        }
-        else{
-            setBinans(0)
-        }
-        if(bin>0){ //if binary is greater than 0
-            setOctans(parseInt(bin,2).toString(8))  //method to convert binary to octal
-        }
-        else{
-            setOctans(0)
-        }
-    }, [oct,bin])
+
+function MainOctToBinAndBinToOct() {
+  const [bin, setBin] = useState(0);
+  const [oct, setOct] = useState(0);
+  const [binans, setBinans] = useState(0);
+  const [octans, setOctans] = useState(0);
+
+  const handleConversion = (value, fromBase, toBase) => {
+    const numericValue = parseFloat(value);
+    if (!isNaN(numericValue)) {
+      return numericValue.toString(toBase);
+    } else {
+      return "Invalid input";
+    }
+  };
+
+  useEffect(() => {
+    setBinans(handleConversion(oct, 8, 2));
+    setOctans(handleConversion(bin, 2, 8));
+  }, [oct, bin]);
+
   return (
     <div>
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
