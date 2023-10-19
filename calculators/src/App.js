@@ -143,6 +143,7 @@ import MainDensityCalc from './physics/densityCalc/MainDensityCalc';
 import MainProjectileCalc from './physics/projectileCalc/MainProjectileCalc';
 import MainOhmsLawCalc from './physics/ohmsLawCalc/MainOhmsLawCalc';
 import MainDifferentialCalc from './mathematical/differentialCalc/MainDifferentialCalc';
+import MainEmpiricalFormulaCalc from './chemistry/empiricalFormulaCalc/MainEmpiricalFormulaCalc';
 
 function App() {
   return (
@@ -265,6 +266,7 @@ function App() {
             <Route path="chemicalkineticscalc" element={<MainChemicalKineticsCalc />} />
             <Route path="molecularweightcalc" element={<MainMolecularWeightCalc />} />
             <Route path="chemicalformulavalidator" element={<MainChemicalFormulaValidator />} />
+            <Route path="empiricalformulacalc" element={<MainEmpiricalFormulaCalc />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
