@@ -1,0 +1,26 @@
+.summarizer_textarea {
+  text-align: left;
+  width: 500px;
+  height: 250px;
+  resize: none;
+}
+.summarizer_body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15vh;
+}
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.text-center {
+  text-align: center;
+}
+.summary {
+  width: 70vw;
+  margin: auto;
+}
