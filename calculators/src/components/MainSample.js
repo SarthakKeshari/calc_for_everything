@@ -7,6 +7,11 @@ function MainSample(){
             <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Sample Calculator</Typography>
             <hr/>
             <br/>
+            {/* Write your code here */}
+
+
+
+            {/* End your code here */}
         </Container>
     )
 }

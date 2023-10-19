@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./mainLogAntilog.css";
+import InfoLogAntilog from "./InfoLogAntilog";
 
 function MainLogAntilog() {
   const [number, setNumber] = useState("");
@@ -54,7 +55,7 @@ function MainLogAntilog() {
 
   return (
     <div className="container">
-      <h2 className="title">Log and Antilog Calculator</h2>
+      <h2 className="title">Log and Antilog Calculator <InfoLogAntilog/> </h2>
       <div className="input_container">
         <label>Number:</label>
         <input

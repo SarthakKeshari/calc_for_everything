@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Typography, Button, Grid, TextField } from '@mui/material';
+import InfoHCFCalc from './InfoHCFCalc';
 function calculateHCF(a, b) {
     while (b !== 0) {
         [a, b] = [b, a % b];
@@ -31,7 +32,7 @@ function MainHCFCalc() {
 
     return (
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: "10" }}>
-            <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>HCF Calculator</Typography>
+            <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>HCF Calculator <InfoHCFCalc/> </Typography>
             <hr />
             <br />
             <Container maxWidth="sm">

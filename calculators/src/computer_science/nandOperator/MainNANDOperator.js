@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Divider, Input, Typography } from '@mui/material';
 import CopyValue from '../../components/CopyValue';
+import InfoNANDOperator from './InfoNANDOperator';
 
 function MainNANDOperator(){
     const [field,setField] = useState(0)
@@ -47,7 +48,7 @@ function MainNANDOperator(){
       };
     return(
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>NAND Operator</Typography>
+            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>NAND Operator<InfoNANDOperator/> </Typography>
             <hr/>
             <br/>
                 <Container sx={{display:"flex", flexDirection:"column"}}>

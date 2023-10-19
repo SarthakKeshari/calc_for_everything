@@ -1,73 +1,137 @@
-import React, { useEffect, useState } from 'react';
-import { Container, Divider, Input, Typography } from '@mui/material';
-import CopyValue from '../../components/CopyValue';
-function MainOctToBinAndBinToOct(){
-    const [bin,setBin] = useState(0)
-    const [oct,setOct] = useState(0)
-    const [binans,setBinans] = useState(0)
-    const [octans,setOctans] = useState(0)
-    useEffect(() => {
-        if(oct>0){ //if octal is greater than 0
-            setBinans(parseInt(oct,8).toString(2))  //method to convert octal to binary
-        }
-        else{
-            setBinans(0)
-        }
-        if(bin>0){ //if binary is greater than 0
-            setOctans(parseInt(bin,2).toString(8))  //method to convert binary to octal
-        }
-        else{
-            setOctans(0)
-        }
-    }, [oct,bin])
+import React, { useState } from "react";
+import {
+  TextField,
+  Typography,
+  Box,
+  Container,
+  Grid,
+  Paper,
+} from "@mui/material";
+
+function Converter() {
+  const [octalValue, setOctalValue] = useState("");
+  const [binaryValue, setBinaryValue] = useState("");
+
+  const handleOctalChange = (event) => {
+    const inputValue = event.target.value;
+    setOctalValue(inputValue);
+    setBinaryValue(octalToBinary(inputValue));
+  };
+
+  const handleBinaryChange = (event) => {
+    const inputValue = event.target.value;
+    setBinaryValue(inputValue);
+    setOctalValue(binaryToOctal(inputValue));
+  };
+
+  const octalToBinary = (octal) => {
+    if (!octal.match(/^[0-7.]+$/)) {
+      return "Invalid Octal";
+    }
+
+    const isNegative = octal[0] === "-";
+    octal = octal.replace("-", "");
+
+    const parts = octal.split(".");
+    const integerPart = parts[0];
+    const fractionalPart = parts[1] || "0";
+
+    const integerBinary = parseInt(integerPart, 8).toString(2);
+    const fractionalBinary = parseInt(fractionalPart, 8)
+      .toString(2)
+      .padStart(fractionalPart.length * 3, "0");
+
+    let result = isNegative ? "-" : "";
+    result += integerBinary;
+
+    if (fractionalPart !== "0") {
+      result += "." + fractionalBinary;
+    }
+
+    return result;
+  };
+
+  const binaryToOctal = (binary) => {
+    if (!binary.match(/^[01.]+$/)) {
+      return "Invalid Binary";
+    }
+
+    const isNegative = binary[0] === "-";
+    binary = binary.replace("-", "");
+
+    const parts = binary.split(".");
+    const integerPart = parts[0];
+    const fractionalPart = parts[1] || "0";
+
+    const integerOctal = parseInt(integerPart, 2).toString(8);
+    let fractionalOctal = "";
+    if (fractionalPart !== "0") {
+      const fractionalBinary = "1" + fractionalPart;
+      fractionalOctal = parseInt(fractionalBinary, 2).toString(8).slice(1);
+    }
+
+    let result = isNegative ? "-" : "";
+    result += integerOctal;
+
+    if (fractionalOctal !== "") {
+      result += "." + fractionalOctal;
+    }
+
+    return result;
+  };
+
   return (
-    <div>
-        <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Octal-Binary and Vice versa calculator</Typography>
-            <hr/>
-            <br/>
-            <Container sx={{display:"flex", flexDirection:"column"}}>
-                <Typography pt={1} variant='h6' mt={2}>Enter Octal No.</Typography>
-                <Input
-                    color="primary"
-                    disabled={false}
-                    placeholder="Enter Octal No."
-                    size="lg"
-                    variant="outlined"
-                    type='number'
-                    onChange={(e) => setOct(e.target.value)}
-                    value={oct}
+    <div style={{ display: "flex", alignItems: "center", minHeight: "30vh" }}>
+      <Container>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={6}>
+            <Paper elevation={3}>
+              <Box p={2}>
+                <Typography variant="h5" align="center">
+                  Octal to Binary
+                </Typography>
+                <TextField
+                  label="Octal"
+                  variant="outlined"
+                  fullWidth
+                  value={octalValue}
+                  onChange={handleOctalChange}
+                  placeholder="Enter Octal"
                 />
-                <Typography pt={1} variant='h6' mt={2}>Binary No.</Typography>
-                <div className='output'>
-                    <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{binans}</Typography>
-                    <CopyValue value={binans}/>
-                </div>
-                <hr/>
-                <br/>
-                <Divider />
-                <Typography pt={1} variant='h6' mt={2}>Enter Binary No.</Typography>
-                <Input
-                    color="primary"
-                    disabled={false}
-                    placeholder="Enter Binary No."
-                    size="lg"
-                    variant="outlined"
-                    type='number'
-                    onChange={(e) => setBin(e.target.value)}
-                    value={bin}
+                <Box mt={2}>
+                  <Typography variant="h6">
+                    <strong>Binary:</strong> {binaryValue}
+                  </Typography>
+                </Box>
+              </Box>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Paper elevation={3}>
+              <Box p={2}>
+                <Typography variant="h5" align="center">
+                  Binary to Octal
+                </Typography>
+                <TextField
+                  label="Binary"
+                  variant="outlined"
+                  fullWidth
+                  value={binaryValue}
+                  onChange={handleBinaryChange}
+                  placeholder="Enter Binary"
                 />
-                <Typography pt={1} variant='h6' mt={2}>Octal no.</Typography>
-                <div className='output'>
-                    <Typography pt={1} variant='h6' fontStyle={{color: "blue"}}>{octans}</Typography>
-                    <CopyValue value={octans}/>
-                </div>
-                
-                <Divider />
-            </Container>
-        </Container>
+                <Box mt={2}>
+                  <Typography variant="h6">
+                    <strong>Octal:</strong> {octalValue}
+                  </Typography>
+                </Box>
+              </Box>
+            </Paper>
+          </Grid>
+        </Grid>
+      </Container>
     </div>
-  )
+  );
 }
 
-export default MainOctToBinAndBinToOct;
+export default Converter;
