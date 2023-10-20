@@ -144,6 +144,7 @@ import MainProjectileCalc from './physics/projectileCalc/MainProjectileCalc';
 import MainOhmsLawCalc from './physics/ohmsLawCalc/MainOhmsLawCalc';
 import MainDifferentialCalc from './mathematical/differentialCalc/MainDifferentialCalc';
 import MainEmpiricalFormulaCalc from './chemistry/empiricalFormulaCalc/MainEmpiricalFormulaCalc';
+import MainImagesToPDFConsolidator from './computer_science/imagesToPDFConsolidator/MainImagesToPDFConsolidator';
 
 function App() {
   return (
@@ -200,6 +201,7 @@ function App() {
             <Route path="parasummarizer" element={<MainParaSummarizer />} />
             <Route path="imagetextreader" element={<MainImageTextReader />} />
             <Route path="ieee754converter" element={<MainIEEE754Converter />} />
+            <Route path="imagestopdfconsolidator" element={<MainImagesToPDFConsolidator />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />

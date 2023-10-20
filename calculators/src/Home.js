@@ -55,6 +55,7 @@ export default function Home() {
             <HomeGridItem calcName="Paragraph Summarizer" path="/parasummarizer"/> 
             <HomeGridItem calcName="Image Text Reader" path="/imagetextreader"/> 
             <HomeGridItem calcName="IEEE754 Converter" path="/ieee754converter"/> 
+            <HomeGridItem calcName="Images To PDF Consolidator" path="/imagestopdfconsolidator"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
