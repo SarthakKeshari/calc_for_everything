@@ -158,6 +158,7 @@ import MainPOSSOPConverter from './computer_science/pOSSOPConverter/MainPOSSOPCo
 import MainGrayCodeCalc from './computer_science/grayCodeCalc/MainGrayCodeCalc';
 import MainComplementCalc from './computer_science/complementCalc/MainComplementCalc';
 import MainKineticEnergyCalc from './physics/kineticEnergyCalc/MainKineticEnergyCalc';
+import MainTimeDilationCalc from './physics/timeDilationCalc/MainTimeDilationCalc';
 
 function App() {
   return (
@@ -302,6 +303,7 @@ function App() {
             <Route path="mkscgsfpscalc" element={<MainMKSCGSFPSCalc />} />
             <Route path="combinedgaslawscalc" element={<MainCombinedGasLawsCalc />} />
             <Route path="kineticenergycalc" element={<MainKineticEnergyCalc />} />
+            <Route path="timedilationcalc" element={<MainTimeDilationCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
