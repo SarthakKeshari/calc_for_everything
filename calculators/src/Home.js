@@ -57,6 +57,7 @@ export default function Home() {
             <HomeGridItem calcName="IEEE754 Converter" path="/ieee754converter"/> 
             <HomeGridItem calcName="Images To PDF Consolidator" path="/imagestopdfconsolidator"/> 
             <HomeGridItem calcName="Computer Algebra System (CAS) Calculator" path="/computeralgebrasystemcascalc"/> 
+            <HomeGridItem calcName="Base Change Calculator" path="/basechangecalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
