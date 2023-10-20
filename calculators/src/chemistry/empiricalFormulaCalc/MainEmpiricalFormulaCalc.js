@@ -1,84 +1,94 @@
 import React, { useState } from 'react';
-import {
-  Container,
-  TextField,
-  Button,
-  Typography,
-  Grid,
-} from '@mui/material';
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+import Grid from '@mui/material/Grid';
 
-function EmpiricalFormulaCalculator() {
-  const [masses, setMasses] = useState({
-    element1: '',
-    element2: '',
-    element3: '',
-  });
+const EmpiricalFormulaCalculator = () => {
+  const [open, setOpen] = useState(false);
+  const [inputElement, setInputElement] = useState('');
+  const [inputNumber, setInputNumber] = useState('');
+  const [elements, setElements] = useState([]);
   const [empiricalFormula, setEmpiricalFormula] = useState('');
 
-  const calculateEmpiricalFormula = () => {
-    // Your empirical formula calculation logic here
-    // Replace the following example with your actual calculation logic
-    const { element1, element2, element3 } = masses;
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
 
-    if (element1 && element2 && element3) {
-      const formula = `C${element1}H${element2}O${element3}`;
-      setEmpiricalFormula(formula);
-    } else {
-      setEmpiricalFormula('Please enter all element masses');
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleAddElement = () => {
+    if (inputElement && inputNumber) {
+      setElements((prevState) => [
+        ...prevState,
+        { element: inputElement, number: inputNumber },
+      ]);
+      setInputElement('');
+      setInputNumber('');
     }
   };
 
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setMasses({ ...masses, [name]: value });
+  const handleCalculate = () => {
+    const formula = elements
+      .map(({ element, number }) => {
+        return number === '1' ? element : `${element}${number}`;
+      })
+      .join('');
+    setEmpiricalFormula(formula);
+    handleClose();
   };
 
   return (
-    <Container>
-      <Typography variant="h4" gutterBottom>
-        Empirical Formula Calculator
-      </Typography>
-      <Grid container spacing={2}>
-        <Grid item xs={4}>
-          <TextField
-            label="Element 1 Mass"
-            name="element1"
-            value={masses.element1}
-            onChange={handleInputChange}
-            fullWidth
-          />
-        </Grid>
-        <Grid item xs={4}>
-          <TextField
-            label="Element 2 Mass"
-            name="element2"
-            value={masses.element2}
-            onChange={handleInputChange}
-            fullWidth
-          />
-        </Grid>
-        <Grid item xs={4}>
-          <TextField
-            label="Element 3 Mass"
-            name="element3"
-            value={masses.element3}
-            onChange={handleInputChange}
-            fullWidth
-          />
-        </Grid>
-      </Grid>
-      <Button
-        variant="contained"
-        color="primary"
-        onClick={calculateEmpiricalFormula}
-      >
+    <div>
+      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
         Calculate Empirical Formula
       </Button>
-      <Typography variant="h6" gutterBottom>
-        Empirical Formula: {empiricalFormula}
-      </Typography>
-    </Container>
+      <Dialog open={open} onClose={handleClose}>
+        <DialogTitle>Empirical Formula Calculator</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            Enter element symbols and their counts:
+          </DialogContentText>
+          <Grid container spacing={2}>
+            <Grid item xs={6}>
+              <TextField
+                label="Element Symbol"
+                value={inputElement}
+                onChange={(e) => setInputElement(e.target.value)}
+                fullWidth
+              />
+            </Grid>
+            <Grid item xs={6}>
+              <TextField
+                label="Element Count"
+                type="number"
+                value={inputNumber}
+                onChange={(e) => setInputNumber(e.target.value)}
+                fullWidth
+              />
+            </Grid>
+          </Grid>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleAddElement} color="primary">
+            Add Element
+          </Button>
+          <Button onClick={handleCalculate} color="primary">
+            Calculate
+          </Button>
+        </DialogActions>
+      </Dialog>
+      <div>
+        <p>Empirical Formula: {empiricalFormula}</p>
+      </div>
+    </div>
   );
-}
+};
 
 export default EmpiricalFormulaCalculator;
