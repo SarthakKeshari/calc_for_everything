@@ -146,6 +146,7 @@ import MainDifferentialCalc from './mathematical/differentialCalc/MainDifferenti
 import MainEmpiricalFormulaCalc from './chemistry/empiricalFormulaCalc/MainEmpiricalFormulaCalc';
 import MainImagesToPDFConsolidator from './computer_science/imagesToPDFConsolidator/MainImagesToPDFConsolidator';
 import MainMKSCGSFPSCalc from './physics/mKSCGSFPSCalc/MainMKSCGSFPSCalc';
+import MainCombinedGasLawsCalc from './physics/combinedGasLawsCalc/MainCombinedGasLawsCalc';
 
 function App() {
   return (
@@ -203,7 +204,6 @@ function App() {
             <Route path="imagetextreader" element={<MainImageTextReader />} />
             <Route path="ieee754converter" element={<MainIEEE754Converter />} />
             <Route path="imagestopdfconsolidator" element={<MainImagesToPDFConsolidator />} />
-            <Route path="mkscgsfpscalc" element={<MainMKSCGSFPSCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -279,6 +279,8 @@ function App() {
             <Route path="densitycalc" element={<MainDensityCalc />} />
             <Route path="projectilecalc" element={<MainProjectileCalc />} />
             <Route path="ohmslawcalc" element={<MainOhmsLawCalc />} />
+            <Route path="mkscgsfpscalc" element={<MainMKSCGSFPSCalc />} />
+            <Route path="combinedgaslawscalc" element={<MainCombinedGasLawsCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />

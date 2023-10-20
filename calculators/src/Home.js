@@ -56,7 +56,6 @@ export default function Home() {
             <HomeGridItem calcName="Image Text Reader" path="/imagetextreader"/> 
             <HomeGridItem calcName="IEEE754 Converter" path="/ieee754converter"/> 
             <HomeGridItem calcName="Images To PDF Consolidator" path="/imagestopdfconsolidator"/> 
-            <HomeGridItem calcName="MKS - CGS - FPS Calculator" path="/mkscgsfpscalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -144,6 +143,8 @@ export default function Home() {
             <HomeGridItem calcName="Density Calculator" path="/densitycalc"/>
             <HomeGridItem calcName="Projectile Calculator" path="/projectilecalc"/>
             <HomeGridItem calcName="Ohm's Law Calculator" path="/ohmslawcalc"/>
+            <HomeGridItem calcName="MKS - CGS - FPS Calculator" path="/mkscgsfpscalc"/> 
+            <HomeGridItem calcName="Combined Gas Laws Calculator" path="/combinedgaslawscalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>
