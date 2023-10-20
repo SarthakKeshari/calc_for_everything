@@ -147,6 +147,7 @@ import MainEmpiricalFormulaCalc from './chemistry/empiricalFormulaCalc/MainEmpir
 import MainImagesToPDFConsolidator from './computer_science/imagesToPDFConsolidator/MainImagesToPDFConsolidator';
 import MainMKSCGSFPSCalc from './physics/mKSCGSFPSCalc/MainMKSCGSFPSCalc';
 import MainCombinedGasLawsCalc from './physics/combinedGasLawsCalc/MainCombinedGasLawsCalc';
+import MainMultiCurrencyChangeCalc from './finance/multiCurrencyChangeCalc/MainMultiCurrencyChangeCalc';
 
 function App() {
   return (
@@ -292,6 +293,7 @@ function App() {
             <Route path="tipcalc" element={<MainTipCalc />} />
             <Route path="receiptgenerator" element={<MainReceiptGenerator />} />
             <Route path="gdpcalc" element={<MainGDPCalc />} />
+            <Route path="multicurrencychangecalc" element={<MainMultiCurrencyChangeCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
