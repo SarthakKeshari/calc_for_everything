@@ -60,6 +60,7 @@ export default function Home() {
             <HomeGridItem calcName="Base Change Calculator" path="/basechangecalc"/> 
             <HomeGridItem calcName="POS - SOP Converter" path="/possopconverter"/> 
             <HomeGridItem calcName="Gray Code Calculator" path="/graycodecalc"/> 
+            <HomeGridItem calcName="Complement Calculator" path="/complementcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
