@@ -155,6 +155,7 @@ import MainPipesAndCisternsCalc from './mathematical/pipesAndCisternsCalc/MainPi
 import MainFactorialCalc_Gamma from './mathematical/factorialCalc_Gamma/MainFactorialCalc_Gamma';
 import MainAnalyticalFuncCalc from './mathematical/analyticalFuncCalc/MainAnalyticalFuncCalc';
 import MainPOSSOPConverter from './computer_science/pOSSOPConverter/MainPOSSOPConverter';
+import MainGrayCodeCalc from './computer_science/grayCodeCalc/MainGrayCodeCalc';
 
 function App() {
   return (
@@ -215,6 +216,7 @@ function App() {
             <Route path="computeralgebrasystemcascalc" element={<MainComputerAlgebraSystemCASCalc />} />
             <Route path="basechangecalc" element={<MainBaseChangeCalculator />} />
             <Route path="possopconverter" element={<MainPOSSOPConverter />} />
+            <Route path="graycodecalc" element={<MainGrayCodeCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
