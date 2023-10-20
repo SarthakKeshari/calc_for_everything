@@ -157,6 +157,7 @@ import MainAnalyticalFuncCalc from './mathematical/analyticalFuncCalc/MainAnalyt
 import MainPOSSOPConverter from './computer_science/pOSSOPConverter/MainPOSSOPConverter';
 import MainGrayCodeCalc from './computer_science/grayCodeCalc/MainGrayCodeCalc';
 import MainComplementCalc from './computer_science/complementCalc/MainComplementCalc';
+import MainKineticEnergyCalc from './physics/kineticEnergyCalc/MainKineticEnergyCalc';
 
 function App() {
   return (
@@ -300,6 +301,7 @@ function App() {
             <Route path="ohmslawcalc" element={<MainOhmsLawCalc />} />
             <Route path="mkscgsfpscalc" element={<MainMKSCGSFPSCalc />} />
             <Route path="combinedgaslawscalc" element={<MainCombinedGasLawsCalc />} />
+            <Route path="kineticenergycalc" element={<MainKineticEnergyCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
