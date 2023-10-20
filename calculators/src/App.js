@@ -154,6 +154,7 @@ import MainBaseChangeCalculator from './computer_science/baseChangeCalculator/Ma
 import MainPipesAndCisternsCalc from './mathematical/pipesAndCisternsCalc/MainPipesAndCisternsCalc';
 import MainFactorialCalc_Gamma from './mathematical/factorialCalc_Gamma/MainFactorialCalc_Gamma';
 import MainAnalyticalFuncCalc from './mathematical/analyticalFuncCalc/MainAnalyticalFuncCalc';
+import MainPOSSOPConverter from './computer_science/pOSSOPConverter/MainPOSSOPConverter';
 
 function App() {
   return (
@@ -213,6 +214,7 @@ function App() {
             <Route path="imagestopdfconsolidator" element={<MainImagesToPDFConsolidator />} />
             <Route path="computeralgebrasystemcascalc" element={<MainComputerAlgebraSystemCASCalc />} />
             <Route path="basechangecalc" element={<MainBaseChangeCalculator />} />
+            <Route path="possopconverter" element={<MainPOSSOPConverter />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
