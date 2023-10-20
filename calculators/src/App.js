@@ -152,6 +152,7 @@ import MainLaplaceCalc from './mathematical/laplaceCalc/MainLaplaceCalc';
 import MainComputerAlgebraSystemCASCalc from './computer_science/computerAlgebraSystemCASCalc/MainComputerAlgebraSystemCASCalc';
 import MainBaseChangeCalculator from './computer_science/baseChangeCalculator/MainBaseChangeCalculator';
 import MainPipesAndCisternsCalc from './mathematical/pipesAndCisternsCalc/MainPipesAndCisternsCalc';
+import MainFactorialCalc_Gamma from './mathematical/factorialCalc_Gamma/MainFactorialCalc_Gamma';
 
 function App() {
   return (
@@ -273,6 +274,7 @@ function App() {
             <Route path="differentialcalc" element={<MainDifferentialCalc /> } />
             <Route path="laplacecalc" element={<MainLaplaceCalc /> } />
             <Route path="pipesandcisternscalc" element={<MainPipesAndCisternsCalc /> } />
+            <Route path="factorialcalcgamma" element={<MainFactorialCalc_Gamma /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />

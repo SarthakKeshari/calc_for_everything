@@ -124,6 +124,7 @@ export default function Home() {
             <HomeGridItem calcName="Differential Calculator" path="/differentialcalc"/>
             <HomeGridItem calcName="Laplace Calculator" path="/laplacecalc"/>
             <HomeGridItem calcName="Pipes And Cisterns Calculator" path="/pipesandcisternscalc"/>
+            <HomeGridItem calcName="Factorial Calculator (Gamma)" path="/factorialcalcgamma"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
