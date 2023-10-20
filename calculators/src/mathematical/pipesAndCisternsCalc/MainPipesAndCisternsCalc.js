@@ -1,15 +1,14 @@
 import React from 'react';
 import { Container, Typography } from '@mui/material';
-import ImageTextReader from './ImageTextReader';
 
-function MainImageTextReader(){
+function MainPipesAndCisternsCalc(){
     return(
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Image Text Reader</Typography>
+            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Pipes And Cisterns Calculator</Typography>
             <hr/>
             <br/>
             {/* Write your code here */}
-            <ImageTextReader />
+
 
 
             {/* End your code here */}
@@ -17,4 +16,4 @@ function MainImageTextReader(){
     )
 }
 
-export default MainImageTextReader;
+export default MainPipesAndCisternsCalc;

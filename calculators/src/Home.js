@@ -55,6 +55,9 @@ export default function Home() {
             <HomeGridItem calcName="Paragraph Summarizer" path="/parasummarizer"/> 
             <HomeGridItem calcName="Image Text Reader" path="/imagetextreader"/> 
             <HomeGridItem calcName="IEEE754 Converter" path="/ieee754converter"/> 
+            <HomeGridItem calcName="Images To PDF Consolidator" path="/imagestopdfconsolidator"/> 
+            <HomeGridItem calcName="Computer Algebra System (CAS) Calculator" path="/computeralgebrasystemcascalc"/> 
+            <HomeGridItem calcName="Base Change Calculator" path="/basechangecalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -119,6 +122,8 @@ export default function Home() {
             <HomeGridItem calcName="Similarity Of Triangle Calculator" path="/similarityoftrianglecalc"/>
             <HomeGridItem calcName="Sum of N terms of AP/GP/HP Calculator" path="/sumofapgphpcalc"/>
             <HomeGridItem calcName="Differential Calculator" path="/differentialcalc"/>
+            <HomeGridItem calcName="Laplace Calculator" path="/laplacecalc"/>
+            <HomeGridItem calcName="Pipes And Cisterns Calculator" path="/pipesandcisternscalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
@@ -142,6 +147,8 @@ export default function Home() {
             <HomeGridItem calcName="Density Calculator" path="/densitycalc"/>
             <HomeGridItem calcName="Projectile Calculator" path="/projectilecalc"/>
             <HomeGridItem calcName="Ohm's Law Calculator" path="/ohmslawcalc"/>
+            <HomeGridItem calcName="MKS - CGS - FPS Calculator" path="/mkscgsfpscalc"/> 
+            <HomeGridItem calcName="Combined Gas Laws Calculator" path="/combinedgaslawscalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>
@@ -157,6 +164,7 @@ export default function Home() {
             <HomeGridItem calcName="Tip Calculator" path="/tipcalc"/>
             <HomeGridItem calcName="Receipt Generator" path="/receiptgenerator"/>
             <HomeGridItem calcName="GDP Calculator" path="/gdpcalc"/>
+            <HomeGridItem calcName="Multi-Currency Change Calculator" path="/multicurrencychangecalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>
