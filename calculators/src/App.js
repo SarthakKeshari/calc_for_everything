@@ -148,6 +148,7 @@ import MainImagesToPDFConsolidator from './computer_science/imagesToPDFConsolida
 import MainMKSCGSFPSCalc from './physics/mKSCGSFPSCalc/MainMKSCGSFPSCalc';
 import MainCombinedGasLawsCalc from './physics/combinedGasLawsCalc/MainCombinedGasLawsCalc';
 import MainMultiCurrencyChangeCalc from './finance/multiCurrencyChangeCalc/MainMultiCurrencyChangeCalc';
+import MainLaplaceCalc from './mathematical/laplaceCalc/MainLaplaceCalc';
 
 function App() {
   return (
@@ -265,6 +266,7 @@ function App() {
             <Route path="similarityoftrianglecalc" element={<MainSimilarityOfTriangleCalc /> } />
             <Route path="sumofapgphpcalc" element={<MainSumAPGPHPCalc /> } />
             <Route path="differentialcalc" element={<MainDifferentialCalc /> } />
+            <Route path="laplacecalc" element={<MainLaplaceCalc /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
