@@ -6,14 +6,17 @@ function MainBaseChangeCalculator() {
   const [inputBase, setInputBase] = React.useState(10);
   const [outputBase, setOutputBase] = React.useState(10);
   const [outputNumber, setOutputNumber] = React.useState("");
-
+// Handle conversion when the "Convert" button is clicked
   const handleConvert = () => {
+    // Check if all required inputs are provided
     if (!inputNumber || !inputBase || !outputBase) {
       return;
     }
-
+    // Convert input number to decimal using parseInt
     const parsedInputNumber = parseInt(inputNumber, inputBase);
+    // Convert decimal number to output base using toString
     const convertedNumber = parsedInputNumber.toString(outputBase);
+    // Update output number state
     setOutputNumber(convertedNumber);
   };
   return (
