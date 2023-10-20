@@ -18,7 +18,7 @@ const style = {
 
 {/* For reference look into the following file - calc_for_everything\calculators\src\mathematical\simple_interest\InfoSI.js */}
 // Change the name of the function as the file name
-export default function InfoFactorialCalc() {
+export default function InfoFactorsOfNumber() {
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -37,25 +37,29 @@ export default function InfoFactorialCalc() {
         <Box sx={style} sm={1}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {/* Calculator Heading */}
-
+            Factors of a number
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {/* Definition */}
-            
+            A factor of a number is a number that divides the given number without leaving a remainder.
             <br/>
             {/* Replace the below calculator name with yuor calculator name */}
-            The formula for calculating simple interest is:
+            The example for factors of a number is :
             <br/>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h3>
                 {/* Add calc formula */}
-                
+                The factors of 12 are 1, 2, 3, 4, 6, and 12 because each of these numbers can be multiplied in pairs to equal 12:<br/>
+
+                1 * 12 = 12 <br/>
+                2 * 6 = 12 <br/>
+                3 * 4 = 12 <br/>
               </h3>
             </code>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h5>
                 {/* Define meaning that each variable convey */}
-
+                So, 1, 2, 3, 4, 6, and 12 are all factors of 12. Factors always include 1 and the number itself.
               </h5>
             </code>
           </Typography>

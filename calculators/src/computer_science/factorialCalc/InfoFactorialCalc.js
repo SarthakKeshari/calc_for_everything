@@ -37,25 +37,26 @@ export default function InfoFactorialCalc() {
         <Box sx={style} sm={1}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {/* Calculator Heading */}
-
+            Factorial Calculator
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {/* Definition */}
-            
+            A factorial calculator is a tool or program that calculates the factorial of a non-negative integer.
             <br/>
             {/* Replace the below calculator name with yuor calculator name */}
-            The formula for calculating simple interest is:
+            The example for factorial of a number is :
             <br/>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h3>
                 {/* Add calc formula */}
-                
+                if you input "5" into a factorial calculator, it would calculate and display the result as: <br/>
+                5! = 5 * 4 * 3 * 2 * 1 = 120 <br/>
               </h3>
             </code>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h5>
                 {/* Define meaning that each variable convey */}
-
+                So, the factorial of 5 is 120. A factorial calculator simplifies the process of multiplying all the positive integers from 1 to the given number.
               </h5>
             </code>
           </Typography>

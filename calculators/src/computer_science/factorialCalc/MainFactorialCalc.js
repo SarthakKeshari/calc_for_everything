@@ -3,6 +3,7 @@ import {  Container,
     TextField,
     Button,
     Typography, } from '@mui/material';
+import InfoFactorialCalc from './InfoFactorialCalc';
 
 function MainFactorialCalc(){
   const [number, setNumber] = useState('');
@@ -23,7 +24,7 @@ function MainFactorialCalc(){
 
      return(
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Factorial Calculator</Typography>
+            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Factorial Calculator<InfoFactorialCalc/></Typography>
             <hr/>
             <br/>
             <TextField

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Typography, TextField, Button } from '@mui/material';
+import InfoFactorsOfNumber from './InfoFactorsOfNumber';
 
 function MainFactorsOfNumber() {
     const [number, setNumber] = useState('');
@@ -26,7 +27,7 @@ function MainFactorsOfNumber() {
 
     return (
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: "10" }}>
-            <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Factors Of A Number</Typography>
+            <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Factors Of A Number <InfoFactorsOfNumber/></Typography>
             <hr />
             <br />
             <div>
