@@ -149,6 +149,7 @@ import MainMKSCGSFPSCalc from './physics/mKSCGSFPSCalc/MainMKSCGSFPSCalc';
 import MainCombinedGasLawsCalc from './physics/combinedGasLawsCalc/MainCombinedGasLawsCalc';
 import MainMultiCurrencyChangeCalc from './finance/multiCurrencyChangeCalc/MainMultiCurrencyChangeCalc';
 import MainLaplaceCalc from './mathematical/laplaceCalc/MainLaplaceCalc';
+import MainComputerAlgebraSystemCASCalc from './mathematical/computerAlgebraSystemCASCalc/MainComputerAlgebraSystemCASCalc';
 
 function App() {
   return (
@@ -206,6 +207,7 @@ function App() {
             <Route path="imagetextreader" element={<MainImageTextReader />} />
             <Route path="ieee754converter" element={<MainIEEE754Converter />} />
             <Route path="imagestopdfconsolidator" element={<MainImagesToPDFConsolidator />} />
+            <Route path="computeralgebrasystemcascalc" element={<MainComputerAlgebraSystemCASCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
