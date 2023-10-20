@@ -123,6 +123,7 @@ export default function Home() {
             <HomeGridItem calcName="Sum of N terms of AP/GP/HP Calculator" path="/sumofapgphpcalc"/>
             <HomeGridItem calcName="Differential Calculator" path="/differentialcalc"/>
             <HomeGridItem calcName="Laplace Calculator" path="/laplacecalc"/>
+            <HomeGridItem calcName="Pipes And Cisterns Calculator" path="/pipesandcisternscalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>

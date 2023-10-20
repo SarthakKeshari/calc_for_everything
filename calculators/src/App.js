@@ -151,6 +151,7 @@ import MainMultiCurrencyChangeCalc from './finance/multiCurrencyChangeCalc/MainM
 import MainLaplaceCalc from './mathematical/laplaceCalc/MainLaplaceCalc';
 import MainComputerAlgebraSystemCASCalc from './computer_science/computerAlgebraSystemCASCalc/MainComputerAlgebraSystemCASCalc';
 import MainBaseChangeCalculator from './computer_science/baseChangeCalculator/MainBaseChangeCalculator';
+import MainPipesAndCisternsCalc from './mathematical/pipesAndCisternsCalc/MainPipesAndCisternsCalc';
 
 function App() {
   return (
@@ -271,6 +272,7 @@ function App() {
             <Route path="sumofapgphpcalc" element={<MainSumAPGPHPCalc /> } />
             <Route path="differentialcalc" element={<MainDifferentialCalc /> } />
             <Route path="laplacecalc" element={<MainLaplaceCalc /> } />
+            <Route path="pipesandcisternscalc" element={<MainPipesAndCisternsCalc /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
