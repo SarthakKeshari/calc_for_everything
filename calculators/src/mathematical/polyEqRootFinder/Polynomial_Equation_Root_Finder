@@ -1,0 +1,25 @@
+import numpy as np
+
+def find_polynomial_roots():
+    # Input the degree of the polynomial
+    degree = int(input("Enter the degree of the polynomial (maximum 7): "))
+    if degree > 7:
+        print("The maximum allowed degree is 7.")
+        return
+
+    # Input coefficients for the polynomial equation
+    coefficients = []
+    for i in range(degree, -1, -1):
+        coefficient = float(input(f"Enter the coefficient for x^{i}: "))
+        coefficients.append(coefficient)
+
+    # Find the roots of the polynomial using NumPy's roots function
+    roots = np.roots(coefficients)
+
+    # Display the roots of the polynomial
+    print(f"The roots of the polynomial are:")
+    for root in roots:
+        print(f"Root: {root}")
+
+if __name__ == "__main__":
+    find_polynomial_roots()
