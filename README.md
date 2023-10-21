@@ -73,7 +73,18 @@ Hard | 20 Points
 - Code Editor for Web De
 - Pv4 To IPv6 Calculator
 - Color Code Format Converter
-
+- Data Storage Converter
+- Hamming Distance Calculator
+- Flow Chart Maker
+- Data Cleaner
+- Checksum Calculator
+- Paragraph Summarizer
+- Decimal/2421 Code Converter
+- Hamming Code Calculator
+- Random Number Generator
+- Image Text Reader
+- IEEE754 Converter 
+- IP Address Calculator
 
 #### Mathematical
 - Simple Interest
@@ -119,6 +130,21 @@ Hard | 20 Points
 - Equating Denominator Of Fraction
 - Table Of A Number
 - Factors Of A Number
+-Pythagoras Theorem Calculator
+- Mixed To Improper And Improper To Mixed Fraction Calculator
+- Cube Root And Square Root Calculator
+- Area Of 2D Shapes Calculator
+- Surface Area Of 3D Shapes Calculator
+- Square And Cube Calculator
+- Roman Numeral Converter
+- Operations On Fractions Calculator
+- Statistical Graph Creator
+- Volume 3D Shapes Calculator
+- Congruency Of Triangle Calculator
+- Numerals To Words Converter
+- Permutation And Combination Calculator
+- Similarity Of Triangle Calculator
+- Sum of N terms of AP/GP/HP Calculator 
 
 
 #### Chemistry
@@ -126,6 +152,16 @@ Hard | 20 Points
 - Chemical Equation Balancer
 - Chemical Kinetics Calculator
 - Molecular Weight Calculator
+- Chemical Formula Validator
+#### Physics 
+- Pressure Calculator 
+- Cosmo Mass Converter 
+- Amplitude Calculator 
+- Vibrational response Calculator 
+- Density Calculator 
+- Projectile Calculator 
+- ohm's Law Calculator 
+
 #### Finance
 - FD Maturity Calculator
 - RD Maturity Calculator
@@ -133,7 +169,11 @@ Hard | 20 Points
 - Savings Calculator
 - Expense Tracker
 - Currency Converter
-- Profit Margin Calculato
+- Profit Margin Calculator
+- Tip Calculator 
+- Reciept Generator 
+- GDP Calculator 
+
  #### Health
 - BMI
 - BMR 
@@ -143,6 +183,16 @@ Hard | 20 Points
 - Drug Dosage Calculator
 - APGAR Score Calculator
 - Water Intake Calculator
+- Novelty Age Calculator 
+- Day Scheduler 
+- Task Planner 
+  
+#### ART 
+- Drawing Canvas 
+- Mandala Creator 
+#### Space 
+- Satellite Location using TLE
+-  
 
 <br/>
 
