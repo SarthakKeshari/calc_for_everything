@@ -162,6 +162,7 @@ import MainTimeDilationCalc from './physics/timeDilationCalc/MainTimeDilationCal
 import MainTransmissionDelayCalc from './computer_science/transmissionDelayCalc/MainTransmissionDelayCalc';
 import MainPicEditor from './art/picEditor/MainPicEditor';
 import MainAvatarCreater from './art/avatarCreater/MainAvatarCreater';
+import MainCarrollsCaveOfKnowledge from './computer_science/carrollsCaveOfKnowledge/MainCarrollsCaveOfKnowledge';
 
 function App() {
   return (
@@ -225,6 +226,7 @@ function App() {
             <Route path="graycodecalc" element={<MainGrayCodeCalc />} />
             <Route path="complementcalc" element={<MainComplementCalc />} />
             <Route path="transmissiondelaycalc" element={<MainTransmissionDelayCalc />} />
+            <Route path="carrollscaveofknowledgecalc" element={<MainCarrollsCaveOfKnowledge />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
