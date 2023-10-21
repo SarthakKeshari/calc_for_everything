@@ -17,7 +17,7 @@ const style = {
 };
 
 {/* For reference look into the following file - calc_for_everything\calculators\src\mathematical\simple_interest\InfoSI.js */}
-export default function InfoPrimeFactors() {
+export default function InfoMatrixTranspose() {
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -43,10 +43,10 @@ export default function InfoPrimeFactors() {
             
             <br/>
             {/* Replace the below calculator name with yuor calculator name */}
-            Here are the simple steps to find the transpose of a matrix:
-            1.Begin with the matrix for which you want to calculate the transpose. Let's call it matrix A.
-            2. Create a new matrix with dimensions × n×m, where n is the number of columns in A and m is the number of rows in A. In this new matrix, swap the rows and columns of the original matrix A.
-            3.The new matrix from step 2 is the transpose of the original matrix A. You can denote it as A^T
+            Here are the simple steps to find the transpose of a matrix:<br/>
+            1.Begin with the matrix for which you want to calculate the transpose. Let's call it matrix A.<br/>
+            2. Create a new matrix with dimensions n×m, where n is the number of columns in A and m is the number of rows in A. In this new matrix, swap the rows and columns of the original matrix A.<br/>
+            3.The new matrix from step 2 is the transpose of the original matrix A. You can denote it as A^T<br/>
 
             <br/>
             <code style={{display: 'flex', justifyContent: 'center'}}>

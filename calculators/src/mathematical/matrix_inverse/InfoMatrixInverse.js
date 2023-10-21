@@ -17,7 +17,7 @@ const style = {
 };
 
 {/* For reference look into the following file - calc_for_everything\calculators\src\mathematical\simple_interest\InfoSI.js */}
-export default function InfoPrimeFactors() {
+export default function InfoMatrixInverse() {
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -43,11 +43,11 @@ export default function InfoPrimeFactors() {
             
             <br/>
             {/* Replace the below calculator name with yuor calculator name */}
-            Follow the following steps to calculate the Inverse of a Matrix:
-            Step 1: Determine the Dimension and Verify Invertibility
-            Step 2: Create an augmented matrix [A∣I], where A is the original matrix, and I is the identity matrix of the same size as A.           
-            Step 3: Apply Row Operations to Transform A to the Identity Matrix
-            Step 4: The Resulting Matrix is the Inverse
+            Follow the following steps to calculate the Inverse of a Matrix:<br/>
+            Step 1: Determine the Dimension and Verify Invertibility<br/>
+            Step 2: Create an augmented matrix [A∣I], where A is the original matrix, and I is the identity matrix of the same size as A.<br/>           
+            Step 3: Apply Row Operations to Transform A to the Identity Matrix<br/>
+            Step 4: The Resulting Matrix is the Inverse<br/>
             <br/>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h3>
