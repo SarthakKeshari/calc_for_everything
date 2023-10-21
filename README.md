@@ -85,6 +85,12 @@ Hard | 20 Points
 - Image Text Reader
 - IEEE754 Converter 
 - IP Address Calculator
+- Image To PDF Consolidator
+- Computer Algebra System (CAS) Calculator
+- Base Change Calculator
+- POS-SOP Converter
+- Gray Code Calculator
+- Complement Calculator
 
 #### Mathematical
 - Simple Interest
@@ -145,6 +151,11 @@ Hard | 20 Points
 - Permutation And Combination Calculator
 - Similarity Of Triangle Calculator
 - Sum of N terms of AP/GP/HP Calculator 
+- Differential Calculator
+- Laplace Calculator
+- Pipes And Cisterns Calculator
+- Factorial Calculator (Gamma)
+- Analytical Function Calculator
 
 
 #### Physics
@@ -160,6 +171,8 @@ Hard | 20 Points
 - Chemical Kinetics Calculator
 - Molecular Weight Calculator
 - Chemical Formula Validator
+- Empirical Formula Calculator 
+
 #### Physics 
 - Pressure Calculator 
 - Cosmo Mass Converter 
@@ -168,6 +181,10 @@ Hard | 20 Points
 - Density Calculator 
 - Projectile Calculator 
 - ohm's Law Calculator 
+- MKS-CS-FPS Calculator
+- Combined Gas Laws Calculator
+- Kinetic Energy Calculator
+- Time Dilation Calculator
 
 #### Finance
 - FD Maturity Calculator
@@ -197,6 +214,7 @@ Hard | 20 Points
 #### ART 
 - Drawing Canvas 
 - Mandala Creator 
+
 #### Space 
 - Satellite Location using TLE
 -  
