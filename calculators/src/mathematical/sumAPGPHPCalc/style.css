@@ -1,0 +1,22 @@
+.main{
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 7px 10px rgba(0,0,0,0.8);
+    width: fit-content;
+    padding-bottom: 2%;
+}
+.input{
+    width: 98%;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    background-color: rgb(224, 224, 224);
+    color: black;
+    border-radius: 10px;
+    margin-left: 43%;
+    margin-bottom: 2%;
+    width: fit-content;
+}

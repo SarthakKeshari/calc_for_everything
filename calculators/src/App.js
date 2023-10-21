@@ -159,6 +159,9 @@ import MainGrayCodeCalc from './computer_science/grayCodeCalc/MainGrayCodeCalc';
 import MainComplementCalc from './computer_science/complementCalc/MainComplementCalc';
 import MainKineticEnergyCalc from './physics/kineticEnergyCalc/MainKineticEnergyCalc';
 import MainTimeDilationCalc from './physics/timeDilationCalc/MainTimeDilationCalc';
+import MainTransmissionDelayCalc from './computer_science/transmissionDelayCalc/MainTransmissionDelayCalc';
+import MainPicEditor from './art/picEditor/MainPicEditor';
+import MainAvatarCreater from './art/avatarCreater/MainAvatarCreater';
 
 function App() {
   return (
@@ -221,6 +224,7 @@ function App() {
             <Route path="possopconverter" element={<MainPOSSOPConverter />} />
             <Route path="graycodecalc" element={<MainGrayCodeCalc />} />
             <Route path="complementcalc" element={<MainComplementCalc />} />
+            <Route path="transmissiondelaycalc" element={<MainTransmissionDelayCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -331,6 +335,8 @@ function App() {
             {/* Art */}
             <Route path="drawingcanvas" element={<MainDrawingCanvas />} />
             <Route path="mandalacreater" element={<MainMandalaCreater />} />
+            <Route path="piceditor" element={<MainPicEditor />} />
+            <Route path="avatarcreater" element={<MainAvatarCreater />} />
             {/* Space */}
             <Route path="satellitelocationusingtle" element={<MainSatelliteLocationUsingTLE />} />
           </Route>

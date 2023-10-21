@@ -61,6 +61,7 @@ export default function Home() {
             <HomeGridItem calcName="POS - SOP Converter" path="/possopconverter"/> 
             <HomeGridItem calcName="Gray Code Calculator" path="/graycodecalc"/> 
             <HomeGridItem calcName="Complement Calculator" path="/complementcalc"/> 
+            <HomeGridItem calcName="Transmission Delay Calculator" path="/transmissiondelaycalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -195,6 +196,8 @@ export default function Home() {
         <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
             <HomeGridItem calcName="Drawing Canvas" path="/drawingcanvas"/>
             <HomeGridItem calcName="Mandala Creater" path="/mandalacreater"/>
+            <HomeGridItem calcName="Pic Editor" path="/piceditor"/>
+            <HomeGridItem calcName="Avatar Creater" path="/avatarcreater"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Space</Typography>
