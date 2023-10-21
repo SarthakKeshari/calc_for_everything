@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Typography, Card, TextField, Button } from '@mui/material';
+import InfoQuadraticEquationIntersection from './InfoQuadraticEquationIntersection';
 
 const equationStyle = {
     fontSize: '1.5rem', // Adjust the font size as needed
@@ -109,7 +110,7 @@ function MainQuadraticEquationIntersection() {
   return (
     <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: '10' }}>
       <Typography pt={1} variant="h5" sx={{ textAlign: 'center' }}>
-        Quadratic Equation Intersection Calculator
+        Quadratic Equation Intersection Calculator <InfoQuadraticEquationIntersection/>
       </Typography>
       <hr />
 

@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import { Container, Typography } from '@mui/material';
 import "./index.css";
+import InfoSetOperations from './InfoSetOperations';
 
 
 function MainSetOperations() {
@@ -44,7 +45,7 @@ function MainSetOperations() {
   return (
 
     <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-        <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Set Operations</Typography>
+        <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Set Operations <InfoSetOperations/></Typography>
             <hr/>
             <br/>
     <div className="app">
