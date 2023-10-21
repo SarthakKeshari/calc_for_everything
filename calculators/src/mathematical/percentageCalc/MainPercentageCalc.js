@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Typography, Button, TextField } from '@mui/material';
+import InfoPercentageCalc from './InfoPercentageCalc';
 
 function MainPercentageCalc() {
     const [number, setNumber] = useState('');
@@ -19,7 +20,7 @@ function MainPercentageCalc() {
     };
     return (
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: "10" }}>
-            <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Percentage Calculator</Typography>
+            <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Percentage Calculator <InfoPercentageCalc /> </Typography>
             <hr />
             <br />
             <div>
