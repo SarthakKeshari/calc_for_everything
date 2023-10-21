@@ -12,10 +12,10 @@ function AvatarCreator() {
         setInitials(e.target.value);
     };
 
-    const createAvatar = () => {
+    const GenerateAvatar = () => {
         // You can customize the avatar color, background, and size as per your requirements
         const avatar = (
-            <Avatar style={{ backgroundColor: '#3f51b5', width: 100, height: 100 }}>
+            <Avatar style={{ backgroundColor: '#3f51b5', width: 200, height: 200 }}>
                 {initials}
             </Avatar>
         );
@@ -27,19 +27,19 @@ function AvatarCreator() {
             <Grid container spacing={2}>
                 <Grid item>
                     <TextField
-                        label="Enter Initials"
+                        label="Enter your Initials"
                         variant="outlined"
                         value={initials}
                         onChange={handleInitialsChange}
                     />
                 </Grid>
                 <Grid item>
-                    <Button variant="contained" color="primary" onClick={createAvatar}>
-                        Create Avatar
+                    <Button variant="contained" color="primary" onClick={GenerateAvatar}>
+                        Generate Avatar
                     </Button>
                 </Grid>
             </Grid>
-            <div style={{ marginTop: '20px' }}>{avatarSrc}</div>
+            <div style={{ marginTop: '40px' }}>{avatarSrc}</div>
         </div>
     );
 }
