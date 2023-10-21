@@ -63,7 +63,6 @@ export default function Home() {
             <HomeGridItem calcName="Complement Calculator" path="/complementcalc"/> 
             <HomeGridItem calcName="Transmission Delay Calculator" path="/transmissiondelaycalc"/> 
             <HomeGridItem calcName="Carroll's Cave Of Knowledge Calculator" path="/carrollscaveofknowledgecalc"/> 
-            <HomeGridItem calcName="Z-Score Calculator" path="/zscorecalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -132,6 +131,7 @@ export default function Home() {
             <HomeGridItem calcName="Pipes And Cisterns Calculator" path="/pipesandcisternscalc"/>
             <HomeGridItem calcName="Factorial Calculator (Gamma)" path="/factorialcalcgamma"/>
             <HomeGridItem calcName="Analytical Function Calculator" path="/analyticalFuncCalc"/>
+            <HomeGridItem calcName="Z-Score Calculator" path="/zscorecalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>

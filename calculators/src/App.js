@@ -228,7 +228,6 @@ function App() {
             <Route path="complementcalc" element={<MainComplementCalc />} />
             <Route path="transmissiondelaycalc" element={<MainTransmissionDelayCalc />} />
             <Route path="carrollscaveofknowledgecalc" element={<MainCarrollsCaveOfKnowledge />} />
-            <Route path="zscorecalc" element={<MainZScoreCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -293,6 +292,7 @@ function App() {
             <Route path="pipesandcisternscalc" element={<MainPipesAndCisternsCalc /> } />
             <Route path="factorialcalcgamma" element={<MainFactorialCalc_Gamma /> } />
             <Route path="analyticalFuncCalc" element={<MainAnalyticalFuncCalc /> } />
+            <Route path="zscorecalc" element={<MainZScoreCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
