@@ -1,0 +1,37 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+
+# Define the kinetic model function (in this case, first-order reaction)
+def first_order_kinetics(t, k):
+    return k * t
+
+# Input experimental data (time and concentration)
+time = [0, 10, 20, 30, 40]  # Time points
+concentration = [1.0, 0.736, 0.543, 0.401, 0.296]  # Corresponding concentration
+
+# Perform curve fitting to determine the rate constant (k)
+popt, _ = curve_fit(first_order_kinetics, time, concentration)
+
+# Extract the rate constant
+k = popt[0]
+
+# Calculate the reaction order (in this case, it's 1)
+reaction_order = 2
+
+# Calculate the reaction rate
+reaction_rate = k * concentration[0]
+
+# Display the results
+print(f"Rate Constant (k): {k}")
+print(f"Reaction Order: {reaction_order}")
+print(f"Initial Reaction Rate: {reaction_rate}")
+
+# Create a plot to visualize the data and fitted curve
+fitted_concentration = [first_order_kinetics(t, k) for t in time]
+plt.plot(time, concentration, 'ro', label='Experimental Data')
+plt.plot(time, fitted_concentration, 'b-', label='Fitted Curve')
+plt.xlabel('Time')
+plt.ylabel('Concentration')
+plt.legend()
+plt.show()
