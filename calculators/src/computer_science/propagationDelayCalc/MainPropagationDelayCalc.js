@@ -6,20 +6,33 @@ function MainPropagationDelayCalc() {
   const [speed, setSpeed] = useState(""); // Speed of propagation (in meters per second)
   const [delay, setDelay] = useState(""); // Propagation delay (in seconds)
   const [resultType, setResultType] = useState("Propagation Delay (seconds)");
+  const [error, setError] = useState("");
 
   const handleDistanceChange = (event) => {
     setDistance(event.target.value);
+    setError("");
   };
 
   const handleSpeedChange = (event) => {
     setSpeed(event.target.value);
+    setError("");
   };
 
   const handleDelayChange = (event) => {
     setDelay(event.target.value);
+    setError("");
   };
 
   const calculateDelay = () => {
+    if (
+      (distance.trim() && isNaN(parseFloat(distance))) ||
+      (speed.trim() && isNaN(parseFloat(speed))) ||
+      (delay.trim() && isNaN(parseFloat(delay)))
+    ) {
+      setError("Please enter numeric values for all fields.");
+      return;
+    }
+
     if (distance && speed) {
       const calculatedDelay = (
         parseFloat(distance) / parseFloat(speed)
@@ -70,7 +83,7 @@ function MainPropagationDelayCalc() {
       <br />
       <br />
       <TextField
-        label={resultType}
+        label="Propagation Delay (seconds)"
         variant="outlined"
         value={delay}
         onChange={handleDelayChange}
@@ -83,12 +96,19 @@ function MainPropagationDelayCalc() {
       <br />
       <br />
       <Typography variant="h6" sx={{ textAlign: "center" }}>
-        {resultType}:{" "}
-        {resultType === "Propagation Delay (seconds)"
-          ? delay
-          : resultType === "Distance (meters)"
-          ? distance
-          : speed}
+        {error ? (
+          <Typography color="error" sx={{ textAlign: "center" }}>
+            {error}
+          </Typography>
+        ) : (
+          `${resultType}: ${
+            resultType === "Propagation Delay (seconds)"
+              ? delay
+              : resultType === "Distance (meters)"
+              ? distance
+              : speed
+          }`
+        )}
       </Typography>
     </Container>
   );
