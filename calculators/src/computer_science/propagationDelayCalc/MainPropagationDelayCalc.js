@@ -2,43 +2,61 @@ import React, { useState } from "react";
 import { Container, Typography, TextField, Button } from "@mui/material";
 
 function MainPropagationDelayCalc() {
-  const [distance, setDistance] = useState(""); // Distance between sender and receiver
-  const [speed, setSpeed] = useState(""); // Speed of propagation
-  const [delay, setDelay] = useState(""); // Propagation delay
+  const [distance, setDistance] = useState(""); // Distance between sender and receiver (in meters)
+  const [speed, setSpeed] = useState(""); // Speed of propagation (in meters per second)
+  const [delay, setDelay] = useState(""); // Propagation delay (in seconds)
+  const [resultType, setResultType] = useState("Propagation Delay (seconds)");
+  const [error, setError] = useState("");
 
   const handleDistanceChange = (event) => {
     setDistance(event.target.value);
+    setError("");
   };
 
   const handleSpeedChange = (event) => {
     setSpeed(event.target.value);
+    setError("");
   };
 
   const handleDelayChange = (event) => {
     setDelay(event.target.value);
+    setError("");
   };
 
-  // Calculate propagation delay
   const calculateDelay = () => {
+    if (speed && distance && delay) {
+      setError("Please enter any 2 values.");
+      return;
+    }
+
+    if (
+      (distance.trim() && isNaN(parseFloat(distance))) ||
+      (speed.trim() && isNaN(parseFloat(speed))) ||
+      (delay.trim() && isNaN(parseFloat(delay)))
+    ) {
+      setError("Please enter numeric values for all fields.");
+      return;
+    }
+
     if (distance && speed) {
       const calculatedDelay = (
         parseFloat(distance) / parseFloat(speed)
       ).toFixed(2);
       setDelay(calculatedDelay);
+      setResultType("Propagation Delay (seconds)");
     } else if (delay) {
-      // Calculate missing value if propagation delay is given
       if (speed) {
-        // Calculate distance if speed and delay are given
         const calculatedDistance = (
           parseFloat(speed) * parseFloat(delay)
         ).toFixed(2);
         setDistance(calculatedDistance);
+        setResultType("Distance (meters)");
       } else {
-        // Calculate speed if distance and delay are given
         const calculatedSpeed = (
           parseFloat(distance) / parseFloat(delay)
         ).toFixed(2);
         setSpeed(calculatedSpeed);
+        setResultType("Speed of Propagation (m/s)");
       }
     }
   };
@@ -78,12 +96,24 @@ function MainPropagationDelayCalc() {
       <br />
       <br />
       <Button variant="contained" color="primary" onClick={calculateDelay}>
-        Calculate Propagation Delay
+        Calculate
       </Button>
       <br />
       <br />
       <Typography variant="h6" sx={{ textAlign: "center" }}>
-        Propagation Delay: {delay} seconds
+        {error ? (
+          <Typography color="error" sx={{ textAlign: "center" }}>
+            {error}
+          </Typography>
+        ) : (
+          `${resultType}: ${
+            resultType === "Propagation Delay (seconds)"
+              ? delay
+              : resultType === "Distance (meters)"
+              ? distance
+              : speed
+          }`
+        )}
       </Typography>
     </Container>
   );
