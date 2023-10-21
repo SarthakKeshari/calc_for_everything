@@ -63,9 +63,11 @@ function MainMUXCalc() {
       <Typography variant="h6" sx={{ textAlign: "center" }}>
         Output F: {f}
       </Typography>
-      <Typography variant="h6" sx={{ textAlign: "center" }}>
-        Selected line : {parseInt(i, 2)}
-      </Typography>
+      {f && parseInt(i, 2) >= 0 && parseInt(i, 2) < Math.pow(2, n) && (
+        <Typography variant="h6" sx={{ textAlign: "center" }}>
+          Selected line : D{parseInt(i, 2)}
+        </Typography>
+      )}
     </Container>
   );
 }
