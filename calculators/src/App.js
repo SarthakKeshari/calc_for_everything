@@ -170,6 +170,7 @@ import MainMUXCalc from './computer_science/mUXCalc/MainMUXCalc';
 import MainPropagationDelayCalc from './computer_science/propagationDelayCalc/MainPropagationDelayCalc';
 import MainPotentialEnergyCalc from './physics/potentialEnergyCalc/MainPotentialEnergyCalc';
 import MainDeMUXCalc from './computer_science/deMUXCalc/MainDeMUXCalc';
+import MainZTransformCalc from './mathematical/zTransformCalc/MainZTransformCalc';
 
 function App() {
   return (
@@ -302,6 +303,7 @@ function App() {
             <Route path="factorialcalcgamma" element={<MainFactorialCalc_Gamma /> } />
             <Route path="analyticalFuncCalc" element={<MainAnalyticalFuncCalc /> } />
             <Route path="zscorecalc" element={<MainZScoreCalc />} />
+            <Route path="ztransformcalc" element={<MainZTransformCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
