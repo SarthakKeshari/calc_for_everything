@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Typography, TextField, Button, Table, TableBody, TableCell, TableContainer, TableRow, Paper } from '@mui/material';
+import InfoMatrixTranspose from './InfoMatrixTranspose';
 
 function MainMatrixTranspose() {
     const [numRows, setNumRows] = useState(0);
@@ -51,7 +52,7 @@ function MainMatrixTranspose() {
 
     return (
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: "10" }}>
-            <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Transpose of Matrix Calculator</Typography>
+            <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Transpose of Matrix Calculator <InfoMatrixTranspose/></Typography>
             <hr />
             <br />
 

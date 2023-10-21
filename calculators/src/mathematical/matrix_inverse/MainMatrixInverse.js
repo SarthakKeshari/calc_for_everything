@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import numeric from "numeric";
 import "./mainMatrixInverse.css";
+import InfoMatrixInverse from "./InfoMatrixInverse";
 
 function MainMatrixInverse() {
   const [matrixSize, setMatrixSize] = useState("");
@@ -52,7 +53,7 @@ const handleMatrixChange = (row, col, value) => {
   };
   return (
     <div className="matrix-inverse-calculator">
-      <h1>Matrix Inverse Calculator</h1>
+      <h1>Matrix Inverse Calculator<InfoMatrixInverse/></h1>
       <div>
         <label className="mx-2">Matrix Size:</label>
         <input
