@@ -197,6 +197,7 @@ export default function Home() {
             <HomeGridItem calcName="Drawing Canvas" path="/drawingcanvas"/>
             <HomeGridItem calcName="Mandala Creater" path="/mandalacreater"/>
             <HomeGridItem calcName="Pic Editor" path="/piceditor"/>
+            <HomeGridItem calcName="Avatar Creater" path="/avatarcreater"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Space</Typography>

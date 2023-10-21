@@ -161,6 +161,7 @@ import MainKineticEnergyCalc from './physics/kineticEnergyCalc/MainKineticEnergy
 import MainTimeDilationCalc from './physics/timeDilationCalc/MainTimeDilationCalc';
 import MainTransmissionDelayCalc from './computer_science/transmissionDelayCalc/MainTransmissionDelayCalc';
 import MainPicEditor from './art/picEditor/MainPicEditor';
+import MainAvatarCreater from './art/avatarCreater/MainAvatarCreater';
 
 function App() {
   return (
@@ -335,6 +336,7 @@ function App() {
             <Route path="drawingcanvas" element={<MainDrawingCanvas />} />
             <Route path="mandalacreater" element={<MainMandalaCreater />} />
             <Route path="piceditor" element={<MainPicEditor />} />
+            <Route path="avatarcreater" element={<MainAvatarCreater />} />
             {/* Space */}
             <Route path="satellitelocationusingtle" element={<MainSatelliteLocationUsingTLE />} />
           </Route>
