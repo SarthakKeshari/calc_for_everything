@@ -24,6 +24,11 @@ function MainPropagationDelayCalc() {
   };
 
   const calculateDelay = () => {
+    if (speed && distance && delay) {
+      setError("Please enter any 2 values.");
+      return;
+    }
+
     if (
       (distance.trim() && isNaN(parseFloat(distance))) ||
       (speed.trim() && isNaN(parseFloat(speed))) ||
