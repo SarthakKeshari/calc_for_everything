@@ -168,6 +168,7 @@ import MainHookesLawCalc from './physics/hookesLawCalc/MainHookesLawCalc';
 import MainWorkCalc from './physics/workCalc/MainWorkCalc';
 import MainMUXCalc from './computer_science/mUXCalc/MainMUXCalc';
 import MainPropagationDelayCalc from './computer_science/propagationDelayCalc/MainPropagationDelayCalc';
+import MainPotentialEnergyCalc from './physics/potentialEnergyCalc/MainPotentialEnergyCalc';
 
 function App() {
   return (
@@ -320,6 +321,7 @@ function App() {
             <Route path="timedilationcalc" element={<MainTimeDilationCalc />} />
             <Route path="hookeslawcalc" element={<MainHookesLawCalc />} />
             <Route path="workcalc" element={<MainWorkCalc />} />
+            <Route path="potentialenergycalc" element={<MainPotentialEnergyCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
