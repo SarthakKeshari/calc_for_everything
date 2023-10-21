@@ -64,6 +64,7 @@ export default function Home() {
             <HomeGridItem calcName="Transmission Delay Calculator" path="/transmissiondelaycalc"/> 
             <HomeGridItem calcName="Carroll's Cave Of Knowledge Calculator" path="/carrollscaveofknowledgecalc"/> 
             <HomeGridItem calcName="MUX Calculator" path="/muxcalc"/> 
+            <HomeGridItem calcName="Propagation Delay Calculator" path="/propagationdelaycalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
