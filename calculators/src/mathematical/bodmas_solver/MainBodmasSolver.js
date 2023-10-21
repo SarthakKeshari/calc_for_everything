@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Box, Typography, TextField, Button } from "@mui/material";
 import CopyValue from "../../components/CopyValue";
+import InfoBodmasSolver from './InfoBodmasSolver';
 
 function MainBodmasSolver() {
   const [input, setInput] = useState("");
@@ -32,6 +33,7 @@ function MainBodmasSolver() {
     <Container maxWidth="md" sx={{ marginTop: "2rem" }}>
       <Typography variant="h4" gutterBottom>
         BODMAS Solver
+        <InfoBodmasSolver /> 
       </Typography>
       <br />
       <TextField

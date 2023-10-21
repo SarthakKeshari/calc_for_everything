@@ -18,7 +18,7 @@ const style = {
 
 {/* For reference look into the following file - calc_for_everything\calculators\src\mathematical\simple_interest\InfoSI.js */}
 // Change the name of the function as the file name
-export default function InfoLogAntilog () {
+export default function InfoQuadraticEquationSolver () {
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -37,12 +37,13 @@ export default function InfoLogAntilog () {
         <Box sx={style} sm={1}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {/* Calculator Heading */}
-            Log Antilog Calculator
+            Quadratic Equation Solver 
 
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {/* Definition */}
-            A logarithm (log) is a mathematical function that finds the exponent required to obtain a given number using a specified base, while an antilogarithm (antilog) is the inverse operation, calculating the original number from a base and exponent.
+            A quadratic equation solver is a mathematical tool or method that finds the solutions (roots) of quadratic equations, which are equations of the form ax^2 + bx + c = 0.
+
             
             <br/>
             {/* Replace the below calculator name with yuor calculator name */}
@@ -51,17 +52,14 @@ export default function InfoLogAntilog () {
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h3>
                 {/* Add calc formula */}
-                Logarithm (log) Formula:
-                log_b(x) = y, where b^y = x
-                Antilogarithm (Antilog) Formula:
-                x = b^y
+                x = (-b ± √(b² - 4ac)) / (2a)
                 
               </h3>
             </code>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h5>
                 {/* Define meaning that each variable convey */}
-                Original Number "x" from the base "b" and the Exponent "y" 
+                Here, 'a', 'b', and 'c' are the coefficients of the quadratic equation, and 'x' represents the solutions or roots of the equation.
 
               </h5>
             </code>
