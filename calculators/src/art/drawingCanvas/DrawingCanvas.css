@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); 
+  
+h1 { 
+    font-family: 'Lobster', cursive; 
+    font-size: 50px; 
+    color: #4644f0; 
+} 
+  
+.draw-area { 
+    width: 1150px; 
+    height: 550px; 
+    border: 2px solid #808080; 
+    position: relative; 
+    background-color: white; 
+} 
+  
+.Menu { 
+    width: 650px; 
+    height: 50px; 
+    display: flex; 
+    justify-content: space-evenly; 
+    border-radius: 5px; 
+    align-items: center; 
+    background-color: #a3a3a32d; 
+    margin: auto; 
+    margin-top: 10px; 
+}

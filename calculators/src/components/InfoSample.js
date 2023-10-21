@@ -18,7 +18,7 @@ const style = {
 
 {/* For reference look into the following file - calc_for_everything\calculators\src\mathematical\simple_interest\InfoSI.js */}
 // Change the name of the function as the file name
-export default function InfoSample() {
+export default function InfoFactorialCalc() {
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);

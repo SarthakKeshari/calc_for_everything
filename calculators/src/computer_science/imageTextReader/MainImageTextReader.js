@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Typography } from '@mui/material';
+import ImageTextReader from './ImageTextReader';
 
 function MainImageTextReader(){
     return(
@@ -8,7 +9,7 @@ function MainImageTextReader(){
             <hr/>
             <br/>
             {/* Write your code here */}
-
+            <ImageTextReader />
 
 
             {/* End your code here */}

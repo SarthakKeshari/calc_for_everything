@@ -142,6 +142,23 @@ import MainSatelliteLocationUsingTLE from './space/satelliteLocationUsingTLE/Mai
 import MainDensityCalc from './physics/densityCalc/MainDensityCalc';
 import MainProjectileCalc from './physics/projectileCalc/MainProjectileCalc';
 import MainOhmsLawCalc from './physics/ohmsLawCalc/MainOhmsLawCalc';
+import MainDifferentialCalc from './mathematical/differentialCalc/MainDifferentialCalc';
+import MainEmpiricalFormulaCalc from './chemistry/empiricalFormulaCalc/MainEmpiricalFormulaCalc';
+import MainImagesToPDFConsolidator from './computer_science/imagesToPDFConsolidator/MainImagesToPDFConsolidator';
+import MainMKSCGSFPSCalc from './physics/mKSCGSFPSCalc/MainMKSCGSFPSCalc';
+import MainCombinedGasLawsCalc from './physics/combinedGasLawsCalc/MainCombinedGasLawsCalc';
+import MainMultiCurrencyChangeCalc from './finance/multiCurrencyChangeCalc/MainMultiCurrencyChangeCalc';
+import MainLaplaceCalc from './mathematical/laplaceCalc/MainLaplaceCalc';
+import MainComputerAlgebraSystemCASCalc from './computer_science/computerAlgebraSystemCASCalc/MainComputerAlgebraSystemCASCalc';
+import MainBaseChangeCalculator from './computer_science/baseChangeCalculator/MainBaseChangeCalculator';
+import MainPipesAndCisternsCalc from './mathematical/pipesAndCisternsCalc/MainPipesAndCisternsCalc';
+import MainFactorialCalc_Gamma from './mathematical/factorialCalc_Gamma/MainFactorialCalc_Gamma';
+import MainAnalyticalFuncCalc from './mathematical/analyticalFuncCalc/MainAnalyticalFuncCalc';
+import MainPOSSOPConverter from './computer_science/pOSSOPConverter/MainPOSSOPConverter';
+import MainGrayCodeCalc from './computer_science/grayCodeCalc/MainGrayCodeCalc';
+import MainComplementCalc from './computer_science/complementCalc/MainComplementCalc';
+import MainKineticEnergyCalc from './physics/kineticEnergyCalc/MainKineticEnergyCalc';
+import MainTimeDilationCalc from './physics/timeDilationCalc/MainTimeDilationCalc';
 
 function App() {
   return (
@@ -198,6 +215,12 @@ function App() {
             <Route path="parasummarizer" element={<MainParaSummarizer />} />
             <Route path="imagetextreader" element={<MainImageTextReader />} />
             <Route path="ieee754converter" element={<MainIEEE754Converter />} />
+            <Route path="imagestopdfconsolidator" element={<MainImagesToPDFConsolidator />} />
+            <Route path="computeralgebrasystemcascalc" element={<MainComputerAlgebraSystemCASCalc />} />
+            <Route path="basechangecalc" element={<MainBaseChangeCalculator />} />
+            <Route path="possopconverter" element={<MainPOSSOPConverter />} />
+            <Route path="graycodecalc" element={<MainGrayCodeCalc />} />
+            <Route path="complementcalc" element={<MainComplementCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -257,12 +280,18 @@ function App() {
             <Route path="permutationandcombinationcalc" element={<MainPermutationAndCombinationCalc /> } />
             <Route path="similarityoftrianglecalc" element={<MainSimilarityOfTriangleCalc /> } />
             <Route path="sumofapgphpcalc" element={<MainSumAPGPHPCalc /> } />
+            <Route path="differentialcalc" element={<MainDifferentialCalc /> } />
+            <Route path="laplacecalc" element={<MainLaplaceCalc /> } />
+            <Route path="pipesandcisternscalc" element={<MainPipesAndCisternsCalc /> } />
+            <Route path="factorialcalcgamma" element={<MainFactorialCalc_Gamma /> } />
+            <Route path="analyticalFuncCalc" element={<MainAnalyticalFuncCalc /> } />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
             <Route path="chemicalkineticscalc" element={<MainChemicalKineticsCalc />} />
             <Route path="molecularweightcalc" element={<MainMolecularWeightCalc />} />
             <Route path="chemicalformulavalidator" element={<MainChemicalFormulaValidator />} />
+            <Route path="empiricalformulacalc" element={<MainEmpiricalFormulaCalc />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
@@ -271,6 +300,10 @@ function App() {
             <Route path="densitycalc" element={<MainDensityCalc />} />
             <Route path="projectilecalc" element={<MainProjectileCalc />} />
             <Route path="ohmslawcalc" element={<MainOhmsLawCalc />} />
+            <Route path="mkscgsfpscalc" element={<MainMKSCGSFPSCalc />} />
+            <Route path="combinedgaslawscalc" element={<MainCombinedGasLawsCalc />} />
+            <Route path="kineticenergycalc" element={<MainKineticEnergyCalc />} />
+            <Route path="timedilationcalc" element={<MainTimeDilationCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
@@ -282,6 +315,7 @@ function App() {
             <Route path="tipcalc" element={<MainTipCalc />} />
             <Route path="receiptgenerator" element={<MainReceiptGenerator />} />
             <Route path="gdpcalc" element={<MainGDPCalc />} />
+            <Route path="multicurrencychangecalc" element={<MainMultiCurrencyChangeCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />

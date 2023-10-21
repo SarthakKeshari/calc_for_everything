@@ -55,6 +55,12 @@ export default function Home() {
             <HomeGridItem calcName="Paragraph Summarizer" path="/parasummarizer"/> 
             <HomeGridItem calcName="Image Text Reader" path="/imagetextreader"/> 
             <HomeGridItem calcName="IEEE754 Converter" path="/ieee754converter"/> 
+            <HomeGridItem calcName="Images To PDF Consolidator" path="/imagestopdfconsolidator"/> 
+            <HomeGridItem calcName="Computer Algebra System (CAS) Calculator" path="/computeralgebrasystemcascalc"/> 
+            <HomeGridItem calcName="Base Change Calculator" path="/basechangecalc"/> 
+            <HomeGridItem calcName="POS - SOP Converter" path="/possopconverter"/> 
+            <HomeGridItem calcName="Gray Code Calculator" path="/graycodecalc"/> 
+            <HomeGridItem calcName="Complement Calculator" path="/complementcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -118,6 +124,11 @@ export default function Home() {
             <HomeGridItem calcName="Permutation And Combination Calculator" path="/permutationandcombinationcalc"/>
             <HomeGridItem calcName="Similarity Of Triangle Calculator" path="/similarityoftrianglecalc"/>
             <HomeGridItem calcName="Sum of N terms of AP/GP/HP Calculator" path="/sumofapgphpcalc"/>
+            <HomeGridItem calcName="Differential Calculator" path="/differentialcalc"/>
+            <HomeGridItem calcName="Laplace Calculator" path="/laplacecalc"/>
+            <HomeGridItem calcName="Pipes And Cisterns Calculator" path="/pipesandcisternscalc"/>
+            <HomeGridItem calcName="Factorial Calculator (Gamma)" path="/factorialcalcgamma"/>
+            <HomeGridItem calcName="Analytical Function Calculator" path="/analyticalFuncCalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
@@ -128,6 +139,7 @@ export default function Home() {
             <HomeGridItem calcName="Chemical Kinetics Calculator" path="/chemicalkineticscalc"/>
             <HomeGridItem calcName="Molecular Weight Calculator" path="/molecularweightcalc"/>
             <HomeGridItem calcName="Chemical Formula Validator" path="/chemicalformulavalidator"/>
+            <HomeGridItem calcName="Empirical Formula Calculator" path="/empiricalformulacalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Physics</Typography>
@@ -140,6 +152,10 @@ export default function Home() {
             <HomeGridItem calcName="Density Calculator" path="/densitycalc"/>
             <HomeGridItem calcName="Projectile Calculator" path="/projectilecalc"/>
             <HomeGridItem calcName="Ohm's Law Calculator" path="/ohmslawcalc"/>
+            <HomeGridItem calcName="MKS - CGS - FPS Calculator" path="/mkscgsfpscalc"/> 
+            <HomeGridItem calcName="Combined Gas Laws Calculator" path="/combinedgaslawscalc"/> 
+            <HomeGridItem calcName="Kinetic Energy Calculator" path="/kineticenergycalc"/> 
+            <HomeGridItem calcName="Time Dilation Calculator" path="/timedilationcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>
@@ -155,6 +171,7 @@ export default function Home() {
             <HomeGridItem calcName="Tip Calculator" path="/tipcalc"/>
             <HomeGridItem calcName="Receipt Generator" path="/receiptgenerator"/>
             <HomeGridItem calcName="GDP Calculator" path="/gdpcalc"/>
+            <HomeGridItem calcName="Multi-Currency Change Calculator" path="/multicurrencychangecalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>

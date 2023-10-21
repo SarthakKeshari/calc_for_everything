@@ -147,6 +147,13 @@ Hard | 20 Points
 - Sum of N terms of AP/GP/HP Calculator 
 
 
+#### Physics
+- Amplitude Calculator
+- Cosmo Mass Converter
+- Density Calculator
+- Pressure Calculator
+
+
 #### Chemistry
 - pH Calculato
 - Chemical Equation Balancer

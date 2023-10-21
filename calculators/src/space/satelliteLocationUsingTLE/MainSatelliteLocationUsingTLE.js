@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Typography } from '@mui/material';
+import SatellitePosition from './SatellitePosition';
 
 function MainSatelliteLocationUsingTLE(){
     return(
@@ -8,9 +9,7 @@ function MainSatelliteLocationUsingTLE(){
             <hr/>
             <br/>
             {/* Write your code here */}
-
-
-
+            <SatellitePosition/>
             {/* End your code here */}
         </Container>
     )
