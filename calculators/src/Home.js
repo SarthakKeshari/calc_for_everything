@@ -49,6 +49,23 @@ export default function Home() {
             <HomeGridItem calcName="File/Data Comparator" path="/filedatacomparator"/>
             <HomeGridItem calcName="Flow Chart Maker" path="/flowchartmaker"/> 
             <HomeGridItem calcName="Data Cleaner" path="/datacleaner"/> 
+            <HomeGridItem calcName="Random Number Generator" path="/randomnumbergenerator"/> 
+            <HomeGridItem calcName="IP Address Calculator" path="/ipaddresscalc"/> 
+            <HomeGridItem calcName="Checksum Calculator" path="/checksumcalc"/> 
+            <HomeGridItem calcName="Paragraph Summarizer" path="/parasummarizer"/> 
+            <HomeGridItem calcName="Image Text Reader" path="/imagetextreader"/> 
+            <HomeGridItem calcName="IEEE754 Converter" path="/ieee754converter"/> 
+            <HomeGridItem calcName="Images To PDF Consolidator" path="/imagestopdfconsolidator"/> 
+            <HomeGridItem calcName="Computer Algebra System (CAS) Calculator" path="/computeralgebrasystemcascalc"/> 
+            <HomeGridItem calcName="Base Change Calculator" path="/basechangecalc"/> 
+            <HomeGridItem calcName="POS - SOP Converter" path="/possopconverter"/> 
+            <HomeGridItem calcName="Gray Code Calculator" path="/graycodecalc"/> 
+            <HomeGridItem calcName="Complement Calculator" path="/complementcalc"/> 
+            <HomeGridItem calcName="Transmission Delay Calculator" path="/transmissiondelaycalc"/> 
+            <HomeGridItem calcName="Carroll's Cave Of Knowledge Calculator" path="/carrollscaveofknowledgecalc"/> 
+            <HomeGridItem calcName="MUX Calculator" path="/muxcalc"/> 
+            <HomeGridItem calcName="Propagation Delay Calculator" path="/propagationdelaycalc"/> 
+            <HomeGridItem calcName="DeMUX Calculator" path="/demuxcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -111,6 +128,14 @@ export default function Home() {
             <HomeGridItem calcName="Numerals To Words Converter" path="/numeralstowordsconverter"/>
             <HomeGridItem calcName="Permutation And Combination Calculator" path="/permutationandcombinationcalc"/>
             <HomeGridItem calcName="Similarity Of Triangle Calculator" path="/similarityoftrianglecalc"/>
+            <HomeGridItem calcName="Sum of N terms of AP/GP/HP Calculator" path="/sumofapgphpcalc"/>
+            <HomeGridItem calcName="Differential Calculator" path="/differentialcalc"/>
+            <HomeGridItem calcName="Laplace Calculator" path="/laplacecalc"/>
+            <HomeGridItem calcName="Pipes And Cisterns Calculator" path="/pipesandcisternscalc"/>
+            <HomeGridItem calcName="Factorial Calculator (Gamma)" path="/factorialcalcgamma"/>
+            <HomeGridItem calcName="Analytical Function Calculator" path="/analyticalFuncCalc"/>
+            <HomeGridItem calcName="Z-Score Calculator" path="/zscorecalc"/> 
+            <HomeGridItem calcName="Z-Transform Calculator" path="/ztransformcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
@@ -121,6 +146,7 @@ export default function Home() {
             <HomeGridItem calcName="Chemical Kinetics Calculator" path="/chemicalkineticscalc"/>
             <HomeGridItem calcName="Molecular Weight Calculator" path="/molecularweightcalc"/>
             <HomeGridItem calcName="Chemical Formula Validator" path="/chemicalformulavalidator"/>
+            <HomeGridItem calcName="Empirical Formula Calculator" path="/empiricalformulacalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Physics</Typography>
@@ -129,6 +155,17 @@ export default function Home() {
             <HomeGridItem calcName="Pressure Calculator" path="/pressurecalc"/>
             <HomeGridItem calcName="Cosmo Mass Converter" path="/cosmomassconverter"/>
             <HomeGridItem calcName="Amplitude Calculator" path="/amplitudecalculator"/>
+            <HomeGridItem calcName="Vibrational Response Calculator" path="/vibrationalresponsecalc"/>
+            <HomeGridItem calcName="Density Calculator" path="/densitycalc"/>
+            <HomeGridItem calcName="Projectile Calculator" path="/projectilecalc"/>
+            <HomeGridItem calcName="Ohm's Law Calculator" path="/ohmslawcalc"/>
+            <HomeGridItem calcName="MKS - CGS - FPS Calculator" path="/mkscgsfpscalc"/> 
+            <HomeGridItem calcName="Combined Gas Laws Calculator" path="/combinedgaslawscalc"/> 
+            <HomeGridItem calcName="Kinetic Energy Calculator" path="/kineticenergycalc"/> 
+            <HomeGridItem calcName="Time Dilation Calculator" path="/timedilationcalc"/> 
+            <HomeGridItem calcName="Hooke's Law Calculator" path="/hookeslawcalc"/> 
+            <HomeGridItem calcName="Work Calculator" path="/workcalc"/> 
+            <HomeGridItem calcName="Potential Energy Calculator" path="/potentialenergycalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>
@@ -144,6 +181,7 @@ export default function Home() {
             <HomeGridItem calcName="Tip Calculator" path="/tipcalc"/>
             <HomeGridItem calcName="Receipt Generator" path="/receiptgenerator"/>
             <HomeGridItem calcName="GDP Calculator" path="/gdpcalc"/>
+            <HomeGridItem calcName="Multi-Currency Change Calculator" path="/multicurrencychangecalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>
@@ -167,6 +205,14 @@ export default function Home() {
         <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
             <HomeGridItem calcName="Drawing Canvas" path="/drawingcanvas"/>
             <HomeGridItem calcName="Mandala Creater" path="/mandalacreater"/>
+            <HomeGridItem calcName="Pic Editor" path="/piceditor"/>
+            <HomeGridItem calcName="Avatar Creater" path="/avatarcreater"/>
+        </Grid>
+        <br/>
+        <Typography pt={1} variant='h5'>Space</Typography>
+        <hr/>
+        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
+            <HomeGridItem calcName="Satellite Location using TLE" path="/satellitelocationusingtle"/>
         </Grid>
         <br/>
     </Container>

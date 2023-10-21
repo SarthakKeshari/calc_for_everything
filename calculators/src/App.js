@@ -130,6 +130,47 @@ import MainAmplitudeCalc from './physics/amplitudeCalc/MainAmplitudeCalc';
 import MainDataCleaner from './computer_science/dataCleaner/MainDataCleaner';
 import MainGDPCalc from './finance/gDPCalc/MainGDPCalc';
 import MainMandalaCreater from './art/mandalaCreater/MainMandalaCreater';
+import MainRandomNumberGenerator from './computer_science/randomNumberGenerator/MainRandomNumberGenerator';
+import MainIPAddressCalc from './computer_science/iPAddressCalc/MainIPAddressCalc';
+import MainSumAPGPHPCalc from './mathematical/sumAPGPHPCalc/MainSumAPGPHPCalc';
+import MainChecksumCalc from './computer_science/checksumCalc/MainChecksumCalc';
+import MainParaSummarizer from './computer_science/paraSummarizer/MainParaSummarizer';
+import MainImageTextReader from './computer_science/imageTextReader/MainImageTextReader';
+import MainVibrationalResponseCalc from './physics/vibrationalResponseCalc/MainVibrationalResponseCalc';
+import MainIEEE754Converter from './computer_science/iEEE754Converter/MainIEEE754Converter';
+import MainSatelliteLocationUsingTLE from './space/satelliteLocationUsingTLE/MainSatelliteLocationUsingTLE';
+import MainDensityCalc from './physics/densityCalc/MainDensityCalc';
+import MainProjectileCalc from './physics/projectileCalc/MainProjectileCalc';
+import MainOhmsLawCalc from './physics/ohmsLawCalc/MainOhmsLawCalc';
+import MainDifferentialCalc from './mathematical/differentialCalc/MainDifferentialCalc';
+import MainEmpiricalFormulaCalc from './chemistry/empiricalFormulaCalc/MainEmpiricalFormulaCalc';
+import MainImagesToPDFConsolidator from './computer_science/imagesToPDFConsolidator/MainImagesToPDFConsolidator';
+import MainMKSCGSFPSCalc from './physics/mKSCGSFPSCalc/MainMKSCGSFPSCalc';
+import MainCombinedGasLawsCalc from './physics/combinedGasLawsCalc/MainCombinedGasLawsCalc';
+import MainMultiCurrencyChangeCalc from './finance/multiCurrencyChangeCalc/MainMultiCurrencyChangeCalc';
+import MainLaplaceCalc from './mathematical/laplaceCalc/MainLaplaceCalc';
+import MainComputerAlgebraSystemCASCalc from './computer_science/computerAlgebraSystemCASCalc/MainComputerAlgebraSystemCASCalc';
+import MainBaseChangeCalculator from './computer_science/baseChangeCalculator/MainBaseChangeCalculator';
+import MainPipesAndCisternsCalc from './mathematical/pipesAndCisternsCalc/MainPipesAndCisternsCalc';
+import MainFactorialCalc_Gamma from './mathematical/factorialCalc_Gamma/MainFactorialCalc_Gamma';
+import MainAnalyticalFuncCalc from './mathematical/analyticalFuncCalc/MainAnalyticalFuncCalc';
+import MainPOSSOPConverter from './computer_science/pOSSOPConverter/MainPOSSOPConverter';
+import MainGrayCodeCalc from './computer_science/grayCodeCalc/MainGrayCodeCalc';
+import MainComplementCalc from './computer_science/complementCalc/MainComplementCalc';
+import MainKineticEnergyCalc from './physics/kineticEnergyCalc/MainKineticEnergyCalc';
+import MainTimeDilationCalc from './physics/timeDilationCalc/MainTimeDilationCalc';
+import MainTransmissionDelayCalc from './computer_science/transmissionDelayCalc/MainTransmissionDelayCalc';
+import MainPicEditor from './art/picEditor/MainPicEditor';
+import MainAvatarCreater from './art/avatarCreater/MainAvatarCreater';
+import MainCarrollsCaveOfKnowledge from './computer_science/carrollsCaveOfKnowledge/MainCarrollsCaveOfKnowledge';
+import MainZScoreCalc from './mathematical/zScoreCalc/MainZScoreCalc';
+import MainHookesLawCalc from './physics/hookesLawCalc/MainHookesLawCalc';
+import MainWorkCalc from './physics/workCalc/MainWorkCalc';
+import MainMUXCalc from './computer_science/mUXCalc/MainMUXCalc';
+import MainPropagationDelayCalc from './computer_science/propagationDelayCalc/MainPropagationDelayCalc';
+import MainPotentialEnergyCalc from './physics/potentialEnergyCalc/MainPotentialEnergyCalc';
+import MainDeMUXCalc from './computer_science/deMUXCalc/MainDeMUXCalc';
+import MainZTransformCalc from './mathematical/zTransformCalc/MainZTransformCalc';
 
 function App() {
   return (
@@ -180,6 +221,23 @@ function App() {
             <Route path="filedatacomparator" element={<MainFileDataComparator />} />
             <Route path="flowchartmaker" element={<MainFlowChartMaker />} />
             <Route path="datacleaner" element={<MainDataCleaner />} />
+            <Route path="randomnumbergenerator" element={<MainRandomNumberGenerator />} />
+            <Route path="ipaddresscalc" element={<MainIPAddressCalc />} />
+            <Route path="checksumcalc" element={<MainChecksumCalc />} />
+            <Route path="parasummarizer" element={<MainParaSummarizer />} />
+            <Route path="imagetextreader" element={<MainImageTextReader />} />
+            <Route path="ieee754converter" element={<MainIEEE754Converter />} />
+            <Route path="imagestopdfconsolidator" element={<MainImagesToPDFConsolidator />} />
+            <Route path="computeralgebrasystemcascalc" element={<MainComputerAlgebraSystemCASCalc />} />
+            <Route path="basechangecalc" element={<MainBaseChangeCalculator />} />
+            <Route path="possopconverter" element={<MainPOSSOPConverter />} />
+            <Route path="graycodecalc" element={<MainGrayCodeCalc />} />
+            <Route path="complementcalc" element={<MainComplementCalc />} />
+            <Route path="transmissiondelaycalc" element={<MainTransmissionDelayCalc />} />
+            <Route path="carrollscaveofknowledgecalc" element={<MainCarrollsCaveOfKnowledge />} />
+            <Route path="muxcalc" element={<MainMUXCalc />} />
+            <Route path="propagationdelaycalc" element={<MainPropagationDelayCalc />} />
+            <Route path="demuxcalc" element={<MainDeMUXCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -238,16 +296,36 @@ function App() {
             <Route path="numeralstowordsconverter" element={<MainNumeralsToWords /> } />
             <Route path="permutationandcombinationcalc" element={<MainPermutationAndCombinationCalc /> } />
             <Route path="similarityoftrianglecalc" element={<MainSimilarityOfTriangleCalc /> } />
+            <Route path="sumofapgphpcalc" element={<MainSumAPGPHPCalc /> } />
+            <Route path="differentialcalc" element={<MainDifferentialCalc /> } />
+            <Route path="laplacecalc" element={<MainLaplaceCalc /> } />
+            <Route path="pipesandcisternscalc" element={<MainPipesAndCisternsCalc /> } />
+            <Route path="factorialcalcgamma" element={<MainFactorialCalc_Gamma /> } />
+            <Route path="analyticalFuncCalc" element={<MainAnalyticalFuncCalc /> } />
+            <Route path="zscorecalc" element={<MainZScoreCalc />} />
+            <Route path="ztransformcalc" element={<MainZTransformCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
             <Route path="chemicalkineticscalc" element={<MainChemicalKineticsCalc />} />
             <Route path="molecularweightcalc" element={<MainMolecularWeightCalc />} />
             <Route path="chemicalformulavalidator" element={<MainChemicalFormulaValidator />} />
+            <Route path="empiricalformulacalc" element={<MainEmpiricalFormulaCalc />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
             <Route path="amplitudecalculator" element={<MainAmplitudeCalc />} />
+            <Route path="vibrationalresponsecalc" element={<MainVibrationalResponseCalc />} />
+            <Route path="densitycalc" element={<MainDensityCalc />} />
+            <Route path="projectilecalc" element={<MainProjectileCalc />} />
+            <Route path="ohmslawcalc" element={<MainOhmsLawCalc />} />
+            <Route path="mkscgsfpscalc" element={<MainMKSCGSFPSCalc />} />
+            <Route path="combinedgaslawscalc" element={<MainCombinedGasLawsCalc />} />
+            <Route path="kineticenergycalc" element={<MainKineticEnergyCalc />} />
+            <Route path="timedilationcalc" element={<MainTimeDilationCalc />} />
+            <Route path="hookeslawcalc" element={<MainHookesLawCalc />} />
+            <Route path="workcalc" element={<MainWorkCalc />} />
+            <Route path="potentialenergycalc" element={<MainPotentialEnergyCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
@@ -259,6 +337,7 @@ function App() {
             <Route path="tipcalc" element={<MainTipCalc />} />
             <Route path="receiptgenerator" element={<MainReceiptGenerator />} />
             <Route path="gdpcalc" element={<MainGDPCalc />} />
+            <Route path="multicurrencychangecalc" element={<MainMultiCurrencyChangeCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
@@ -274,6 +353,10 @@ function App() {
             {/* Art */}
             <Route path="drawingcanvas" element={<MainDrawingCanvas />} />
             <Route path="mandalacreater" element={<MainMandalaCreater />} />
+            <Route path="piceditor" element={<MainPicEditor />} />
+            <Route path="avatarcreater" element={<MainAvatarCreater />} />
+            {/* Space */}
+            <Route path="satellitelocationusingtle" element={<MainSatelliteLocationUsingTLE />} />
           </Route>
         </Routes>
       </BrowserRouter>

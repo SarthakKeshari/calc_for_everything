@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Typography, TextField, Button, Box, Paper } from '@mui/material';
+import InfoProfitLossCalc from './InfoProfitLossCalc';
 
 
 function MainProfitLossCalc() {
@@ -35,7 +36,7 @@ function MainProfitLossCalc() {
     };
     return (
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: "10" }}>
-            <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Profit Loss Calculator</Typography>
+            <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Profit Loss Calculator<InfoProfitLossCalc/></Typography>
             <hr />
             <br />
             <TextField
