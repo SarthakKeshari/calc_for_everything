@@ -163,6 +163,7 @@ import MainTransmissionDelayCalc from './computer_science/transmissionDelayCalc/
 import MainPicEditor from './art/picEditor/MainPicEditor';
 import MainAvatarCreater from './art/avatarCreater/MainAvatarCreater';
 import MainCarrollsCaveOfKnowledge from './computer_science/carrollsCaveOfKnowledge/MainCarrollsCaveOfKnowledge';
+import MainZScoreCalc from './mathematical/zScoreCalc/MainZScoreCalc';
 
 function App() {
   return (
@@ -227,6 +228,7 @@ function App() {
             <Route path="complementcalc" element={<MainComplementCalc />} />
             <Route path="transmissiondelaycalc" element={<MainTransmissionDelayCalc />} />
             <Route path="carrollscaveofknowledgecalc" element={<MainCarrollsCaveOfKnowledge />} />
+            <Route path="zscorecalc" element={<MainZScoreCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
