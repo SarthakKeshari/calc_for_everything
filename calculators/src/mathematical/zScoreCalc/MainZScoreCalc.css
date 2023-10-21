@@ -1,0 +1,16 @@
+/* styling to remove the increment andf decrement button in input box */
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 15px;
+}
