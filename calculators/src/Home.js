@@ -196,6 +196,7 @@ export default function Home() {
         <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
             <HomeGridItem calcName="Drawing Canvas" path="/drawingcanvas"/>
             <HomeGridItem calcName="Mandala Creater" path="/mandalacreater"/>
+            <HomeGridItem calcName="Pic Editor" path="/piceditor"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Space</Typography>

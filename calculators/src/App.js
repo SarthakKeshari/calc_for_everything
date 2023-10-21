@@ -160,6 +160,7 @@ import MainComplementCalc from './computer_science/complementCalc/MainComplement
 import MainKineticEnergyCalc from './physics/kineticEnergyCalc/MainKineticEnergyCalc';
 import MainTimeDilationCalc from './physics/timeDilationCalc/MainTimeDilationCalc';
 import MainTransmissionDelayCalc from './computer_science/transmissionDelayCalc/MainTransmissionDelayCalc';
+import MainPicEditor from './art/picEditor/MainPicEditor';
 
 function App() {
   return (
@@ -333,6 +334,7 @@ function App() {
             {/* Art */}
             <Route path="drawingcanvas" element={<MainDrawingCanvas />} />
             <Route path="mandalacreater" element={<MainMandalaCreater />} />
+            <Route path="piceditor" element={<MainPicEditor />} />
             {/* Space */}
             <Route path="satellitelocationusingtle" element={<MainSatelliteLocationUsingTLE />} />
           </Route>
