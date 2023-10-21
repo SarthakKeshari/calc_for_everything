@@ -164,6 +164,7 @@ import MainPicEditor from './art/picEditor/MainPicEditor';
 import MainAvatarCreater from './art/avatarCreater/MainAvatarCreater';
 import MainCarrollsCaveOfKnowledge from './computer_science/carrollsCaveOfKnowledge/MainCarrollsCaveOfKnowledge';
 import MainZScoreCalc from './mathematical/zScoreCalc/MainZScoreCalc';
+import MainHookesLawCalc from './physics/hookesLawCalc/MainHookesLawCalc';
 
 function App() {
   return (
@@ -312,6 +313,7 @@ function App() {
             <Route path="combinedgaslawscalc" element={<MainCombinedGasLawsCalc />} />
             <Route path="kineticenergycalc" element={<MainKineticEnergyCalc />} />
             <Route path="timedilationcalc" element={<MainTimeDilationCalc />} />
+            <Route path="hookeslawcalc" element={<MainHookesLawCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
