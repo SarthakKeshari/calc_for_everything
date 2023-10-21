@@ -169,6 +169,7 @@ import MainWorkCalc from './physics/workCalc/MainWorkCalc';
 import MainMUXCalc from './computer_science/mUXCalc/MainMUXCalc';
 import MainPropagationDelayCalc from './computer_science/propagationDelayCalc/MainPropagationDelayCalc';
 import MainPotentialEnergyCalc from './physics/potentialEnergyCalc/MainPotentialEnergyCalc';
+import MainDeMUXCalc from './computer_science/deMUXCalc/MainDeMUXCalc';
 
 function App() {
   return (
@@ -235,6 +236,7 @@ function App() {
             <Route path="carrollscaveofknowledgecalc" element={<MainCarrollsCaveOfKnowledge />} />
             <Route path="muxcalc" element={<MainMUXCalc />} />
             <Route path="propagationdelaycalc" element={<MainPropagationDelayCalc />} />
+            <Route path="demuxcalc" element={<MainDeMUXCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
