@@ -21,7 +21,7 @@ function MainGDPCalc() {
 
   const totalGDP =
     Object.values(sectors).reduce((acc, value) => acc + value, 0) -
-    sectors.imports;
+    2 * sectors.imports;
 
   const totalGDP_CostIncome = Object.values(sectors_GDP).reduce(
     (acc, value) => acc + value,
