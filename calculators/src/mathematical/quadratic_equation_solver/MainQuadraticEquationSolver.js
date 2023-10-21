@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Typography, Divider, Input } from "@mui/material";
+import InfoQuadraticEquationSolver from './InfoQuadraticEquationSolver';
 
 function MainQuadraticEquationSolver() {
   const [x2, setX2] = useState();
@@ -47,6 +48,7 @@ function MainQuadraticEquationSolver() {
     >
       <Typography pt={1} variant="h5" sx={{ textAlign: "center" }}>
         Quadratic Equation Solver
+        <InfoQuadraticEquationSolver/>
       </Typography>
       <hr />
       <br />
