@@ -166,6 +166,7 @@ import MainCarrollsCaveOfKnowledge from './computer_science/carrollsCaveOfKnowle
 import MainZScoreCalc from './mathematical/zScoreCalc/MainZScoreCalc';
 import MainHookesLawCalc from './physics/hookesLawCalc/MainHookesLawCalc';
 import MainWorkCalc from './physics/workCalc/MainWorkCalc';
+import MainMUXCalc from './computer_science/mUXCalc/MainMUXCalc';
 
 function App() {
   return (
@@ -230,6 +231,7 @@ function App() {
             <Route path="complementcalc" element={<MainComplementCalc />} />
             <Route path="transmissiondelaycalc" element={<MainTransmissionDelayCalc />} />
             <Route path="carrollscaveofknowledgecalc" element={<MainCarrollsCaveOfKnowledge />} />
+            <Route path="muxcalc" element={<MainMUXCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
