@@ -167,6 +167,7 @@ export default function Home() {
             <HomeGridItem calcName="Hooke's Law Calculator" path="/hookeslawcalc"/> 
             <HomeGridItem calcName="Work Calculator" path="/workcalc"/> 
             <HomeGridItem calcName="Potential Energy Calculator" path="/potentialenergycalc"/> 
+            <HomeGridItem calcName="Gravitational Force Calculator" path="/gravitationalforcecalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>
