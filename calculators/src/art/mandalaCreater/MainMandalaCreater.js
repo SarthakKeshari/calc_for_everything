@@ -99,6 +99,9 @@ function MainMandalaCreater() {
         Mandala Creator
       </Typography>
       <hr />
+      <p style={{ fontSize: '0.8rem', marginLeft: '275px' }}>
+        Draw in the top-left section to make mandala art. The other sections will mirror your drawing.
+      </p>
       <br />
       <div className='mandala-container'>
         <div className='mandala-canvas'>
