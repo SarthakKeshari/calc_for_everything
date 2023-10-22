@@ -6,7 +6,6 @@ function MainQRCodeGenerator() {
     const [url, setUrl] = useState('https://www.google.com');
     const [qrCodeImage, setQRCodeImage] = useState(null);
     const qrCodeRef = useRef(null);
-    let filename = "QRCode_" + `${url}`;
 
     const generateQRCode = () => {
         const qrCodeDataUrl = qrCodeRef.current.toDataURL('image/png');
@@ -14,9 +13,12 @@ function MainQRCodeGenerator() {
 
     }
     function saveCanvasAsImage() {
+        const canvas = document.getElementById('QRCodeCanvas');
+        const image = new Image();
+        image.src = canvas.toDataURL('image/png');
         const a = document.createElement('a');
-        a.href = qrCodeImage;
-        a.download = `${filename}.png`;
+        a.href = image.src;
+        a.download = "QRCode.png";
         a.click();
     }
     return (
