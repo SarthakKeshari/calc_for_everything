@@ -177,6 +177,7 @@ import MainHomogeneousInterpreter from './mathematical/homogeneousInterpreter/Ma
 import MainSetupDelayCalc from './computer_science/setupDelayCalc/MainSetupDelayCalc';
 import MainVarianceStandardDeviationConverter from './mathematical/varianceStandardDeviationConverter/MainVarianceStandardDeviationConverter';
 import MainStatisticsMeanCalc from './mathematical/statisticsMeanCalc/MainStatisticsMeanCalc';
+import MainStatisticsMedianCalc from './mathematical/statisticsMedianCalc/MainStatisticsMedianCalc';
 
 function App() {
   return (
@@ -315,6 +316,7 @@ function App() {
             <Route path="homogeneousinterpreter" element={<MainHomogeneousInterpreter />} />
             <Route path="variancestandarddeviationconverter" element={<MainVarianceStandardDeviationConverter />} />
             <Route path="statisticsmeancalc" element={<MainStatisticsMeanCalc />} />
+            <Route path="statisticsmediancalc" element={<MainStatisticsMedianCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
