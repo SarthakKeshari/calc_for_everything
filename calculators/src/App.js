@@ -174,6 +174,7 @@ import MainZTransformCalc from './mathematical/zTransformCalc/MainZTransformCalc
 import MainQRCodeGenerator from './computer_science/qRCodeGenerator/MainQRCodeGenerator';
 import MainGravitationalForceCalc from './physics/gravitationalForceCalc/MainGravitationalForceCalc';
 import MainHomogeneousInterpreter from './mathematical/homogeneousInterpreter/MainHomogeneousInterpreter';
+import MainSetupDelayCalc from './computer_science/setupDelayCalc/MainSetupDelayCalc';
 
 function App() {
   return (
@@ -242,6 +243,7 @@ function App() {
             <Route path="propagationdelaycalc" element={<MainPropagationDelayCalc />} />
             <Route path="demuxcalc" element={<MainDeMUXCalc />} />
             <Route path="qrcodegenerator" element={<MainQRCodeGenerator />} />
+            <Route path="setupdelaycalc" element={<MainSetupDelayCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />

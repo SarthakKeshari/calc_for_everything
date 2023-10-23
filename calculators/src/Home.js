@@ -67,6 +67,7 @@ export default function Home() {
             <HomeGridItem calcName="Propagation Delay Calculator" path="/propagationdelaycalc"/> 
             <HomeGridItem calcName="DeMUX Calculator" path="/demuxcalc"/> 
             <HomeGridItem calcName="QR Code Generator" path="/qrcodegenerator"/> 
+            <HomeGridItem calcName="Setup Delay Calculator" path="/setupdelaycalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
