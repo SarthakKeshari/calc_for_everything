@@ -180,6 +180,7 @@ import MainStatisticsMeanCalc from './mathematical/statisticsMeanCalc/MainStatis
 import MainStatisticsMedianCalc from './mathematical/statisticsMedianCalc/MainStatisticsMedianCalc';
 import MainDNARNAConverter from './biology/dNARNAConverter/MainDNARNAConverter';
 import MainRMSValueCalc from './mathematical/rMSValueCalc/MainRMSValueCalc';
+import MainPacketsOrderCalc from './computer_science/packetsOrderCalc/MainPacketsOrderCalc';
 
 function App() {
   return (
@@ -249,6 +250,7 @@ function App() {
             <Route path="demuxcalc" element={<MainDeMUXCalc />} />
             <Route path="qrcodegenerator" element={<MainQRCodeGenerator />} />
             <Route path="setupdelaycalc" element={<MainSetupDelayCalc />} />
+            <Route path="packetsordercalc" element={<MainPacketsOrderCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
