@@ -183,6 +183,7 @@ import MainRMSValueCalc from './mathematical/rMSValueCalc/MainRMSValueCalc';
 import MainPacketsOrderCalc from './computer_science/packetsOrderCalc/MainPacketsOrderCalc';
 import MainBase64EncoderDecoder from './computer_science/base64EncoderDecoder/MainBase64EncoderDecoder';
 import MainMeanDeviationAboutMedianCalc from './mathematical/meanDeviationAboutMedianCalc/MainMeanDeviationAboutMedianCalc';
+import MainSleepCalc from './health/sleepCalc/MainSleepCalc';
 
 function App() {
   return (
@@ -375,6 +376,7 @@ function App() {
             <Route path="noveltyagecalc" element={<MainNoveltyAgeCalculator />} />
             <Route path="dayscheduler" element={<MainDayScheduler />} />
             <Route path="taskplanner" element={<MainTaskPlanner />} />
+            <Route path="sleepcalc" element={<MainSleepCalc />} />
             {/* Art */}
             <Route path="drawingcanvas" element={<MainDrawingCanvas />} />
             <Route path="mandalacreater" element={<MainMandalaCreater />} />

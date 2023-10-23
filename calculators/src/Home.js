@@ -215,6 +215,7 @@ export default function Home() {
             <HomeGridItem calcName="Novelty Age Calculator" path="/noveltyagecalc"/>
             <HomeGridItem calcName="Day Scheduler" path="/dayscheduler"/>
             <HomeGridItem calcName="Task Planner" path="/taskplanner"/>
+            <HomeGridItem calcName="Sleep Calculator" path="/sleepcalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Art</Typography>
