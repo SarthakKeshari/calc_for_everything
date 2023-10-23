@@ -142,6 +142,7 @@ export default function Home() {
             <HomeGridItem calcName="Variance - Standard Deviation Converter" path="/variancestandarddeviationconverter"/> 
             <HomeGridItem calcName="Statistics Mean Calculator" path="/statisticsmeancalc"/> 
             <HomeGridItem calcName="Statistics Median Calculator" path="/statisticsmediancalc"/> 
+            <HomeGridItem calcName="RMS Value Calculator" path="/rmsvaluecalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>

@@ -179,6 +179,7 @@ import MainVarianceStandardDeviationConverter from './mathematical/varianceStand
 import MainStatisticsMeanCalc from './mathematical/statisticsMeanCalc/MainStatisticsMeanCalc';
 import MainStatisticsMedianCalc from './mathematical/statisticsMedianCalc/MainStatisticsMedianCalc';
 import MainDNARNAConverter from './biology/dNARNAConverter/MainDNARNAConverter';
+import MainRMSValueCalc from './mathematical/rMSValueCalc/MainRMSValueCalc';
 
 function App() {
   return (
@@ -318,6 +319,7 @@ function App() {
             <Route path="variancestandarddeviationconverter" element={<MainVarianceStandardDeviationConverter />} />
             <Route path="statisticsmeancalc" element={<MainStatisticsMeanCalc />} />
             <Route path="statisticsmediancalc" element={<MainStatisticsMedianCalc />} />
+            <Route path="rmsvaluecalc" element={<MainRMSValueCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
