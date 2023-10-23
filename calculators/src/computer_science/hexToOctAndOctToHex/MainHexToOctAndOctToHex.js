@@ -1,78 +1,101 @@
 import React, { useState } from "react";
-import { Container, TextField, Button, Grid, Typography } from "@mui/material";
+import {
+  Container,
+  Typography,
+  TextField,
+  Button,
+  Grid,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
+} from "@mui/material";
 
 function MainHexToOctAndOctToHex() {
+  const [inputValue, setInputValue] = useState("");
+  const [outputValue, setOutputValue] = useState("");
+  const [conversionType, setConversionType] = useState("hexToOctal");
 
-    const [hex, setHex] = useState("");
-    const [oct, setOct] = useState("");
+  const convertHexToOctal = () => {
+    const decimalValue = parseInt(inputValue, 16);
+    const octalValue = decimalValue.toString(8);
+    setOutputValue(octalValue);
+  };
 
-    const handleHexToOct = () => {
-        try {
-            const decimal = parseInt(hex, 16);
-            const octal = decimal.toString(8);
-            setOct(octal);
-        } catch (error) {
-            setOct("Invalid Input");
-        }
-    };
+  const convertOctalToHex = () => {
+    const decimalValue = parseInt(inputValue, 8);
+    const hexValue = decimalValue.toString(16).toUpperCase();
+    setOutputValue(hexValue);
+  };
 
-    const handleOctToHex = () => {
-        try {
-            const decimal = parseInt(oct, 8);
-            const hex = decimal.toString(16);
-            setHex(hex.toUpperCase());
-        } catch (error) {
-            setHex("Invalid Input");
-        }
-    };
+  const handleConversionTypeChange = (event) => {
+    setConversionType(event.target.value);
+  };
 
-    return (
-        <Container
-            maxWidth="lg"
-            sx={{ bgcolor: "#eeeeee", minHeight: "90vh", paddingY: "10" }}
-        >
-            <Typography pt={1} variant="h5" sx={{ textAlign: "center" }}>
-                Hexadecimal to Octal and Octal to Hexadecimal Calculator
-            </Typography>
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+    setOutputValue("");
+  };
 
-            <hr />
-            <br />
+  return (
+    <Container
+      maxWidth="lg"
+      sx={{ bgcolor: "#eeeeee", minHeight: "90vh", paddingY: "10" }}
+    >
+      <Typography pt={1} variant="h5" sx={{ textAlign: "center" }}>
+        Hexadecimal to Octal and Octal to Hexadecimal Calculator
+      </Typography>
 
-            <Grid container spacing={2} alignItems="center">
-                <Grid item xs={12}>
-                    <TextField
-                        label="Hexadecimal"
-                        variant="outlined"
-                        fullWidth
-                        value={hex}
-                        onChange={(e) => setHex(e.target.value.toUpperCase())}
-                    />
-                </Grid>
+      <hr />
+      <br />
 
-                <Grid item xs={12}>
-                    <Button variant="contained" color="primary" onClick={handleHexToOct}>
-                        Convert Hex to Oct
-                    </Button>
-                </Grid>
-
-                <Grid item xs={12}>
-                    <TextField
-                        label="Octal"
-                        variant="outlined"
-                        fullWidth
-                        value={oct}
-                        onChange={(e) => setOct(e.target.value)}
-                    />
-                </Grid>
-
-                <Grid item xs={12}>
-                    <Button variant="contained" color="primary" onClick={handleOctToHex}>
-                        Convert Oct to Hex
-                    </Button>
-                </Grid>
-            </Grid>
-        </Container>
-    );
+      <Grid container spacing={2}>
+        <Grid item xs={12}>
+          <FormControl fullWidth>
+            <InputLabel>Select Conversion Type</InputLabel>
+            <Select
+              value={conversionType}
+              onChange={handleConversionTypeChange}
+            >
+              <MenuItem value="hexToOctal">Hex to Octal</MenuItem>
+              <MenuItem value="octalToHex">Octal to Hex</MenuItem>
+            </Select>
+          </FormControl>
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            label="Enter Value"
+            variant="outlined"
+            fullWidth
+            value={inputValue}
+            onChange={handleInputChange}
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={
+              conversionType === "hexToOctal"
+                ? convertHexToOctal
+                : convertOctalToHex
+            }
+          >
+            Convert
+          </Button>
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            label="Converted Value"
+            variant="outlined"
+            fullWidth
+            value={outputValue}
+            disabled
+          />
+        </Grid>
+      </Grid>
+    </Container>
+  );
 }
 
 export default MainHexToOctAndOctToHex;
