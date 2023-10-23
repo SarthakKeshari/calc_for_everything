@@ -176,6 +176,7 @@ import MainGravitationalForceCalc from './physics/gravitationalForceCalc/MainGra
 import MainHomogeneousInterpreter from './mathematical/homogeneousInterpreter/MainHomogeneousInterpreter';
 import MainSetupDelayCalc from './computer_science/setupDelayCalc/MainSetupDelayCalc';
 import MainVarianceStandardDeviationConverter from './mathematical/varianceStandardDeviationConverter/MainVarianceStandardDeviationConverter';
+import MainStatisticsMeanCalc from './mathematical/statisticsMeanCalc/MainStatisticsMeanCalc';
 
 function App() {
   return (
@@ -313,6 +314,7 @@ function App() {
             <Route path="ztransformcalc" element={<MainZTransformCalc />} />
             <Route path="homogeneousinterpreter" element={<MainHomogeneousInterpreter />} />
             <Route path="variancestandarddeviationconverter" element={<MainVarianceStandardDeviationConverter />} />
+            <Route path="statisticsmeancalc" element={<MainStatisticsMeanCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
