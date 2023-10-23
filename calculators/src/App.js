@@ -188,6 +188,7 @@ import MainCoefOfMeanDeviationCalc from './mathematical/coefOfMeanDeviationCalc/
 import MainModeCalc from './mathematical/modeCalc/MainModeCalc';
 import MainSetOperationsExtended from './mathematical/setOperationsExtended/MainSetOperationsExtended';
 import MainUniversityGPACalc from './mathematical/universityGPACalc/MainUniversityGPACalc';
+import MainTorqueCalc from './physics/torqueCalc/MainTorqueCalc';
 
 function App() {
   return (
@@ -358,6 +359,7 @@ function App() {
             <Route path="workcalc" element={<MainWorkCalc />} />
             <Route path="potentialenergycalc" element={<MainPotentialEnergyCalc />} />
             <Route path="gravitationalforcecalc" element={<MainGravitationalForceCalc />} />
+            <Route path="torquecalc" element={<MainTorqueCalc />} />
             {/* Biology */}
             <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
             {/* Finance */}
