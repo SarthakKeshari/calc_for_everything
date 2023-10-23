@@ -140,6 +140,8 @@ export default function Home() {
             <HomeGridItem calcName="Z-Transform Calculator" path="/ztransformcalc"/> 
             <HomeGridItem calcName="Homogeneous Interpreter" path="/homogeneousinterpreter"/> 
             <HomeGridItem calcName="Variance - Standard Deviation Converter" path="/variancestandarddeviationconverter"/> 
+            <HomeGridItem calcName="Statistics Mean Calculator" path="/statisticsmeancalc"/> 
+            <HomeGridItem calcName="Statistics Median Calculator" path="/statisticsmediancalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
