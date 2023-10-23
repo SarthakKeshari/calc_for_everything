@@ -1,36 +1,68 @@
 import React, { useState } from "react";
-import { Container, Typography, TextField, Button, Grid } from "@mui/material";
+import {
+  Container,
+  Typography,
+  TextField,
+  Button,
+  Grid,
+  ToggleButton,
+  ToggleButtonGroup,
+} from "@mui/material";
 
 function MainDNARNAConverter() {
-  const [dnaSequence, setDnaSequence] = useState("");
-  const [rnaSequence, setRnaSequence] = useState("");
+  const [sequence, setSequence] = useState("");
+  const [convertedSequence, setConvertedSequence] = useState("");
+  const [mode, setMode] = useState("dnaToRna");
 
-  const convertDnaToRna = () => {
-    const dna = dnaSequence.toUpperCase();
-    let rna = "";
+  const convertSequence = () => {
+    let converted = "";
+    const inputSequence = sequence.toUpperCase();
 
-    for (let i = 0; i < dna.length; i++) {
-      const nucleotide = dna[i];
-      switch (nucleotide) {
-        case "A":
-          rna += "U";
-          break;
-        case "T":
-          rna += "A";
-          break;
-        case "G":
-          rna += "C";
-          break;
-        case "C":
-          rna += "G";
-          break;
-        default:
-          rna += nucleotide;
+    if (mode === "dnaToRna") {
+      for (let i = 0; i < inputSequence.length; i++) {
+        const nucleotide = inputSequence[i];
+        switch (nucleotide) {
+          case "A":
+            converted += "U";
+            break;
+          case "T":
+            converted += "A";
+            break;
+          case "G":
+            converted += "C";
+            break;
+          case "C":
+            converted += "G";
+            break;
+          default:
+            converted += nucleotide;
+        }
+      }
+    } else if (mode === "rnaToDna") {
+      for (let i = 0; i < inputSequence.length; i++) {
+        const nucleotide = inputSequence[i];
+        switch (nucleotide) {
+          case "A":
+            converted += "T";
+            break;
+          case "U":
+            converted += "A";
+            break;
+          case "G":
+            converted += "C";
+            break;
+          case "C":
+            converted += "G";
+            break;
+          default:
+            converted += nucleotide;
+        }
       }
     }
 
-    setRnaSequence(rna);
+    setConvertedSequence(converted);
   };
+
   return (
     <Container
       maxWidth="lg"
@@ -41,27 +73,37 @@ function MainDNARNAConverter() {
       </Typography>
       <hr />
       <br />
-      {/* Write your code here */}
+
+      <ToggleButtonGroup
+        value={mode}
+        exclusive
+        onChange={(event, newMode) => setMode(newMode)}
+        aria-label="conversion mode"
+      >
+        <ToggleButton value="dnaToRna">DNA to RNA</ToggleButton>
+        <ToggleButton value="rnaToDna">RNA to DNA</ToggleButton>
+      </ToggleButtonGroup>
 
       <TextField
-        label="Enter DNA Sequence"
+        label={`Enter ${mode === "dnaToRna" ? "DNA" : "RNA"} Sequence`}
         variant="outlined"
         fullWidth
-        value={dnaSequence}
-        onChange={(e) => setDnaSequence(e.target.value)}
+        value={sequence}
+        onChange={(e) => setSequence(e.target.value)}
       />
-      <Button variant="contained" color="primary" onClick={convertDnaToRna}>
+      <Button variant="contained" color="primary" onClick={convertSequence}>
         Convert
       </Button>
+      <br />
+
       <TextField
-        label="Resulting RNA Sequence"
+        label={`Resulting ${mode === "dnaToRna" ? "RNA" : "DNA"} Sequence`}
         variant="outlined"
         fullWidth
-        value={rnaSequence}
+        value={convertedSequence}
         disabled
+        sx={{ fontWeight: convertedSequence ? "bold" : "normal" }}
       />
-
-      {/* End your code here */}
     </Container>
   );
 }
