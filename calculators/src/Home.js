@@ -67,6 +67,9 @@ export default function Home() {
             <HomeGridItem calcName="Propagation Delay Calculator" path="/propagationdelaycalc"/> 
             <HomeGridItem calcName="DeMUX Calculator" path="/demuxcalc"/> 
             <HomeGridItem calcName="QR Code Generator" path="/qrcodegenerator"/> 
+            <HomeGridItem calcName="Setup Delay Calculator" path="/setupdelaycalc"/> 
+            <HomeGridItem calcName="Packets Order Calculator" path="/packetsordercalc"/> 
+            <HomeGridItem calcName="Base64 Encoder/Decoder" path="/base64encoderdecoder"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -137,6 +140,11 @@ export default function Home() {
             <HomeGridItem calcName="Analytical Function Calculator" path="/analyticalFuncCalc"/>
             <HomeGridItem calcName="Z-Score Calculator" path="/zscorecalc"/> 
             <HomeGridItem calcName="Z-Transform Calculator" path="/ztransformcalc"/> 
+            <HomeGridItem calcName="Homogeneous Interpreter" path="/homogeneousinterpreter"/> 
+            <HomeGridItem calcName="Variance - Standard Deviation Converter" path="/variancestandarddeviationconverter"/> 
+            <HomeGridItem calcName="Statistics Mean Calculator" path="/statisticsmeancalc"/> 
+            <HomeGridItem calcName="Statistics Median Calculator" path="/statisticsmediancalc"/> 
+            <HomeGridItem calcName="RMS Value Calculator" path="/rmsvaluecalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
@@ -168,6 +176,12 @@ export default function Home() {
             <HomeGridItem calcName="Work Calculator" path="/workcalc"/> 
             <HomeGridItem calcName="Potential Energy Calculator" path="/potentialenergycalc"/> 
             <HomeGridItem calcName="Gravitational Force Calculator" path="/gravitationalforcecalc"/> 
+        </Grid>
+        <br/>
+        <Typography pt={1} variant='h5'>Biology</Typography>
+        <hr/>
+        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
+            <HomeGridItem calcName="DNA - RNA Converter" path="/dnarnaconverter"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>

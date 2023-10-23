@@ -21,6 +21,7 @@
     "number-to-words": "^1.2.4",
     "numeric": "^1.2.6",
     "plotly.js": "^2.26.1",
+    "qrcode.react": "^3.1.0",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-copy-to-clipboard": "^5.1.0",

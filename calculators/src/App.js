@@ -173,6 +173,15 @@ import MainDeMUXCalc from './computer_science/deMUXCalc/MainDeMUXCalc';
 import MainZTransformCalc from './mathematical/zTransformCalc/MainZTransformCalc';
 import MainQRCodeGenerator from './computer_science/qRCodeGenerator/MainQRCodeGenerator';
 import MainGravitationalForceCalc from './physics/gravitationalForceCalc/MainGravitationalForceCalc';
+import MainHomogeneousInterpreter from './mathematical/homogeneousInterpreter/MainHomogeneousInterpreter';
+import MainSetupDelayCalc from './computer_science/setupDelayCalc/MainSetupDelayCalc';
+import MainVarianceStandardDeviationConverter from './mathematical/varianceStandardDeviationConverter/MainVarianceStandardDeviationConverter';
+import MainStatisticsMeanCalc from './mathematical/statisticsMeanCalc/MainStatisticsMeanCalc';
+import MainStatisticsMedianCalc from './mathematical/statisticsMedianCalc/MainStatisticsMedianCalc';
+import MainDNARNAConverter from './biology/dNARNAConverter/MainDNARNAConverter';
+import MainRMSValueCalc from './mathematical/rMSValueCalc/MainRMSValueCalc';
+import MainPacketsOrderCalc from './computer_science/packetsOrderCalc/MainPacketsOrderCalc';
+import MainBase64EncoderDecoder from './computer_science/base64EncoderDecoder/MainBase64EncoderDecoder';
 
 function App() {
   return (
@@ -241,6 +250,9 @@ function App() {
             <Route path="propagationdelaycalc" element={<MainPropagationDelayCalc />} />
             <Route path="demuxcalc" element={<MainDeMUXCalc />} />
             <Route path="qrcodegenerator" element={<MainQRCodeGenerator />} />
+            <Route path="setupdelaycalc" element={<MainSetupDelayCalc />} />
+            <Route path="packetsordercalc" element={<MainPacketsOrderCalc />} />
+            <Route path="base64encoderdecoder" element={<MainBase64EncoderDecoder />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -307,6 +319,11 @@ function App() {
             <Route path="analyticalFuncCalc" element={<MainAnalyticalFuncCalc /> } />
             <Route path="zscorecalc" element={<MainZScoreCalc />} />
             <Route path="ztransformcalc" element={<MainZTransformCalc />} />
+            <Route path="homogeneousinterpreter" element={<MainHomogeneousInterpreter />} />
+            <Route path="variancestandarddeviationconverter" element={<MainVarianceStandardDeviationConverter />} />
+            <Route path="statisticsmeancalc" element={<MainStatisticsMeanCalc />} />
+            <Route path="statisticsmediancalc" element={<MainStatisticsMedianCalc />} />
+            <Route path="rmsvaluecalc" element={<MainRMSValueCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
@@ -330,6 +347,8 @@ function App() {
             <Route path="workcalc" element={<MainWorkCalc />} />
             <Route path="potentialenergycalc" element={<MainPotentialEnergyCalc />} />
             <Route path="gravitationalforcecalc" element={<MainGravitationalForceCalc />} />
+            {/* Biology */}
+            <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
