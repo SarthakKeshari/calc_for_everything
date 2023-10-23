@@ -178,6 +178,7 @@ import MainSetupDelayCalc from './computer_science/setupDelayCalc/MainSetupDelay
 import MainVarianceStandardDeviationConverter from './mathematical/varianceStandardDeviationConverter/MainVarianceStandardDeviationConverter';
 import MainStatisticsMeanCalc from './mathematical/statisticsMeanCalc/MainStatisticsMeanCalc';
 import MainStatisticsMedianCalc from './mathematical/statisticsMedianCalc/MainStatisticsMedianCalc';
+import MainDNARNAConverter from './biology/dNARNAConverter/MainDNARNAConverter';
 
 function App() {
   return (
@@ -340,6 +341,8 @@ function App() {
             <Route path="workcalc" element={<MainWorkCalc />} />
             <Route path="potentialenergycalc" element={<MainPotentialEnergyCalc />} />
             <Route path="gravitationalforcecalc" element={<MainGravitationalForceCalc />} />
+            {/* Biology */}
+            <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />

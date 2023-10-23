@@ -175,6 +175,12 @@ export default function Home() {
             <HomeGridItem calcName="Gravitational Force Calculator" path="/gravitationalforcecalc"/> 
         </Grid>
         <br/>
+        <Typography pt={1} variant='h5'>Biology</Typography>
+        <hr/>
+        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
+            <HomeGridItem calcName="DNA - RNA Converter" path="/dnarnaconverter"/>
+        </Grid>
+        <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>
         <hr/>
         <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
