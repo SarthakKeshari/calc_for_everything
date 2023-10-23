@@ -191,6 +191,7 @@ import MainUniversityGPACalc from './mathematical/universityGPACalc/MainUniversi
 import MainTorqueCalc from './physics/torqueCalc/MainTorqueCalc';
 import MainAveragesCalculator from './mathematical/averagesCalculator/MainAveragesCalculator';
 import MainMMMCalc from './mathematical/mMMCalc/MainMMMCalc';
+import MainDrugHalfLifeClearanceCalc from './biology/drugHalfLifeClearanceCalc/MainDrugHalfLifeClearanceCalc';
 
 function App() {
   return (
@@ -366,6 +367,7 @@ function App() {
             <Route path="torquecalc" element={<MainTorqueCalc />} />
             {/* Biology */}
             <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
+            <Route path="drughalflifeclearancecalc" element={<MainDrugHalfLifeClearanceCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
