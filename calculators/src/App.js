@@ -175,6 +175,7 @@ import MainQRCodeGenerator from './computer_science/qRCodeGenerator/MainQRCodeGe
 import MainGravitationalForceCalc from './physics/gravitationalForceCalc/MainGravitationalForceCalc';
 import MainHomogeneousInterpreter from './mathematical/homogeneousInterpreter/MainHomogeneousInterpreter';
 import MainSetupDelayCalc from './computer_science/setupDelayCalc/MainSetupDelayCalc';
+import MainVarianceStandardDeviationConverter from './mathematical/varianceStandardDeviationConverter/MainVarianceStandardDeviationConverter';
 
 function App() {
   return (
@@ -311,6 +312,7 @@ function App() {
             <Route path="zscorecalc" element={<MainZScoreCalc />} />
             <Route path="ztransformcalc" element={<MainZTransformCalc />} />
             <Route path="homogeneousinterpreter" element={<MainHomogeneousInterpreter />} />
+            <Route path="variancestandarddeviationconverter" element={<MainVarianceStandardDeviationConverter />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
