@@ -185,6 +185,7 @@ import MainBase64EncoderDecoder from './computer_science/base64EncoderDecoder/Ma
 import MainMeanDeviationAboutMedianCalc from './mathematical/meanDeviationAboutMedianCalc/MainMeanDeviationAboutMedianCalc';
 import MainSleepCalc from './health/sleepCalc/MainSleepCalc';
 import MainCoefOfMeanDeviationCalc from './mathematical/coefOfMeanDeviationCalc/MainCoefOfMeanDeviationCalc';
+import MainModeCalc from './mathematical/modeCalc/MainModeCalc';
 
 function App() {
   return (
@@ -329,6 +330,7 @@ function App() {
             <Route path="rmsvaluecalc" element={<MainRMSValueCalc />} />
             <Route path="meandeviationaboutmediancalc" element={<MainMeanDeviationAboutMedianCalc />} />
             <Route path="coefofmeandeviationcalc" element={<MainCoefOfMeanDeviationCalc />} />
+            <Route path="modecalc" element={<MainModeCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />

@@ -147,6 +147,7 @@ export default function Home() {
             <HomeGridItem calcName="RMS Value Calculator" path="/rmsvaluecalc"/> 
             <HomeGridItem calcName="Mean Deviation about Median Calculator" path="/meandeviationaboutmediancalc"/> 
             <HomeGridItem calcName="Coefficient Of Mean Deviation Calculator" path="/coefofmeandeviationcalc"/> 
+            <HomeGridItem calcName="Mode Calculator" path="/modecalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
