@@ -186,6 +186,7 @@ import MainMeanDeviationAboutMedianCalc from './mathematical/meanDeviationAboutM
 import MainSleepCalc from './health/sleepCalc/MainSleepCalc';
 import MainCoefOfMeanDeviationCalc from './mathematical/coefOfMeanDeviationCalc/MainCoefOfMeanDeviationCalc';
 import MainModeCalc from './mathematical/modeCalc/MainModeCalc';
+import MainSetOperationsExtended from './mathematical/setOperationsExtended/MainSetOperationsExtended';
 
 function App() {
   return (
@@ -331,6 +332,7 @@ function App() {
             <Route path="meandeviationaboutmediancalc" element={<MainMeanDeviationAboutMedianCalc />} />
             <Route path="coefofmeandeviationcalc" element={<MainCoefOfMeanDeviationCalc />} />
             <Route path="modecalc" element={<MainModeCalc />} />
+            <Route path="setoperationsextendedcalc" element={<MainSetOperationsExtended />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
