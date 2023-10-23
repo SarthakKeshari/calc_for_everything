@@ -182,6 +182,7 @@ import MainDNARNAConverter from './biology/dNARNAConverter/MainDNARNAConverter';
 import MainRMSValueCalc from './mathematical/rMSValueCalc/MainRMSValueCalc';
 import MainPacketsOrderCalc from './computer_science/packetsOrderCalc/MainPacketsOrderCalc';
 import MainBase64EncoderDecoder from './computer_science/base64EncoderDecoder/MainBase64EncoderDecoder';
+import MainMeanDeviationAboutMedianCalc from './mathematical/meanDeviationAboutMedianCalc/MainMeanDeviationAboutMedianCalc';
 
 function App() {
   return (
@@ -324,6 +325,7 @@ function App() {
             <Route path="statisticsmeancalc" element={<MainStatisticsMeanCalc />} />
             <Route path="statisticsmediancalc" element={<MainStatisticsMedianCalc />} />
             <Route path="rmsvaluecalc" element={<MainRMSValueCalc />} />
+            <Route path="meandeviationaboutmediancalc" element={<MainMeanDeviationAboutMedianCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
