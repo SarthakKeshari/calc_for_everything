@@ -69,6 +69,7 @@ export default function Home() {
             <HomeGridItem calcName="QR Code Generator" path="/qrcodegenerator"/> 
             <HomeGridItem calcName="Setup Delay Calculator" path="/setupdelaycalc"/> 
             <HomeGridItem calcName="Packets Order Calculator" path="/packetsordercalc"/> 
+            <HomeGridItem calcName="Base64 Encoder/Decoder" path="/base64encoderdecoder"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>

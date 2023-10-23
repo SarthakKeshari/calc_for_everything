@@ -181,6 +181,7 @@ import MainStatisticsMedianCalc from './mathematical/statisticsMedianCalc/MainSt
 import MainDNARNAConverter from './biology/dNARNAConverter/MainDNARNAConverter';
 import MainRMSValueCalc from './mathematical/rMSValueCalc/MainRMSValueCalc';
 import MainPacketsOrderCalc from './computer_science/packetsOrderCalc/MainPacketsOrderCalc';
+import MainBase64EncoderDecoder from './computer_science/base64EncoderDecoder/MainBase64EncoderDecoder';
 
 function App() {
   return (
@@ -251,6 +252,7 @@ function App() {
             <Route path="qrcodegenerator" element={<MainQRCodeGenerator />} />
             <Route path="setupdelaycalc" element={<MainSetupDelayCalc />} />
             <Route path="packetsordercalc" element={<MainPacketsOrderCalc />} />
+            <Route path="base64encoderdecoder" element={<MainBase64EncoderDecoder />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
