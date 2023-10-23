@@ -173,6 +173,7 @@ import MainDeMUXCalc from './computer_science/deMUXCalc/MainDeMUXCalc';
 import MainZTransformCalc from './mathematical/zTransformCalc/MainZTransformCalc';
 import MainQRCodeGenerator from './computer_science/qRCodeGenerator/MainQRCodeGenerator';
 import MainGravitationalForceCalc from './physics/gravitationalForceCalc/MainGravitationalForceCalc';
+import MainHomogeneousInterpreter from './mathematical/homogeneousInterpreter/MainHomogeneousInterpreter';
 
 function App() {
   return (
@@ -307,6 +308,7 @@ function App() {
             <Route path="analyticalFuncCalc" element={<MainAnalyticalFuncCalc /> } />
             <Route path="zscorecalc" element={<MainZScoreCalc />} />
             <Route path="ztransformcalc" element={<MainZTransformCalc />} />
+            <Route path="homogeneousinterpreter" element={<MainHomogeneousInterpreter />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
