@@ -171,6 +171,8 @@ import MainPropagationDelayCalc from './computer_science/propagationDelayCalc/Ma
 import MainPotentialEnergyCalc from './physics/potentialEnergyCalc/MainPotentialEnergyCalc';
 import MainDeMUXCalc from './computer_science/deMUXCalc/MainDeMUXCalc';
 import MainZTransformCalc from './mathematical/zTransformCalc/MainZTransformCalc';
+import MainQRCodeGenerator from './computer_science/qRCodeGenerator/MainQRCodeGenerator';
+import MainGravitationalForceCalc from './physics/gravitationalForceCalc/MainGravitationalForceCalc';
 
 function App() {
   return (
@@ -238,6 +240,7 @@ function App() {
             <Route path="muxcalc" element={<MainMUXCalc />} />
             <Route path="propagationdelaycalc" element={<MainPropagationDelayCalc />} />
             <Route path="demuxcalc" element={<MainDeMUXCalc />} />
+            <Route path="qrcodegenerator" element={<MainQRCodeGenerator />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -326,6 +329,7 @@ function App() {
             <Route path="hookeslawcalc" element={<MainHookesLawCalc />} />
             <Route path="workcalc" element={<MainWorkCalc />} />
             <Route path="potentialenergycalc" element={<MainPotentialEnergyCalc />} />
+            <Route path="gravitationalforcecalc" element={<MainGravitationalForceCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />

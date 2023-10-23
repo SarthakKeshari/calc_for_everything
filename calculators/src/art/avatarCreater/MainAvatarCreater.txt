@@ -1,0 +1,423 @@
+// Code by  Harshit Upadhyay - @UPADHYAY-HARSHIT - https://github.com/UPADHYAY-HARSHIT
+
+import React, { useEffect, useState } from 'react';
+import { Container, Typography } from '@mui/material';
+import { Avatar } from 'react-avataaars';
+import Box from '@mui/material/Box';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+import TextField from '@mui/material/TextField';
+
+function MainAvatarCreater() {
+
+    const [accessories, setAccessories] = useState('Blank');
+    const [avatarStyle, setAvatarStyle] = useState('Transparent')
+    const [clotheColor, setClotheColor] = useState('white')
+    const [clotheType, setClotheType] = useState('shirt')
+    const [eyeType, setEyeType] = useState('happy')
+    const [eyebrowType, setEyebrowType] = useState('default')
+    const [facialHairColor, setFacialHairColor] = useState('black')
+    const [facialHairType, setFacialHairType] = useState('majestic')
+    const [hairColor, setHairColor] = useState('black')
+    const [mouthType, setMouthType] = useState('smile')
+    const [skinColor, setSkinColor] = useState('light')
+    const [topType, setTopType] = useState('shortHair')
+    const [hash, setHash] = useState('write-anything-here')
+
+
+    const [options, setOptions] = useState({
+        accessories: accessories,
+        style: avatarStyle,
+        clothescolor: clotheColor,
+        clothes: clotheType,
+        eyes: eyeType,
+        eyebrow: eyebrowType,
+        facialHairColor: facialHairColor,
+        facialHairType: facialHairType,
+        hairColor: hairColor,
+        mouth: mouthType,
+        skinColor: skinColor,
+        top: topType
+    })
+
+
+    useEffect(() => {
+        console.log(options)
+        setOptions({
+            ...options,
+            accessories: accessories,
+            style: avatarStyle,
+            clothescolor: clotheColor,
+            clothes: clotheType,
+            eyes: eyeType,
+            eyebrow: eyebrowType,
+            facialHairColor: facialHairColor,
+            facialHairType: facialHairType,
+            hairColor: hairColor,
+            mouth: mouthType,
+            skinColor: skinColor,
+            top: topType
+        })
+        console.log(accessories)
+    }, [accessories, avatarStyle, clotheColor, clotheType, eyeType, eyebrowType, facialHairColor, facialHairType, hairColor, mouthType, skinColor, topType]);
+
+
+
+    return (
+
+
+
+        <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: "10" }}>
+            <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Avatar Creater</Typography>
+            <hr />
+            <br />
+            {/* Write your code here */}
+            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                <InputLabel id="accessories-select">Accessories</InputLabel>
+                <Select
+                    labelId="accessories-select"
+                    id="accessories-select-small"
+                    value={accessories}
+                    label="Accessories"
+                    onChange={(e) => setAccessories(e.target.value)}
+                >
+                    <MenuItem value="">
+                        <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={'kurt'}>Kurt</MenuItem>
+                    <MenuItem value={'prescription01'}>'Prescription01'</MenuItem>
+                    <MenuItem value={'prescription02'}>'Prescription02'</MenuItem>
+                    <MenuItem value={'round'}>'Round'</MenuItem>
+                    <MenuItem value={'wayfarers'}>'Wayfarers'</MenuItem>
+                    <MenuItem value={'sunglasses'}>'Sunglasses'</MenuItem>
+                </Select>
+
+            </FormControl>
+
+            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                <InputLabel id="avatarstyle-select">AvatarStyle</InputLabel>
+                <Select
+                    labelId="avatarstyle-select"
+                    id="avatarstyle-select-small"
+                    value={avatarStyle}
+                    label="avatarstyle"
+                    onChange={(e) => setAvatarStyle(e.target.value)}
+                >
+                    <MenuItem value="">
+                        <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={'circle'}>Circle</MenuItem>
+                    <MenuItem value={''}>'Transparent'</MenuItem>
+
+                </Select>
+
+            </FormControl>
+
+            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                <InputLabel id="clothecolor-select">ClotheColor</InputLabel>
+                <Select
+                    labelId="clothecolor-select"
+                    id="clothecolor-select-small"
+                    value={clotheColor}
+                    label="clothecolor"
+                    onChange={(e) => setClotheColor(e.target.value)}
+                >
+                    <MenuItem value="">
+                        <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={'black'}>'Black'</MenuItem>
+                    <MenuItem value={'blue'}>'Blue01','Blue02','Blue03'</MenuItem>
+                    <MenuItem value={'gray'}>'Gray01','Gray02'</MenuItem>
+                    <MenuItem value={'heather'}>'Heather'</MenuItem>
+                    <MenuItem value={'pastel'}>'PastelBlue','PastelGreen', 'PastelOrange', 'PastelRed', 'PastelYellow'</MenuItem>
+                    <MenuItem value={'pink'}>'Pink'</MenuItem>
+                    <MenuItem value={'red'}>'Red'</MenuItem>
+                    <MenuItem value={'white'}>'White'</MenuItem>
+
+
+
+                </Select>
+            </FormControl>
+
+            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                <InputLabel id="clothetype-select">ClotheType</InputLabel>
+                <Select
+                    labelId="clothetype-select"
+                    id="clothetype-select-small"
+                    value={clotheType}
+                    label="clothetype"
+                    onChange={(e) => setClotheType(e.target.value)}
+                >
+                    <MenuItem value="">
+                        <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={'blazer'}>'BlazerShirt', 'BlazerSweater'</MenuItem>
+                    <MenuItem value={'sweater'}>'CollarSweater'</MenuItem>
+                    <MenuItem value={'shirt'}>'GraphicShirt', 'ShirtCrewNeck', 'ShirtScoopNeck', 'ShirtVNeck'</MenuItem>
+                    <MenuItem value={'hoodie'}>'Hoodie'</MenuItem>
+                    <MenuItem value={'overall'}>'Overall'</MenuItem>
+                   
+
+                </Select>
+            </FormControl>
+
+            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                <InputLabel id="eyetype-select">EyeType</InputLabel>
+                <Select
+                    labelId="eyetype-select"
+                    id="eyetype-select-small"
+                    value={eyeType}
+                    label="eyetype"
+                    onChange={(e) => setEyeType(e.target.value)}
+                >
+                    <MenuItem value="">
+                        <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={'close'}>'Close'</MenuItem>
+                    <MenuItem value={'cry'}>'Cry'</MenuItem>
+                    <MenuItem value={'default'}>'Default'</MenuItem>
+                    <MenuItem value={'dizzy'}>'Dizzy'</MenuItem>
+                    <MenuItem value={'roll'}>'Roll'</MenuItem>
+                    <MenuItem value={'happy'}>'Happy'</MenuItem>
+                    <MenuItem value={'hearts'}>'Hearts'</MenuItem>
+                    <MenuItem value={'side'}>'Side'</MenuItem>
+                    <MenuItem value={'squint'}>'Squint'</MenuItem>
+                    <MenuItem value={'surprised'}>'Surprised'</MenuItem>
+                    <MenuItem value={'wink'}>'Wink'</MenuItem>
+                    <MenuItem value={'winkwacky'}>'WinkWacky'</MenuItem>
+
+
+
+
+                </Select>
+
+            </FormControl>
+
+
+            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                <InputLabel id="eyebrowtype-select">EyebrowType</InputLabel>
+                <Select
+                    labelId="eyebrowtype-select"
+                    id="eyebrowtype-select-small"
+                    value={eyebrowType}
+                    label="eyebrowtype"
+                    onChange={(e) => setEyebrowType(e.target.value)}
+                >
+                    <MenuItem value="">
+                        <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={'angry'}>'Angry', 'AngryNatural'</MenuItem>
+                    <MenuItem value={'default'}>'Default', 'DefaultNatural'</MenuItem>
+                    <MenuItem value={'flat'}>'FlatNatural'</MenuItem>
+                    <MenuItem value={'raised'}>'RaisedExcited', 'RaisedExcitedNatural'</MenuItem>
+                    <MenuItem value={'sad'}>'SadConcerned', 'SadConcernedNatural'</MenuItem>
+                    <MenuItem value={'unibrow'}>'UnibrowNatural'</MenuItem>
+                    <MenuItem value={'up'}>'UpDown', 'UpDownNatural'</MenuItem>
+                    
+
+                </Select>
+
+            </FormControl>
+
+            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                <InputLabel id="facialhaircolor-select">FacialHairColor</InputLabel>
+                <Select
+                    labelId="facialhaircolor-select"
+                    id="facialhaircolor-select-small"
+                    value={facialHairColor}
+                    label="facialhaircolor"
+                    onChange={(e) => setFacialHairColor(e.target.value)}
+                >
+                    <MenuItem value="">
+                        <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={'auburn'}>'Auburn'</MenuItem>
+                    <MenuItem value={'black'}>'Black'</MenuItem>
+                    <MenuItem value={'blonde'}>'Blonde', 'BlondeGolden'</MenuItem>
+                    <MenuItem value={'brown'}>'Brown', 'BrownDark'</MenuItem>
+                    <MenuItem value={'pastelpink'}>'PastelPink'</MenuItem>
+                    <MenuItem value={'platinum'}>'Platinum'</MenuItem>
+                    <MenuItem value={'red'}>'Red'</MenuItem>
+                    <MenuItem value={'gray'}>'SilverGray'</MenuItem>
+                   
+
+                </Select>
+
+            </FormControl>
+
+
+
+            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                <InputLabel id="facialhairtype-select">FacialHairType</InputLabel>
+                <Select
+                    labelId="facialhairtype-select"
+                    id="facialhairtype-select-small"
+                    value={facialHairType}
+                    label="facialhairtype"
+                    onChange={(e) => setFacialHairType(e.target.value)}
+                >
+                    <MenuItem value="">
+                        <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={'medium'}>'BeardMedium'</MenuItem>
+                    <MenuItem value={'light'}>'BeardLight'</MenuItem>
+                    <MenuItem value={'majestic'}>'BeardMajestic'</MenuItem>
+                    <MenuItem value={'fancy'}>'MoustacheFancy'</MenuItem>
+                    <MenuItem value={'magnum'}>'MoustacheMagnum'</MenuItem>
+                    <MenuItem value={'platinum'}>'Platinum'</MenuItem>
+                   
+
+                </Select>
+
+            </FormControl>
+
+            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                <InputLabel id="haircolor-select">HairColor</InputLabel>
+                <Select
+                    labelId="haircolor-select"
+                    id="haircolor-select-small"
+                    value={hairColor}
+                    label="haircolor"
+                    onChange={(e) => setHairColor(e.target.value)}
+                >
+                    <MenuItem value="">
+                        <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={'auburn'}>Auburn</MenuItem>
+                    <MenuItem value={'black'}>'Black'</MenuItem>
+                    <MenuItem value={'blonde'}>'Blonde', 'BlondeGolden'</MenuItem>
+                    <MenuItem value={'brown'}>'Brown', 'BrownDark'</MenuItem>
+                    <MenuItem value={'pastelpink'}>'PastelPink'</MenuItem>
+                    <MenuItem value={'platinum'}>'Platinum'</MenuItem>
+                    <MenuItem value={'red'}>'Red'</MenuItem>
+                    <MenuItem value={'gray'}>'SilverGray'</MenuItem>
+                   
+
+                </Select>
+
+            </FormControl>
+
+
+
+            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                <InputLabel id="mouthtype-select">MouthType</InputLabel>
+                <Select
+                    labelId="mouthtype-select"
+                    id="mouthtype-select-small"
+                    value={mouthType}
+                    label="mouthtype"
+                    onChange={(e) => setMouthType(e.target.value)}
+                >
+                    <MenuItem value="">
+                        <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={'concerned'}>'Concerned'</MenuItem>
+                    <MenuItem value={'disbelief'}>'Disbelief'</MenuItem>
+                    <MenuItem value={'default'}>'Default'</MenuItem>
+                    <MenuItem value={'eating'}>'Eating'</MenuItem>
+                    <MenuItem value={'grimace'}>'Grimace'</MenuItem>
+                    <MenuItem value={'sad'}>'Sad'</MenuItem>
+                    <MenuItem value={'scream'}>'Scream'</MenuItem>
+                    <MenuItem value={'serious'}>'Serious'</MenuItem>
+                    <MenuItem value={'smile'}>'Smile'</MenuItem>
+                    <MenuItem value={'twinkle'}>'Twinkle'</MenuItem>
+                    <MenuItem value={'womit'}>'Womit'</MenuItem>
+                   
+
+
+                </Select>
+
+            </FormControl>
+
+
+
+            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                <InputLabel id="skincolor-select">SkinColor</InputLabel>
+                <Select
+                    labelId="skincolor-select"
+                    id="skincolor-select-small"
+                    value={skinColor}
+                    label="skincolor"
+                    onChange={(e) => setSkinColor(e.target.value)}
+                >
+                    <MenuItem value="">
+                        <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={'tanned'}>'Tanned'</MenuItem>
+                    <MenuItem value={'yellow'}>'Yellow'</MenuItem>
+                    <MenuItem value={'pale'}>'Pale'</MenuItem>
+                    <MenuItem value={'light'}>'Light'</MenuItem>
+                    <MenuItem value={'brown'}>'Brown'</MenuItem>
+                    <MenuItem value={'darkbrown'}>'DarkBrown'</MenuItem>
+                    <MenuItem value={'black'}>'Black'</MenuItem>
+                   
+
+
+                </Select>
+            </FormControl>
+
+
+
+            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                <InputLabel id="toptype-select">TopType</InputLabel>
+                <Select
+                    labelId="toptype-select"
+                    id="toptype-select-small"
+                    value={topType}
+                    label="toptype"
+                    onChange={(e) => setTopType(e.target.value)}
+                >
+                    <MenuItem value="">
+                        <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={'longhair'}>'LongHairBigHair',
+      'LongHairBob',
+      'LongHairBun',
+      'LongHairCurly',
+      'LongHairCurvy',
+      'LongHairDreads',
+      'LongHairFrida',
+      'LongHairFro',
+      'LongHairFroBand',
+      'LongHairMiaWallace',
+      'LongHairNotTooLong',
+      'LongHairShavedSides',
+      'LongHairStraight',
+      'LongHairStraight2',
+      'LongHairStraightStrand'</MenuItem>
+                    <MenuItem value={'shorthair'}>'ShortHairDreads01',
+      'ShortHairDreads02',
+      'ShortHairFrizzle',
+      'ShortHairShaggy',
+      'ShortHairShaggyMullet',
+      'ShortHairShortCurly',
+      'ShortHairShortFlat',
+      'ShortHairShortRound',
+      'ShortHairShortWaved',
+      'ShortHairSides',
+      'ShortHairTheCaesar',
+      'ShortHairTheCaesarSidePart'</MenuItem>
+                    <MenuItem value={'eyepatch'}>'Eyepatch'</MenuItem>
+                    <MenuItem value={'hat'}>'Hat', 'WinterHat1', 'WinterHat2', 'WinterHat3', 'WinterHat4'</MenuItem>
+                    <MenuItem value={'hijab'}>'Hijab'</MenuItem>
+                    <MenuItem value={'turban'}>'Turban'</MenuItem>
+                    
+
+                </Select>
+            </FormControl>
+
+            <TextField id="hash" label="Text Playground(Enter random text)" variant="outlined" value={hash} onChange={(e) => setHash(e.target.value)} />
+
+
+
+            <Avatar options={options} hash={hash} />
+
+
+            {/* End your code here */}
+        </Container>
+    )
+}
+
+export default MainAvatarCreater
