@@ -40,6 +40,20 @@ function MetricUnitConverter() {
       μs: 0.001,
       ns: 0.000001,
     },
+    speed: {
+      miles_per_hr: 1.60934,
+      kilometer_per_hr: 1,
+      meter_per_sec: 3.6,
+    },
+    pressure: {
+      pascal: 1,
+      bar: 0.00001,
+      techAtm: 0.0000098692,
+      stdAtm: 0.00000980665,
+      pounds_per_square_inch: 0.00014503773773375,
+      torr: 0.007500616827042,
+    },
+
   };
 
   const handleUnitTypeChange = (event) => {
@@ -108,6 +122,13 @@ function MetricUnitConverter() {
       const resultValue = (inputValue * fromFactor) / toFactor;
       setResult(resultValue.toFixed(4));
     }
+    else if (unitType === 'speed') {
+      const resultValue = (inputValueFloat * fromFactor) / toFactor;
+      setResult(resultValue.toFixed(5));
+    } else if (unitType === 'pressure') {
+      const resultValue = (inputValueFloat * toFactor) / fromFactor;
+      setResult(resultValue.toFixed(9));
+    }
     else {
       setResult('Invalid input');
     }
@@ -126,6 +147,8 @@ function MetricUnitConverter() {
           <MenuItem value="weight">Weight</MenuItem>
           <MenuItem value="temperature">Temperature</MenuItem>
           <MenuItem value="time">Time</MenuItem>
+          <MenuItem value="speed">Speed</MenuItem>
+          <MenuItem value="pressure">Pressure</MenuItem>
         </Select>
       </FormControl>
       <FormControl fullWidth variant="outlined" sx={{ marginBottom: '1rem' }}>
