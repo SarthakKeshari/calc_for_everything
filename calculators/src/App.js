@@ -190,6 +190,7 @@ import MainSetOperationsExtended from './mathematical/setOperationsExtended/Main
 import MainUniversityGPACalc from './mathematical/universityGPACalc/MainUniversityGPACalc';
 import MainTorqueCalc from './physics/torqueCalc/MainTorqueCalc';
 import MainAveragesCalculator from './mathematical/averagesCalculator/MainAveragesCalculator';
+import MainMMMCalc from './mathematical/mMMCalc/MainMMMCalc';
 
 function App() {
   return (
@@ -338,6 +339,7 @@ function App() {
             <Route path="setoperationsextendedcalc" element={<MainSetOperationsExtended />} />
             <Route path="universitygpacalc" element={<MainUniversityGPACalc />} />
             <Route path="averagescalc" element={<MainAveragesCalculator />} />
+            <Route path="mmmcalc" element={<MainMMMCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />

@@ -151,6 +151,7 @@ export default function Home() {
             <HomeGridItem calcName="Set Operations Extended Calculator" path="/setoperationsextendedcalc"/> 
             <HomeGridItem calcName="University GPA Calculator" path="/universitygpacalc"/> 
             <HomeGridItem calcName="Averages Calculator" path="/averagescalc"/> 
+            <HomeGridItem calcName="MMM Calculator" path="/mmmcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
