@@ -29,11 +29,14 @@ function SetupDelayCalculator() {
       </Typography>
       <hr />
       <div>
-        <h4>Setup Delay</h4> refers to the total time delay that occurs from the
-        moment a sender initiates the transmission of a message packet to the
-        time when the receiver successfully receives and processes the complete
-        message packet. This delay is a sum of two key components: Propagation
-        Delay and Transmission Delay.
+        <h4>
+          <b>Setup Delay</b>
+        </h4>
+        refers to the total time delay that occurs from the moment a sender
+        initiates the transmission of a message packet to the time when the
+        receiver successfully receives and processes the complete message
+        packet. This delay is a sum of two key components: Propagation Delay and
+        Transmission Delay.
         <br />
         <h4>Propagation Delay:</h4> This is the time it takes for the signal to
         travel from the sender to the receiver. It depends on the distance
