@@ -18,7 +18,7 @@ const style = {
 
 {/* For reference look into the following file - calc_for_everything\calculators\src\mathematical\simple_interest\InfoSI.js */}
 // Change the name of the function as the file name
-export default function InfoLogAntilog () {
+export default function InfoSetOperations() {
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -37,31 +37,34 @@ export default function InfoLogAntilog () {
         <Box sx={style} sm={1}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {/* Calculator Heading */}
-            Log Antilog Calculator
+            Set Operations Calculator
 
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {/* Definition */}
-            A logarithm (log) is a mathematical function that finds the exponent required to obtain a given number using a specified base, while an antilogarithm (antilog) is the inverse operation, calculating the original number from a base and exponent.
-            
+            Set operations are mathematical operations used to manipulate sets, which are collections of distinct elements.
             <br/>
             {/* Replace the below calculator name with yuor calculator name */}
-            The formula for calculating simple interest is:
+            The formula for Set operations is:
+            Union (∪): Combines elements from two sets.
+Intersection (∩): Identifies elements common to two sets.
+Complement (¬ or '): Contains elements not in a given set.
+Difference (\ or -): Contains elements in one set but not in another set.
             <br/>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h3>
                 {/* Add calc formula */}
-                Logarithm (log) Formula:
-                log_b(x) = y, where b^y = x
-                Antilogarithm (Antilog) Formula:
-                x = b^y
                 
               </h3>
             </code>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h5>
                 {/* Define meaning that each variable convey */}
-                Original Number "x" from the base "b" and the Exponent "y" 
+                Union (∪): Combines elements from two sets.
+Intersection (∩): Identifies elements common to two sets.
+Complement (¬ or '): Contains elements not in a given set.
+Difference (\ or -): Contains elements in one set but not in another set.
+These operations are typically expressed using set notation and principles rather than explicit mathematical formulas.
 
               </h5>
             </code>

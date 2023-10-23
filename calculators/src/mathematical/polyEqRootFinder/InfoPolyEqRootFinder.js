@@ -18,7 +18,7 @@ const style = {
 
 {/* For reference look into the following file - calc_for_everything\calculators\src\mathematical\simple_interest\InfoSI.js */}
 // Change the name of the function as the file name
-export default function InfoLogAntilog () {
+export default function InfoPolyEqRootFinder() {
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -37,32 +37,33 @@ export default function InfoLogAntilog () {
         <Box sx={style} sm={1}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {/* Calculator Heading */}
-            Log Antilog Calculator
-
+            Cube Root And Square Root Calculator
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {/* Definition */}
-            A logarithm (log) is a mathematical function that finds the exponent required to obtain a given number using a specified base, while an antilogarithm (antilog) is the inverse operation, calculating the original number from a base and exponent.
-            
+            A polynomial equation root finder is a computational tool or algorithm used to determine the values of the variable that make the polynomial equation equal to zero, known as its roots or solutions.
             <br/>
             {/* Replace the below calculator name with yuor calculator name */}
-            The formula for calculating simple interest is:
+            The formula for calculating Roots of a polynomial equation is:
+            ax 
+n
+ +bx 
+(n−1)
+ +cx 
+(n−2)
+ +…+k=0
             <br/>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h3>
                 {/* Add calc formula */}
-                Logarithm (log) Formula:
-                log_b(x) = y, where b^y = x
-                Antilogarithm (Antilog) Formula:
-                x = b^y
                 
               </h3>
             </code>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h5>
                 {/* Define meaning that each variable convey */}
-                Original Number "x" from the base "b" and the Exponent "y" 
-
+                The coefficients "a," "b," and "c" are constants that determine the specific characteristics of the polynomial equation.
+                x is the variable, and you would solve for the values of "x" that make the equation true.   
               </h5>
             </code>
           </Typography>

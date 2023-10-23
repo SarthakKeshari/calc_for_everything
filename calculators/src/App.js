@@ -169,6 +169,10 @@ import MainWorkCalc from './physics/workCalc/MainWorkCalc';
 import MainMUXCalc from './computer_science/mUXCalc/MainMUXCalc';
 import MainPropagationDelayCalc from './computer_science/propagationDelayCalc/MainPropagationDelayCalc';
 import MainPotentialEnergyCalc from './physics/potentialEnergyCalc/MainPotentialEnergyCalc';
+import MainDeMUXCalc from './computer_science/deMUXCalc/MainDeMUXCalc';
+import MainZTransformCalc from './mathematical/zTransformCalc/MainZTransformCalc';
+import MainQRCodeGenerator from './computer_science/qRCodeGenerator/MainQRCodeGenerator';
+import MainGravitationalForceCalc from './physics/gravitationalForceCalc/MainGravitationalForceCalc';
 
 function App() {
   return (
@@ -235,6 +239,8 @@ function App() {
             <Route path="carrollscaveofknowledgecalc" element={<MainCarrollsCaveOfKnowledge />} />
             <Route path="muxcalc" element={<MainMUXCalc />} />
             <Route path="propagationdelaycalc" element={<MainPropagationDelayCalc />} />
+            <Route path="demuxcalc" element={<MainDeMUXCalc />} />
+            <Route path="qrcodegenerator" element={<MainQRCodeGenerator />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -300,6 +306,7 @@ function App() {
             <Route path="factorialcalcgamma" element={<MainFactorialCalc_Gamma /> } />
             <Route path="analyticalFuncCalc" element={<MainAnalyticalFuncCalc /> } />
             <Route path="zscorecalc" element={<MainZScoreCalc />} />
+            <Route path="ztransformcalc" element={<MainZTransformCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
@@ -322,6 +329,7 @@ function App() {
             <Route path="hookeslawcalc" element={<MainHookesLawCalc />} />
             <Route path="workcalc" element={<MainWorkCalc />} />
             <Route path="potentialenergycalc" element={<MainPotentialEnergyCalc />} />
+            <Route path="gravitationalforcecalc" element={<MainGravitationalForceCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
