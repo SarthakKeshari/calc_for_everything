@@ -189,6 +189,7 @@ import MainModeCalc from './mathematical/modeCalc/MainModeCalc';
 import MainSetOperationsExtended from './mathematical/setOperationsExtended/MainSetOperationsExtended';
 import MainUniversityGPACalc from './mathematical/universityGPACalc/MainUniversityGPACalc';
 import MainTorqueCalc from './physics/torqueCalc/MainTorqueCalc';
+import MainAveragesCalculator from './mathematical/averagesCalculator/MainAveragesCalculator';
 
 function App() {
   return (
@@ -336,6 +337,7 @@ function App() {
             <Route path="modecalc" element={<MainModeCalc />} />
             <Route path="setoperationsextendedcalc" element={<MainSetOperationsExtended />} />
             <Route path="universitygpacalc" element={<MainUniversityGPACalc />} />
+            <Route path="averagescalc" element={<MainAveragesCalculator />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
