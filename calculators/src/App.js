@@ -184,6 +184,7 @@ import MainPacketsOrderCalc from './computer_science/packetsOrderCalc/MainPacket
 import MainBase64EncoderDecoder from './computer_science/base64EncoderDecoder/MainBase64EncoderDecoder';
 import MainMeanDeviationAboutMedianCalc from './mathematical/meanDeviationAboutMedianCalc/MainMeanDeviationAboutMedianCalc';
 import MainSleepCalc from './health/sleepCalc/MainSleepCalc';
+import MainCoefOfMeanDeviationCalc from './mathematical/coefOfMeanDeviationCalc/MainCoefOfMeanDeviationCalc';
 
 function App() {
   return (
@@ -327,6 +328,7 @@ function App() {
             <Route path="statisticsmediancalc" element={<MainStatisticsMedianCalc />} />
             <Route path="rmsvaluecalc" element={<MainRMSValueCalc />} />
             <Route path="meandeviationaboutmediancalc" element={<MainMeanDeviationAboutMedianCalc />} />
+            <Route path="coefofmeandeviationcalc" element={<MainCoefOfMeanDeviationCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
