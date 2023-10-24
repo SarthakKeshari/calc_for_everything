@@ -13,9 +13,18 @@ Star ⭐ | Fork 🔗 | Contribute 💻
 
 <br>
 
+## Contribution Certificate
+All the contributors are requested to fill the Google form. Form will be active till 10th of November, 2023.
+### https://forms.gle/oQ5NPE2KP3fkQDwn6
+<br/>
+
 ## Benefits
-### Collect *25 points* and earn your **Contribution Certificate**
-   
+#### 🏆 **Special Certificate** for Top 3 contributors of this repository
+#### 🥉Collect *5 points* and earn your **Open-Source Contributor Certificate**
+#### 🥈Collect *25 points* and earn your **Open-Source Contributor Certificate - (Finisher)**
+#### 🥇Collect *50 points* and earn your **Open-Source Contributor Certificate - (Extra Miler)**
+<br/>
+
 #### Points Scheme
 Level | Points
 ------------ | -------------
@@ -226,57 +235,79 @@ Hard | 20 Points
 #### Ranklist
 Rank | Githib Handle | Points Scored       
 ------------ | ------------- | ------------
-1 | @maskboyAvi | 85
-2 | @imsoumik03 | 50
-3 | @7twik | 45
-4 | @Saksham-245 | 40
-5 | @Akash0420 | 30
-6 | @aniketsinha5552 | 25
-7 | @Sam-bhav-20 | 25
-8 | @anushka-srivastava22 | 25
+1 | @maskboyAvi | 95
+2 | @Upadhyay-Harshit | 80
+2 | @nipun221 | 80
+3 | @imsoumik03 | 55
+3 | @anushka-srivastava22 | 55
+4 | @dvtushar | 50
+4 | @Deathanni | 50
+4 | @syash7202 | 50
+5 | @7twik | 45
+5 | @ravishrivas | 45
+6 | @Saksham-245 | 40
+6 | @uttkarsh1m | 40
+6 | @PrachiDev11 | 40
+7 | @Rida-Nuha | 35
+8 | @Akash0420 | 30
+8 | @Sk783 | 30
+8 | @Satvik-Garg | 30
+9 | @Sam-bhav-20 | 25
 9 | @Celebi07 | 25
+9 | @aniketsinha5552 | 25
+9 | @rishirohilla | 25
+9 | @divyansh-4 | 25
+9 | @sikehish | 25
+10 | @DanishGBU | 20
 10 | @capsy14 | 20
-11 | @Satvik-Garg | 20
-12 | @uttkarsh1m | 20
-13 | @Ayushlion8 | 15
-14 | @DeexithParand2k2 | 15
-15 | @dfordp | 15
-16 | @farhanalws4u | 15
-17 | @govardhanshah456 | 15
-18 | @hiren2599 | 15
-19 | @Upadhyay-Harshit | 15
-20 | @ArnabBCA | 10
-21 | @ashishnallana | 10
-22 | @DanishGBU | 10
-23 | @Kris0011 | 10
-24 | @Saifullah00 | 10
-25 | @shreyashsingh-101 | 10
-26 | @Vimal-Dubey | 10
-27 | @VincentPaulV | 10
-28 | @remonix | 10
-29 | @abhijithhegde | 5
-30 | @girisha-pawan | 5
-31 | @Heramb4270 | 5
-32 | @Musak2 | 5
-33 | @PrachiDev11 | 5
-34 | @Rida-Nuha | 15
-35 | @rishirohilla | 5
-36 | @Sk783 | 5
-37 | @TANYA03GUPTA | 5
-38 | @tmsagarofficial | 5
-39 | @shrinidhihegde3 | 5
-40 | @Deathanni | 5
-41 | @munfaridzahera | 5
-42 | @mr-kadyan | 5
-43 | @dvtushar | 5
-44 | @atharvsawant2003 | 5
-45 | @tiwari00ayush | 5
+10 | @sachinsingh2020 | 20
+10 | @munfaridzahera | 20
+10 | @remonix | 20
+10 | @its-kumar-yash | 20
+10 | @girisha-pawan | 20
+10 | @tejxv | 20
+11 | @hiren2599 | 15
+11 | @govardhanshah456 | 15
+11 | @farhanalws4u | 15
+11 | @dfordp | 15
+11 | @DeexithParand2k2 | 15
+11 | @Ayushlion8 | 15
+11 | @mr-kadyan | 15
+11 | @chinmayr633 | 15
+11 | @ashishnallana | 15
+11 | @aditya962 | 15
+11 | @Rishika631 | 15
+12 | @VincentPaulV | 10
+12 | @Vimal-Dubey | 10
+12 | @shrinidhihegde3 | 10
+12 | @shreyashsingh-101 | 10
+12 | @Saifullah00 | 10
+12 | @plon-Susk7 | 10
+12 | @Kris0011 | 10
+12 | @ArnabBCA | 10
+12 | @Pasqua101 | 10
+12 | @Ayush-Vish | 10
+12 | @ctln23 | 10
+12 | @aditish11 | 10
+12 | @IshaanShettigar | 10
+13 | @vendhan-ds | 5
+13 | @tmsagarofficial | 5
+13 | @tiwari00ayush | 5
+13 | @TANYA03GUPTA | 5
+13 | @srronaksingh | 5
+13 | @Musak2 | 5
+13 | @Heramb4270 | 5
+13 | @atharvsawant2003 | 5
+13 | @abhijithhegde | 5
+13 | @Ahasasjain | 5
+13 | @XronTrix10 | 5
+13 | @shivanshhgit | 5
+13 | @real-varshney | 5
 
-#### Contributors eligible for Contribution Certificate
-<div style="display:flex; justify-content: center">
-  <img src="https://github.com/7twik.png" width="60px;" style="margin-right:10"/>   
-  <img src="https://github.com/imsoumik03.png" width="60px;" style="margin-right:10"/>
-</div>
+## Contribution Certificate
+All the contributors are requested to fill the Google form. Form will be active till 10th of November, 2023.
+### https://forms.gle/oQ5NPE2KP3fkQDwn6
+<br/>
 
 
 <br/>

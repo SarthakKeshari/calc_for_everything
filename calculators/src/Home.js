@@ -68,6 +68,8 @@ export default function Home() {
             <HomeGridItem calcName="DeMUX Calculator" path="/demuxcalc"/> 
             <HomeGridItem calcName="QR Code Generator" path="/qrcodegenerator"/> 
             <HomeGridItem calcName="Setup Delay Calculator" path="/setupdelaycalc"/> 
+            <HomeGridItem calcName="Packets Order Calculator" path="/packetsordercalc"/> 
+            <HomeGridItem calcName="Base64 Encoder/Decoder" path="/base64encoderdecoder"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -142,6 +144,14 @@ export default function Home() {
             <HomeGridItem calcName="Variance - Standard Deviation Converter" path="/variancestandarddeviationconverter"/> 
             <HomeGridItem calcName="Statistics Mean Calculator" path="/statisticsmeancalc"/> 
             <HomeGridItem calcName="Statistics Median Calculator" path="/statisticsmediancalc"/> 
+            <HomeGridItem calcName="RMS Value Calculator" path="/rmsvaluecalc"/> 
+            <HomeGridItem calcName="Mean Deviation about Median Calculator" path="/meandeviationaboutmediancalc"/> 
+            <HomeGridItem calcName="Coefficient Of Mean Deviation Calculator" path="/coefofmeandeviationcalc"/> 
+            <HomeGridItem calcName="Mode Calculator" path="/modecalc"/> 
+            <HomeGridItem calcName="Set Operations Extended Calculator" path="/setoperationsextendedcalc"/> 
+            <HomeGridItem calcName="University GPA Calculator" path="/universitygpacalc"/> 
+            <HomeGridItem calcName="Averages Calculator" path="/averagescalc"/> 
+            <HomeGridItem calcName="MMM Calculator" path="/mmmcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
@@ -173,6 +183,14 @@ export default function Home() {
             <HomeGridItem calcName="Work Calculator" path="/workcalc"/> 
             <HomeGridItem calcName="Potential Energy Calculator" path="/potentialenergycalc"/> 
             <HomeGridItem calcName="Gravitational Force Calculator" path="/gravitationalforcecalc"/> 
+            <HomeGridItem calcName="Torque Calculator" path="/torquecalc"/> 
+        </Grid>
+        <br/>
+        <Typography pt={1} variant='h5'>Biology</Typography>
+        <hr/>
+        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
+            <HomeGridItem calcName="DNA - RNA Converter" path="/dnarnaconverter"/>
+            <HomeGridItem calcName="Drug Half-Life/Clearance Calculator" path="/drughalflifeclearancecalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Finance</Typography>
@@ -205,6 +223,8 @@ export default function Home() {
             <HomeGridItem calcName="Novelty Age Calculator" path="/noveltyagecalc"/>
             <HomeGridItem calcName="Day Scheduler" path="/dayscheduler"/>
             <HomeGridItem calcName="Task Planner" path="/taskplanner"/>
+            <HomeGridItem calcName="Sleep Calculator" path="/sleepcalc"/>
+            <HomeGridItem calcName="Macronutrient Ratio Calculator" path="/macronutrientratiocalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Art</Typography>

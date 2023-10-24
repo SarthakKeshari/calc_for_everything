@@ -1,76 +1,123 @@
-import React, { useState } from 'react';
-import { Container, Typography, TextField, Button, Grid, Box } from '@mui/material';
+import React, { useState } from "react";
+import {
+  TextField,
+  Typography,
+  Box,
+  Container,
+  Grid,
+  Paper,
+} from "@mui/material";
 
-function MainDecToOctAndOctToDec() {
-  const [inputValue, setInputValue] = useState('');
-  const [outputValue, setOutputValue] = useState('');
-  const [conversionMode, setConversionMode] = useState('decimalToOctal');
+function Converter() {
+  const [decimalValue, setDecimalValue] = useState("");
+  const [octalValue, setOctalValue] = useState("");
 
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
+  const handleDecimalChange = (event) => {
+    const inputValue = event.target.value;
+    setDecimalValue(inputValue);
+    setOctalValue(decimalToOctal(inputValue));
   };
 
-  const handleConvert = () => {
-    if (conversionMode === 'decimalToOctal') {
-      // Convert decimal to octal
-      const decimalValue = parseInt(inputValue, 10);
-      if (!isNaN(decimalValue)) {
-        setOutputValue(decimalValue.toString(8));
-      } else {
-        setOutputValue('Invalid input');
-      }
-    } else {
-      // Convert octal to decimal
-      const octalValue = parseInt(inputValue, 8);
-      if (!isNaN(octalValue)) {
-        setOutputValue(octalValue.toString());
-      } else {
-        setOutputValue('Invalid input');
-      }
+  const handleOctalChange = (event) => {
+    const inputValue = event.target.value;
+    setOctalValue(inputValue);
+    setDecimalValue(octalToDecimal(inputValue));
+  };
+
+  const decimalToOctal = (decimal) => {
+    if (!decimal.match(/^-?\d+(\.\d+)?$/)) {
+      return "Invalid Decimal";
     }
+
+    const isNegative = decimal[0] === "-";
+    decimal = decimal.replace("-", "");
+
+    const parts = decimal.split(".");
+    const integerPart = parseInt(parts[0]);
+    const fractionalPart = parts[1] ? parseFloat("0." + parts[1]) : 0;
+
+    let result = isNegative ? "-" : "";
+    result += integerPart.toString(8);
+
+    if (fractionalPart !== 0) {
+      result += "." + fractionalPart.toString(8).slice(2); // Remove "0o" from the octal part
+    }
+
+    return result;
+  };
+
+  const octalToDecimal = (octal) => {
+    if (!octal.match(/^-?[0-7]+(\.[0-7]+)?$/)) {
+      return "Invalid Octal";
+    }
+
+    const isNegative = octal[0] === "-";
+    octal = octal.replace("-", "");
+
+    const parts = octal.split(".");
+    const integerPart = parseInt(parts[0], 8);
+    const fractionalPart = parts[1]
+      ? parseInt("0o" + parts[1], 8) / Math.pow(8, parts[1].length)
+      : 0;
+
+    let result = isNegative ? "-" : "";
+    result += (integerPart + fractionalPart).toString();
+
+    return result;
   };
 
   return (
-    <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: '10' }}>
-      <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Decimal to Octal and Octal to Decimal Calculator</Typography>
-      <hr />
-      <br />
-      <Grid container spacing={3}>
-        <Grid item xs={6}>
-          <TextField
-            label="Input Value"
-            variant="outlined"
-            fullWidth
-            value={inputValue}
-            onChange={handleInputChange}
-          />
+    <div style={{ display: "flex", alignItems: "center", minHeight: "30vh" }}>
+      <Container>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={6}>
+            <Paper elevation={3}>
+              <Box p={2}>
+                <Typography variant="h5" align="center">
+                  Decimal to Octal
+                </Typography>
+                <TextField
+                  label="Decimal"
+                  variant="outlined"
+                  fullWidth
+                  value={decimalValue}
+                  onChange={handleDecimalChange}
+                  placeholder="Enter Decimal"
+                />
+                <Box mt={2}>
+                  <Typography variant="h6">
+                    <strong>Octal:</strong> {octalValue}
+                  </Typography>
+                </Box>
+              </Box>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Paper elevation={3}>
+              <Box p={2}>
+                <Typography variant="h5" align="center">
+                  Octal to Decimal
+                </Typography>
+                <TextField
+                  label="Octal"
+                  variant="outlined"
+                  fullWidth
+                  value={octalValue}
+                  onChange={handleOctalChange}
+                  placeholder="Enter Octal"
+                />
+                <Box mt={2}>
+                  <Typography variant="h6">
+                    <strong>Decimal:</strong> {decimalValue}
+                  </Typography>
+                </Box>
+              </Box>
+            </Paper>
+          </Grid>
         </Grid>
-        <Grid item xs={6}>
-          <TextField
-            label={conversionMode === 'decimalToOctal' ? 'Octal Value' : 'Decimal Value'}
-            variant="outlined"
-            fullWidth
-            value={outputValue}
-            disabled
-          />
-        </Grid>
-      </Grid>
-      <br />
-      <Box sx={{ textAlign: 'center' }}>
-        <Button variant="contained" onClick={handleConvert}>
-          Convert
-        </Button>
-        <br />
-        <br />
-        <Button
-          variant="outlined"
-          onClick={() => setConversionMode(conversionMode === 'decimalToOctal' ? 'octalToDecimal' : 'decimalToOctal')}
-        >
-          {conversionMode === 'decimalToOctal' ? 'Switch to Octal to Decimal' : 'Switch to Decimal to Octal'}
-        </Button>
-      </Box>
-    </Container>
+      </Container>
+    </div>
   );
 }
 
-export default MainDecToOctAndOctToDec;
+export default Converter;

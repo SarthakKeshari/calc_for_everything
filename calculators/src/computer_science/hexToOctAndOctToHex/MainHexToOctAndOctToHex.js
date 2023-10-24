@@ -1,78 +1,131 @@
 import React, { useState } from "react";
-import { Container, TextField, Button, Grid, Typography } from "@mui/material";
+import {
+  TextField,
+  Typography,
+  Box,
+  Container,
+  Grid,
+  Paper,
+} from "@mui/material";
 
-function MainHexToOctAndOctToHex() {
+function Converter() {
+  const [octalValue, setOctalValue] = useState("");
+  const [hexadecimalValue, setHexadecimalValue] = useState("");
 
-    const [hex, setHex] = useState("");
-    const [oct, setOct] = useState("");
+  const handleOctalChange = (event) => {
+    const inputValue = event.target.value;
+    setOctalValue(inputValue);
+    setHexadecimalValue(octalToHexadecimal(inputValue));
+  };
 
-    const handleHexToOct = () => {
-        try {
-            const decimal = parseInt(hex, 16);
-            const octal = decimal.toString(8);
-            setOct(octal);
-        } catch (error) {
-            setOct("Invalid Input");
-        }
-    };
+  const handleHexadecimalChange = (event) => {
+    const inputValue = event.target.value;
+    setHexadecimalValue(inputValue);
+    setOctalValue(hexadecimalToOctal(inputValue));
+  };
 
-    const handleOctToHex = () => {
-        try {
-            const decimal = parseInt(oct, 8);
-            const hex = decimal.toString(16);
-            setHex(hex.toUpperCase());
-        } catch (error) {
-            setHex("Invalid Input");
-        }
-    };
+  const octalToHexadecimal = (octal) => {
+    if (!octal.match(/^-?[0-7]+(\.[0-7]+)?$/)) {
+      return "Invalid Octal";
+    }
 
-    return (
-        <Container
-            maxWidth="lg"
-            sx={{ bgcolor: "#eeeeee", minHeight: "90vh", paddingY: "10" }}
-        >
-            <Typography pt={1} variant="h5" sx={{ textAlign: "center" }}>
-                Hexadecimal to Octal and Octal to Hexadecimal Calculator
-            </Typography>
+    const isNegative = octal[0] === "-";
+    octal = octal.replace("-", "");
 
-            <hr />
-            <br />
+    const parts = octal.split(".");
+    const integerPart = parseInt(parts[0], 8).toString(16).toUpperCase();
+    const fractionalPart = parts[1]
+      ? parseInt("0" + parts[1], 8)
+          .toString(16)
+          .toUpperCase()
+      : "0";
 
-            <Grid container spacing={2} alignItems="center">
-                <Grid item xs={12}>
-                    <TextField
-                        label="Hexadecimal"
-                        variant="outlined"
-                        fullWidth
-                        value={hex}
-                        onChange={(e) => setHex(e.target.value.toUpperCase())}
-                    />
-                </Grid>
+    let result = isNegative ? "-" : "";
+    result += integerPart;
 
-                <Grid item xs={12}>
-                    <Button variant="contained" color="primary" onClick={handleHexToOct}>
-                        Convert Hex to Oct
-                    </Button>
-                </Grid>
+    if (fractionalPart !== "0") {
+      result += "." + fractionalPart;
+    }
 
-                <Grid item xs={12}>
-                    <TextField
-                        label="Octal"
-                        variant="outlined"
-                        fullWidth
-                        value={oct}
-                        onChange={(e) => setOct(e.target.value)}
-                    />
-                </Grid>
+    return result;
+  };
 
-                <Grid item xs={12}>
-                    <Button variant="contained" color="primary" onClick={handleOctToHex}>
-                        Convert Oct to Hex
-                    </Button>
-                </Grid>
-            </Grid>
-        </Container>
-    );
+  const hexadecimalToOctal = (hexadecimal) => {
+    if (!hexadecimal.match(/^-?[0-9a-fA-F]+(\.[0-9a-fA-F]+)?$/)) {
+      return "Invalid Hexadecimal";
+    }
+
+    const isNegative = hexadecimal[0] === "-";
+    hexadecimal = hexadecimal.replace("-", "");
+
+    const parts = hexadecimal.split(".");
+    const integerPart = parseInt(parts[0], 16).toString(8);
+    const fractionalPart = parts[1]
+      ? parseInt("0x" + parts[1], 16).toString(8)
+      : "0";
+
+    let result = isNegative ? "-" : "";
+    result += integerPart;
+
+    if (fractionalPart !== "0") {
+      result += "." + fractionalPart;
+    }
+
+    return result;
+  };
+
+  return (
+    <div style={{ display: "flex", alignItems: "center", minHeight: "30vh" }}>
+      <Container>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={6}>
+            <Paper elevation={3}>
+              <Box p={2}>
+                <Typography variant="h5" align="center">
+                  Octal to Hexadecimal
+                </Typography>
+                <TextField
+                  label="Octal"
+                  variant="outlined"
+                  fullWidth
+                  value={octalValue}
+                  onChange={handleOctalChange}
+                  placeholder="Enter Octal"
+                />
+                <Box mt={2}>
+                  <Typography variant="h6">
+                    <strong>Hexadecimal:</strong> {hexadecimalValue}
+                  </Typography>
+                </Box>
+              </Box>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Paper elevation={3}>
+              <Box p={2}>
+                <Typography variant="h5" align="center">
+                  Hexadecimal to Octal
+                </Typography>
+                <TextField
+                  label="Hexadecimal"
+                  variant="outlined"
+                  fullWidth
+                  value={hexadecimalValue}
+                  onChange={handleHexadecimalChange}
+                  placeholder="Enter Hexadecimal"
+                />
+                <Box mt={2}>
+                  <Typography variant="h6">
+                    <strong>Octal:</strong> {octalValue}
+                  </Typography>
+                </Box>
+              </Box>
+            </Paper>
+          </Grid>
+        </Grid>
+      </Container>
+    </div>
+  );
 }
 
-export default MainHexToOctAndOctToHex;
+export default Converter;
