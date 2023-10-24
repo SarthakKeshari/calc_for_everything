@@ -19,12 +19,12 @@ All the contributors are requested to fill the Google form. Form will be active 
 <br/>
 
 ## Benefits
-#### **Special Certificate** for Top 3 contributors of this repository
-#### Collect *5 points* and earn your **Open-Source Contributor Certificate**
-#### Collect *25 points* and earn your **Open-Source Contributor Certificate - (Finisher)**
-#### Collect *50 points* and earn your **Open-Source Contributor Certificate - (Extra Miler)**
+#### 🏆 **Special Certificate** for Top 3 contributors of this repository
+#### 🥉Collect *5 points* and earn your **Open-Source Contributor Certificate**
+#### 🥈Collect *25 points* and earn your **Open-Source Contributor Certificate - (Finisher)**
+#### 🥇Collect *50 points* and earn your **Open-Source Contributor Certificate - (Extra Miler)**
 <br/>
-   
+
 #### Points Scheme
 Level | Points
 ------------ | -------------
