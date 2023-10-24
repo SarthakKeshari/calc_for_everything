@@ -5,7 +5,7 @@ function MainPotentialEnergyCalc(){
     const g = 9.8;
     const [mass, setMass] = useState(0);
     const [height, setHeight] = useState(0);
-    let [potentialEnergy, setPotentialEnergy] = useState("0 N");
+    let [potentialEnergy, setPotentialEnergy] = useState("0 J");
 
     const [massError, setMassError] = useState(false);
     const [heightError, setHeightError] = useState(false);
@@ -19,7 +19,7 @@ function MainPotentialEnergyCalc(){
 
         if(!massError && !heightError) {
             potentialEnergy = parsedHeight*parsedMass*g;
-            setPotentialEnergy(`${potentialEnergy} N`)
+            setPotentialEnergy(`${potentialEnergy} J`)
         }
         else{
             setPotentialEnergy(`An input error has occurred`)
