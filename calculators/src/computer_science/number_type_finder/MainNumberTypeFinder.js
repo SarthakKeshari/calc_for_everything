@@ -27,6 +27,11 @@ import { checkZeisel } from "./Zeisel";
 import { checkPancake } from "./Pancake";
 import { checkZuckerman } from "./Zuckerman";
 import { checkTaxicab } from "./Taxicab";
+import { checkAbundant } from "./Abundant";
+import { checkDisarium } from "./Disarium";
+import { checkEmirp } from "./Emirp";
+import { checkFascinating } from "./Fascinating";
+import { checkMagic } from "./Magic";
 function MainNumberTypeFinder() {
   const [number, setnumber] = useState("");
   const [selectedNumberTypes, setselectedNumberTypes] = useState([]);
@@ -59,7 +64,7 @@ function MainNumberTypeFinder() {
         case "amicable":
           calculatedResults.amicable = checkAmicable(number);
           break;
-          case "fibonacci":
+        case "fibonacci":
           calculatedResults.fibonacci = checkFibonacci(number);
           break;
         case "palindromic":
@@ -77,14 +82,29 @@ function MainNumberTypeFinder() {
         case "zeisel":
           calculatedResults.zeisel = checkZeisel(number);
           break;
-          case "pancake":
-            calculatedResults.pancake = checkPancake(number);
-            break; 
-          case "taxicab":
-            calculatedResults.taxicab = checkTaxicab(number);
+        case "pancake":
+          calculatedResults.pancake = checkPancake(number);
           break;
-          case "zuckerman":
+        case "taxicab":
+          calculatedResults.taxicab = checkTaxicab(number);
+          break;
+        case "zuckerman":
           calculatedResults.zuckerman = checkZuckerman(number);
+          break;
+        case "abundant":
+          calculatedResults.abundant = checkAbundant(number);
+          break;
+        case "disarium":
+          calculatedResults.disarium = checkDisarium(number);
+          break;
+        case "emirp":
+          calculatedResults.emirp = checkEmirp(number);
+          break;
+        case "fascinating":
+          calculatedResults.fascinating = checkFascinating(number);
+          break;
+        case "magic":
+          calculatedResults.magic = checkMagic(number);
           break;
         default:
           break;
@@ -93,7 +113,7 @@ function MainNumberTypeFinder() {
 
     setresults(calculatedResults);
   };
-  
+
   return (
     <Container
       maxWidth="lg"
@@ -142,6 +162,11 @@ function MainNumberTypeFinder() {
           <MenuItem value="pancake">Pancake Number</MenuItem>
           <MenuItem value="taxicab">Taxicab Number</MenuItem>
           <MenuItem value="zuckerman">Zuckerman Number</MenuItem>
+          <MenuItem value="abundant">Abundant Number</MenuItem>
+          <MenuItem value="disarium">Disarium Number</MenuItem>
+          <MenuItem value="emirp">Emirp Number</MenuItem>
+          <MenuItem value="magic">Magic Number</MenuItem>
+          <MenuItem value="fascinating">Fascinating Number</MenuItem>
         </Select>
       </FormControl>
       {/* button to check the number type */}
