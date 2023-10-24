@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { Container, Typography, Table, TableBody, Paper, TableContainer, TableRow, TableHead, TextField, Button, Box} from '@mui/material';
+import { Container, Typography, Table, TableBody, Paper, TableContainer, TableRow, TableHead, TextField, Button, Box, Grid} from '@mui/material';
 import TableCell from "@mui/material/TableCell";
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 
@@ -10,7 +10,9 @@ function MainUniversityGPACalc(){
     const [points, setPoints] = useState([10,9,8,7,6,null,null,null,null,null,null,null,null,null,null])
     const [pointErrors, setPointErrors] = useState([false,false,false,false,false,null,null,null,null,null,null,null,null,null,null])
 
-    
+    const [gradesAchieved, setGradesAchieved] = useState([])
+    const [courseCredits, setCourseCredits] = useState([])
+
     /* Setting this up to show error state in case someone types a letter instead of a Number */
     useEffect(()=>{
         let newPointErrors = points.map((point,i)=>{
@@ -60,7 +62,7 @@ function MainUniversityGPACalc(){
     }
 
     /* function to handle adding a new row in the grade-point table */
-    const addRow = () =>{
+    const addRowTable1 = () =>{
         /*  1. find the first index that is null in either of the state arrays: points or grades
             2. Turn that index into a default value
             3. Re-render
@@ -103,6 +105,46 @@ function MainUniversityGPACalc(){
         setPoints(newPoints);
     }
 
+
+    const handleChangeTable2 = (i, newVal,choice) => {
+        if (choice==="grade") {
+            const newGradesAchieved = gradesAchieved.map((gradeAchieved,index)=>{
+                if (i===index) {
+                    return newVal;
+                }
+                else {
+                    return gradeAchieved;
+                }
+            })
+
+            setGradesAchieved(newGradesAchieved)
+        }
+        else if (choice==="credit") {
+            const newCourseCredits = courseCredits.map((credit,index)=>{
+                if (i===index) {
+                    return newVal;
+                }
+                else {
+                    return credit;
+                }
+            })
+
+            setCourseCredits(newCourseCredits)
+        }
+    }
+
+    const addRowTable2 = () =>{
+        let newGradesAchieved = gradesAchieved.slice() // copy by value
+        let newCourseCredits = courseCredits.slice()
+
+        newGradesAchieved.push("A");
+        newCourseCredits.push(4);
+
+        console.log(newGradesAchieved, newCourseCredits);
+        setGradesAchieved(newGradesAchieved);
+        setCourseCredits(newCourseCredits);
+    }
+
     /*  Create the grade-point table-body */
     let gradePointRow = []
     grades.forEach((grade,i)=>{
@@ -121,7 +163,25 @@ function MainUniversityGPACalc(){
     })
 
     let mainTableBody = []
-    
+    gradesAchieved.forEach((gradeAchieved, i)=> {
+        mainTableBody.push(
+            <TableRow key={i}>
+                <TableCell sx={{textAlign:"center"}}>{`Subject${i+1}`}</TableCell>
+
+                <TableCell sx={{textAlign:"center"}}>
+                    <TextField variant="standard" value={courseCredits[i]} sx={{width:"50%"}}
+                        onChange={(e)=> handleChangeTable2(i,e.target.value, "credit")}
+                    />
+                </TableCell>
+
+                <TableCell sx={{textAlign:"center"}}>
+                    <TextField variant="standard" value={gradeAchieved} sx={{width:"50%"}}
+                        onChange={(e)=> handleChangeTable2(i,e.target.value, "grade")}
+                    />
+                </TableCell>
+            </TableRow>
+        )
+    })
 
     return(
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
@@ -129,25 +189,52 @@ function MainUniversityGPACalc(){
             <hr/>
             <br/>
             <Container maxWidth="md">
-                {/* <TableContainer component={Paper}> */}
-                    <Table sx={{maxWidth:"200px", backgroundColor:"#fff", marginBottom:"1rem"}} size='small'>
-                        <TableHead sx={{backgroundColor:"#1976D2"}}>
-                            <TableRow>
-                                <TableCell sx={{color:"white"}}><strong>Grade</strong></TableCell>
-                                <TableCell sx={{color:"white"}} align='right'><strong>Point</strong></TableCell>
-                            </TableRow>
-                        </TableHead>
 
-                        <TableBody >
-                            {gradePointRow}
-                        </TableBody>
-                    </Table>
-                {/* </TableContainer> */}
-                
-                <Box sx={{textAlign:"center"}}>
-                    <Button variant='contained' onClick={addRow}><AddCircleIcon/></Button>
-                </Box>
+                <Grid container spacing={4} sx={{marginTop:"40px"}}>
+                    <Grid item xs={4}>
+                        {/* <TableContainer component={Paper}> */}
+                            <Table sx={{maxWidth:"200px", backgroundColor:"#fff", marginBottom:"1rem"}} size='small'>
+                                <TableHead sx={{backgroundColor:"#1976D2"}}>
+                                    <TableRow>
+                                        <TableCell sx={{color:"white"}}><strong>Grade</strong></TableCell>
+                                        <TableCell sx={{color:"white"}} align='right'><strong>Point</strong></TableCell>
+                                    </TableRow>
+                                </TableHead>
 
+                                <TableBody >
+                                    {gradePointRow}
+                                </TableBody>
+                            </Table>
+                        {/* </TableContainer> */}
+                        
+                        <Box sx={{textAlign:"center"}}>
+                            <Button variant='contained' onClick={addRowTable1}><AddCircleIcon/></Button>
+                        </Box>
+                    </Grid>
+
+                    <Grid item xs={8}>
+                    <Table sx={{maxWidth:"500px", backgroundColor:"#fff", marginBottom:"1rem"}} size='small'>
+                            <TableHead sx={{backgroundColor:"#1976D2"}}>
+                                <TableRow>
+                                    <TableCell sx={{color:"white", width:"40%"}} align='center'><strong>Subject</strong></TableCell>
+                                    <TableCell sx={{color:"white", width:"25%"}} align='center'><strong>No. of Credits</strong></TableCell>
+                                    <TableCell sx={{color:"white", width:"31%"}} align="center"><strong>Grade Achieved</strong></TableCell>
+                                </TableRow>
+                            </TableHead>
+
+                            <TableBody >
+                                {mainTableBody}
+                                    {/* <TableCell sx={{textAlign:"center"}}>Subject1</TableCell>
+                                    <TableCell sx={{textAlign:"center"}}><TextField variant="standard" sx={{width:"75%"}}/></TableCell>
+                                    <TableCell sx={{textAlign:"center"}}><TextField variant="standard" sx={{width:"65%"}}/></TableCell> */}
+                            </TableBody>
+                        </Table>
+
+                    <Box sx={{textAlign:"center"}}>
+                        <Button variant='contained' onClick={addRowTable2}><AddCircleIcon/></Button>
+                    </Box>
+                    </Grid>
+                </Grid>
 
             </Container>
         </Container>
