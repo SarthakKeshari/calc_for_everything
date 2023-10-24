@@ -20,10 +20,17 @@ function MainAveragesCalculator() {
   const handleChange = (event) => {
     setValues(event.target.value);
   };
-  
+
   // Calculate averages when the button is clicked
   const calculateAverages = () => {
-    if (!values) return; // Check if there's any input
+    if (!values) {
+        setResults({
+            arithmeticMean: 0,
+            geometricMean: 0,
+            harmonicMean: 0,
+          });
+        return
+    }; // Check if there's any input
 
     const numbers = values.split(',').map((num) => parseFloat(num.trim()));
 
