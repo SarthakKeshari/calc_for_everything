@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Container, Typography, Grid, TextField, Box, Button, InputAdornment } from '@mui/material';
 
 function MainGravitationalForceCalc(){
@@ -15,26 +15,13 @@ function MainGravitationalForceCalc(){
     const [distanceError, setDistanceError] = useState(false);
 
     const handleCalculate = () => {
-        setMass1Error(false);
-        setMass2Error(false);
-        setDistanceError(false);
-
-        // Parse input values to floats
+        /*  setMass1Error(false);
+            setMass2Error(false);
+            setDistanceError(false); Older code */
         const parsedMass1 = parseFloat(mass1);
         const parsedMass2 = parseFloat(mass2);
         const parsedDistance = parseFloat(distance);
-
-        // Check if the parsed values are valid numbers
-        if (isNaN(parsedMass1)) {
-            setMass1Error(true);
-        }
-        if (isNaN(parsedMass2)) {
-            setMass2Error(true);
-        }
-        if (isNaN(parsedDistance)) {
-            setDistanceError(true);
-        }
-
+        
         // If no errors, calculate gravitational force
         if (!mass1Error && !mass2Error && !distanceError) {
             // Calculate gravitational force and update the state
@@ -46,13 +33,42 @@ function MainGravitationalForceCalc(){
         }
     }
 
+    useEffect(()=>{
+        // Parse input values to floats
+        const parsedMass1 = parseFloat(mass1);
+        const parsedMass2 = parseFloat(mass2);
+        const parsedDistance = parseFloat(distance);
+
+        // Check if the parsed values are valid numbers
+        if (isNaN(parsedMass1)) {
+            setMass1Error(true);
+        }
+        else{
+            setMass1Error(false)
+        }
+
+        if (isNaN(parsedMass2)) {
+            setMass2Error(true);
+        }
+        else{
+            setMass2Error(false)
+        }
+
+        if (isNaN(parsedDistance)) {
+            setDistanceError(true);
+        }
+        else{
+            setDistanceError(false)
+        }
+    },[mass1,mass2,distance])
+
 
     return(
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
             <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Gravitational Force Calculator</Typography>
             <hr/>
             <br/>
-            {/* Write your code here */}
+            
             <Container maxWidth="sm" sx={{ marginTop: "30px" }}>
                 <Grid container spacing={2} rowSpacing={4}>
                     <Grid item xs={6}>
@@ -86,9 +102,6 @@ function MainGravitationalForceCalc(){
                     Gravitational Force: {gravForce} 
                 </Typography>
             </Container>
-
-
-            {/* End your code here */}
         </Container>
     )
 }
