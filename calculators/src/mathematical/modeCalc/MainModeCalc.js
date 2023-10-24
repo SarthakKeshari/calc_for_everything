@@ -28,11 +28,19 @@ function MainModeCalc() {
     const rows = data
       .split("\n")
       .map((row) => row.split("|").map((entry) => entry.trim()));
+
+    // Check if data is in the correct format
+    if (rows.some((row) => row.length !== 2)) {
+      return alert(
+        "Data should be entered in the correct format: Interval | Frequency"
+      );
+    }
+
     const frequencies = rows.map((row) => parseInt(row[1]));
 
     // Find the mode
     let maxValue = 0;
-    let modeValue = 0;
+    let modeValue = "No mode"; // Default to "No mode"
     for (let i = 0; i < frequencies.length; i++) {
       if (frequencies[i] > maxValue) {
         maxValue = frequencies[i];
