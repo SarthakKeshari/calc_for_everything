@@ -62,7 +62,7 @@ function MainPotentialEnergyCalc(){
                     error={massError} helperText={massHelperText}/>
 
                 <TextField fullWidth variant='outlined' label="Height" margin='normal' value={height} onChange={(e)=> setHeight(e.target.value)}
-                    InputProps={{endAdornment:<InputAdornment position='end'>m/s²</InputAdornment>}}
+                    InputProps={{endAdornment:<InputAdornment position='end'>m</InputAdornment>}}
                     error={heightError} helperText={heightHelperText}/>
 
                 <Box sx={{ textAlign: "center" }}>
