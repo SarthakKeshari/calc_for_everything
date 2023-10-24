@@ -182,6 +182,16 @@ import MainDNARNAConverter from './biology/dNARNAConverter/MainDNARNAConverter';
 import MainRMSValueCalc from './mathematical/rMSValueCalc/MainRMSValueCalc';
 import MainPacketsOrderCalc from './computer_science/packetsOrderCalc/MainPacketsOrderCalc';
 import MainBase64EncoderDecoder from './computer_science/base64EncoderDecoder/MainBase64EncoderDecoder';
+import MainMeanDeviationAboutMedianCalc from './mathematical/meanDeviationAboutMedianCalc/MainMeanDeviationAboutMedianCalc';
+import MainSleepCalc from './health/sleepCalc/MainSleepCalc';
+import MainCoefOfMeanDeviationCalc from './mathematical/coefOfMeanDeviationCalc/MainCoefOfMeanDeviationCalc';
+import MainModeCalc from './mathematical/modeCalc/MainModeCalc';
+import MainSetOperationsExtended from './mathematical/setOperationsExtended/MainSetOperationsExtended';
+import MainUniversityGPACalc from './mathematical/universityGPACalc/MainUniversityGPACalc';
+import MainTorqueCalc from './physics/torqueCalc/MainTorqueCalc';
+import MainAveragesCalculator from './mathematical/averagesCalculator/MainAveragesCalculator';
+import MainMMMCalc from './mathematical/mMMCalc/MainMMMCalc';
+import MainDrugHalfLifeClearanceCalc from './biology/drugHalfLifeClearanceCalc/MainDrugHalfLifeClearanceCalc';
 
 function App() {
   return (
@@ -324,6 +334,13 @@ function App() {
             <Route path="statisticsmeancalc" element={<MainStatisticsMeanCalc />} />
             <Route path="statisticsmediancalc" element={<MainStatisticsMedianCalc />} />
             <Route path="rmsvaluecalc" element={<MainRMSValueCalc />} />
+            <Route path="meandeviationaboutmediancalc" element={<MainMeanDeviationAboutMedianCalc />} />
+            <Route path="coefofmeandeviationcalc" element={<MainCoefOfMeanDeviationCalc />} />
+            <Route path="modecalc" element={<MainModeCalc />} />
+            <Route path="setoperationsextendedcalc" element={<MainSetOperationsExtended />} />
+            <Route path="universitygpacalc" element={<MainUniversityGPACalc />} />
+            <Route path="averagescalc" element={<MainAveragesCalculator />} />
+            <Route path="mmmcalc" element={<MainMMMCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
@@ -347,8 +364,10 @@ function App() {
             <Route path="workcalc" element={<MainWorkCalc />} />
             <Route path="potentialenergycalc" element={<MainPotentialEnergyCalc />} />
             <Route path="gravitationalforcecalc" element={<MainGravitationalForceCalc />} />
+            <Route path="torquecalc" element={<MainTorqueCalc />} />
             {/* Biology */}
             <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
+            <Route path="drughalflifeclearancecalc" element={<MainDrugHalfLifeClearanceCalc />} />
             {/* Finance */}
             <Route path="fdmaturitycalc" element={<MainFDMaturityCalc />} />
             <Route path="rdmaturitycalc" element={<MainRDMaturityCalc />} />
@@ -373,6 +392,7 @@ function App() {
             <Route path="noveltyagecalc" element={<MainNoveltyAgeCalculator />} />
             <Route path="dayscheduler" element={<MainDayScheduler />} />
             <Route path="taskplanner" element={<MainTaskPlanner />} />
+            <Route path="sleepcalc" element={<MainSleepCalc />} />
             {/* Art */}
             <Route path="drawingcanvas" element={<MainDrawingCanvas />} />
             <Route path="mandalacreater" element={<MainMandalaCreater />} />

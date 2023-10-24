@@ -1,53 +1,92 @@
-import React, { useState } from 'react';
-import { Container, Typography, TextField, Button, Grid, Box } from '@mui/material';
+import React, { useState } from "react";
+import {
+  Container,
+  Typography,
+  TextField,
+  Button,
+  Grid,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
+} from "@mui/material";
 
-function MainDecToOctAndOctToDec() {
-  const [inputValue, setInputValue] = useState('');
-  const [outputValue, setOutputValue] = useState('');
-  const [conversionMode, setConversionMode] = useState('decimalToOctal');
+function DecOctalConverter() {
+  const [inputValue, setInputValue] = useState("");
+  const [outputValue, setOutputValue] = useState("");
+  const [conversionType, setConversionType] = useState("decimalToOctal");
 
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
+  const convertDecimalToOctal = () => {
+    const decimalValue = parseInt(inputValue, 10);
+    const octalValue = decimalValue.toString(8);
+    setOutputValue(octalValue);
   };
 
-  const handleConvert = () => {
-    if (conversionMode === 'decimalToOctal') {
-      // Convert decimal to octal
-      const decimalValue = parseInt(inputValue, 10);
-      if (!isNaN(decimalValue)) {
-        setOutputValue(decimalValue.toString(8));
-      } else {
-        setOutputValue('Invalid input');
-      }
-    } else {
-      // Convert octal to decimal
-      const octalValue = parseInt(inputValue, 8);
-      if (!isNaN(octalValue)) {
-        setOutputValue(octalValue.toString());
-      } else {
-        setOutputValue('Invalid input');
-      }
-    }
+  const convertOctalToDecimal = () => {
+    const decimalValue = parseInt(inputValue, 8);
+    setOutputValue(decimalValue);
+  };
+
+  const handleConversionTypeChange = (event) => {
+    setConversionType(event.target.value);
+  };
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+    setOutputValue("");
   };
 
   return (
-    <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: '10' }}>
-      <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Decimal to Octal and Octal to Decimal Calculator</Typography>
+    <Container
+      maxWidth="lg"
+      sx={{ bgcolor: "#eeeeee", minHeight: "90vh", paddingY: 10 }}
+    >
+      <Typography
+        variant="h5"
+        sx={{ textAlign: "center", marginBottom: "20px" }}
+      >
+        Decimal to Octal and Vice Versa Converter with Decimal Value Calculator
+      </Typography>
       <hr />
       <br />
-      <Grid container spacing={3}>
-        <Grid item xs={6}>
+      <Grid container spacing={2}>
+        <Grid item xs={12}>
+          <FormControl fullWidth>
+            <InputLabel>Select Conversion Type</InputLabel>
+            <Select
+              value={conversionType}
+              onChange={handleConversionTypeChange}
+            >
+              <MenuItem value="decimalToOctal">Decimal to Octal</MenuItem>
+              <MenuItem value="octalToDecimal">Octal to Decimal</MenuItem>
+            </Select>
+          </FormControl>
+        </Grid>
+        <Grid item xs={12}>
           <TextField
-            label="Input Value"
+            label="Enter Value"
             variant="outlined"
             fullWidth
             value={inputValue}
             onChange={handleInputChange}
           />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12}>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={
+              conversionType === "decimalToOctal"
+                ? convertDecimalToOctal
+                : convertOctalToDecimal
+            }
+          >
+            Convert
+          </Button>
+        </Grid>
+        <Grid item xs={12}>
           <TextField
-            label={conversionMode === 'decimalToOctal' ? 'Octal Value' : 'Decimal Value'}
+            label="Converted Value"
             variant="outlined"
             fullWidth
             value={outputValue}
@@ -55,22 +94,8 @@ function MainDecToOctAndOctToDec() {
           />
         </Grid>
       </Grid>
-      <br />
-      <Box sx={{ textAlign: 'center' }}>
-        <Button variant="contained" onClick={handleConvert}>
-          Convert
-        </Button>
-        <br />
-        <br />
-        <Button
-          variant="outlined"
-          onClick={() => setConversionMode(conversionMode === 'decimalToOctal' ? 'octalToDecimal' : 'decimalToOctal')}
-        >
-          {conversionMode === 'decimalToOctal' ? 'Switch to Octal to Decimal' : 'Switch to Decimal to Octal'}
-        </Button>
-      </Box>
     </Container>
   );
 }
 
-export default MainDecToOctAndOctToDec;
+export default DecOctalConverter;
