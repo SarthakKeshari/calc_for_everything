@@ -1,101 +1,131 @@
 import React, { useState } from "react";
 import {
-  Container,
-  Typography,
   TextField,
-  Button,
+  Typography,
+  Box,
+  Container,
   Grid,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
+  Paper,
 } from "@mui/material";
 
-function MainHexToOctAndOctToHex() {
-  const [inputValue, setInputValue] = useState("");
-  const [outputValue, setOutputValue] = useState("");
-  const [conversionType, setConversionType] = useState("hexToOctal");
+function Converter() {
+  const [octalValue, setOctalValue] = useState("");
+  const [hexadecimalValue, setHexadecimalValue] = useState("");
 
-  const convertHexToOctal = () => {
-    const decimalValue = parseInt(inputValue, 16);
-    const octalValue = decimalValue.toString(8);
-    setOutputValue(octalValue);
+  const handleOctalChange = (event) => {
+    const inputValue = event.target.value;
+    setOctalValue(inputValue);
+    setHexadecimalValue(octalToHexadecimal(inputValue));
   };
 
-  const convertOctalToHex = () => {
-    const decimalValue = parseInt(inputValue, 8);
-    const hexValue = decimalValue.toString(16).toUpperCase();
-    setOutputValue(hexValue);
+  const handleHexadecimalChange = (event) => {
+    const inputValue = event.target.value;
+    setHexadecimalValue(inputValue);
+    setOctalValue(hexadecimalToOctal(inputValue));
   };
 
-  const handleConversionTypeChange = (event) => {
-    setConversionType(event.target.value);
+  const octalToHexadecimal = (octal) => {
+    if (!octal.match(/^-?[0-7]+(\.[0-7]+)?$/)) {
+      return "Invalid Octal";
+    }
+
+    const isNegative = octal[0] === "-";
+    octal = octal.replace("-", "");
+
+    const parts = octal.split(".");
+    const integerPart = parseInt(parts[0], 8).toString(16).toUpperCase();
+    const fractionalPart = parts[1]
+      ? parseInt("0" + parts[1], 8)
+          .toString(16)
+          .toUpperCase()
+      : "0";
+
+    let result = isNegative ? "-" : "";
+    result += integerPart;
+
+    if (fractionalPart !== "0") {
+      result += "." + fractionalPart;
+    }
+
+    return result;
   };
 
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
-    setOutputValue("");
+  const hexadecimalToOctal = (hexadecimal) => {
+    if (!hexadecimal.match(/^-?[0-9a-fA-F]+(\.[0-9a-fA-F]+)?$/)) {
+      return "Invalid Hexadecimal";
+    }
+
+    const isNegative = hexadecimal[0] === "-";
+    hexadecimal = hexadecimal.replace("-", "");
+
+    const parts = hexadecimal.split(".");
+    const integerPart = parseInt(parts[0], 16).toString(8);
+    const fractionalPart = parts[1]
+      ? parseInt("0x" + parts[1], 16).toString(8)
+      : "0";
+
+    let result = isNegative ? "-" : "";
+    result += integerPart;
+
+    if (fractionalPart !== "0") {
+      result += "." + fractionalPart;
+    }
+
+    return result;
   };
 
   return (
-    <Container
-      maxWidth="lg"
-      sx={{ bgcolor: "#eeeeee", minHeight: "90vh", paddingY: "10" }}
-    >
-      <Typography pt={1} variant="h5" sx={{ textAlign: "center" }}>
-        Hexadecimal to Octal and Octal to Hexadecimal Calculator
-      </Typography>
-
-      <hr />
-      <br />
-
-      <Grid container spacing={2}>
-        <Grid item xs={12}>
-          <FormControl fullWidth>
-            <InputLabel>Select Conversion Type</InputLabel>
-            <Select
-              value={conversionType}
-              onChange={handleConversionTypeChange}
-            >
-              <MenuItem value="hexToOctal">Hex to Octal</MenuItem>
-              <MenuItem value="octalToHex">Octal to Hex</MenuItem>
-            </Select>
-          </FormControl>
+    <div style={{ display: "flex", alignItems: "center", minHeight: "30vh" }}>
+      <Container>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={6}>
+            <Paper elevation={3}>
+              <Box p={2}>
+                <Typography variant="h5" align="center">
+                  Octal to Hexadecimal
+                </Typography>
+                <TextField
+                  label="Octal"
+                  variant="outlined"
+                  fullWidth
+                  value={octalValue}
+                  onChange={handleOctalChange}
+                  placeholder="Enter Octal"
+                />
+                <Box mt={2}>
+                  <Typography variant="h6">
+                    <strong>Hexadecimal:</strong> {hexadecimalValue}
+                  </Typography>
+                </Box>
+              </Box>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Paper elevation={3}>
+              <Box p={2}>
+                <Typography variant="h5" align="center">
+                  Hexadecimal to Octal
+                </Typography>
+                <TextField
+                  label="Hexadecimal"
+                  variant="outlined"
+                  fullWidth
+                  value={hexadecimalValue}
+                  onChange={handleHexadecimalChange}
+                  placeholder="Enter Hexadecimal"
+                />
+                <Box mt={2}>
+                  <Typography variant="h6">
+                    <strong>Octal:</strong> {octalValue}
+                  </Typography>
+                </Box>
+              </Box>
+            </Paper>
+          </Grid>
         </Grid>
-        <Grid item xs={12}>
-          <TextField
-            label="Enter Value"
-            variant="outlined"
-            fullWidth
-            value={inputValue}
-            onChange={handleInputChange}
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={
-              conversionType === "hexToOctal"
-                ? convertHexToOctal
-                : convertOctalToHex
-            }
-          >
-            Convert
-          </Button>
-        </Grid>
-        <Grid item xs={12}>
-          <TextField
-            label="Converted Value"
-            variant="outlined"
-            fullWidth
-            value={outputValue}
-            disabled
-          />
-        </Grid>
-      </Grid>
-    </Container>
+      </Container>
+    </div>
   );
 }
 
-export default MainHexToOctAndOctToHex;
+export default Converter;
