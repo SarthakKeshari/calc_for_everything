@@ -192,6 +192,7 @@ import MainTorqueCalc from './physics/torqueCalc/MainTorqueCalc';
 import MainAveragesCalculator from './mathematical/averagesCalculator/MainAveragesCalculator';
 import MainMMMCalc from './mathematical/mMMCalc/MainMMMCalc';
 import MainDrugHalfLifeClearanceCalc from './biology/drugHalfLifeClearanceCalc/MainDrugHalfLifeClearanceCalc';
+import MainMacronutrientRatioCalc from './health/macronutrientRatioCalc/MainMacronutrientRatioCalc';
 
 function App() {
   return (
@@ -393,6 +394,7 @@ function App() {
             <Route path="dayscheduler" element={<MainDayScheduler />} />
             <Route path="taskplanner" element={<MainTaskPlanner />} />
             <Route path="sleepcalc" element={<MainSleepCalc />} />
+            <Route path="macronutrientratiocalc" element={<MainMacronutrientRatioCalc />} />
             {/* Art */}
             <Route path="drawingcanvas" element={<MainDrawingCanvas />} />
             <Route path="mandalacreater" element={<MainMandalaCreater />} />
