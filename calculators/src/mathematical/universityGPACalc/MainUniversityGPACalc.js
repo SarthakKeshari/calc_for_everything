@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { Container, Typography, Table, TableBody, Paper, TableContainer, TableRow, TableHead, TextField, Button, Box, Grid} from '@mui/material';
+import { Container, Typography, Table, TableBody, TableRow, TableHead, TextField, Button, Box, Grid} from '@mui/material';
 import TableCell from "@mui/material/TableCell";
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import CalculateIcon from '@mui/icons-material/Calculate';
@@ -161,7 +161,7 @@ function MainUniversityGPACalc(){
             let index = grades.indexOf(grade);
             if (index === -1) {
             console.log("Error");
-            setGPA("You have included a grade that is not present in the grade-point table")
+            setGPA("⚠️ You have included a grade that is not present in the grade-point table")
             hasError= true;
             
         }
