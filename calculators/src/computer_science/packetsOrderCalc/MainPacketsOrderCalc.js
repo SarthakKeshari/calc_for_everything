@@ -84,7 +84,7 @@ function PropagationDelayCalculator() {
         <ul>
           {sortedData.map((row, index) => (
             <li key={index}>
-              Datagram {row.datagram}: {calculateDelay(row.pathLength, row.sumOfVisitedSwitchDelay)} seconds
+              Datagram {row.datagram}: {calculateDelay(row.pathLength, row.sumOfVisitedSwitchDelay)} milliseconds
             </li>
           ))}
         </ul>
