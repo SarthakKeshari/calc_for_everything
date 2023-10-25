@@ -43,7 +43,7 @@ function MainUniversityGPACalc(){
                     return point
                 }    
                 else if(!isNaN(newVal)) {
-                    return newVal
+                    return newValOrg
                 }
                 else{
                     return ""
