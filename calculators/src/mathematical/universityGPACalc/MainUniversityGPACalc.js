@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import { Container, Typography, Table, TableBody, Paper, TableContainer, TableRow, TableHead, TextField, Button, Box, Grid} from '@mui/material';
 import TableCell from "@mui/material/TableCell";
 import AddCircleIcon from '@mui/icons-material/AddCircle';
+import CalculateIcon from '@mui/icons-material/Calculate';
 
 function MainUniversityGPACalc(){
     
@@ -12,6 +13,8 @@ function MainUniversityGPACalc(){
 
     const [gradesAchieved, setGradesAchieved] = useState([])
     const [courseCredits, setCourseCredits] = useState([])
+
+    const [GPA, setGPA] = useState(0);
 
     /* Setting this up to show error state in case someone types a letter instead of a Number */
     useEffect(()=>{
@@ -140,9 +143,38 @@ function MainUniversityGPACalc(){
         newGradesAchieved.push("A");
         newCourseCredits.push(4);
 
-        console.log(newGradesAchieved, newCourseCredits);
+        // console.log(newGradesAchieved, newCourseCredits);
         setGradesAchieved(newGradesAchieved);
         setCourseCredits(newCourseCredits);
+    }
+
+    const calcGPA = () => {
+        /*  1. Go through every grade achieved and find its corresponding point, if there is no corresponding point throw error
+            2. Accumulate the product of point and credits. divide by total number of credits and display
+        */
+        let gpa = 0;
+        let totalCredits = 0;
+        let hasError = false;
+        gradesAchieved.forEach((grade,i)=>{
+
+            totalCredits += parseInt(courseCredits[i]);
+            let index = grades.indexOf(grade);
+            if (index === -1) {
+            console.log("Error");
+            setGPA("You have included a grade that is not present in the grade-point table")
+            hasError= true;
+            
+        }
+        else {
+            gpa += points[index] * parseInt(courseCredits[i]); // note these are two different indexes, "index" and "i"
+            console.log(`${points[index]} * ${courseCredits[i]}`);
+        }
+        })
+
+        if(!hasError) {
+            gpa = gpa / totalCredits;
+            setGPA(`${gpa} 🎉`);
+        }
     }
 
     /*  Create the grade-point table-body */
@@ -166,7 +198,7 @@ function MainUniversityGPACalc(){
     gradesAchieved.forEach((gradeAchieved, i)=> {
         mainTableBody.push(
             <TableRow key={i}>
-                <TableCell sx={{textAlign:"center"}}>{`Subject${i+1}`}</TableCell>
+                <TableCell sx={{textAlign:"center"}}>{`Course ${i+1}`}</TableCell>
 
                 <TableCell sx={{textAlign:"center"}}>
                     <TextField variant="standard" value={courseCredits[i]} sx={{width:"50%"}}
@@ -216,7 +248,7 @@ function MainUniversityGPACalc(){
                     <Table sx={{maxWidth:"500px", backgroundColor:"#fff", marginBottom:"1rem"}} size='small'>
                             <TableHead sx={{backgroundColor:"#1976D2"}}>
                                 <TableRow>
-                                    <TableCell sx={{color:"white", width:"40%"}} align='center'><strong>Subject</strong></TableCell>
+                                    <TableCell sx={{color:"white", width:"40%"}} align='center'><strong>Course</strong></TableCell>
                                     <TableCell sx={{color:"white", width:"25%"}} align='center'><strong>No. of Credits</strong></TableCell>
                                     <TableCell sx={{color:"white", width:"31%"}} align="center"><strong>Grade Achieved</strong></TableCell>
                                 </TableRow>
@@ -233,8 +265,18 @@ function MainUniversityGPACalc(){
                     <Box sx={{textAlign:"center"}}>
                         <Button variant='contained' onClick={addRowTable2}><AddCircleIcon/></Button>
                     </Box>
+
+                    <Box sx={{textAlign:"center"}}>
+                        <Button variant='contained'  sx={{marginTop:"30px"}} onClick={calcGPA}>
+                            Calculate  <CalculateIcon sx={{marginLeft:"5px"}}/>
+                        </Button>
+                    </Box>
                     </Grid>
                 </Grid>
+
+                <Typography variant="h6" sx={{ textAlign: "center", marginTop: "1.5rem" }}>
+                    GPA: {GPA}
+                </Typography>
 
             </Container>
         </Container>
