@@ -89,7 +89,7 @@ function PropagationDelayCalculator() {
           ))}
         </ul>
         <Typography variant="h6">Total Delay</Typography>
-        <p>{totalDelay} seconds</p>
+        <p>{totalDelay} milliseconds</p>
       </Card>
     </Container>
   );
