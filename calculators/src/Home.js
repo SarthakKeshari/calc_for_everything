@@ -224,6 +224,7 @@ export default function Home() {
             <HomeGridItem calcName="Day Scheduler" path="/dayscheduler"/>
             <HomeGridItem calcName="Task Planner" path="/taskplanner"/>
             <HomeGridItem calcName="Sleep Calculator" path="/sleepcalc"/>
+            <HomeGridItem calcName="Macronutrient Ratio Calculator" path="/macronutrientratiocalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Art</Typography>
