@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Typography, Table, TableHead, TableBody, TableRow, TableCell, TextField, Paper, Button, TableContainer } from '@mui/material';
+import { Container, Typography, Table, TableHead, TableBody, TableRow, TableCell, TextField, Button } from '@mui/material';
 
 function MainMeanDeviationAboutMedianCalc() {
 
@@ -120,7 +120,7 @@ function MainMeanDeviationAboutMedianCalc() {
 
   return (
     <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: "10" }}>
-      <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Mean Deviation about Median Calculator</Typography>
+      <Typography pt={1} variant='h5' sx={{ textAlign: "center", fontFamily: 'KaTeX_Math' }}>Mean Deviation about Median Calculator</Typography>
       <hr />
       <br />
 
@@ -128,13 +128,13 @@ function MainMeanDeviationAboutMedianCalc() {
       <Table sx={{ border: '1px solid #ccc' }}>
         <TableHead>
             <TableRow>
-            <TableCell sx={{textAlign: 'center', fontWeight: 'bold', borderRight: '1px solid #ccc', paddingRight: '8px'}}>
+            <TableCell sx={{textAlign: 'center', fontFamily: 'KaTeX_Math', fontSize:'20px', fontWeight: 'bold', borderRight: '1px solid #ccc', paddingRight: '8px'}}>
                 Class Interval<br />Lower Limit
             </TableCell>
-            <TableCell sx={{textAlign: 'center', fontWeight: 'bold', borderRight: '1px solid #ccc', paddingRight: '8px'}}>
+            <TableCell sx={{textAlign: 'center', fontFamily: 'KaTeX_Math', fontSize:'20px', fontWeight: 'bold', borderRight: '1px solid #ccc', paddingRight: '8px'}}>
                 Class Interval<br />Upper Limit
             </TableCell>
-            <TableCell sx={{textAlign: 'center', fontWeight: 'bold'}}>
+            <TableCell sx={{textAlign: 'center', fontFamily: 'KaTeX_Math', fontSize:'20px', fontWeight: 'bold'}}>
                 Frequency
             </TableCell>
             </TableRow>
@@ -201,19 +201,30 @@ function MainMeanDeviationAboutMedianCalc() {
             Calculate
             </Button>
             
+            <div style={{margin:'60px'}}>
             {
                 result !== null && result!==NaN ? (
-                    <Typography variant="h6" style={{ marginTop: "40px" }}>
-                        Mean Deviation about Median: {result}
+                    <Typography variant="h6" style={{
+                        lineHeight: '1.5',
+                        fontFamily: 'KaTeX_Math',
+                        textAlign: 'center',
+                        fontSize:'25px'
+                    }}>
+                        Mean Deviation about the Median:&nbsp;&nbsp;{result}
                     </Typography>
                 ) : (
-                    <Typography variant="h6" style={{ marginTop: "40px" }}>
-                        Check if the input is entered right !
+                    <Typography variant="h6" style={{
+                        lineHeight: '1.5',
+                        fontFamily: 'KaTeX_Math',
+                        textAlign: 'center',
+                        fontSize:'25px'
+                    }}>
+                        Check if the input is valid and complete before calculation !
                     </Typography>    
                 )
             }
+            </div>
         </div>
-
     </Container>
   );
 }
