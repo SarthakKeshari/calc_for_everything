@@ -11,44 +11,82 @@ import {
   Paper,
   TextField,
   Button,
+  IconButton,
 } from "@mui/material";
 
 function MainModeCalc() {
-  const [data, setData] = useState("");
+  const [rows, setRows] = useState([
+    { interval: "", frequency: "", cumulativeFrequency: "" },
+  ]);
   const [mode, setMode] = useState(null);
 
   const handleCalculateMode = () => {
-    // Parse the data and calculate the mode
-    if (data === "") {
-      return alert(
-        "Please enter the grouped data and their respective frequencies in the format: Interval | Frequency"
-      );
+    if (rows.some((row) => row.interval === "" || row.frequency === "")) {
+      return alert("Please fill in all rows with valid data.");
     }
 
-    const rows = data
+    const data = rows
+      .map(
+        (row) =>
+          `${row.interval} | ${row.frequency} | ${row.cumulativeFrequency}`
+      )
+      .join("\n");
+
+    const parsedData = data
       .split("\n")
       .map((row) => row.split("|").map((entry) => entry.trim()));
 
-    // Check if data is in the correct format
-    if (rows.some((row) => row.length !== 2)) {
+    if (parsedData.some((row) => row.length < 2)) {
       return alert(
-        "Data should be entered in the correct format: Interval | Frequency"
+        "Data should be entered in the correct format: Interval | Frequency | Cumulative Frequency (optional)."
       );
     }
 
-    const frequencies = rows.map((row) => parseInt(row[1]));
+    const frequencies = parsedData.map((row) => parseInt(row[1]));
 
-    // Find the mode
     let maxValue = 0;
-    let modeValue = "No mode"; // Default to "No mode"
+    let modeValue = "No mode";
     for (let i = 0; i < frequencies.length; i++) {
       if (frequencies[i] > maxValue) {
         maxValue = frequencies[i];
-        modeValue = rows[i][0];
+        modeValue = parsedData[i][0];
       }
     }
 
     setMode(modeValue);
+  };
+
+  const addRow = () => {
+    setRows([
+      ...rows,
+      { interval: "", frequency: "", cumulativeFrequency: "" },
+    ]);
+  };
+
+  const deleteRow = () => {
+    if (rows.length > 1) {
+      const updatedRows = [...rows];
+      updatedRows.pop();
+      setRows(updatedRows);
+    }
+  };
+
+  const handleRowChange = (index, field, value) => {
+    const updatedRows = [...rows];
+    updatedRows[index][field] = value;
+
+    // If the field being changed is 'frequency', update cumulative frequency
+    if (field === "frequency") {
+      let cumulativeFrequency = 0;
+      for (let i = 0; i <= index; i++) {
+        if (updatedRows[i].frequency !== "") {
+          cumulativeFrequency += parseInt(updatedRows[i].frequency);
+        }
+        updatedRows[i].cumulativeFrequency = cumulativeFrequency;
+      }
+    }
+
+    setRows(updatedRows);
   };
 
   return (
@@ -63,22 +101,72 @@ function MainModeCalc() {
       <br />
 
       <Typography variant="body1" sx={{ marginBottom: "1rem" }}>
-        To enter data, use the format: Interval | Frequency. Separate each entry
-        with a new line.
+        To enter data, fill in the table. You can add more rows as needed.
       </Typography>
 
-      <TextField
-        label="Enter data"
-        variant="outlined"
-        fullWidth
-        value={data}
-        onChange={(e) => setData(e.target.value)}
-        sx={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
-        style={{ marginBottom: "1rem" }}
-        multiline
-        rows={6}
-      />
+      <TableContainer component={Paper} style={{ marginBottom: "1rem" }}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>Interval</TableCell>
+              <TableCell>Frequency</TableCell>
+              <TableCell>Cumulative Frequency</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {rows.map((row, index) => (
+              <TableRow
+                key={index}
+                sx={index % 2 === 0 ? { bgcolor: "#f2f2f2" } : {}}
+              >
+                <TableCell>
+                  <TextField
+                    value={row.interval}
+                    onChange={(e) =>
+                      handleRowChange(index, "interval", e.target.value)
+                    }
+                  />
+                </TableCell>
+                <TableCell>
+                  <TextField
+                    value={row.frequency}
+                    onChange={(e) =>
+                      handleRowChange(index, "frequency", e.target.value)
+                    }
+                  />
+                </TableCell>
+                <TableCell>
+                  <TextField
+                    value={row.cumulativeFrequency}
+                    onChange={(e) =>
+                      handleRowChange(
+                        index,
+                        "cumulativeFrequency",
+                        e.target.value
+                      )
+                    }
+                  />
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
 
+      <IconButton color="primary" size="small" onClick={addRow}>
+        Add Row
+      </IconButton>
+
+      <IconButton
+        color="danger"
+        size="small"
+        style={{ marginLeft: "1rem" }}
+        onClick={deleteRow}
+      >
+        Delete Last Row
+      </IconButton>
+
+      <br />
       <Button
         variant="contained"
         color="primary"
