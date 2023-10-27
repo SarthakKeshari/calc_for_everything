@@ -193,7 +193,6 @@ import MainAveragesCalculator from './mathematical/averagesCalculator/MainAverag
 import MainMMMCalc from './mathematical/mMMCalc/MainMMMCalc';
 import MainDrugHalfLifeClearanceCalc from './biology/drugHalfLifeClearanceCalc/MainDrugHalfLifeClearanceCalc';
 import MainMacronutrientRatioCalc from './health/macronutrientRatioCalc/MainMacronutrientRatioCalc';
-import MainPartialFractionsCalc from './mathematical/partialFractionsCalc/MainPartialFractionsCalc';
 
 function App() {
   return (
@@ -343,7 +342,6 @@ function App() {
             <Route path="universitygpacalc" element={<MainUniversityGPACalc />} />
             <Route path="averagescalc" element={<MainAveragesCalculator />} />
             <Route path="mmmcalc" element={<MainMMMCalc />} />
-            <Route path="partialfractionscalc" element={<MainPartialFractionsCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
