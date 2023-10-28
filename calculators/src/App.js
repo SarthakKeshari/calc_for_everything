@@ -196,6 +196,7 @@ import MainMacronutrientRatioCalc from './health/macronutrientRatioCalc/MainMacr
 import MainPartialFractionsCalc from './mathematical/partialFractionsCalc/MainPartialFractionsCalc';
 import MainBinaryStringWeightCalc from './computer_science/binaryStringWeightCalc/MainBinaryStringWeightCalc';
 import MainPointsWithMinimumHammingDistanceCalc from './computer_science/pointsWithMinimumHammingDistanceCalc/MainPointsWithMinimumHammingDistanceCalc';
+import MainPOSETCalc from './mathematical/pOSETCalc/MainPOSETCalc';
 
 function App() {
   return (
@@ -348,6 +349,7 @@ function App() {
             <Route path="averagescalc" element={<MainAveragesCalculator />} />
             <Route path="mmmcalc" element={<MainMMMCalc />} />
             <Route path="partialfractionscalc" element={<MainPartialFractionsCalc />} />
+            <Route path="posetcalc" element={<MainPOSETCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
