@@ -197,6 +197,7 @@ import MainPartialFractionsCalc from './mathematical/partialFractionsCalc/MainPa
 import MainBinaryStringWeightCalc from './computer_science/binaryStringWeightCalc/MainBinaryStringWeightCalc';
 import MainPointsWithMinimumHammingDistanceCalc from './computer_science/pointsWithMinimumHammingDistanceCalc/MainPointsWithMinimumHammingDistanceCalc';
 import MainPOSETCalc from './mathematical/pOSETCalc/MainPOSETCalc';
+import MainMolesCalc from './chemistry/molesCalc/MainMolesCalc';
 
 function App() {
   return (
@@ -357,6 +358,7 @@ function App() {
             <Route path="molecularweightcalc" element={<MainMolecularWeightCalc />} />
             <Route path="chemicalformulavalidator" element={<MainChemicalFormulaValidator />} />
             <Route path="empiricalformulacalc" element={<MainEmpiricalFormulaCalc />} />
+            <Route path="molescalc" element={<MainMolesCalc />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
