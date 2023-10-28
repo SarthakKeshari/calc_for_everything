@@ -193,6 +193,18 @@ import MainAveragesCalculator from './mathematical/averagesCalculator/MainAverag
 import MainMMMCalc from './mathematical/mMMCalc/MainMMMCalc';
 import MainDrugHalfLifeClearanceCalc from './biology/drugHalfLifeClearanceCalc/MainDrugHalfLifeClearanceCalc';
 import MainMacronutrientRatioCalc from './health/macronutrientRatioCalc/MainMacronutrientRatioCalc';
+import MainPartialFractionsCalc from './mathematical/partialFractionsCalc/MainPartialFractionsCalc';
+import MainBinaryStringWeightCalc from './computer_science/binaryStringWeightCalc/MainBinaryStringWeightCalc';
+import MainPointsWithMinimumHammingDistanceCalc from './computer_science/pointsWithMinimumHammingDistanceCalc/MainPointsWithMinimumHammingDistanceCalc';
+import MainPOSETCalc from './mathematical/pOSETCalc/MainPOSETCalc';
+import MainMolesCalc from './chemistry/molesCalc/MainMolesCalc';
+import MainMolarityCalc from './chemistry/molarityCalc/MainMolarityCalc';
+import MainFuelCostCalc from './finance/fuelCostCalc/MainFuelCostCalc';
+import MainEquivalentMassCalc from './chemistry/equivalentMassCalc/MainEquivalentMassCalc';
+import MainFrictionCalc from './physics/frictionCalc/MainFrictionCalc';
+import MainProjectileRangeCalc from './physics/projectileRangeCalc/MainProjectileRangeCalc';
+import MainBinaryTreeVisualizer from './computer_science/binaryTreeVisualizer/MainBinaryTreeVisualizer';
+import MainMomentumCalc from './physics/momentumCalc/MainMomentumCalc';
 
 function App() {
   return (
@@ -264,6 +276,9 @@ function App() {
             <Route path="setupdelaycalc" element={<MainSetupDelayCalc />} />
             <Route path="packetsordercalc" element={<MainPacketsOrderCalc />} />
             <Route path="base64encoderdecoder" element={<MainBase64EncoderDecoder />} />
+            <Route path="binarystringweightcalc" element={<MainBinaryStringWeightCalc />} />
+            <Route path="pointswithminimumhammingdistancecalc" element={<MainPointsWithMinimumHammingDistanceCalc />} />
+            <Route path="binarytreevisualizer" element={<MainBinaryTreeVisualizer />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -342,6 +357,8 @@ function App() {
             <Route path="universitygpacalc" element={<MainUniversityGPACalc />} />
             <Route path="averagescalc" element={<MainAveragesCalculator />} />
             <Route path="mmmcalc" element={<MainMMMCalc />} />
+            <Route path="partialfractionscalc" element={<MainPartialFractionsCalc />} />
+            <Route path="posetcalc" element={<MainPOSETCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
@@ -349,6 +366,9 @@ function App() {
             <Route path="molecularweightcalc" element={<MainMolecularWeightCalc />} />
             <Route path="chemicalformulavalidator" element={<MainChemicalFormulaValidator />} />
             <Route path="empiricalformulacalc" element={<MainEmpiricalFormulaCalc />} />
+            <Route path="molescalc" element={<MainMolesCalc />} />
+            <Route path="molaritycalc" element={<MainMolarityCalc />} />
+            <Route path="equivalentmasscalc" element={<MainEquivalentMassCalc />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
@@ -366,6 +386,9 @@ function App() {
             <Route path="potentialenergycalc" element={<MainPotentialEnergyCalc />} />
             <Route path="gravitationalforcecalc" element={<MainGravitationalForceCalc />} />
             <Route path="torquecalc" element={<MainTorqueCalc />} />
+            <Route path="frictioncalc" element={<MainFrictionCalc />} />
+            <Route path="projectilerangecalc" element={<MainProjectileRangeCalc />} />
+            <Route path="momentumcalc" element={<MainMomentumCalc />} />
             {/* Biology */}
             <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
             <Route path="drughalflifeclearancecalc" element={<MainDrugHalfLifeClearanceCalc />} />
@@ -381,6 +404,7 @@ function App() {
             <Route path="receiptgenerator" element={<MainReceiptGenerator />} />
             <Route path="gdpcalc" element={<MainGDPCalc />} />
             <Route path="multicurrencychangecalc" element={<MainMultiCurrencyChangeCalc />} />
+            <Route path="fuelcostcalc" element={<MainFuelCostCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />

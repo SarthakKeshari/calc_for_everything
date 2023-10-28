@@ -70,6 +70,9 @@ export default function Home() {
             <HomeGridItem calcName="Setup Delay Calculator" path="/setupdelaycalc"/> 
             <HomeGridItem calcName="Packets Order Calculator" path="/packetsordercalc"/> 
             <HomeGridItem calcName="Base64 Encoder/Decoder" path="/base64encoderdecoder"/> 
+            <HomeGridItem calcName="Binary String Weight Calculator" path="/binarystringweightcalc"/> 
+            <HomeGridItem calcName="# of Points With Minimum Hamming Distance Calculator" path="/pointswithminimumhammingdistancecalc"/> 
+            <HomeGridItem calcName="Binary Tree Visualizer" path="/binarytreevisualizer"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -152,6 +155,8 @@ export default function Home() {
             <HomeGridItem calcName="University GPA Calculator" path="/universitygpacalc"/> 
             <HomeGridItem calcName="Averages Calculator" path="/averagescalc"/> 
             <HomeGridItem calcName="MMM Calculator" path="/mmmcalc"/> 
+            <HomeGridItem calcName="Partial Fractions Calculator" path="/partialfractionscalc"/> 
+            <HomeGridItem calcName="POSET Calculator" path="/posetcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
@@ -163,6 +168,9 @@ export default function Home() {
             <HomeGridItem calcName="Molecular Weight Calculator" path="/molecularweightcalc"/>
             <HomeGridItem calcName="Chemical Formula Validator" path="/chemicalformulavalidator"/>
             <HomeGridItem calcName="Empirical Formula Calculator" path="/empiricalformulacalc"/>
+            <HomeGridItem calcName="Moles Calculator" path="/molescalc"/>
+            <HomeGridItem calcName="Molarity Calculator" path="/molaritycalc"/>
+            <HomeGridItem calcName="Equivalent Mass Calculator" path="/equivalentmasscalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Physics</Typography>
@@ -184,6 +192,9 @@ export default function Home() {
             <HomeGridItem calcName="Potential Energy Calculator" path="/potentialenergycalc"/> 
             <HomeGridItem calcName="Gravitational Force Calculator" path="/gravitationalforcecalc"/> 
             <HomeGridItem calcName="Torque Calculator" path="/torquecalc"/> 
+            <HomeGridItem calcName="Friction Calculator" path="/frictioncalc"/> 
+            <HomeGridItem calcName="Projectile Range Calculator" path="/projectilerangecalc"/> 
+            <HomeGridItem calcName="Momentum Calculator" path="/momentumcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Biology</Typography>
@@ -207,6 +218,7 @@ export default function Home() {
             <HomeGridItem calcName="Receipt Generator" path="/receiptgenerator"/>
             <HomeGridItem calcName="GDP Calculator" path="/gdpcalc"/>
             <HomeGridItem calcName="Multi-Currency Change Calculator" path="/multicurrencychangecalc"/>
+            <HomeGridItem calcName="Fuel Cost Calculator" path="/fuelcostcalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Health</Typography>
