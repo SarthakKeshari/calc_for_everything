@@ -207,6 +207,7 @@ import MainBinaryTreeVisualizer from './computer_science/binaryTreeVisualizer/Ma
 import MainMomentumCalc from './physics/momentumCalc/MainMomentumCalc';
 import MainCRCCalc from './computer_science/cRCCalc/MainCRCCalc';
 import MainMolalityCalc from './chemistry/molalityCalc/MainMolalityCalc';
+import MainQuartilesCalc from './mathematical/quartilesCalc/MainQuartilesCalc';
 
 function App() {
   return (
@@ -362,6 +363,7 @@ function App() {
             <Route path="mmmcalc" element={<MainMMMCalc />} />
             <Route path="partialfractionscalc" element={<MainPartialFractionsCalc />} />
             <Route path="posetcalc" element={<MainPOSETCalc />} />
+            <Route path="quartilescalc" element={<MainQuartilesCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
