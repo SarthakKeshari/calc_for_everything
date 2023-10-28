@@ -204,6 +204,7 @@ import MainEquivalentMassCalc from './chemistry/equivalentMassCalc/MainEquivalen
 import MainFrictionCalc from './physics/frictionCalc/MainFrictionCalc';
 import MainProjectileRangeCalc from './physics/projectileRangeCalc/MainProjectileRangeCalc';
 import MainBinaryTreeVisualizer from './computer_science/binaryTreeVisualizer/MainBinaryTreeVisualizer';
+import MainMomentumCalc from './physics/momentumCalc/MainMomentumCalc';
 
 function App() {
   return (
@@ -387,6 +388,7 @@ function App() {
             <Route path="torquecalc" element={<MainTorqueCalc />} />
             <Route path="frictioncalc" element={<MainFrictionCalc />} />
             <Route path="projectilerangecalc" element={<MainProjectileRangeCalc />} />
+            <Route path="momentumcalc" element={<MainMomentumCalc />} />
             {/* Biology */}
             <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
             <Route path="drughalflifeclearancecalc" element={<MainDrugHalfLifeClearanceCalc />} />
