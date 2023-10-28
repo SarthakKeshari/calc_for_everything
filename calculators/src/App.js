@@ -199,6 +199,7 @@ import MainPointsWithMinimumHammingDistanceCalc from './computer_science/pointsW
 import MainPOSETCalc from './mathematical/pOSETCalc/MainPOSETCalc';
 import MainMolesCalc from './chemistry/molesCalc/MainMolesCalc';
 import MainMolarityCalc from './chemistry/molarityCalc/MainMolarityCalc';
+import MainFuelCostCalc from './finance/fuelCostCalc/MainFuelCostCalc';
 
 function App() {
   return (
@@ -393,6 +394,7 @@ function App() {
             <Route path="receiptgenerator" element={<MainReceiptGenerator />} />
             <Route path="gdpcalc" element={<MainGDPCalc />} />
             <Route path="multicurrencychangecalc" element={<MainMultiCurrencyChangeCalc />} />
+            <Route path="fuelcostcalc" element={<MainFuelCostCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
