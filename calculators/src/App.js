@@ -195,6 +195,7 @@ import MainDrugHalfLifeClearanceCalc from './biology/drugHalfLifeClearanceCalc/M
 import MainMacronutrientRatioCalc from './health/macronutrientRatioCalc/MainMacronutrientRatioCalc';
 import MainPartialFractionsCalc from './mathematical/partialFractionsCalc/MainPartialFractionsCalc';
 import MainBinaryStringWeightCalc from './computer_science/binaryStringWeightCalc/MainBinaryStringWeightCalc';
+import MainPointsWithMinimumHammingDistanceCalc from './computer_science/pointsWithMinimumHammingDistanceCalc/MainPointsWithMinimumHammingDistanceCalc';
 
 function App() {
   return (
@@ -267,6 +268,7 @@ function App() {
             <Route path="packetsordercalc" element={<MainPacketsOrderCalc />} />
             <Route path="base64encoderdecoder" element={<MainBase64EncoderDecoder />} />
             <Route path="binarystringweightcalc" element={<MainBinaryStringWeightCalc />} />
+            <Route path="pointswithminimumhammingdistancecalc" element={<MainPointsWithMinimumHammingDistanceCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
