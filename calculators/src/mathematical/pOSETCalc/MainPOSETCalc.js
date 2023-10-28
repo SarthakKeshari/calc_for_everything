@@ -32,7 +32,7 @@ function MainPOSETCalc() {
         return;
       }
 
-      //Antisymmetry
+      // Antisymmetry
       if (x !== y) {
         if (relations.has(`${x},${y}`) && relations.has(`${y},${x}`)) {
           isAntisymmetric = false;
@@ -51,12 +51,24 @@ function MainPOSETCalc() {
       }
     }
 
-    let resultMessage = "It is a ";
-    if (!isReflexive || !isAntisymmetric || !isTransitive) {
-      resultMessage = "It is not a ";
+    if (isReflexive && isAntisymmetric && isTransitive) {
+      setResult("It is a POSET");
+      return;
     }
 
-    setResult(resultMessage + "POSET.");
+    let resultMessage = "It is not a POSET";
+
+    if (!isReflexive) {
+      resultMessage += " It is not reflexive.";
+    }
+    if (!isAntisymmetric) {
+      resultMessage += " It is not antisymmetric.";
+    }
+    if (!isTransitive) {
+      resultMessage += " It is not transitive.";
+    }
+
+    setResult(resultMessage);
   };
 
   return (
@@ -71,6 +83,17 @@ function MainPOSETCalc() {
       <br />
 
       <TextField
+        label="Enter set A (comma-separated)"
+        variant="outlined"
+        fullWidth
+        value={inputSet}
+        onChange={(e) => setInputSet(e.target.value)}
+      />
+
+      <br />
+      <br />
+
+      <TextField
         multiline
         label="Enter pairs"
         variant="outlined"
@@ -79,13 +102,8 @@ function MainPOSETCalc() {
         onChange={(e) => setInputPairs(e.target.value)}
       />
 
-      <TextField
-        label="Enter set A (comma-separated)"
-        variant="outlined"
-        fullWidth
-        value={inputSet}
-        onChange={(e) => setInputSet(e.target.value)}
-      />
+      <br />
+      <br />
 
       <Button variant="contained" color="primary" onClick={checkPOSET}>
         Calculate
