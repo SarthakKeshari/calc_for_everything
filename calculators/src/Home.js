@@ -172,6 +172,7 @@ export default function Home() {
             <HomeGridItem calcName="Moles Calculator" path="/molescalc"/>
             <HomeGridItem calcName="Molarity Calculator" path="/molaritycalc"/>
             <HomeGridItem calcName="Equivalent Mass Calculator" path="/equivalentmasscalc"/>
+            <HomeGridItem calcName="Molality Calculator" path="/molalitycalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Physics</Typography>

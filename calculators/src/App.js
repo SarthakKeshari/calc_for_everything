@@ -206,6 +206,7 @@ import MainProjectileRangeCalc from './physics/projectileRangeCalc/MainProjectil
 import MainBinaryTreeVisualizer from './computer_science/binaryTreeVisualizer/MainBinaryTreeVisualizer';
 import MainMomentumCalc from './physics/momentumCalc/MainMomentumCalc';
 import MainCRCCalc from './computer_science/cRCCalc/MainCRCCalc';
+import MainMolalityCalc from './chemistry/molalityCalc/MainMolalityCalc';
 
 function App() {
   return (
@@ -371,6 +372,7 @@ function App() {
             <Route path="molescalc" element={<MainMolesCalc />} />
             <Route path="molaritycalc" element={<MainMolarityCalc />} />
             <Route path="equivalentmasscalc" element={<MainEquivalentMassCalc />} />
+            <Route path="molalitycalc" element={<MainMolalityCalc />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
