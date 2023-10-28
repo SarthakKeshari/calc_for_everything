@@ -166,16 +166,8 @@ Hard | 20 Points
 - Factorial Calculator (Gamma)
 - Analytical Function Calculator
 
-
-#### Physics
-- Amplitude Calculator
-- Cosmo Mass Converter
-- Density Calculator
-- Pressure Calculator
-
-
 #### Chemistry
-- pH Calculato
+- pH Calculator
 - Chemical Equation Balancer
 - Chemical Kinetics Calculator
 - Molecular Weight Calculator
@@ -194,6 +186,7 @@ Hard | 20 Points
 - Combined Gas Laws Calculator
 - Kinetic Energy Calculator
 - Time Dilation Calculator
+- Momentum Calculator
 
 #### Finance
 - FD Maturity Calculator
