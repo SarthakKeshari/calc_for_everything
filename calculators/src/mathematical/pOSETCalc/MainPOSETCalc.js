@@ -52,11 +52,11 @@ function MainPOSETCalc() {
     }
 
     if (isReflexive && isAntisymmetric && isTransitive) {
-      setResult("It is a POSET");
+      setResult("It is a POSET.");
       return;
     }
 
-    let resultMessage = "It is not a POSET";
+    let resultMessage = "It is not a POSET.";
 
     if (!isReflexive) {
       resultMessage += " It is not reflexive.";
