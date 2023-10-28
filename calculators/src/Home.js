@@ -191,6 +191,7 @@ export default function Home() {
             <HomeGridItem calcName="Potential Energy Calculator" path="/potentialenergycalc"/> 
             <HomeGridItem calcName="Gravitational Force Calculator" path="/gravitationalforcecalc"/> 
             <HomeGridItem calcName="Torque Calculator" path="/torquecalc"/> 
+            <HomeGridItem calcName="Friction Calculator" path="/frictioncalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Biology</Typography>
