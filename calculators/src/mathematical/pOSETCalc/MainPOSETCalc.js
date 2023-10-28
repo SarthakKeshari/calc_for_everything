@@ -13,7 +13,7 @@ function MainPOSETCalc() {
       .map((pair) => [pair[0].trim(), pair[1].trim()]);
 
     const setA = inputSet.split(",").map((element) => element.trim());
-    const relations = new Set(pairs.map(([x, y]) => `${x},${y}`));
+    const relations = new Set(pairs.map(([x, y]) => `${x},${y}`)); //this is to ensure that the pairs are unique. We need to convert the constituent pairs(which are essentially arrays) to strings as arrays consisting of the same values aren't considered to be unique.
     let isReflexive = true;
     let isAntisymmetric = true;
     let isTransitive = true;
