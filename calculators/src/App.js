@@ -198,6 +198,7 @@ import MainBinaryStringWeightCalc from './computer_science/binaryStringWeightCal
 import MainPointsWithMinimumHammingDistanceCalc from './computer_science/pointsWithMinimumHammingDistanceCalc/MainPointsWithMinimumHammingDistanceCalc';
 import MainPOSETCalc from './mathematical/pOSETCalc/MainPOSETCalc';
 import MainMolesCalc from './chemistry/molesCalc/MainMolesCalc';
+import MainMolarityCalc from './chemistry/molarityCalc/MainMolarityCalc';
 
 function App() {
   return (
@@ -359,6 +360,7 @@ function App() {
             <Route path="chemicalformulavalidator" element={<MainChemicalFormulaValidator />} />
             <Route path="empiricalformulacalc" element={<MainEmpiricalFormulaCalc />} />
             <Route path="molescalc" element={<MainMolesCalc />} />
+            <Route path="molaritycalc" element={<MainMolarityCalc />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
