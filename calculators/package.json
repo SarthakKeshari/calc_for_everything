@@ -18,6 +18,7 @@
     "inr-words": "^1.0.4",
     "jspdf": "^2.5.1",
     "mathjs": "^11.11.2",
+    "nerdamer": "^1.1.13",
     "number-to-words": "^1.2.4",
     "numeric": "^1.2.6",
     "plotly.js": "^2.26.1",
