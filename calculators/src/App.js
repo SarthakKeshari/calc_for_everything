@@ -194,6 +194,7 @@ import MainMMMCalc from './mathematical/mMMCalc/MainMMMCalc';
 import MainDrugHalfLifeClearanceCalc from './biology/drugHalfLifeClearanceCalc/MainDrugHalfLifeClearanceCalc';
 import MainMacronutrientRatioCalc from './health/macronutrientRatioCalc/MainMacronutrientRatioCalc';
 import MainPartialFractionsCalc from './mathematical/partialFractionsCalc/MainPartialFractionsCalc';
+import MainBinaryStringWeightCalc from './computer_science/binaryStringWeightCalc/MainBinaryStringWeightCalc';
 
 function App() {
   return (
@@ -265,6 +266,7 @@ function App() {
             <Route path="setupdelaycalc" element={<MainSetupDelayCalc />} />
             <Route path="packetsordercalc" element={<MainPacketsOrderCalc />} />
             <Route path="base64encoderdecoder" element={<MainBase64EncoderDecoder />} />
+            <Route path="binarystringweightcalc" element={<MainBinaryStringWeightCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />

@@ -70,6 +70,7 @@ export default function Home() {
             <HomeGridItem calcName="Setup Delay Calculator" path="/setupdelaycalc"/> 
             <HomeGridItem calcName="Packets Order Calculator" path="/packetsordercalc"/> 
             <HomeGridItem calcName="Base64 Encoder/Decoder" path="/base64encoderdecoder"/> 
+            <HomeGridItem calcName="Binary String Weight Calculator" path="/binarystringweightcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
