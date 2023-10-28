@@ -205,6 +205,7 @@ import MainFrictionCalc from './physics/frictionCalc/MainFrictionCalc';
 import MainProjectileRangeCalc from './physics/projectileRangeCalc/MainProjectileRangeCalc';
 import MainBinaryTreeVisualizer from './computer_science/binaryTreeVisualizer/MainBinaryTreeVisualizer';
 import MainMomentumCalc from './physics/momentumCalc/MainMomentumCalc';
+import MainCRCCalc from './computer_science/cRCCalc/MainCRCCalc';
 
 function App() {
   return (
@@ -279,6 +280,7 @@ function App() {
             <Route path="binarystringweightcalc" element={<MainBinaryStringWeightCalc />} />
             <Route path="pointswithminimumhammingdistancecalc" element={<MainPointsWithMinimumHammingDistanceCalc />} />
             <Route path="binarytreevisualizer" element={<MainBinaryTreeVisualizer />} />
+            <Route path="crccalc" element={<MainCRCCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />

@@ -73,6 +73,7 @@ export default function Home() {
             <HomeGridItem calcName="Binary String Weight Calculator" path="/binarystringweightcalc"/> 
             <HomeGridItem calcName="# of Points With Minimum Hamming Distance Calculator" path="/pointswithminimumhammingdistancecalc"/> 
             <HomeGridItem calcName="Binary Tree Visualizer" path="/binarytreevisualizer"/> 
+            <HomeGridItem calcName="CRC Calculator" path="/crccalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
