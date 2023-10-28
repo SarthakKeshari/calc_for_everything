@@ -74,6 +74,7 @@ export default function Home() {
             <HomeGridItem calcName="# of Points With Minimum Hamming Distance Calculator" path="/pointswithminimumhammingdistancecalc"/> 
             <HomeGridItem calcName="Binary Tree Visualizer" path="/binarytreevisualizer"/> 
             <HomeGridItem calcName="CRC Calculator" path="/crccalc"/> 
+            <HomeGridItem calcName="Not Calculator" path="/notcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>

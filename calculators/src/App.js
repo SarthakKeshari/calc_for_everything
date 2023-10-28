@@ -208,6 +208,7 @@ import MainMomentumCalc from './physics/momentumCalc/MainMomentumCalc';
 import MainCRCCalc from './computer_science/cRCCalc/MainCRCCalc';
 import MainMolalityCalc from './chemistry/molalityCalc/MainMolalityCalc';
 import MainQuartilesCalc from './mathematical/quartilesCalc/MainQuartilesCalc';
+import MainNotCalc from './computer_science/notCalc/MainNotCalc';
 
 function App() {
   return (
@@ -283,6 +284,7 @@ function App() {
             <Route path="pointswithminimumhammingdistancecalc" element={<MainPointsWithMinimumHammingDistanceCalc />} />
             <Route path="binarytreevisualizer" element={<MainBinaryTreeVisualizer />} />
             <Route path="crccalc" element={<MainCRCCalc />} />
+            <Route path="notcalc" element={<MainNotCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
