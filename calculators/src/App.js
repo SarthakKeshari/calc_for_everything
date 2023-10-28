@@ -209,6 +209,7 @@ import MainCRCCalc from './computer_science/cRCCalc/MainCRCCalc';
 import MainMolalityCalc from './chemistry/molalityCalc/MainMolalityCalc';
 import MainQuartilesCalc from './mathematical/quartilesCalc/MainQuartilesCalc';
 import MainNotCalc from './computer_science/notCalc/MainNotCalc';
+import MainTATCalc from './computer_science/tATCalc/MainTATCalc';
 
 function App() {
   return (
@@ -285,6 +286,7 @@ function App() {
             <Route path="binarytreevisualizer" element={<MainBinaryTreeVisualizer />} />
             <Route path="crccalc" element={<MainCRCCalc />} />
             <Route path="notcalc" element={<MainNotCalc />} />
+            <Route path="tatcalc" element={<MainTATCalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
