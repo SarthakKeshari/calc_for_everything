@@ -203,6 +203,7 @@ import MainFuelCostCalc from './finance/fuelCostCalc/MainFuelCostCalc';
 import MainEquivalentMassCalc from './chemistry/equivalentMassCalc/MainEquivalentMassCalc';
 import MainFrictionCalc from './physics/frictionCalc/MainFrictionCalc';
 import MainProjectileRangeCalc from './physics/projectileRangeCalc/MainProjectileRangeCalc';
+import MainBinaryTreeVisualizer from './computer_science/binaryTreeVisualizer/MainBinaryTreeVisualizer';
 
 function App() {
   return (
@@ -276,6 +277,7 @@ function App() {
             <Route path="base64encoderdecoder" element={<MainBase64EncoderDecoder />} />
             <Route path="binarystringweightcalc" element={<MainBinaryStringWeightCalc />} />
             <Route path="pointswithminimumhammingdistancecalc" element={<MainPointsWithMinimumHammingDistanceCalc />} />
+            <Route path="binarytreevisualizer" element={<MainBinaryTreeVisualizer />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />

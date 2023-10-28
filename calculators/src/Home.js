@@ -72,6 +72,7 @@ export default function Home() {
             <HomeGridItem calcName="Base64 Encoder/Decoder" path="/base64encoderdecoder"/> 
             <HomeGridItem calcName="Binary String Weight Calculator" path="/binarystringweightcalc"/> 
             <HomeGridItem calcName="# of Points With Minimum Hamming Distance Calculator" path="/pointswithminimumhammingdistancecalc"/> 
+            <HomeGridItem calcName="Binary Tree Visualizer" path="/binarytreevisualizer"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
