@@ -202,6 +202,7 @@ import MainMolarityCalc from './chemistry/molarityCalc/MainMolarityCalc';
 import MainFuelCostCalc from './finance/fuelCostCalc/MainFuelCostCalc';
 import MainEquivalentMassCalc from './chemistry/equivalentMassCalc/MainEquivalentMassCalc';
 import MainFrictionCalc from './physics/frictionCalc/MainFrictionCalc';
+import MainProjectileRangeCalc from './physics/projectileRangeCalc/MainProjectileRangeCalc';
 
 function App() {
   return (
@@ -383,6 +384,7 @@ function App() {
             <Route path="gravitationalforcecalc" element={<MainGravitationalForceCalc />} />
             <Route path="torquecalc" element={<MainTorqueCalc />} />
             <Route path="frictioncalc" element={<MainFrictionCalc />} />
+            <Route path="projectilerangecalc" element={<MainProjectileRangeCalc />} />
             {/* Biology */}
             <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
             <Route path="drughalflifeclearancecalc" element={<MainDrugHalfLifeClearanceCalc />} />
