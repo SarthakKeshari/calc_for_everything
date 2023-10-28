@@ -200,6 +200,7 @@ import MainPOSETCalc from './mathematical/pOSETCalc/MainPOSETCalc';
 import MainMolesCalc from './chemistry/molesCalc/MainMolesCalc';
 import MainMolarityCalc from './chemistry/molarityCalc/MainMolarityCalc';
 import MainFuelCostCalc from './finance/fuelCostCalc/MainFuelCostCalc';
+import MainEquivalentMassCalc from './chemistry/equivalentMassCalc/MainEquivalentMassCalc';
 
 function App() {
   return (
@@ -362,6 +363,7 @@ function App() {
             <Route path="empiricalformulacalc" element={<MainEmpiricalFormulaCalc />} />
             <Route path="molescalc" element={<MainMolesCalc />} />
             <Route path="molaritycalc" element={<MainMolarityCalc />} />
+            <Route path="equivalentmasscalc" element={<MainEquivalentMassCalc />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
