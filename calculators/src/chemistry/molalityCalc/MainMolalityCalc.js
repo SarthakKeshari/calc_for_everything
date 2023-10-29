@@ -60,6 +60,8 @@ function MainMolalityCalc() {
       } else {
         setResult("Invalid input");
       }
+    } else {
+      setResult("Invalid inputs!");
     }
   };
 
