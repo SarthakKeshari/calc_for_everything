@@ -37,8 +37,7 @@ export default function InfoLogAntilog () {
         <Box sx={style} sm={1}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {/* Calculator Heading */}
-            Log Antilog Calculator
-
+            LoG And Antilog Calculation
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {/* Definition */}
@@ -46,7 +45,7 @@ export default function InfoLogAntilog () {
             
             <br/>
             {/* Replace the below calculator name with yuor calculator name */}
-            The formula for calculating simple interest is:
+            The formula for calculating Log and Antilog is:
             <br/>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h3>
