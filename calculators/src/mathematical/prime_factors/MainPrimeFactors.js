@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Typography } from '@mui/material';
+import InfoPrimeFactors from './InfoPrimeFactors';
 
 function MainPrimeFactors(){
 
@@ -34,7 +35,7 @@ function MainPrimeFactors(){
       
       return(
         <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-          <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Prime Factors Calculator</Typography>
+          <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Prime Factors Calculator<InfoPrimeFactors/></Typography>
           <hr/>
           <br/>
           <input type="number" onChange={handleInputChange} />

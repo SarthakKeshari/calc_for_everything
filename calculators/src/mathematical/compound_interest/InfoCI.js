@@ -36,24 +36,33 @@ export default function InfoCI() {
         <Box sx={style} sm={1}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {/* Calculator Heading */}
-
+            Compound Interest Calculator
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {/* Definition */}
-            
+            Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods, resulting in a snowball effect that leads to the growth of an investment or the increase in the cost of a loan over time.
             <br/>
             {/* Replace the below calculator name with yuor calculator name */}
-            The formula for calculating simple interest is:
+            The formula for calculating compound interest is:
             <br/>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h3>
                 {/* Add calc formula */}
-                
+                A = P(1 + r/n)^(nt)
+
+
               </h3>
             </code>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h5>
                 {/* Define meaning that each variable convey */}
+                Where:
+                A = the future value of the investment/loan, including interest
+                P = the principal amount (the initial amount of money)
+                r = the annual interest rate (in decimal form, so if it's 5%, it's 0.05)
+                n = the number of times that interest is compounded per year
+                t = the number of years the money is invested or borrowed for
+
 
               </h5>
             </code>

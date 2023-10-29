@@ -17,8 +17,7 @@ const style = {
 };
 
 {/* For reference look into the following file - calc_for_everything\calculators\src\mathematical\simple_interest\InfoSI.js */}
-// Change the name of the function as the file name
-export default function InfoQuadraticEquationSolver () {
+export default function InfoQuadraticEquationSolver() {
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -37,30 +36,31 @@ export default function InfoQuadraticEquationSolver () {
         <Box sx={style} sm={1}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {/* Calculator Heading */}
-            Quadratic Equation Solver 
-
+            Calculator to solve Quadratic Equations
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {/* Definition */}
-            A quadratic equation solver is a mathematical tool or method that finds the solutions (roots) of quadratic equations, which are equations of the form ax^2 + bx + c = 0.
-
-            
+            A quadratic equation is a second-degree polynomial equation in a single variable.
             <br/>
             {/* Replace the below calculator name with yuor calculator name */}
-            The formula for calculating simple interest is:
+            <br/>
             <br/>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h3>
                 {/* Add calc formula */}
-                x = (-b ± √(b² - 4ac)) / (2a)
-                
+                x = (-b ± √(b^2 - 4ac)) / (2a)
+
+
               </h3>
             </code>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h5>
                 {/* Define meaning that each variable convey */}
-                Here, 'a', 'b', and 'c' are the coefficients of the quadratic equation, and 'x' represents the solutions or roots of the equation.
+                Where:
 
+                "x" represents the solutions to the quadratic equation.
+                "a," "b," and "c" are the coefficients of the equation, with "a" not equal to zero.
+                The ± sign indicates that there are usually two solutions, one for each value of "+" and "-", giving you the two possible solutions for "x."
               </h5>
             </code>
           </Typography>

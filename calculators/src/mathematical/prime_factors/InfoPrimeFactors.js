@@ -43,12 +43,25 @@ export default function InfoPrimeFactors() {
             
             <br/>
             {/* Replace the below calculator name with yuor calculator name */}
-            The formula for calculating simple interest is:
+            Calculator to find Prime Fators
             <br/>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h3>
                 {/* Add calc formula */}
-                
+                Prime factorization is the process of breaking down a number into its prime factors, which are the prime numbers that can divide the original number evenly. 
+                <br></br>
+                1.Start with the number you want to find the prime factors for.<br/>
+
+                2.Begin by dividing the number by the smallest prime number, which is 2. Continue dividing by 2 until you can no longer divide evenly.<br/>
+
+                3. Move on to the next prime number, which is 3, and continue dividing by 3 until you can no longer divide evenly.<br/>
+
+                4.Continue this process with the subsequent prime numbers (5, 7, 11, 13, 17, 19, 23, and so on) until the number is completely factored into prime numbers.<br/>
+
+                5.Keep track of all the prime factors you used.<br/>
+
+                The prime factors you've found are the prime factorization of the original number.<br/>
+<br/>
               </h3>
             </code>
             <code style={{display: 'flex', justifyContent: 'center'}}>
