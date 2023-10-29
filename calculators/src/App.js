@@ -210,6 +210,7 @@ import MainMolalityCalc from './chemistry/molalityCalc/MainMolalityCalc';
 import MainQuartilesCalc from './mathematical/quartilesCalc/MainQuartilesCalc';
 import MainNotCalc from './computer_science/notCalc/MainNotCalc';
 import MainTATCalc from './computer_science/tATCalc/MainTATCalc';
+import MainLowerBoundUpperBoundCalc from './mathematical/lowerBoundUpperBoundCalc/MainLowerBoundUpperBoundCalc';
 
 function App() {
   return (
@@ -368,6 +369,7 @@ function App() {
             <Route path="partialfractionscalc" element={<MainPartialFractionsCalc />} />
             <Route path="posetcalc" element={<MainPOSETCalc />} />
             <Route path="quartilescalc" element={<MainQuartilesCalc />} />
+            <Route path="lowerboundupperboundcalc" element={<MainLowerBoundUpperBoundCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
