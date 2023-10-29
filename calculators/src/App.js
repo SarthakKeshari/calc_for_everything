@@ -211,6 +211,7 @@ import MainQuartilesCalc from './mathematical/quartilesCalc/MainQuartilesCalc';
 import MainNotCalc from './computer_science/notCalc/MainNotCalc';
 import MainTATCalc from './computer_science/tATCalc/MainTATCalc';
 import MainLowerBoundUpperBoundCalc from './mathematical/lowerBoundUpperBoundCalc/MainLowerBoundUpperBoundCalc';
+import MainMolarMassCalc from './chemistry/molarMassCalc/MainMolarMassCalc';
 
 function App() {
   return (
@@ -381,6 +382,7 @@ function App() {
             <Route path="molaritycalc" element={<MainMolarityCalc />} />
             <Route path="equivalentmasscalc" element={<MainEquivalentMassCalc />} />
             <Route path="molalitycalc" element={<MainMolalityCalc />} />
+            <Route path="molarmasscalc" element={<MainMolarMassCalc />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
