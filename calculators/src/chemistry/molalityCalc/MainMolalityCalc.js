@@ -28,10 +28,9 @@ function MainMolalityCalc() {
         massOfSolventValue > 0
       ) {
         const molalityValue = molesValue / massOfSolventValue;
-        setResult("Molality: ");
-        setMolality(molalityValue.toFixed(2));
+        setResult("Molality: " + molalityValue);
+        setMolality(molalityValue);
       } else {
-        setMolality("Invalid input");
         setResult("Invalid input");
       }
     } else if (moles !== "" && molality !== "") {
@@ -39,11 +38,10 @@ function MainMolalityCalc() {
       const molalityValue = parseFloat(molality);
 
       if (!isNaN(molesValue) && !isNaN(molalityValue) && molalityValue >= 0) {
-        const massOfSolventValue = (molesValue / molalityValue) * 1000; // Convert mass to kgs
-        setMassOfSolvent(massOfSolventValue.toFixed(2));
-        setResult("Mass of solvent(in kgs): ");
+        const massOfSolventValue = molesValue / molalityValue;
+        setMassOfSolvent(massOfSolventValue);
+        setResult("Mass of solvent(in kgs): " + massOfSolventValue);
       } else {
-        setMassOfSolvent("Invalid input");
         setResult("Invalid input");
       }
     } else if (massOfSolvent !== "" && molality !== "") {
@@ -56,11 +54,10 @@ function MainMolalityCalc() {
         massOfSolventValue > 0 &&
         molalityValue >= 0
       ) {
-        const molesValue = (massOfSolventValue / 1000) * molalityValue;
-        setMoles(molesValue.toFixed(2));
-        setResult("No. of moles: ");
+        const molesValue = massOfSolventValue * molalityValue;
+        setMoles(molesValue);
+        setResult("No. of moles: " + molesValue);
       } else {
-        setMoles("Invalid input");
         setResult("Invalid input");
       }
     }
@@ -114,7 +111,6 @@ function MainMolalityCalc() {
 
       <Paper sx={{ padding: 2, marginTop: 2 }}>
         <Typography variant="h6">{result}</Typography>
-        <Typography>{molality}</Typography>
       </Paper>
 
       <Link component={RouterLink} to="/molescalc" sx={{ marginTop: 2 }}>
