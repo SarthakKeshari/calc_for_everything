@@ -212,6 +212,7 @@ import MainNotCalc from './computer_science/notCalc/MainNotCalc';
 import MainTATCalc from './computer_science/tATCalc/MainTATCalc';
 import MainLowerBoundUpperBoundCalc from './mathematical/lowerBoundUpperBoundCalc/MainLowerBoundUpperBoundCalc';
 import MainMolarMassCalc from './chemistry/molarMassCalc/MainMolarMassCalc';
+import MainPlanetaryGravitationalCalc from './physics/planetaryGravitationalCalc/MainPlanetaryGravitationalCalc';
 
 function App() {
   return (
@@ -403,6 +404,7 @@ function App() {
             <Route path="frictioncalc" element={<MainFrictionCalc />} />
             <Route path="projectilerangecalc" element={<MainProjectileRangeCalc />} />
             <Route path="momentumcalc" element={<MainMomentumCalc />} />
+            <Route path="planetarygravitationalcalc" element={<MainPlanetaryGravitationalCalc />} />
             {/* Biology */}
             <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
             <Route path="drughalflifeclearancecalc" element={<MainDrugHalfLifeClearanceCalc />} />

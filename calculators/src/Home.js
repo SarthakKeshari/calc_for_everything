@@ -202,6 +202,7 @@ export default function Home() {
             <HomeGridItem calcName="Friction Calculator" path="/frictioncalc"/> 
             <HomeGridItem calcName="Projectile Range Calculator" path="/projectilerangecalc"/> 
             <HomeGridItem calcName="Momentum Calculator" path="/momentumcalc"/> 
+            <HomeGridItem calcName="Planetary Gravitational Calculator" path="/planetarygravitationalcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Biology</Typography>
