@@ -1,19 +1,119 @@
-import React from 'react';
-import { Container, Typography } from '@mui/material';
+import React, { useState } from "react";
+import {
+  Container,
+  Typography,
+  TextField,
+  Button,
+  Paper,
+  Link,
+  Box,
+} from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 
-function MainMolalityCalc(){
-    return(
-        <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Molality Calculator</Typography>
-            <hr/>
-            <br/>
-            {/* Write your code here */}
+function MainMolalityCalc() {
+  const [moles, setMoles] = useState("");
+  const [massOfSolvent, setMassOfSolvent] = useState("");
+  const [molality, setMolality] = useState("");
 
+  const calculateMolality = () => {
+    if (moles !== "" && massOfSolvent !== "") {
+      const molesValue = parseFloat(moles);
+      const massOfSolventValue = parseFloat(massOfSolvent);
 
+      if (
+        !isNaN(molesValue) &&
+        !isNaN(massOfSolventValue) &&
+        massOfSolventValue > 0
+      ) {
+        const molalityValue = molesValue / (massOfSolventValue / 1000); // Convert mass to grams
+        setMolality(molalityValue.toFixed(2));
+      } else {
+        setMolality("Invalid input");
+      }
+    } else if (moles !== "" && molality !== "") {
+      const molesValue = parseFloat(moles);
+      const molalityValue = parseFloat(molality);
 
-            {/* End your code here */}
-        </Container>
-    )
+      if (!isNaN(molesValue) && !isNaN(molalityValue) && molalityValue >= 0) {
+        const massOfSolventValue = (molesValue / molalityValue) * 1000; // Convert mass to kgs
+        setMassOfSolvent(massOfSolventValue.toFixed(2));
+      } else {
+        setMassOfSolvent("Invalid input");
+      }
+    } else if (massOfSolvent !== "" && molality !== "") {
+      const massOfSolventValue = parseFloat(massOfSolvent);
+      const molalityValue = parseFloat(molality);
+
+      if (
+        !isNaN(massOfSolventValue) &&
+        !isNaN(molalityValue) &&
+        massOfSolventValue > 0 &&
+        molalityValue >= 0
+      ) {
+        const molesValue = (massOfSolventValue / 1000) * molalityValue;
+        setMoles(molesValue.toFixed(2));
+      } else {
+        setMoles("Invalid input");
+      }
+    }
+  };
+
+  return (
+    <Container
+      maxWidth="lg"
+      sx={{ bgcolor: "#eeeeee", minHeight: "90vh", paddingY: 2 }}
+    >
+      <Typography pt={1} variant="h5" sx={{ textAlign: "center" }}>
+        Molality Calculator
+      </Typography>
+      <hr />
+      <br />
+
+      <TextField
+        label="Number of moles"
+        variant="outlined"
+        fullWidth
+        value={moles}
+        onChange={(e) => setMoles(e.target.value)}
+      />
+
+      <Box sx={{ marginY: 2 }}>
+        <TextField
+          label="Mass of solvent (in kgs or multiples/sub-multiples)"
+          variant="outlined"
+          fullWidth
+          value={massOfSolvent}
+          onChange={(e) => setMassOfSolvent(e.target.value)}
+        />
+      </Box>
+
+      <TextField
+        label="Molality"
+        variant="outlined"
+        fullWidth
+        value={molality}
+        onChange={(e) => setMolality(e.target.value)}
+      />
+
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={calculateMolality}
+        sx={{ marginTop: 2 }}
+      >
+        Calculate
+      </Button>
+
+      <Paper sx={{ padding: 2, marginTop: 2 }}>
+        <Typography variant="h6">Molality:</Typography>
+        <Typography>{molality}</Typography>
+      </Paper>
+
+      <Link component={RouterLink} to="/molescalc" sx={{ marginTop: 2 }}>
+        Go to Moles calculator
+      </Link>
+    </Container>
+  );
 }
 
 export default MainMolalityCalc;
