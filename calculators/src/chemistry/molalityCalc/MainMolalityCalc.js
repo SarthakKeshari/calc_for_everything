@@ -14,6 +14,8 @@ function MainMolalityCalc() {
   const [moles, setMoles] = useState("");
   const [massOfSolvent, setMassOfSolvent] = useState("");
   const [molality, setMolality] = useState("");
+  //   const [outputMessage, setOutputMessage] = useState("Molality: ");
+  const [result, setResult] = useState("Molality: ");
 
   const calculateMolality = () => {
     if (moles !== "" && massOfSolvent !== "") {
@@ -25,10 +27,12 @@ function MainMolalityCalc() {
         !isNaN(massOfSolventValue) &&
         massOfSolventValue > 0
       ) {
-        const molalityValue = molesValue / (massOfSolventValue / 1000); // Convert mass to grams
+        const molalityValue = molesValue / massOfSolventValue;
+        setResult("Molality: ");
         setMolality(molalityValue.toFixed(2));
       } else {
         setMolality("Invalid input");
+        setResult("Invalid input");
       }
     } else if (moles !== "" && molality !== "") {
       const molesValue = parseFloat(moles);
@@ -37,8 +41,10 @@ function MainMolalityCalc() {
       if (!isNaN(molesValue) && !isNaN(molalityValue) && molalityValue >= 0) {
         const massOfSolventValue = (molesValue / molalityValue) * 1000; // Convert mass to kgs
         setMassOfSolvent(massOfSolventValue.toFixed(2));
+        setResult("Mass of solvent(in kgs): ");
       } else {
         setMassOfSolvent("Invalid input");
+        setResult("Invalid input");
       }
     } else if (massOfSolvent !== "" && molality !== "") {
       const massOfSolventValue = parseFloat(massOfSolvent);
@@ -52,8 +58,10 @@ function MainMolalityCalc() {
       ) {
         const molesValue = (massOfSolventValue / 1000) * molalityValue;
         setMoles(molesValue.toFixed(2));
+        setResult("No. of moles: ");
       } else {
         setMoles("Invalid input");
+        setResult("Invalid input");
       }
     }
   };
@@ -105,7 +113,7 @@ function MainMolalityCalc() {
       </Button>
 
       <Paper sx={{ padding: 2, marginTop: 2 }}>
-        <Typography variant="h6">Molality:</Typography>
+        <Typography variant="h6">{result}</Typography>
         <Typography>{molality}</Typography>
       </Paper>
 
