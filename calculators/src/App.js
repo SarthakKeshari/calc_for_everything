@@ -213,6 +213,7 @@ import MainTATCalc from './computer_science/tATCalc/MainTATCalc';
 import MainLowerBoundUpperBoundCalc from './mathematical/lowerBoundUpperBoundCalc/MainLowerBoundUpperBoundCalc';
 import MainMolarMassCalc from './chemistry/molarMassCalc/MainMolarMassCalc';
 import MainPlanetaryGravitationalCalc from './physics/planetaryGravitationalCalc/MainPlanetaryGravitationalCalc';
+import MainGravityAccelerationCalc from './physics/gravityAccelerationCalc/MainGravityAccelerationCalc';
 
 function App() {
   return (
@@ -405,6 +406,7 @@ function App() {
             <Route path="projectilerangecalc" element={<MainProjectileRangeCalc />} />
             <Route path="momentumcalc" element={<MainMomentumCalc />} />
             <Route path="planetarygravitationalcalc" element={<MainPlanetaryGravitationalCalc />} />
+            <Route path="gravityaccelerationcalc" element={<MainGravityAccelerationCalc />} />
             {/* Biology */}
             <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
             <Route path="drughalflifeclearancecalc" element={<MainDrugHalfLifeClearanceCalc />} />
