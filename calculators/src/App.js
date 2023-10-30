@@ -225,6 +225,7 @@ import MainWordCounter from './computer_science/wordCounter/MainWordCounter';
 import MainCrossProductCalc from './physics/crossProductCalc/MainCrossProductCalc';
 import MainDotProductCalc from './physics/dotProductCalc/MainDotProductCalc';
 import MainElasticPotentialCalc from './physics/elasticPotentialCalc/MainElasticPotentialCalc';
+import MainCoinFlipper from './sports_games/coinFlipper/MainCoinFlipper';
 
 function App() {
   return (
@@ -464,6 +465,8 @@ function App() {
             <Route path="mandalacreater" element={<MainMandalaCreater />} />
             <Route path="piceditor" element={<MainPicEditor />} />
             <Route path="avatarcreater" element={<MainAvatarCreater />} />
+            {/* Games/Sports */}
+            <Route path="coinflipper" element={<MainCoinFlipper />} />
             {/* Space */}
             <Route path="satellitelocationusingtle" element={<MainSatelliteLocationUsingTLE />} />
           </Route>
