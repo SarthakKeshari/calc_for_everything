@@ -78,6 +78,7 @@ export default function Home() {
             <HomeGridItem calcName="TAT Calculator" path="/tatcalc"/> 
             <HomeGridItem calcName="Stopwatch" path="/stopwatch"/> 
             <HomeGridItem calcName="PPI Calculator" path="/ppicalc"/> 
+            <HomeGridItem calcName="Word Counter" path="/wordcounter"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -167,6 +168,7 @@ export default function Home() {
             <HomeGridItem calcName="Golden Ratio Calculator" path="/goldenratiocalc"/> 
             <HomeGridItem calcName="Diamond Problem Solver" path="/diamondproblemsolver"/> 
             <HomeGridItem calcName="Internal Angles Of a Polygon Calculator" path="/internalanglesofapolygoncalc"/> 
+            <HomeGridItem calcName="Nth Root Calculator" path="/nthrootcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>

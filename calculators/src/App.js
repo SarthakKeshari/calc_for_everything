@@ -220,6 +220,8 @@ import MainDiamondProblemSolver from './mathematical/diamondProblemSolver/MainDi
 import MainPPICalc from './computer_science/pPICalc/MainPPICalc';
 import MainIdealGasLawCalc from './physics/idealGasLawCalc/MainIdealGasLawCalc';
 import MainInternalAnglesOfAPolygon from './mathematical/internalAnglesOfAPolygon/MainInternalAnglesOfAPolygon';
+import MainNthRootCalc from './mathematical/nthRootCalc/MainNthRootCalc';
+import MainWordCounter from './computer_science/wordCounter/MainWordCounter';
 
 function App() {
   return (
@@ -299,6 +301,7 @@ function App() {
             <Route path="tatcalc" element={<MainTATCalc />} />
             <Route path="stopwatch" element={<MainStopwatch />} />
             <Route path="ppicalc" element={<MainPPICalc />} />
+            <Route path="wordcounter" element={<MainWordCounter />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -384,6 +387,7 @@ function App() {
             <Route path="goldenratiocalc" element={<MainGoldenRatioCalc />} />
             <Route path="diamondproblemsolver" element={<MainDiamondProblemSolver />} />
             <Route path="internalanglesofapolygoncalc" element={<MainInternalAnglesOfAPolygon />} />
+            <Route path="nthrootcalc" element={<MainNthRootCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
