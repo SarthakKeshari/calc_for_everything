@@ -212,6 +212,8 @@ export default function Home() {
             <HomeGridItem calcName="Planetary Gravitational Calculator" path="/planetarygravitationalcalc"/> 
             <HomeGridItem calcName="Gravity Acceleration Calculator" path="/gravityaccelerationcalc"/> 
             <HomeGridItem calcName="Ideal Gas Law Calculator" path="/idealgaslawcalc"/> 
+            <HomeGridItem calcName="Cross Product Calculator" path="/crossproductcalc"/> 
+            <HomeGridItem calcName="Dot Product Calculator" path="/dotproductcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Biology</Typography>
