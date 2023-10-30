@@ -217,6 +217,7 @@ import MainGravityAccelerationCalc from './physics/gravityAccelerationCalc/MainG
 import MainStopwatch from './computer_science/stopwatch/MainStopwatch';
 import MainGoldenRatioCalc from './mathematical/goldenRatioCalc/MainGoldenRatioCalc';
 import MainDiamondProblemSolver from './mathematical/diamondProblemSolver/MainDiamondProblemSolver';
+import MainPPICalc from './computer_science/pPICalc/MainPPICalc';
 
 function App() {
   return (
@@ -295,6 +296,7 @@ function App() {
             <Route path="notcalc" element={<MainNotCalc />} />
             <Route path="tatcalc" element={<MainTATCalc />} />
             <Route path="stopwatch" element={<MainStopwatch />} />
+            <Route path="ppicalc" element={<MainPPICalc />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
