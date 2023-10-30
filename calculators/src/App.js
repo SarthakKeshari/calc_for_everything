@@ -215,6 +215,7 @@ import MainMolarMassCalc from './chemistry/molarMassCalc/MainMolarMassCalc';
 import MainPlanetaryGravitationalCalc from './physics/planetaryGravitationalCalc/MainPlanetaryGravitationalCalc';
 import MainGravityAccelerationCalc from './physics/gravityAccelerationCalc/MainGravityAccelerationCalc';
 import MainStopwatch from './computer_science/stopwatch/MainStopwatch';
+import MainGoldenRatioCalc from './mathematical/goldenRatioCalc/MainGoldenRatioCalc';
 
 function App() {
   return (
@@ -375,6 +376,7 @@ function App() {
             <Route path="posetcalc" element={<MainPOSETCalc />} />
             <Route path="quartilescalc" element={<MainQuartilesCalc />} />
             <Route path="lowerboundupperboundcalc" element={<MainLowerBoundUpperBoundCalc />} />
+            <Route path="goldenratiocalc" element={<MainGoldenRatioCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
