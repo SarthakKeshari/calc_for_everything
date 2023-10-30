@@ -222,6 +222,8 @@ import MainIdealGasLawCalc from './physics/idealGasLawCalc/MainIdealGasLawCalc';
 import MainInternalAnglesOfAPolygon from './mathematical/internalAnglesOfAPolygon/MainInternalAnglesOfAPolygon';
 import MainNthRootCalc from './mathematical/nthRootCalc/MainNthRootCalc';
 import MainWordCounter from './computer_science/wordCounter/MainWordCounter';
+import MainCrossProductCalc from './physics/crossProductCalc/MainCrossProductCalc';
+import MainDotProductCalc from './physics/dotProductCalc/MainDotProductCalc';
 
 function App() {
   return (
@@ -423,6 +425,8 @@ function App() {
             <Route path="planetarygravitationalcalc" element={<MainPlanetaryGravitationalCalc />} />
             <Route path="gravityaccelerationcalc" element={<MainGravityAccelerationCalc />} />
             <Route path="idealgaslawcalc" element={<MainIdealGasLawCalc />} />
+            <Route path="crossproductcalc" element={<MainCrossProductCalc />} />
+            <Route path="dotproductcalc" element={<MainDotProductCalc />} />
             {/* Biology */}
             <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
             <Route path="drughalflifeclearancecalc" element={<MainDrugHalfLifeClearanceCalc />} />
