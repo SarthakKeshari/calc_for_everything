@@ -5,8 +5,8 @@ function MainNthRootCalc() {
   const [value, setValue] = useState(0);
   const [root, setRoot] = useState(1);
   const [result, setResult] = useState(0);
-  const [rank, setRank] = useState('st')
-  const rankTypes = ['st','nd','rd','th']
+  const [rank, setRank] = useState("st");
+  const rankTypes = ["st", "nd", "rd", "th"];
 
   const handleInput = (e) => {
     setValue(e.target.value);
@@ -17,15 +17,14 @@ function MainNthRootCalc() {
 
   useEffect(() => {
     setResult(Math.pow(value, 1 / root));
-    if(root%10===1 && root%100!==11) {
-        setRank(rankTypes[0])
-    } else if(root%10===2 && root%100!==12) {
-        setRank(rankTypes[1])
-
-    } else if(root%10===3  && root%100!==13) {
-        setRank(rankTypes[2])
+    if (root % 10 === 1 && root % 100 !== 11) {
+      setRank(rankTypes[0]);
+    } else if (root % 10 === 2 && root % 100 !== 12) {
+      setRank(rankTypes[1]);
+    } else if (root % 10 === 3 && root % 100 !== 13) {
+      setRank(rankTypes[2]);
     } else {
-        setRank(rankTypes[3])
+      setRank(rankTypes[3]);
     }
   }, [value, root]);
 
@@ -54,10 +53,13 @@ function MainNthRootCalc() {
         value={root}
         onChange={handleRoot}
       />
-      <br/>
-      <br/>
+      <br />
+      <br />
       <Typography variant="h6">
-      <i><b>Result</b> :</i> {root}'{rank} root of {value} is {result}
+        <i>
+          <b>Result</b> :
+        </i>
+        {root}'{rank} root of {value} is {result}
       </Typography>
       {/* End your code here */}
     </Container>
