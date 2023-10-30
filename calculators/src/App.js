@@ -216,6 +216,7 @@ import MainPlanetaryGravitationalCalc from './physics/planetaryGravitationalCalc
 import MainGravityAccelerationCalc from './physics/gravityAccelerationCalc/MainGravityAccelerationCalc';
 import MainStopwatch from './computer_science/stopwatch/MainStopwatch';
 import MainGoldenRatioCalc from './mathematical/goldenRatioCalc/MainGoldenRatioCalc';
+import MainDiamondProblemSolver from './mathematical/diamondProblemSolver/MainDiamondProblemSolver';
 
 function App() {
   return (
@@ -377,6 +378,7 @@ function App() {
             <Route path="quartilescalc" element={<MainQuartilesCalc />} />
             <Route path="lowerboundupperboundcalc" element={<MainLowerBoundUpperBoundCalc />} />
             <Route path="goldenratiocalc" element={<MainGoldenRatioCalc />} />
+            <Route path="diamondproblemsolver" element={<MainDiamondProblemSolver />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
