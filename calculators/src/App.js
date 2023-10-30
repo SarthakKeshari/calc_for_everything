@@ -218,6 +218,7 @@ import MainStopwatch from './computer_science/stopwatch/MainStopwatch';
 import MainGoldenRatioCalc from './mathematical/goldenRatioCalc/MainGoldenRatioCalc';
 import MainDiamondProblemSolver from './mathematical/diamondProblemSolver/MainDiamondProblemSolver';
 import MainPPICalc from './computer_science/pPICalc/MainPPICalc';
+import MainIdealGasLawCalc from './physics/idealGasLawCalc/MainIdealGasLawCalc';
 
 function App() {
   return (
@@ -415,6 +416,7 @@ function App() {
             <Route path="momentumcalc" element={<MainMomentumCalc />} />
             <Route path="planetarygravitationalcalc" element={<MainPlanetaryGravitationalCalc />} />
             <Route path="gravityaccelerationcalc" element={<MainGravityAccelerationCalc />} />
+            <Route path="idealgaslawcalc" element={<MainIdealGasLawCalc />} />
             {/* Biology */}
             <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
             <Route path="drughalflifeclearancecalc" element={<MainDrugHalfLifeClearanceCalc />} />
