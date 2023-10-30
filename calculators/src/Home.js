@@ -166,6 +166,7 @@ export default function Home() {
             <HomeGridItem calcName="Lower Bound - Upper Bound Calculator" path="/lowerboundupperboundcalc"/> 
             <HomeGridItem calcName="Golden Ratio Calculator" path="/goldenratiocalc"/> 
             <HomeGridItem calcName="Diamond Problem Solver" path="/diamondproblemsolver"/> 
+            <HomeGridItem calcName="Internal Angles Of a Polygon Calculator" path="/internalanglesofapolygoncalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>

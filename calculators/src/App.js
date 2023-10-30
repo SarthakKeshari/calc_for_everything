@@ -219,6 +219,7 @@ import MainGoldenRatioCalc from './mathematical/goldenRatioCalc/MainGoldenRatioC
 import MainDiamondProblemSolver from './mathematical/diamondProblemSolver/MainDiamondProblemSolver';
 import MainPPICalc from './computer_science/pPICalc/MainPPICalc';
 import MainIdealGasLawCalc from './physics/idealGasLawCalc/MainIdealGasLawCalc';
+import MainInternalAnglesOfAPolygon from './mathematical/internalAnglesOfAPolygon/MainInternalAnglesOfAPolygon';
 
 function App() {
   return (
@@ -382,6 +383,7 @@ function App() {
             <Route path="lowerboundupperboundcalc" element={<MainLowerBoundUpperBoundCalc />} />
             <Route path="goldenratiocalc" element={<MainGoldenRatioCalc />} />
             <Route path="diamondproblemsolver" element={<MainDiamondProblemSolver />} />
+            <Route path="internalanglesofapolygoncalc" element={<MainInternalAnglesOfAPolygon />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
