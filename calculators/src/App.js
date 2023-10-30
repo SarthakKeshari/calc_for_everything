@@ -224,6 +224,7 @@ import MainNthRootCalc from './mathematical/nthRootCalc/MainNthRootCalc';
 import MainWordCounter from './computer_science/wordCounter/MainWordCounter';
 import MainCrossProductCalc from './physics/crossProductCalc/MainCrossProductCalc';
 import MainDotProductCalc from './physics/dotProductCalc/MainDotProductCalc';
+import MainElasticPotentialCalc from './physics/elasticPotentialCalc/MainElasticPotentialCalc';
 
 function App() {
   return (
@@ -427,6 +428,7 @@ function App() {
             <Route path="idealgaslawcalc" element={<MainIdealGasLawCalc />} />
             <Route path="crossproductcalc" element={<MainCrossProductCalc />} />
             <Route path="dotproductcalc" element={<MainDotProductCalc />} />
+            <Route path="elasticpotentialcalc" element={<MainElasticPotentialCalc />} />
             {/* Biology */}
             <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
             <Route path="drughalflifeclearancecalc" element={<MainDrugHalfLifeClearanceCalc />} />
