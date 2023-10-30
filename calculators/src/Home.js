@@ -76,6 +76,7 @@ export default function Home() {
             <HomeGridItem calcName="CRC Calculator" path="/crccalc"/> 
             <HomeGridItem calcName="Not Calculator" path="/notcalc"/> 
             <HomeGridItem calcName="TAT Calculator" path="/tatcalc"/> 
+            <HomeGridItem calcName="Stopwatch" path="/stopwatch"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>

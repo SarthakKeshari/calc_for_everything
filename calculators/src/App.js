@@ -214,6 +214,7 @@ import MainLowerBoundUpperBoundCalc from './mathematical/lowerBoundUpperBoundCal
 import MainMolarMassCalc from './chemistry/molarMassCalc/MainMolarMassCalc';
 import MainPlanetaryGravitationalCalc from './physics/planetaryGravitationalCalc/MainPlanetaryGravitationalCalc';
 import MainGravityAccelerationCalc from './physics/gravityAccelerationCalc/MainGravityAccelerationCalc';
+import MainStopwatch from './computer_science/stopwatch/MainStopwatch';
 
 function App() {
   return (
@@ -291,6 +292,7 @@ function App() {
             <Route path="crccalc" element={<MainCRCCalc />} />
             <Route path="notcalc" element={<MainNotCalc />} />
             <Route path="tatcalc" element={<MainTATCalc />} />
+            <Route path="stopwatch" element={<MainStopwatch />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
