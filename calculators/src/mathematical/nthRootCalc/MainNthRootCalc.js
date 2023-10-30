@@ -17,11 +17,13 @@ function MainNthRootCalc() {
 
   useEffect(() => {
     setResult(Math.pow(value, 1 / root));
-    if (root % 10 === 1 && root % 100 !== 11) {
+    const tenths = root%10;
+    const hundreds = root%100;
+    if (tenths === 1 && hundreds !== 11) {
       setRank(rankTypes[0]);
-    } else if (root % 10 === 2 && root % 100 !== 12) {
+    } else if (tenths === 2 && hundreds !== 12) {
       setRank(rankTypes[1]);
-    } else if (root % 10 === 3 && root % 100 !== 13) {
+    } else if (tenths === 3 && hundreds !== 13) {
       setRank(rankTypes[2]);
     } else {
       setRank(rankTypes[3]);
