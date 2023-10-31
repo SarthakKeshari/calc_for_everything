@@ -232,6 +232,7 @@ import MainIrrationalRationalConverter from './mathematical/irrationalRationalCo
 import MainCharacterCounter from './computer_science/characterCounter/MainCharacterCounter';
 import MainRomanNumeralOperationCalc from './computer_science/romanNumeralOperationCalc/MainRomanNumeralOperationCalc';
 import MainVietaTheoremCalc from './mathematical/vietaTheoremCalc/MainVietaTheoremCalc';
+import MainMolarConcentrationCalc from './chemistry/molarConcentrationCalc/MainMolarConcentrationCalc';
 
 function App() {
   return (
@@ -416,6 +417,7 @@ function App() {
             <Route path="equivalentmasscalc" element={<MainEquivalentMassCalc />} />
             <Route path="molalitycalc" element={<MainMolalityCalc />} />
             <Route path="molarmasscalc" element={<MainMolarMassCalc />} />
+            <Route path="molarconcentrationcalc" element={<MainMolarConcentrationCalc />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
