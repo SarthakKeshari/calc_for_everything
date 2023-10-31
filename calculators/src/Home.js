@@ -283,6 +283,7 @@ export default function Home() {
         <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
             <HomeGridItem calcName="Coin Flipper" path="/coinflipper"/> 
             <HomeGridItem calcName="Bingo Number Generator" path="/bingonumbergenerator"/> 
+            <HomeGridItem calcName="Dice Rollerr" path="/diceroller"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Space</Typography>

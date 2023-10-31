@@ -237,6 +237,7 @@ import MainBingoNumberGenerator from './sports_games/bingoNumberGenerator/MainBi
 import MainMarginCalc from './mathematical/marginCalc/MainMarginCalc';
 import MainExponentsSolver from './mathematical/exponentsSolver/MainExponentsSolver';
 import MainRoofingCalc from './finance/roofingCalc/MainRoofingCalc';
+import MainDiceRoller from './sports_games/diceRoller/MainDiceRoller';
 
 function App() {
   return (
@@ -489,6 +490,7 @@ function App() {
             {/* Games/Sports */}
             <Route path="coinflipper" element={<MainCoinFlipper />} />
             <Route path="bingonumbergenerator" element={<MainBingoNumberGenerator />} />
+            <Route path="diceroller" element={<MainDiceRoller />} />
             {/* Space */}
             <Route path="satellitelocationusingtle" element={<MainSatelliteLocationUsingTLE />} />
           </Route>
