@@ -231,6 +231,7 @@ import MainCoInteriorPairs from './mathematical/coInteriorPairs/MainCoInteriorPa
 import MainIrrationalRationalConverter from './mathematical/irrationalRationalConverter/MainIrrationalRationalConverter';
 import MainCharacterCounter from './computer_science/characterCounter/MainCharacterCounter';
 import MainRomanNumeralOperationCalc from './computer_science/romanNumeralOperationCalc/MainRomanNumeralOperationCalc';
+import MainVietaTheoremCalc from './mathematical/vietaTheoremCalc/MainVietaTheoremCalc';
 
 function App() {
   return (
@@ -402,6 +403,7 @@ function App() {
             <Route path="cointeriorpairscalc" element={<MainCoInteriorPairs />} />
             <Route path="irrationaltorationalconverter" element={<MainIrrationalRationalConverter />} />
             <Route path="romannumeraloperationcalc" element={<MainRomanNumeralOperationCalc />} />
+            <Route path="vietatheoremcalc" element={<MainVietaTheoremCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
