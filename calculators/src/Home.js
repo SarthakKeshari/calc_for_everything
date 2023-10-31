@@ -79,6 +79,7 @@ export default function Home() {
             <HomeGridItem calcName="Stopwatch" path="/stopwatch"/> 
             <HomeGridItem calcName="PPI Calculator" path="/ppicalc"/> 
             <HomeGridItem calcName="Word Counter" path="/wordcounter"/> 
+            <HomeGridItem calcName="Character Counter" path="/charactercounter"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>

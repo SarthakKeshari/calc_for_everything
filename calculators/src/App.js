@@ -229,6 +229,7 @@ import MainCoinFlipper from './sports_games/coinFlipper/MainCoinFlipper';
 import MainExternalAnglesOfAPolygonCalc from './mathematical/externalAnglesOfAPolygonCalc/MainExternalAnglesOfAPolygonCalc';
 import MainCoInteriorPairs from './mathematical/coInteriorPairs/MainCoInteriorPairs';
 import MainIrrationalRationalConverter from './mathematical/irrationalRationalConverter/MainIrrationalRationalConverter';
+import MainCharacterCounter from './computer_science/characterCounter/MainCharacterCounter';
 
 function App() {
   return (
@@ -309,6 +310,7 @@ function App() {
             <Route path="stopwatch" element={<MainStopwatch />} />
             <Route path="ppicalc" element={<MainPPICalc />} />
             <Route path="wordcounter" element={<MainWordCounter />} />
+            <Route path="charactercounter" element={<MainCharacterCounter />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
