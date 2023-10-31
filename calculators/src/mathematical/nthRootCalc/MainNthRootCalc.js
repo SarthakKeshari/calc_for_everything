@@ -6,7 +6,6 @@ function MainNthRootCalc() {
   const [root, setRoot] = useState(1);
   const [result, setResult] = useState(0);
   const [rank, setRank] = useState("st");
-  const rankTypes = ["st", "nd", "rd", "th"];
 
   const handleInput = (e) => {
     setValue(e.target.value);
@@ -19,6 +18,7 @@ function MainNthRootCalc() {
     setResult(Math.pow(value, 1 / root));
     const tenths = root%10;
     const hundreds = root%100;
+    const rankTypes = ["st", "nd", "rd", "th"];
     if (tenths === 1 && hundreds !== 11) {
       setRank(rankTypes[0]);
     } else if (tenths === 2 && hundreds !== 12) {
