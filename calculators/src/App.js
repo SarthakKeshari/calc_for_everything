@@ -234,6 +234,7 @@ import MainRomanNumeralOperationCalc from './computer_science/romanNumeralOperat
 import MainVietaTheoremCalc from './mathematical/vietaTheoremCalc/MainVietaTheoremCalc';
 import MainMolarConcentrationCalc from './chemistry/molarConcentrationCalc/MainMolarConcentrationCalc';
 import MainBingoNumberGenerator from './sports_games/bingoNumberGenerator/MainBingoNumberGenerator';
+import MainMarginCalc from './mathematical/marginCalc/MainMarginCalc';
 
 function App() {
   return (
@@ -406,6 +407,7 @@ function App() {
             <Route path="irrationaltorationalconverter" element={<MainIrrationalRationalConverter />} />
             <Route path="romannumeraloperationcalc" element={<MainRomanNumeralOperationCalc />} />
             <Route path="vietatheoremcalc" element={<MainVietaTheoremCalc />} />
+            <Route path="margincalc" element={<MainMarginCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />

@@ -175,6 +175,7 @@ export default function Home() {
             <HomeGridItem calcName="Irrational to Rational Converter" path="/irrationaltorationalconverter"/> 
             <HomeGridItem calcName="Roman Numeral Operation Calculator" path="/romannumeraloperationcalc"/> 
             <HomeGridItem calcName="Vieta Theorem Calculator" path="/vietatheoremcalc"/> 
+            <HomeGridItem calcName="Margin Calculator" path="/margincalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
