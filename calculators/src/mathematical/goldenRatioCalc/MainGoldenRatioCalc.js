@@ -1,85 +1,89 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Typography } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
+
 function MainGoldenRatioCalc() {
 
+    const [sum, setSum] = useState('');
     const [a, setA] = useState('');
     const [b, setB] = useState('');
-    const [ratioType, setRatioType] = useState('');
-    const [missingRatio, setMissingRatio] = useState('');
 
-    const calculateGoldenRatio = (a, b) => {
-        if (a === 0 || b === 0) {
-            return null;
-        }
-        const ratio = (a + b) / a;
-        return ratio;
+    const ableTextFields = () => {
+        document.querySelectorAll('input[type="text"]').forEach((input) => {
+            input.disabled = false;
+        });
     };
 
-    const calculateMissingRatio = () => {
-        const parsedA = parseFloat(a);
-        const parsedB = parseFloat(b);
+    const handleClear = () => {
+        setSum('');
+        setA('');
+        setB('');
+        ableTextFields();
+    };
+              
+    useEffect(() => {
+        if ( (a !== '' && !isNaN(a)) && (b !== '' && !isNaN(b) )) {
+            setSum(a + b);                         
+        } else if ((a !== '' && !isNaN(a)) && (sum !== '' && !isNaN(sum))) {
+            setB(sum - a)                    
+        } else if ((sum !== '' && !isNaN(sum)) && (b !== '' && !isNaN(b))) {
+            setA(sum - b);                      
+        }       
+            
+    }, [sum,a,b]);
 
-        if (isNaN(parsedA) || isNaN(parsedB)) {
-            setMissingRatio('Invalid input');
-            return;
-        }
-
-        if (ratioType === 'AB') {
-            const missingRatio = parsedB * (1 + calculateGoldenRatio(parsedA, parsedB));
-            setMissingRatio(missingRatio.toFixed(2));
-           
-        } else if (ratioType === 'BA') {
-            const missingRatio = parsedA * calculateGoldenRatio(parsedA, parsedB) - parsedB;
-            setMissingRatio(missingRatio.toFixed(2));
-        } else {
-            setMissingRatio('Invalid ratio type');
-        }
+    const handleA = (e) => {
+        setA(parseFloat(e.target.value));
     };
 
-    return(
-        <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Golden Ratio Calculator</Typography>
-            <hr/>
-            <br/>
-            {/* Write your code here */}
-            
-            
+    const handleB = (e) => {
+        setB(parseFloat(e.target.value));
+    };
+
+    const handleSum = (e) => {
+        setSum(parseFloat(e.target.value));
+    };
+
+    return (
+        <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: "10" }}>
+            <Typography pt={1} variant='h5' sx={{ textAlign: "center" }}>Golden Ratio Calculator</Typography>
+            <hr />
+            <br />
+          
+            <TextField
+                label="Value of A+B"
+                type="number"
+                value={sum || ''}
+                onChange={ handleSum}
+                
+                
+            />
             <TextField
                 label="Value of A"
-                variant="outlined"
-                value={a}
-                onChange={(e) => setA(e.target.value)}
-                fullWidth
-                margin="normal"
+                type="number"
+                value={a || ''}
+                onChange={ handleA}
+                
+                
             />
             <TextField
                 label="Value of B"
-                variant="outlined"
-                value={b}
-                onChange={(e) => setB(e.target.value)}
-                fullWidth
-                margin="normal"
+                type="number"
+                value={b || ''}
+                onChange={ handleB}
+                            
             />
-            <TextField
-                label="Ratio Type (AB or BA)"
-                variant="outlined"
-                value={ratioType}
-                onChange={(e) => setRatioType(e.target.value)}
-                fullWidth
-                margin="normal"
-            />
-            <Button variant="contained" onClick={calculateMissingRatio}>
-                Calculate Missing Golden Ratio
-            </Button>
-            {missingRatio && (
-                <Typography variant="h6" sx={{ marginTop: '2rem', textAlign: 'center' }}>
-                    Missing Golden Ratio: {missingRatio}
-                </Typography>
-            )}
-            {/* End your code here */}
+            <Typography variant="h6" sx={{ marginTop: '2rem', textAlign: 'center' }}>
+                (A+B:A)   {(sum / a) || ''} = (A:B)  {(a / b) || ''} 
+            </Typography>
+
+            <Button variant="contained" onClick={handleClear}>Clear</Button>
+
+            
+
+            
         </Container>
     )
 }
