@@ -236,6 +236,7 @@ import MainMolarConcentrationCalc from './chemistry/molarConcentrationCalc/MainM
 import MainBingoNumberGenerator from './sports_games/bingoNumberGenerator/MainBingoNumberGenerator';
 import MainMarginCalc from './mathematical/marginCalc/MainMarginCalc';
 import MainExponentsSolver from './mathematical/exponentsSolver/MainExponentsSolver';
+import MainRoofingCalc from './finance/roofingCalc/MainRoofingCalc';
 
 function App() {
   return (
@@ -465,6 +466,7 @@ function App() {
             <Route path="gdpcalc" element={<MainGDPCalc />} />
             <Route path="multicurrencychangecalc" element={<MainMultiCurrencyChangeCalc />} />
             <Route path="fuelcostcalc" element={<MainFuelCostCalc />} />
+            <Route path="roofingcalc" element={<MainRoofingCalc />} />
             {/* Health */}
             <Route path="bmi" element={<MainBMI />} />
             <Route path="bmr" element={<MainBMR />} />
