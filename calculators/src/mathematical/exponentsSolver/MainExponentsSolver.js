@@ -1,19 +1,47 @@
-import React from 'react';
-import { Container, Typography } from '@mui/material';
+import React, { useState } from "react";
+import { TextField, Button, Box } from "@mui/material";
 
-function MainExponentsSolver(){
-    return(
-        <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY:"10" }}>
-            <Typography pt={1} variant='h5' sx = {{textAlign: "center"}}>Exponents Solver</Typography>
-            <hr/>
-            <br/>
-            {/* Write your code here */}
+function MainExponentsSolver() {
+  const [input, setInput] = useState("");
+  const [result, setResult] = useState("");
 
+  const calculateExponent = () => {
+    try {
+      const inputValue = parseFloat(input);
+      const exponent = Math.exp(inputValue);
+      setResult(`${exponent}`);
+    } catch (error) {
+      setResult("Invalid input. Please enter a valid number.");
+    }
+  };
 
+  return (
+    <>
+      <Box mt={2} sx={{ display: "flex", justifyContent: "center" }}>
+        <TextField
+          label="Enter a number"
+          variant="outlined"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          sx={{ width: "500px" }}
+        />
+      </Box>
 
-            {/* End your code here */}
-        </Container>
-    )
+      <Box mt={2} sx={{ textAlign: "center" }}>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={calculateExponent}
+        >
+          Calculate Exponent
+        </Button>
+      </Box>
+
+      <Box mt={2} sx={{ textAlign: "center" }}>
+        <Typography variant="h6">Result: {result}</Typography>
+      </Box>
+    </>
+  );
 }
 
 export default MainExponentsSolver;
