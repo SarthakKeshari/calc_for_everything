@@ -76,6 +76,10 @@ export default function Home() {
             <HomeGridItem calcName="CRC Calculator" path="/crccalc"/> 
             <HomeGridItem calcName="Not Calculator" path="/notcalc"/> 
             <HomeGridItem calcName="TAT Calculator" path="/tatcalc"/> 
+            <HomeGridItem calcName="Stopwatch" path="/stopwatch"/> 
+            <HomeGridItem calcName="PPI Calculator" path="/ppicalc"/> 
+            <HomeGridItem calcName="Word Counter" path="/wordcounter"/> 
+            <HomeGridItem calcName="Character Counter" path="/charactercounter"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Mathematical</Typography>
@@ -162,8 +166,18 @@ export default function Home() {
             <HomeGridItem calcName="POSET Calculator" path="/posetcalc"/> 
             <HomeGridItem calcName="Quartiles Calculator" path="/quartilescalc"/> 
             <HomeGridItem calcName="Lower Bound - Upper Bound Calculator" path="/lowerboundupperboundcalc"/> 
-            <HomeGridItem calcName="Co-interior Pairs Calculator" path="/cointeriorpairscalc"/> 
-        </Grid>
+            <HomeGridItem calcName="Co-interior Pairs Calculator" path="/cointeriorpairscalc"/>
+            <HomeGridItem calcName="Golden Ratio Calculator" path="/goldenratiocalc"/> 
+            <HomeGridItem calcName="Diamond Problem Solver" path="/diamondproblemsolver"/> 
+            <HomeGridItem calcName="Internal Angles Of a Polygon Calculator" path="/internalanglesofapolygoncalc"/> 
+            <HomeGridItem calcName="Nth Root Calculator" path="/nthrootcalc"/> 
+            <HomeGridItem calcName="External Angles Of a Polygon Calculator" path="/externalanglesofapolygoncalc"/> 
+            <HomeGridItem calcName="Co-Interior Pairs Calculator" path="/cointeriorpairscalc"/> 
+            <HomeGridItem calcName="Irrational to Rational Converter" path="/irrationaltorationalconverter"/> 
+            <HomeGridItem calcName="Roman Numeral Operation Calculator" path="/romannumeraloperationcalc"/> 
+            <HomeGridItem calcName="Vieta Theorem Calculator" path="/vietatheoremcalc"/> 
+            <HomeGridItem calcName="Margin Calculator" path="/margincalc"/> 
+            <HomeGridItem calcName="Exponents Solver" path="/exponentssolver"/> 
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
         <hr/>
@@ -179,6 +193,7 @@ export default function Home() {
             <HomeGridItem calcName="Equivalent Mass Calculator" path="/equivalentmasscalc"/>
             <HomeGridItem calcName="Molality Calculator" path="/molalitycalc"/>
             <HomeGridItem calcName="Molar Mass Calculator" path="/molarmasscalc"/>
+            <HomeGridItem calcName="Molar Concentration Calculator" path="/molarconcentrationcalc"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Physics</Typography>
@@ -205,6 +220,10 @@ export default function Home() {
             <HomeGridItem calcName="Momentum Calculator" path="/momentumcalc"/> 
             <HomeGridItem calcName="Planetary Gravitational Calculator" path="/planetarygravitationalcalc"/> 
             <HomeGridItem calcName="Gravity Acceleration Calculator" path="/gravityaccelerationcalc"/> 
+            <HomeGridItem calcName="Ideal Gas Law Calculator" path="/idealgaslawcalc"/> 
+            <HomeGridItem calcName="Cross Product Calculator" path="/crossproductcalc"/> 
+            <HomeGridItem calcName="Dot Product Calculator" path="/dotproductcalc"/> 
+            <HomeGridItem calcName="Elastic Potential Calculator" path="/elasticpotentialcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Biology</Typography>
@@ -256,6 +275,13 @@ export default function Home() {
             <HomeGridItem calcName="Mandala Creater" path="/mandalacreater"/>
             <HomeGridItem calcName="Pic Editor" path="/piceditor"/>
             <HomeGridItem calcName="Avatar Creater" path="/avatarcreater"/>
+        </Grid>
+        <br/>
+        <Typography pt={1} variant='h5'>Sports/Games</Typography>
+        <hr/>
+        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} padding={1}>
+            <HomeGridItem calcName="Coin Flipper" path="/coinflipper"/> 
+            <HomeGridItem calcName="Bingo Number Generator" path="/bingonumbergenerator"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Space</Typography>

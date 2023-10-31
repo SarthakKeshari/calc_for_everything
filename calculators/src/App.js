@@ -215,6 +215,28 @@ import MainMolarMassCalc from './chemistry/molarMassCalc/MainMolarMassCalc';
 import MainPlanetaryGravitationalCalc from './physics/planetaryGravitationalCalc/MainPlanetaryGravitationalCalc';
 import MainGravityAccelerationCalc from './physics/gravityAccelerationCalc/MainGravityAccelerationCalc';
 import MainCoInteriorPairs from './mathematical/coInteriorPairs/MainCoInteriorPairs';
+import MainStopwatch from './computer_science/stopwatch/MainStopwatch';
+import MainGoldenRatioCalc from './mathematical/goldenRatioCalc/MainGoldenRatioCalc';
+import MainDiamondProblemSolver from './mathematical/diamondProblemSolver/MainDiamondProblemSolver';
+import MainPPICalc from './computer_science/pPICalc/MainPPICalc';
+import MainIdealGasLawCalc from './physics/idealGasLawCalc/MainIdealGasLawCalc';
+import MainInternalAnglesOfAPolygon from './mathematical/internalAnglesOfAPolygon/MainInternalAnglesOfAPolygon';
+import MainNthRootCalc from './mathematical/nthRootCalc/MainNthRootCalc';
+import MainWordCounter from './computer_science/wordCounter/MainWordCounter';
+import MainCrossProductCalc from './physics/crossProductCalc/MainCrossProductCalc';
+import MainDotProductCalc from './physics/dotProductCalc/MainDotProductCalc';
+import MainElasticPotentialCalc from './physics/elasticPotentialCalc/MainElasticPotentialCalc';
+import MainCoinFlipper from './sports_games/coinFlipper/MainCoinFlipper';
+import MainExternalAnglesOfAPolygonCalc from './mathematical/externalAnglesOfAPolygonCalc/MainExternalAnglesOfAPolygonCalc';
+import MainCoInteriorPairs from './mathematical/coInteriorPairs/MainCoInteriorPairs';
+import MainIrrationalRationalConverter from './mathematical/irrationalRationalConverter/MainIrrationalRationalConverter';
+import MainCharacterCounter from './computer_science/characterCounter/MainCharacterCounter';
+import MainRomanNumeralOperationCalc from './computer_science/romanNumeralOperationCalc/MainRomanNumeralOperationCalc';
+import MainVietaTheoremCalc from './mathematical/vietaTheoremCalc/MainVietaTheoremCalc';
+import MainMolarConcentrationCalc from './chemistry/molarConcentrationCalc/MainMolarConcentrationCalc';
+import MainBingoNumberGenerator from './sports_games/bingoNumberGenerator/MainBingoNumberGenerator';
+import MainMarginCalc from './mathematical/marginCalc/MainMarginCalc';
+import MainExponentsSolver from './mathematical/exponentsSolver/MainExponentsSolver';
 
 function App() {
   return (
@@ -292,6 +314,10 @@ function App() {
             <Route path="crccalc" element={<MainCRCCalc />} />
             <Route path="notcalc" element={<MainNotCalc />} />
             <Route path="tatcalc" element={<MainTATCalc />} />
+            <Route path="stopwatch" element={<MainStopwatch />} />
+            <Route path="ppicalc" element={<MainPPICalc />} />
+            <Route path="wordcounter" element={<MainWordCounter />} />
+            <Route path="charactercounter" element={<MainCharacterCounter />} />
             {/* Mathematical */}
             <Route path="simpleinterest" element={<MainSI />} />
             <Route path="compoundinterest" element={<MainCI />} />
@@ -375,6 +401,17 @@ function App() {
             <Route path="quartilescalc" element={<MainQuartilesCalc />} />
             <Route path="lowerboundupperboundcalc" element={<MainLowerBoundUpperBoundCalc />} />
             <Route path="cointeriorpairs" element={<MainCoInteriorPairs />} />
+            <Route path="goldenratiocalc" element={<MainGoldenRatioCalc />} />
+            <Route path="diamondproblemsolver" element={<MainDiamondProblemSolver />} />
+            <Route path="internalanglesofapolygoncalc" element={<MainInternalAnglesOfAPolygon />} />
+            <Route path="nthrootcalc" element={<MainNthRootCalc />} />
+            <Route path="externalanglesofapolygoncalc" element={<MainExternalAnglesOfAPolygonCalc />} />
+            <Route path="cointeriorpairscalc" element={<MainCoInteriorPairs />} />
+            <Route path="irrationaltorationalconverter" element={<MainIrrationalRationalConverter />} />
+            <Route path="romannumeraloperationcalc" element={<MainRomanNumeralOperationCalc />} />
+            <Route path="vietatheoremcalc" element={<MainVietaTheoremCalc />} />
+            <Route path="margincalc" element={<MainMarginCalc />} />
+            <Route path="exponentssolver" element={<MainExponentsSolver />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
@@ -387,6 +424,7 @@ function App() {
             <Route path="equivalentmasscalc" element={<MainEquivalentMassCalc />} />
             <Route path="molalitycalc" element={<MainMolalityCalc />} />
             <Route path="molarmasscalc" element={<MainMolarMassCalc />} />
+            <Route path="molarconcentrationcalc" element={<MainMolarConcentrationCalc />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
@@ -409,6 +447,10 @@ function App() {
             <Route path="momentumcalc" element={<MainMomentumCalc />} />
             <Route path="planetarygravitationalcalc" element={<MainPlanetaryGravitationalCalc />} />
             <Route path="gravityaccelerationcalc" element={<MainGravityAccelerationCalc />} />
+            <Route path="idealgaslawcalc" element={<MainIdealGasLawCalc />} />
+            <Route path="crossproductcalc" element={<MainCrossProductCalc />} />
+            <Route path="dotproductcalc" element={<MainDotProductCalc />} />
+            <Route path="elasticpotentialcalc" element={<MainElasticPotentialCalc />} />
             {/* Biology */}
             <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
             <Route path="drughalflifeclearancecalc" element={<MainDrugHalfLifeClearanceCalc />} />
@@ -444,6 +486,9 @@ function App() {
             <Route path="mandalacreater" element={<MainMandalaCreater />} />
             <Route path="piceditor" element={<MainPicEditor />} />
             <Route path="avatarcreater" element={<MainAvatarCreater />} />
+            {/* Games/Sports */}
+            <Route path="coinflipper" element={<MainCoinFlipper />} />
+            <Route path="bingonumbergenerator" element={<MainBingoNumberGenerator />} />
             {/* Space */}
             <Route path="satellitelocationusingtle" element={<MainSatelliteLocationUsingTLE />} />
           </Route>
