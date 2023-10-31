@@ -230,6 +230,7 @@ import MainExternalAnglesOfAPolygonCalc from './mathematical/externalAnglesOfAPo
 import MainCoInteriorPairs from './mathematical/coInteriorPairs/MainCoInteriorPairs';
 import MainIrrationalRationalConverter from './mathematical/irrationalRationalConverter/MainIrrationalRationalConverter';
 import MainCharacterCounter from './computer_science/characterCounter/MainCharacterCounter';
+import MainRomanNumeralOperationCalc from './computer_science/romanNumeralOperationCalc/MainRomanNumeralOperationCalc';
 
 function App() {
   return (
@@ -400,6 +401,7 @@ function App() {
             <Route path="externalanglesofapolygoncalc" element={<MainExternalAnglesOfAPolygonCalc />} />
             <Route path="cointeriorpairscalc" element={<MainCoInteriorPairs />} />
             <Route path="irrationaltorationalconverter" element={<MainIrrationalRationalConverter />} />
+            <Route path="romannumeraloperationcalc" element={<MainRomanNumeralOperationCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />

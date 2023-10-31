@@ -173,6 +173,7 @@ export default function Home() {
             <HomeGridItem calcName="External Angles Of a Polygon Calculator" path="/externalanglesofapolygoncalc"/> 
             <HomeGridItem calcName="Co-Interior Pairs Calculator" path="/cointeriorpairscalc"/> 
             <HomeGridItem calcName="Irrational to Rational Converter" path="/irrationaltorationalconverter"/> 
+            <HomeGridItem calcName="Roman Numeral Operation Calculator" path="/romannumeraloperationcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
