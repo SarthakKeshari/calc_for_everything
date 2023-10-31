@@ -1,84 +1,146 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Typography, Card, TextField } from '@mui/material';
+import { Container, Typography, TextField, Button, Grid } from '@mui/material';
 
 function MainDiamondProblemSolver() {
-  const [factor1, setFactor1] = useState('');
-  const [factor2, setFactor2] = useState('');
+  const [a, setA] = useState('');
+  const [b, setB] = useState('');
   const [product, setProduct] = useState('');
   const [sum, setSum] = useState('');
 
-  useEffect(() => {
-    calculate();
-  }, [factor1, factor2]);
+  const isInteger = (value) => /^-?\d+$/.test(value);
 
-  const calculate = () => {
-    const num1 = parseFloat(factor1);
-    const num2 = parseFloat(factor2);
+  const findNumbers = (product, sum) => {
+    let discriminant = Math.sqrt(sum * sum - 4 * product);
 
-    if (isNaN(num1) || isNaN(num2)) {
-      setProduct('Please enter valid numbers.');
-      setSum('');
-      return;
+    let x = (sum + discriminant) / 2;
+    let y = (sum - discriminant) / 2;
+
+    return [x, y];
+  };
+
+  const calculateValues = () => {
+    if (isInteger(a) && isInteger(b)) {
+      setProduct(Number(a) * Number(b));
+      setSum(Number(a) + Number(b));
+    } else if (isInteger(a) && isInteger(product)) {
+      setB(product / a);
+      setSum(Number(a) + Number(b));
+    } else if (isInteger(b) && isInteger(product)) {
+      setA(product / b);
+      setSum(Number(a) + Number(b));
+    } else if (isInteger(a) && isInteger(sum)) {
+      setB(sum - a);
+      setProduct(Number(a) * Number(b));
+    } else if (isInteger(b) && isInteger(sum)) {
+      setA(sum - b);
+      setProduct(Number(a) * Number(b));
+    } else if (isInteger(product) && isInteger(sum)) {
+      let result = findNumbers(Number(product), Number(sum));
+      setA(result[0]);
+      setB(result[1]);
+      setProduct(result[0] * result[1]);
     }
+  };
 
-    const calculatedProduct = num1 * num2;
-    const calculatedSum = num1 + num2;
+  useEffect(() => {
+    calculateValues();
+  }, [a, b, product, sum, calculateValues]);
 
-    setProduct(`Product: ${calculatedProduct}`);
-    setSum(`Sum: ${calculatedSum}`);
+  const handleInputChange = (event, inputType) => {
+    const value = event.target.value;
+
+    if (/^-?\d*$/.test(value) || value === '') {
+      if (inputType === 'a') {
+        setA(value);
+      } else if (inputType === 'b') {
+        setB(value);
+      } else if (inputType === 'product') {
+        setProduct(value);
+        if (isInteger(value) && isInteger(b)) {
+          setSum(Number(value) + Number(b));
+        }
+      } else if (inputType === 'sum') {
+        setSum(value);
+        if (isInteger(value) && isInteger(a)) {
+          setProduct(Number(value) * Number(a));
+        }
+      }
+    }
+  };
+
+  const handleClear = () => {
+    setA('');
+    setB('');
+    setProduct('');
+    setSum('');
   };
 
   return (
-    <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: '10' }}>
-      <Typography pt={1} variant="h5" sx={{ textAlign: 'center' }}>
+    <Container
+      maxWidth="lg"
+      sx={{
+        bgcolor: '#eeeeee',
+        minHeight: '90vh',
+        paddingY: '10',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
+      <Typography pt={1} variant="h5" sx={{ textAlign: 'center', mb: 2 }}>
         Diamond Problem Solver
       </Typography>
-      <hr />
 
-      <Card
-        sx={{
-          backgroundColor: 'inherit',
-          margin: '5px',
-          padding: '5px',
-          boxSizing: 'border-box',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-        }}
-      >
-
-
-        <div style={{ display: 'flex', justifyContent: 'center', margin: '10px' }}>
-          <Typography variant="h6" style={{ fontSize: '1.5rem', fontFamily: 'KaTeX_Math' }}>
-            {product}
-          </Typography>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <Grid container spacing={2} justifyContent="center" alignItems="center">
+        <Grid item>
           <TextField
-            label="Factor 1"
+            label="Product"
             variant="outlined"
-            value={factor1}
-            onChange={(e) => setFactor1(e.target.value)}
+            margin="normal"
+            value={product}
+            onChange={(e) => handleInputChange(e, 'product')}
           />
-          <Typography variant="h4" style={{ margin: '0 10px' }}>
-            ⨯ {/* Replace '×' with a larger symbol */}
-          </Typography>
+        </Grid>
+      </Grid>
+      <Grid container spacing={2} justifyContent="center" alignItems="center">
+        <Grid item>
           <TextField
-            label="Factor 2"
+            label="a"
             variant="outlined"
-            value={factor2}
-            onChange={(e) => setFactor2(e.target.value)}
+            margin="normal"
+            value={a}
+            onChange={(e) => handleInputChange(e, 'a')}
           />
-        </div>
+        </Grid>
+        <Grid item>
+          <TextField
+            label="b"
+            variant="outlined"
+            margin="normal"
+            value={b}
+            onChange={(e) => handleInputChange(e, 'b')}
+          />
+        </Grid>
+      </Grid>
+      <Grid container spacing={2} justifyContent="center" alignItems="center">
+        <Grid item>
+          <TextField
+            label="Sum"
+            variant="outlined"
+            margin="normal"
+            value={sum}
+            onChange={(e) => handleInputChange(e, 'sum')}
+          />
+        </Grid>
+      </Grid>
 
-    
-
-        <div style={{ display: 'flex', justifyContent: 'center', margin: '10px' }}>
-          <Typography variant="h6" style={{ fontSize: '1.5rem', fontFamily: 'KaTeX_Math' }}>
-            {sum}
-          </Typography>
-        </div>
-      </Card>
+      <Grid container spacing={2} justifyContent="center" alignItems="center">
+        <Grid item>
+          <Button variant="contained" color="secondary" onClick={handleClear}>
+            Clear All
+          </Button>
+        </Grid>
+      </Grid>
     </Container>
   );
 }
