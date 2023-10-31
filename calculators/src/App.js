@@ -226,6 +226,7 @@ import MainCrossProductCalc from './physics/crossProductCalc/MainCrossProductCal
 import MainDotProductCalc from './physics/dotProductCalc/MainDotProductCalc';
 import MainElasticPotentialCalc from './physics/elasticPotentialCalc/MainElasticPotentialCalc';
 import MainCoinFlipper from './sports_games/coinFlipper/MainCoinFlipper';
+import MainExternalAnglesOfAPolygonCalc from './mathematical/externalAnglesOfAPolygonCalc/MainExternalAnglesOfAPolygonCalc';
 
 function App() {
   return (
@@ -392,6 +393,7 @@ function App() {
             <Route path="diamondproblemsolver" element={<MainDiamondProblemSolver />} />
             <Route path="internalanglesofapolygoncalc" element={<MainInternalAnglesOfAPolygon />} />
             <Route path="nthrootcalc" element={<MainNthRootCalc />} />
+            <Route path="externalanglesofapolygoncalc" element={<MainExternalAnglesOfAPolygonCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />

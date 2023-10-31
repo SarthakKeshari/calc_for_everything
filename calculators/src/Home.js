@@ -169,6 +169,7 @@ export default function Home() {
             <HomeGridItem calcName="Diamond Problem Solver" path="/diamondproblemsolver"/> 
             <HomeGridItem calcName="Internal Angles Of a Polygon Calculator" path="/internalanglesofapolygoncalc"/> 
             <HomeGridItem calcName="Nth Root Calculator" path="/nthrootcalc"/> 
+            <HomeGridItem calcName="External Angles Of a Polygon Calculator" path="/externalanglesofapolygoncalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
