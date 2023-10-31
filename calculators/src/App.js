@@ -374,6 +374,7 @@ function App() {
             <Route path="posetcalc" element={<MainPOSETCalc />} />
             <Route path="quartilescalc" element={<MainQuartilesCalc />} />
             <Route path="lowerboundupperboundcalc" element={<MainLowerBoundUpperBoundCalc />} />
+            <Route path="cointeriorpairs" element={<MainCoInteriorPairs />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
@@ -386,7 +387,6 @@ function App() {
             <Route path="equivalentmasscalc" element={<MainEquivalentMassCalc />} />
             <Route path="molalitycalc" element={<MainMolalityCalc />} />
             <Route path="molarmasscalc" element={<MainMolarMassCalc />} />
-            <Route path="cointeriorpairscalc" element={<MainCoInteriorPairs />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
