@@ -228,6 +228,7 @@ import MainElasticPotentialCalc from './physics/elasticPotentialCalc/MainElastic
 import MainCoinFlipper from './sports_games/coinFlipper/MainCoinFlipper';
 import MainExternalAnglesOfAPolygonCalc from './mathematical/externalAnglesOfAPolygonCalc/MainExternalAnglesOfAPolygonCalc';
 import MainCoInteriorPairs from './mathematical/coInteriorPairs/MainCoInteriorPairs';
+import MainIrrationalRationalConverter from './mathematical/irrationalRationalConverter/MainIrrationalRationalConverter';
 
 function App() {
   return (
@@ -396,6 +397,7 @@ function App() {
             <Route path="nthrootcalc" element={<MainNthRootCalc />} />
             <Route path="externalanglesofapolygoncalc" element={<MainExternalAnglesOfAPolygonCalc />} />
             <Route path="cointeriorpairscalc" element={<MainCoInteriorPairs />} />
+            <Route path="irrationaltorationalconverter" element={<MainIrrationalRationalConverter />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
