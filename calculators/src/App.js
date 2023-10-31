@@ -233,6 +233,7 @@ import MainCharacterCounter from './computer_science/characterCounter/MainCharac
 import MainRomanNumeralOperationCalc from './computer_science/romanNumeralOperationCalc/MainRomanNumeralOperationCalc';
 import MainVietaTheoremCalc from './mathematical/vietaTheoremCalc/MainVietaTheoremCalc';
 import MainMolarConcentrationCalc from './chemistry/molarConcentrationCalc/MainMolarConcentrationCalc';
+import MainBingoNumberGenerator from './sports_games/bingoNumberGenerator/MainBingoNumberGenerator';
 
 function App() {
   return (
@@ -481,6 +482,7 @@ function App() {
             <Route path="avatarcreater" element={<MainAvatarCreater />} />
             {/* Games/Sports */}
             <Route path="coinflipper" element={<MainCoinFlipper />} />
+            <Route path="bingonumbergenerator" element={<MainBingoNumberGenerator />} />
             {/* Space */}
             <Route path="satellitelocationusingtle" element={<MainSatelliteLocationUsingTLE />} />
           </Route>
