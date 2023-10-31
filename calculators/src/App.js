@@ -228,7 +228,6 @@ import MainDotProductCalc from './physics/dotProductCalc/MainDotProductCalc';
 import MainElasticPotentialCalc from './physics/elasticPotentialCalc/MainElasticPotentialCalc';
 import MainCoinFlipper from './sports_games/coinFlipper/MainCoinFlipper';
 import MainExternalAnglesOfAPolygonCalc from './mathematical/externalAnglesOfAPolygonCalc/MainExternalAnglesOfAPolygonCalc';
-import MainCoInteriorPairs from './mathematical/coInteriorPairs/MainCoInteriorPairs';
 import MainIrrationalRationalConverter from './mathematical/irrationalRationalConverter/MainIrrationalRationalConverter';
 import MainCharacterCounter from './computer_science/characterCounter/MainCharacterCounter';
 import MainRomanNumeralOperationCalc from './computer_science/romanNumeralOperationCalc/MainRomanNumeralOperationCalc';
@@ -406,7 +405,6 @@ function App() {
             <Route path="internalanglesofapolygoncalc" element={<MainInternalAnglesOfAPolygon />} />
             <Route path="nthrootcalc" element={<MainNthRootCalc />} />
             <Route path="externalanglesofapolygoncalc" element={<MainExternalAnglesOfAPolygonCalc />} />
-            <Route path="cointeriorpairscalc" element={<MainCoInteriorPairs />} />
             <Route path="irrationaltorationalconverter" element={<MainIrrationalRationalConverter />} />
             <Route path="romannumeraloperationcalc" element={<MainRomanNumeralOperationCalc />} />
             <Route path="vietatheoremcalc" element={<MainVietaTheoremCalc />} />
