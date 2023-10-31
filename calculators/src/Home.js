@@ -162,6 +162,7 @@ export default function Home() {
             <HomeGridItem calcName="POSET Calculator" path="/posetcalc"/> 
             <HomeGridItem calcName="Quartiles Calculator" path="/quartilescalc"/> 
             <HomeGridItem calcName="Lower Bound - Upper Bound Calculator" path="/lowerboundupperboundcalc"/> 
+            <HomeGridItem calcName="Co-interior Pairs Calculator" path="/cointeriorpairscalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>

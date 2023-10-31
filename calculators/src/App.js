@@ -214,6 +214,7 @@ import MainLowerBoundUpperBoundCalc from './mathematical/lowerBoundUpperBoundCal
 import MainMolarMassCalc from './chemistry/molarMassCalc/MainMolarMassCalc';
 import MainPlanetaryGravitationalCalc from './physics/planetaryGravitationalCalc/MainPlanetaryGravitationalCalc';
 import MainGravityAccelerationCalc from './physics/gravityAccelerationCalc/MainGravityAccelerationCalc';
+import MainCoInteriorPairs from './mathematical/coInteriorPairs/MainCoInteriorPairs';
 
 function App() {
   return (
@@ -385,6 +386,7 @@ function App() {
             <Route path="equivalentmasscalc" element={<MainEquivalentMassCalc />} />
             <Route path="molalitycalc" element={<MainMolalityCalc />} />
             <Route path="molarmasscalc" element={<MainMolarMassCalc />} />
+            <Route path="cointeriorpairscalc" element={<MainCoInteriorPairs />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
