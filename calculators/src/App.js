@@ -227,6 +227,7 @@ import MainDotProductCalc from './physics/dotProductCalc/MainDotProductCalc';
 import MainElasticPotentialCalc from './physics/elasticPotentialCalc/MainElasticPotentialCalc';
 import MainCoinFlipper from './sports_games/coinFlipper/MainCoinFlipper';
 import MainExternalAnglesOfAPolygonCalc from './mathematical/externalAnglesOfAPolygonCalc/MainExternalAnglesOfAPolygonCalc';
+import MainCoInteriorPairs from './mathematical/coInteriorPairs/MainCoInteriorPairs';
 
 function App() {
   return (
@@ -394,6 +395,7 @@ function App() {
             <Route path="internalanglesofapolygoncalc" element={<MainInternalAnglesOfAPolygon />} />
             <Route path="nthrootcalc" element={<MainNthRootCalc />} />
             <Route path="externalanglesofapolygoncalc" element={<MainExternalAnglesOfAPolygonCalc />} />
+            <Route path="cointeriorpairscalc" element={<MainCoInteriorPairs />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
