@@ -1,5 +1,7 @@
-# Calculator for Everything
+# [Calculator for Everything](https://calc-for-everything-psi.vercel.app/)
 This repository aims to provide Calculators for educational, professional, scientific, health and well-being and other purposes.
+
+Project Live at - [Calc_for Everything](https://calc-for-everything-psi.vercel.app/)
 
 #### Its a ReactJS project and the UI library used - Material UI
 
