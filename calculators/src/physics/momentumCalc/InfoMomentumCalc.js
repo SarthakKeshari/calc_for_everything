@@ -55,8 +55,8 @@ export default function InfoMomentumCalculator() {
                 {/* Define meaning that each variable convey */}
                 Where: <br/>
                   - P represents the momentum as kg m/s. <br/>
-                  - M is the mass measured in kilograms (kg). <br/>
-                  - V is the velocity measured in meters per second (m/s). <br/>
+                  - M is the mass and can measured in kilograms (kg), grams (g), pounds (lb), and ounces (oz). <br/>
+                  - V is the velocity and can measured in meters per second (m/s), inches per second (in/s), centimeters per second (m/s), and kilometers per second (km/h). <br/>
               </h5>
             </code>
           </Typography>
