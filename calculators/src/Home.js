@@ -284,6 +284,7 @@ export default function Home() {
             <HomeGridItem calcName="Coin Flipper" path="/coinflipper"/> 
             <HomeGridItem calcName="Bingo Number Generator" path="/bingonumbergenerator"/> 
             <HomeGridItem calcName="Dice Rollerr" path="/diceroller"/> 
+            <HomeGridItem calcName="Random Card Generator" path="/randomCardGenerator"/>
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Space</Typography>
