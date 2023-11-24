@@ -55,8 +55,8 @@ export default function InfoDensityCalculator() {
                 {/* Define meaning that each variable convey */}
                 Where: <br/>
                   - P represents the density as kg/m<sup>3</sup>. <br/>
-                  - M is the mass measured in kilograms (kg). <br/>
-                  - V is the volume measured in cubic meters (m<sup>3</sup>). <br/>
+                  - M is the mass measured in kilograms (kg), grams (g), milligrams (mg), ounces (oz), pounds (lb), tons (t). <br/>
+                  - V is the volume measured in cubic meters (m<sup>3</sup>), liters (L), milliliters (mL), cubic inches (in<sup>3</sup>), cubic centimeters (cm<sup>3</sup>). <br/>
               </h5>
             </code>
           </Typography>
