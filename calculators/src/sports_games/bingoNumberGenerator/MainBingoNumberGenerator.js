@@ -1,47 +1,49 @@
 import React, { useState } from 'react';
-import { Container, Typography, Button, Grid } from '@mui/material';
+import { Container, Typography, Button, Grid, Paper } from '@mui/material';
 
-function MainBingoCardGenerator() {
-  const [bingoCards, setBingoCards] = useState([]);
+function MainBingoGame() {
+  const [currentNumber, setCurrentNumber] = useState(null);
+  const [calledNumbers, setCalledNumbers] = useState([]);
 
-  // Function to generate a random number between 1 and 75
-  const generateRandomNumber = () => Math.floor(Math.random() * 75) + 1;
-
-  // Function to generate a random Bingo card
-  const generateBingoCard = () => {
-    const card = Array.from({ length: 5 }, () =>
-      Array.from({ length: 5 }, () => generateRandomNumber())
+  // Function to generate a random Bingo number between 1 and 75, excluding already called numbers
+  const generateBingoNumber = () => {
+    const availableNumbers = Array.from({ length: 75 }, (_, index) => index + 1).filter(
+      (number) => !calledNumbers.includes(number)
     );
-    setBingoCards([...bingoCards, card]);
+
+    if (availableNumbers.length > 0) {
+      const randomNumber = availableNumbers[Math.floor(Math.random() * availableNumbers.length)];
+      setCurrentNumber(randomNumber);
+      setCalledNumbers([...calledNumbers, randomNumber]);
+    } else {
+      // All numbers have been called
+      setCurrentNumber(null);
+    }
   };
 
   return (
     <Container maxWidth="lg" sx={{ bgcolor: '#eeeeee', minHeight: '90vh', paddingY: '10' }}>
       <Typography pt={1} variant="h5" sx={{ textAlign: 'center' }}>
-        Bingo Card Generator
+        Bingo Number Caller
       </Typography>
       <hr />
       <br />
-      <Button variant="contained" onClick={generateBingoCard}>
-        Generate Bingo Card
+      <Button variant="contained" onClick={generateBingoNumber}>
+        Call Bingo Number
       </Button>
       <br />
       <br />
       <Grid container spacing={2}>
-        {bingoCards.map((card, index) => (
-          <Grid item key={index}>
-            <Typography variant="subtitle1">Card {index + 1}</Typography>
-            <table>
-              <tbody>
-                {card.map((row, rowIndex) => (
-                  <tr key={rowIndex}>
-                    {row.map((number, colIndex) => (
-                      <td key={colIndex}>{number}</td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        <Grid item xs={12}>
+          <Typography variant="h6">Current Number:</Typography>
+          <Paper sx={{ textAlign: 'center', padding: '8px' }}>{currentNumber}</Paper>
+        </Grid>
+        <Grid item xs={12}>
+          <Typography variant="h6">Called Numbers:</Typography>
+        </Grid>
+        {calledNumbers.map((number, index) => (
+          <Grid item key={index} xs={3}>
+            <Paper sx={{ textAlign: 'center', padding: '8px' }}>{number}</Paper>
           </Grid>
         ))}
       </Grid>
@@ -49,4 +51,5 @@ function MainBingoCardGenerator() {
   );
 }
 
-export default MainBingoCardGenerator;
+export default MainBingoGame;
+
