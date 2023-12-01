@@ -239,6 +239,7 @@ import MainExponentsSolver from './mathematical/exponentsSolver/MainExponentsSol
 import MainRoofingCalc from './finance/roofingCalc/MainRoofingCalc';
 import MainDiceRoller from './sports_games/diceRoller/MainDiceRoller';
 import RandomCardGenerator from './sports_games/randomCardGenerator/MainRandomCardGenerator';
+import MainCommutativePropertyCalc from './mathematical/commutativePropertyCalc/MainCommutativePropertyCalc';
 
 function App() {
   return (
@@ -413,6 +414,7 @@ function App() {
             <Route path="vietatheoremcalc" element={<MainVietaTheoremCalc />} />
             <Route path="margincalc" element={<MainMarginCalc />} />
             <Route path="exponentssolver" element={<MainExponentsSolver />} />
+            <Route path="commutativepropertycalc" element={<MainCommutativePropertyCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
