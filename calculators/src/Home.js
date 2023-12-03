@@ -177,6 +177,7 @@ export default function Home() {
             <HomeGridItem calcName="Vieta Theorem Calculator" path="/vietatheoremcalc"/> 
             <HomeGridItem calcName="Margin Calculator" path="/margincalc"/> 
             <HomeGridItem calcName="Exponents Solver" path="/exponentssolver"/> 
+            <HomeGridItem calcName="Commutative Property Calculator" path="/commutativepropertycalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
