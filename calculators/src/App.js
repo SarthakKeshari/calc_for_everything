@@ -238,6 +238,8 @@ import MainMarginCalc from './mathematical/marginCalc/MainMarginCalc';
 import MainExponentsSolver from './mathematical/exponentsSolver/MainExponentsSolver';
 import MainRoofingCalc from './finance/roofingCalc/MainRoofingCalc';
 import MainDiceRoller from './sports_games/diceRoller/MainDiceRoller';
+import RandomCardGenerator from './sports_games/randomCardGenerator/MainRandomCardGenerator';
+import MainCommutativePropertyCalc from './mathematical/commutativePropertyCalc/MainCommutativePropertyCalc';
 
 function App() {
   return (
@@ -412,6 +414,7 @@ function App() {
             <Route path="vietatheoremcalc" element={<MainVietaTheoremCalc />} />
             <Route path="margincalc" element={<MainMarginCalc />} />
             <Route path="exponentssolver" element={<MainExponentsSolver />} />
+            <Route path="commutativepropertycalc" element={<MainCommutativePropertyCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
@@ -490,7 +493,8 @@ function App() {
             {/* Games/Sports */}
             <Route path="coinflipper" element={<MainCoinFlipper />} />
             <Route path="bingonumbergenerator" element={<MainBingoNumberGenerator />} />
-            <Route path="diceroller" element={<MainDiceRoller />} />
+            <Route path="diceroller" element={<MainDiceRoller />} /> 
+            <Route path="randomCardGenerator" element={<RandomCardGenerator />} /> 
             {/* Space */}
             <Route path="satellitelocationusingtle" element={<MainSatelliteLocationUsingTLE />} />
           </Route>
