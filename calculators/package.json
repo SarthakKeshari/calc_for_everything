@@ -35,6 +35,7 @@
     "react-plotly.js": "^2.6.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "^5.0.1",
+    "roman-numerals": "^0.3.2",
     "satellite.js": "^5.0.0",
     "tesseract.js": "^5.0.2",
     "web-vitals": "^2.1.4"
