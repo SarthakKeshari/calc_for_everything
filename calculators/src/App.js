@@ -241,6 +241,7 @@ import MainDiceRoller from './sports_games/diceRoller/MainDiceRoller';
 import RandomCardGenerator from './sports_games/randomCardGenerator/MainRandomCardGenerator';
 import MainCommutativePropertyCalc from './mathematical/commutativePropertyCalc/MainCommutativePropertyCalc';
 import MainStemVolumeCalc from './mathematical/stemVolumeCalc/MainStemVolumeCalc';
+import MainVelocityMostProbableValueCalc from './physics/velocityMostProbableValueCalc/MainVelocityMostProbableValueCalc';
 
 function App() {
   return (
@@ -456,6 +457,7 @@ function App() {
             <Route path="crossproductcalc" element={<MainCrossProductCalc />} />
             <Route path="dotproductcalc" element={<MainDotProductCalc />} />
             <Route path="elasticpotentialcalc" element={<MainElasticPotentialCalc />} />
+            <Route path="velocitymostprobablevaluecalc" element={<MainVelocityMostProbableValueCalc />} />
             {/* Biology */}
             <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
             <Route path="drughalflifeclearancecalc" element={<MainDrugHalfLifeClearanceCalc />} />
