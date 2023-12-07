@@ -227,6 +227,7 @@ export default function Home() {
             <HomeGridItem calcName="Dot Product Calculator" path="/dotproductcalc"/> 
             <HomeGridItem calcName="Elastic Potential Calculator" path="/elasticpotentialcalc"/> 
             <HomeGridItem calcName="Velocity Most Probable Value Calculator" path="/velocitymostprobablevaluecalc"/> 
+            <HomeGridItem calcName="Velocity Average Value Calculator" path="/velocityaveragevaluecalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Biology</Typography>

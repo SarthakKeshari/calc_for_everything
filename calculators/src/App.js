@@ -242,6 +242,7 @@ import RandomCardGenerator from './sports_games/randomCardGenerator/MainRandomCa
 import MainCommutativePropertyCalc from './mathematical/commutativePropertyCalc/MainCommutativePropertyCalc';
 import MainStemVolumeCalc from './mathematical/stemVolumeCalc/MainStemVolumeCalc';
 import MainVelocityMostProbableValueCalc from './physics/velocityMostProbableValueCalc/MainVelocityMostProbableValueCalc';
+import MainVelocityAverageValueCalc from './physics/velocityAverageValueCalc/MainVelocityAverageValueCalc';
 
 function App() {
   return (
@@ -458,6 +459,7 @@ function App() {
             <Route path="dotproductcalc" element={<MainDotProductCalc />} />
             <Route path="elasticpotentialcalc" element={<MainElasticPotentialCalc />} />
             <Route path="velocitymostprobablevaluecalc" element={<MainVelocityMostProbableValueCalc />} />
+            <Route path="velocityaveragevaluecalc" element={<MainVelocityAverageValueCalc />} />
             {/* Biology */}
             <Route path="dnarnaconverter" element={<MainDNARNAConverter />} />
             <Route path="drughalflifeclearancecalc" element={<MainDrugHalfLifeClearanceCalc />} />
