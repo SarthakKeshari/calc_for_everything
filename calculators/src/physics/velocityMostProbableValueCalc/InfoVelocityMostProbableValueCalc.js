@@ -41,7 +41,7 @@ export default function InfoVelocityMostProbableValueCalc() {
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {/* Definition */}
-            
+            Velocity Most Probable Value Calculator determines the most probable speed of gas molecules using the Boltzmann constant, temperature, and molecular weight.
             <br/>
             {/* Replace the below calculator name with yuor calculator name */}
             The formula for calculating Velocity Most Probable Value is: 
