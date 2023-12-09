@@ -41,20 +41,34 @@ export default function InfoVelocityAverageValueCalc() {
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {/* Definition */}
-            
+            The Velocity Average Value Calculator computes the average gas molecule velocity using the root mean square formula, molecular weight, and constants.
             <br/>
             {/* Replace the below calculator name with yuor calculator name */}
-            The formula for calculating Velocity Average Value is:
+            The formula for calculating Velocity Average Value is: 
             <br/>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h3>
                 {/* Add calc formula */}
-                
+                V<sub>mp</sub> = √((8 * BoltzmannConstant * temp) / (π * molecularWeight * mh))
               </h3>
             </code>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h5>
                 {/* Define meaning that each variable convey */}
+
+                Where:
+                <br />
+                V<sub>mp</sub> = Most Probable Velocity
+                <br />
+                BoltzmannConstant = Boltzmann constant ( 1.380649e-23 J/K)
+                <br />
+                temp = Temperature (in Kelvins)
+                <br />
+                π = Pi (approximately 3.14159)
+                <br />
+                molecularWeight = Molecular Weight of the fluid
+                <br />
+                mh = Mass of hydrogen (1.67e-27)
 
               </h5>
             </code>
