@@ -49,7 +49,7 @@ export default function InfoVelocityAverageValueCalc() {
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h3>
                 {/* Add calc formula */}
-                V<sub>mp</sub> = √((8 * BoltzmannConstant * temp) / (π * molecularWeight * mh))
+                V<sub>av</sub> = √((8 * BoltzmannConstant * temp) / (π * molecularWeight * mh))
               </h3>
             </code>
             <code style={{display: 'flex', justifyContent: 'center'}}>
@@ -58,7 +58,7 @@ export default function InfoVelocityAverageValueCalc() {
 
                 Where:
                 <br />
-                V<sub>mp</sub> = Most Probable Velocity
+                V<sub>av</sub> = Average Velocity
                 <br />
                 BoltzmannConstant = Boltzmann constant ( 1.380649e-23 J/K)
                 <br />
