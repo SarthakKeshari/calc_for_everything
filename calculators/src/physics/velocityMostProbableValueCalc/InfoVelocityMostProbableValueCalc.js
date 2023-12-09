@@ -44,18 +44,30 @@ export default function InfoVelocityMostProbableValueCalc() {
             
             <br/>
             {/* Replace the below calculator name with yuor calculator name */}
-            The formula for calculating Velocity Most Probable Value is:
+            The formula for calculating Velocity Most Probable Value is: 
             <br/>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h3>
                 {/* Add calc formula */}
-                
+                V<sub>mp</sub> = √((2 * BoltzmannConstant * temp) / (molecularWeight * mh))
               </h3>
             </code>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h5>
                 {/* Define meaning that each variable convey */}
 
+                Where:
+                <br />
+                V<sub>mp</sub> = Most Probable Velocity
+                <br />
+                BoltzmannConstant = Boltzmann constant (1.380649e-23 J/K)
+                <br />
+                temp = Temperature (in Kelvins)
+                <br />
+                
+                molecularWeight = Molecular Weight of the fluid
+                <br />
+                mh = Mass of hydrogen (1.67e-27)
               </h5>
             </code>
           </Typography>
