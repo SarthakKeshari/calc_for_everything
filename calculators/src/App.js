@@ -244,6 +244,7 @@ import MainStemVolumeCalc from './mathematical/stemVolumeCalc/MainStemVolumeCalc
 import MainVelocityMostProbableValueCalc from './physics/velocityMostProbableValueCalc/MainVelocityMostProbableValueCalc';
 import MainVelocityAverageValueCalc from './physics/velocityAverageValueCalc/MainVelocityAverageValueCalc';
 import MainVelocityRootMeanSquareCalc from './chemistry/velocityRootMeanSquareCalc/MainVelocityRootMeanSquareCalc';
+import MainRomanToIntConverter from './mathematical/romanToIntConverter/MainRomanToIntConverter';
 
 function App() {
   return (
@@ -420,6 +421,7 @@ function App() {
             <Route path="exponentssolver" element={<MainExponentsSolver />} />
             <Route path="commutativepropertycalc" element={<MainCommutativePropertyCalc />} />
             <Route path="stemvolumecalc" element={<MainStemVolumeCalc />} />
+            <Route path="romantointconverter" element={<MainRomanToIntConverter />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />
