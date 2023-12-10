@@ -245,6 +245,7 @@ import MainVelocityMostProbableValueCalc from './physics/velocityMostProbableVal
 import MainVelocityAverageValueCalc from './physics/velocityAverageValueCalc/MainVelocityAverageValueCalc';
 import MainVelocityRootMeanSquareCalc from './chemistry/velocityRootMeanSquareCalc/MainVelocityRootMeanSquareCalc';
 import MainRomanToIntConverter from './mathematical/romanToIntConverter/MainRomanToIntConverter';
+import MainMarkupCalc from './mathematical/markupCalc/MainMarkupCalc';
 
 function App() {
   return (
@@ -422,6 +423,7 @@ function App() {
             <Route path="commutativepropertycalc" element={<MainCommutativePropertyCalc />} />
             <Route path="stemvolumecalc" element={<MainStemVolumeCalc />} />
             <Route path="romantointconverter" element={<MainRomanToIntConverter />} />
+            <Route path="markupcalc" element={<MainMarkupCalc />} />
             {/* Chemistry */}
             <Route path="phcalc" element={<MainPHCalc />} />
             <Route path="chemicaleqbalancer" element={<MainChemicalEqBalancer />} />

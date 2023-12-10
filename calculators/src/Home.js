@@ -180,6 +180,7 @@ export default function Home() {
             <HomeGridItem calcName="Commutative Property Calculator" path="/commutativepropertycalc"/> 
             <HomeGridItem calcName="Stem Volume Calculator" path="/stemvolumecalc"/> 
             <HomeGridItem calcName="Roman Numeral To Integer Converter" path="/romantointconverter"/> 
+            <HomeGridItem calcName="Markup Calculator" path="/markupcalc"/> 
         </Grid>
         <br/>
         <Typography pt={1} variant='h5'>Chemistry</Typography>
