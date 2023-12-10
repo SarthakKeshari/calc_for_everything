@@ -37,25 +37,37 @@ export default function InfoVelocityRootMeanSquareCalc() {
         <Box sx={style} sm={1}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {/* Calculator Heading */}
-            Velocity Root Mean Square Value
+            Velocity Root Mean Square Value Calculator
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {/* Definition */}
-            
+            The root mean square (RMS) velocity is a measure of the average speed of particles in a gas.
             <br/>
             {/* Replace the below calculator name with yuor calculator name */}
-            The formula for calculating Velocity Root Mean Square is:
+            The formula for calculating Velocity Root Mean Square Value is: 
             <br/>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h3>
                 {/* Add calc formula */}
-                
+                V<sub>rms</sub> = √((3 * BoltzmannConstant * temp) / (molecularWeight * mh))
               </h3>
             </code>
             <code style={{display: 'flex', justifyContent: 'center'}}>
               <h5>
                 {/* Define meaning that each variable convey */}
 
+                Where:
+                <br />
+                V<sub>rms</sub> = Most Root Mean Square Velocity
+                <br />
+                BoltzmannConstant = Boltzmann constant (1.380649e-23 J/K)
+                <br />
+                temp = Temperature (in Kelvins)
+                <br />
+                
+                molecularWeight = Molecular Weight of the fluid
+                <br />
+                mh = Mass of hydrogen (1.67e-27)
               </h5>
             </code>
           </Typography>
