@@ -243,6 +243,7 @@ import MainCommutativePropertyCalc from './mathematical/commutativePropertyCalc/
 import MainStemVolumeCalc from './mathematical/stemVolumeCalc/MainStemVolumeCalc';
 import MainVelocityMostProbableValueCalc from './physics/velocityMostProbableValueCalc/MainVelocityMostProbableValueCalc';
 import MainVelocityAverageValueCalc from './physics/velocityAverageValueCalc/MainVelocityAverageValueCalc';
+import MainVelocityRootMeanSquareCalc from './chemistry/velocityRootMeanSquareCalc/MainVelocityRootMeanSquareCalc';
 
 function App() {
   return (
@@ -432,6 +433,7 @@ function App() {
             <Route path="molalitycalc" element={<MainMolalityCalc />} />
             <Route path="molarmasscalc" element={<MainMolarMassCalc />} />
             <Route path="molarconcentrationcalc" element={<MainMolarConcentrationCalc />} />
+            <Route path="velocityrootmeansquarecalc" element={<MainVelocityRootMeanSquareCalc />} />
             {/* Physics */}
             <Route path="pressurecalc" element={<MainPressureCalc />} />
             <Route path="cosmomassconverter" element={<MainCosmoMassConverter />} />
